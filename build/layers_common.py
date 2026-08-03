@@ -44,6 +44,82 @@ URL_THE_BIRTHDAY_GAP = f"{DEV}/the-birthday-gap"
 URL_GOAL_SETTING_TOOL = f"{BASE}/page/for-swimmers/goal-setting-tool"
 
 # Swimmer-facing hub. Third audience tree, alongside the coach tree and The ROW Way.
+# ===================== Naming: three jobs, not one =====================
+# REVISED August 2026. The old rule said the slug, the H1, the nav label and the
+# file name all use the same words. That went too far. Three of them have
+# different jobs:
+#
+#   NAV LABEL   wayfinding. Short, in the visitor's words, whatever helps them
+#               find it. "Meet Schedule & Info" is a better nav label than a
+#               better page title.
+#   H1          the page's real title. As descriptive as the content needs.
+#               "Meet and Event Schedule" tells you it covers events and
+#               closures too.
+#   SLUG        stable and descriptive. It must NOT be rewritten every time a
+#               heading is reworded, because that breaks every existing link.
+#
+# What survives from the old rule, and it is the part that mattered:
+#
+#   FILE NAME follows the H1. build_<h1>.py and row_<h1>_embed.html. This is
+#   what stops the build script for a page becoming unfindable, which has
+#   already happened once: the Goal Setting Tool was built as build_swim_math.py.
+#
+# The limit: the three should still be recognizably the same thing. "Goal Setting
+# Tool" against a repo called row-swimming-math was over that line. "For Coaches"
+# in the nav against /page/coaching-at-row is not.
+#
+# So /page/coaching-at-row stays as it is. The nav says For Coaches. Both correct.
+
+
+# ===================== Nav aliases =====================
+# SportsEngine Motion will not allow two navigation entries with the same name.
+# So a page that needs to appear in two sections has its real name in one place
+# and an alias in the other. This is a platform limit and it is CORRECT. Do not
+# "fix" it by making the names match: the nav will reject it.
+#
+# alias in the nav -> the page it points at
+NAV_ALIASES = {
+    "Swimmer Equipment List": "ROW Equipment List",
+    "Order ROW Clothing & Equipment": "ROW Clothing & Equipment",
+}
+
+# The page's real name is what its H1 says, and what a link to it should read.
+# The alias exists only to satisfy the nav.
+
+
+# ===================== The club's own sentences =====================
+# These appear on more than one page, so they live here. Four versions of the
+# promise were in circulation: cherish or carry, experiences in or through
+# competitive swimming. Settled August 2026.
+#
+# CARRY, not cherish. THROUGH, not in: the club's position is that swimming is
+# the vehicle rather than the point, and "through" says that where "in" only
+# says the experiences happen inside the sport. "Through" is also the wording in
+# the 2026-27 Executive Summary.
+PROMISE = ("We&rsquo;re not just training swimmers. We&rsquo;re providing young people, "
+           "families, and coaches with positive experiences they will carry long after "
+           "they&rsquo;ve left the pool.")
+
+MISSION = ("The mission of the Region of Waterloo Swim Club is to create experiences through "
+           "competitive swimming that positively shape our swimmers, families, and coaches "
+           "long after their time with the club has ended.")
+
+FOUNDED = 1976
+
+
+# Booking a new swimmer assessment. THE ONLY LINK. Confirmed August 2026.
+#
+# The eventId changes when a new registration event is created, so it lives here
+# and nowhere else. Never hard-code it in a page script.
+#
+# Retired: /page/for-parents/team-registration?reg_id=115884, which the home page
+# and About Us used under the names "New Swimmer Tryouts" and "Schedule a Swimmer
+# Assessment Today". Two links and three names for the same thing. Both of those
+# pages need updating to the link below.
+URL_ASSESSMENT = f"{BASE}/page/system/teamreg-shopping?eventId=1761153"
+
+URL_EQUIPMENT_LIST = f"{BASE}/page/for-swimmers/row-equipment-list"
+
 URL_FOR_SWIMMERS = f"{BASE}/page/for-swimmers"
 
 # The interactive calculator is hosted off-site because the CMS sanitizer strips <script>.
@@ -275,6 +351,189 @@ PROGRAM_SLUGS = {
 def program_url(short):
     """Page for a group, by its short name. Never hard-code one in a page script."""
     return f"{PROGRAMS_TREE}/{PROGRAM_SLUGS[short]}"
+
+
+# ===================== Program pages, 2026-27 =====================
+# One page per group. Recreation is the single exception: one page carrying both
+# REC-AG options, at the club's direction.
+#
+# Schedules are from ROW_2026-27_Group_Schedules_12h_v26, the current version.
+# Every page prints DRAFT, NOT YET FINAL above its schedule.
+#
+# Lead coaches are as published in the 2026-27 Executive Summary, in the same
+# abbreviated form. TBC where the summary names no one.
+# (day, time, pool, lanes)
+SCHEDULES = {
+    "ND 18&U": [("Mon", "4:00-6:00 pm", "WLU deep end", "3"),
+                ("Tue", "6:00-7:30 am", "WLU deep end", "3"),
+                ("Tue", "4:00-6:00 pm", "WLU deep end", "3"),
+                ("Wed", "6:00-7:30 am &middot; 50 m", "WLU deep end", "2"),
+                ("Wed", "4:00-6:00 pm", "WLU deep end", "3"),
+                ("Thu", "4:00-5:30 pm", "WLU deep end", "3"),
+                ("Fri", "6:00-7:30 am &middot; 50 m", "WLU deep end", "2"),
+                ("Sat", "6:00-8:00 am", "WLU deep end", "3")],
+    "PD1 18&U": [("Mon", "4:00-6:00 pm", "WLU deep end", "3"),
+                 ("Tue", "6:00-7:30 am", "WLU deep end", "3"),
+                 ("Wed", "6:00-7:30 am &middot; 50 m", "WLU deep end", "2"),
+                 ("Wed", "4:00-6:00 pm", "WLU deep end", "3"),
+                 ("Thu", "4:00-5:30 pm", "WLU deep end", "3"),
+                 ("Fri", "6:00-7:30 am &middot; 50 m", "WLU deep end", "2"),
+                 ("Sat", "6:00-8:00 am", "WLU deep end", "3")],
+    "PD2 14&U": [("Mon", "6:00-7:30 pm", "WLU deep end", "3"),
+                 ("Tue", "4:30-6:00 pm", "WLU deep end", "3"),
+                 ("Wed", "6:00-7:30 am &middot; 50 m", "WLU deep end", "2"),
+                 ("Thu", "4:30-6:00 pm", "WLU shallow end", "3"),
+                 ("Fri", "6:00-7:30 am &middot; 50 m", "WLU deep end", "2"),
+                 ("Sat", "6:30-8:00 am", "WLU shallow end", "3")],
+    "PD3 12&U": [("Mon", "6:00-7:30 pm", "WLU deep end", "3"),
+                 ("Tue", "4:30-6:00 pm", "WLU shallow end", "3"),
+                 ("Thu", "4:30-6:00 pm", "WLU shallow end", "3"),
+                 ("Fri", "4:30-6:00 pm", "WLU shallow end", "3"),
+                 ("Sat", "6:30-8:00 am", "WLU shallow end", "3")],
+    "SD 18&U": [("Mon", "6:00-7:30 am", "WLU deep end", "6"),
+                ("Tue", "6:00-7:30 pm", "WLU deep end", "6"),
+                ("Wed", "4:30-6:00 pm", "WLU shallow end", "6"),
+                ("Thu", "6:00-7:30 am", "WLU deep end", "6"),
+                ("Fri", "4:30-6:00 pm", "WLU deep end", "6"),
+                ("Sat", "6:00-7:30 am", "Cameron Heights", "6")],
+    "AGD 14&U": [("Mon", "6:00-7:30 pm", "Cameron Heights", "6"),
+                 ("Wed", "6:00-7:30 pm", "WLU deep end", "6"),
+                 ("Thu", "6:00-7:30 pm", "WLU shallow end", "6"),
+                 ("Fri", "6:00-7:30 pm", "WLU deep end", "6"),
+                 ("Sat", "8:00-9:30 am", "WLU deep end", "6")],
+    "AGD 12&U": [("Mon", "4:30-6:00 pm", "Cameron Heights", "6"),
+                 ("Wed", "6:00-7:30 pm", "WLU shallow end", "6"),
+                 ("Fri", "6:00-7:30 pm", "WLU shallow end", "6"),
+                 ("Sat", "9:30-10:30 am", "WLU deep end", "6")],
+    "JD1": [("Mon", "6:30-7:30 pm", "WLU shallow end", "3"),
+            ("Tue", "4:30-6:00 pm", "WLU shallow end", "3"),
+            ("Thu", "6:30-8:00 pm", "WLU deep end", "3"),
+            ("Sat", "8:00-9:30 am", "WLU shallow end", "3")],
+    "JD2": [("Mon", "6:30-7:30 pm", "WLU shallow end", "3"),
+            ("Thu", "6:30-8:00 pm", "WLU deep end", "3"),
+            ("Sat", "8:00-9:30 am", "WLU shallow end", "3")],
+    "RSA": [("Sat", "7:30-10:00 am", "Cameron Heights", "6")],
+}
+
+# Group size, worked out from the lanes on each schedule and the swimmers per
+# lane in THE RULES WE APPLIED in the Executive Summary:
+#   ND 4 to a lane, PD1 and SD 5, PD2 PD3 JD1 JD2 6, both AGD 5.8, TOPS 5,
+#   REC-AG 4 or fewer. In the 50 m pool ND 6, PD1 7.5, PD2 9.
+#
+# Most come out as a single number because the rule is a whole number and the
+# lane count does not change. Ranges appear only where the rule itself gives one:
+# AGD averages 5.8 a lane, so lanes run at 5 or 6, and the REC-AG groups are
+# capped rather than targeted.
+# (size, how it is worked out)
+GROUP_SIZE = {
+    "ND 18&U":     ("12",        "3 lanes at 4 a lane. In the 50 m pool, 2 lanes at 6."),
+    "PD1 18&U":    ("15",        "3 lanes at 5 a lane. In the 50 m pool, 2 lanes at 7.5."),
+    "PD2 14&U":    ("18",        "3 lanes at 6 a lane. In the 50 m pool, 2 lanes at 9."),
+    "PD3 12&U":    ("18",        "3 lanes at 6 a lane."),
+    "SD 18&U":     ("30",        "6 lanes at 5 a lane."),
+    "AGD 14&U":    ("30 to 36",  "6 lanes averaging 5.8 a lane, so lanes run at 5 or 6."),
+    "AGD 12&U":    ("30 to 36",  "6 lanes averaging 5.8 a lane, so lanes run at 5 or 6."),
+    "JD1":         ("18",        "3 lanes at 6 a lane."),
+    "JD2":         ("18",        "3 lanes at 6 a lane."),
+    "TOPS 3x":     ("15 an option", "3 lanes at 5 a lane, with a coach for every lane. "
+                                    "30 across both options."),
+    "TOPS 2x":     ("15 an option", "3 lanes at 5 a lane, with a coach for every lane. "
+                                    "45 across all three options."),
+    "Recreation":  ("up to 24 and up to 32",
+                    "REC-AG 14&U is 6 lanes at 4 or fewer. REC-AG 18&U runs 5 lanes on Monday "
+                    "and Friday and 8 from Tuesday to Thursday, at 4 or fewer."),
+    "RSA":         ("30 a class, 90 in total",
+                    "6 lanes at about 5 a lane, with a coach for every lane, across three "
+                    "Saturday classes."),
+}
+
+# Groups offered in more than one schedule option. label -> rows.
+OPTIONS = {
+    "TOPS 3x": [("Option 1", [("Mon", "4:30-5:30 pm", "WLU shallow end", "3"),
+                              ("Tue", "6:00-7:00 pm", "WLU shallow end", "3"),
+                              ("Thu", "5:30-6:30 pm", "WLU deep end", "3")]),
+                ("Option 2", [("Mon", "5:30-6:30 pm", "WLU shallow end", "3"),
+                              ("Wed", "7:00-8:00 pm", "Cameron Heights", "3"),
+                              ("Fri", "7:00-8:00 pm", "Cameron Heights", "3")])],
+    "TOPS 2x": [("Option 1", [("Mon", "5:30-6:30 pm", "WLU shallow end", "3"),
+                              ("Wed", "7:00-8:00 pm", "Cameron Heights", "3")]),
+                ("Option 2", [("Tue", "6:00-7:00 pm", "WLU shallow end", "3"),
+                              ("Fri", "7:00-8:00 pm", "Cameron Heights", "3")]),
+                ("Option 3", [("Mon", "4:30-5:30 pm", "WLU shallow end", "3"),
+                              ("Thu", "5:30-6:30 pm", "WLU deep end", "3")])],
+    "Recreation": [("REC-AG 14&U &middot; 3 sessions, 3.5 hours a week",
+                    [("Mon", "7:30-9:00 pm", "Cameron Heights", "6"),
+                     ("Wed", "8:00-9:00 pm", "Cameron Heights", "6"),
+                     ("Fri", "8:00-9:00 pm", "Cameron Heights", "6")]),
+                   ("REC-AG 18&U &middot; 5 sessions, 7.5 hours a week, "
+                    "attend the mornings that suit you",
+                    [("Mon", "6:00-7:30 am", "Rec Complex", "5"),
+                     ("Tue", "6:00-7:30 am", "Rec Complex", "8"),
+                     ("Wed", "6:00-7:30 am", "Rec Complex", "8"),
+                     ("Thu", "6:00-7:30 am", "Rec Complex", "8"),
+                     ("Fri", "6:00-7:30 am", "Rec Complex", "5")])],
+}
+
+# (slug, H1, pathway, schedule key, lead coach, sessions, hours, blurb)
+PROGRAM_PAGES = [
+ ("row-swim-academy", "ROW Swim Academy", "Foundation", "RSA", "Chloe H",
+  "3 class options", "40 minutes each",
+  "Where a swimmer starts. A FUNdamentals program for younger swimmers who want a taste of "
+  "competitive swimming through a club. The aim is strong technique and water skills that carry "
+  "into our junior programs. Saturday mornings at Cameron Heights, with beginner, intermediate "
+  "and advanced levels running together in every class."),
+ ("tops-2x", "TOPS 2x", "Junior", "TOPS 2x", "Kaitlyn M", "2", "2.0",
+  "A first taste of training as a group, twice a week. Three schedule options so families can "
+  "pick what suits them. Every option runs three lanes, five swimmers to a lane, with a coach "
+  "for every lane."),
+ ("tops-3x", "TOPS 3x", "Junior", "TOPS 3x", "Kaitlyn M", "3", "3.0",
+  "The same program as TOPS 2x with an extra session a week. Two schedule options. Every option "
+  "runs three lanes, five swimmers to a lane, with a coach for every lane."),
+ ("junior-development-2", "Junior Development 2", "Junior", "JD2", "Kaitlyn M", "3", "4.0",
+  "Stroke technique, starts and turns, and a first look at racing strategy. JD2 trains alongside "
+  "JD1 on Monday, Thursday and Saturday with three lanes each, so a swimmer ready to move up does "
+  "not have to change everything at once. Swimmers race at local and regional meets."),
+ ("junior-development-1", "Junior Development 1", "Junior", "JD1", "Kaitlyn M", "4", "5.5",
+  "The step up from JD2, with a fourth session a week. Stroke technique, starts and turns, and "
+  "racing strategy. JD1 and JD2 train alongside each other on Monday, Thursday and Saturday. "
+  "Swimmers race at local, regional and provincial meets."),
+ ("recreation", "Recreation", "Recreation", "Recreation", "TBC", "3 or 5", "3.5 or 7.5",
+  "For swimmers who want to keep swimming without the competitive commitment. Technique, fitness, "
+  "and a group to belong to. Two options: REC-AG 14&U trains three evenings a week at Cameron "
+  "Heights, and REC-AG 18&U has five available mornings at the Rec Complex with swimmers "
+  "attending the ones that suit them."),
+ ("age-group-development-12u", "Age Group Development 12&U", "Regional", "AGD 12&U", "TBC",
+  "4", "5.5",
+  "The first competitive group, for swimmers around the 12&U band. Refining technique and "
+  "training skills to compete at the regional level. Evenings only, with no weekday mornings, and "
+  "its own lead coach."),
+ ("age-group-development-14u", "Age Group Development 14&U", "Regional", "AGD 14&U", "TBC",
+  "5", "7.5",
+  "The step up from AGD 12&U, with a fifth session a week. Refining technique and training skills "
+  "to compete at the regional and provincial level. Evenings only, with no weekday mornings, and "
+  "its own lead coach."),
+ ("senior-development", "Senior Development", "Regional", "SD 18&U", "Tyson M", "6", "9.0",
+  "Refining technique and training habits to compete at the regional and provincial level, with "
+  "dryland alongside the swimming. SD trains Saturday mornings at Cameron Heights, and its "
+  "swimmers coach the ROW Swim Academy immediately afterwards."),
+ ("provincial-development-3", "Provincial Development 3", "Provincial", "PD3 12&U", "Isabelle D",
+  "5", "7.5",
+  "Stroke technique, starts and turns, and racing strategy, with the goal of competing at the "
+  "provincial level. Five sessions a week with no weekday mornings."),
+ ("provincial-development-2", "Provincial Development 2", "Provincial", "PD2 14&U", "Tyson M",
+  "6", "9.0",
+  "Building on PD3 with more time in the water and more racing. Six sessions a week, including "
+  "two weekday mornings and 50 metre training twice a week."),
+ ("provincial-development-1", "Provincial Development 1", "Provincial", "PD1 18&U", "Ron F",
+  "7", "12.0",
+  "Stroke skill mastery, goal setting and racing strategy, aiming at Provincial and Canadian Age "
+  "Group Championships. Seven sessions a week with three weekday mornings, one double day, and "
+  "50 metre training twice a week."),
+ ("national-development", "National Development", "National", "ND 18&U", "Ron F", "8", "14.0",
+  "The top of the pathway, for swimmers aiming at the provincial, national and international "
+  "level. Eight sessions a week, three weekday mornings, two double days, and 50 metre training "
+  "twice a week."),
+]
 
 
 # Retired slugs, kept only so a redirect list can be written from them.

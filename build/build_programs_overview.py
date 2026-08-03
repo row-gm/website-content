@@ -153,8 +153,8 @@ promise = card(
 
 
 closing = callout(
-    "<strong>Not sure where your swimmer fits?</strong> Book a new swimmer assessment, or ask a "
-    "coach on deck. Written criteria for moving between groups, and between pathways, are "
+    "<strong>Not sure where your swimmer fits?</strong> Book a new swimmer assessment, or ask a coach "
+    "before or after practice. Written criteria for moving between groups, and between pathways, are "
     "published at the start of the season.")
 
 

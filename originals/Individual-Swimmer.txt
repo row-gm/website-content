@@ -1,0 +1,358 @@
+<div style="max-width:1000px;margin:0 auto;font-family:Arial, Helvetica, sans-serif;background:#F3EFE4;padding:24px;">
+<div style="background:radial-gradient(1100px 500px at 15% -10%, #114C5E 0%, #0A2E3F 55%, #062029 100%);
+color:#FFFFFF;padding:44px 32px;border-radius:14px;"><span style="font-family:'Courier New', Courier, monospace;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:#FFFFFF;margin-bottom:14px;display:block;">How We Design Training &nbsp;&middot;&nbsp; Layer 4</span>
+<h1 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#FFFFFF;
+font-size:34px;line-height:1.1;font-weight:800;margin:0;">The Individual Swimmer</h1>
+
+<p style="max-width:660px;margin:16px 0 0;font-size:16px;color:#CBDDE1;line-height:1.6;font-family:Arial, Helvetica, sans-serif;">One set, a whole lane. How to fit a written set to the swimmer in front of you without writing four sets, and without changing what the set is training.</p>
+</div>
+
+<div style="height:8px;display:flex;border-radius:4px;overflow:hidden;margin:24px 0;">
+<div style="flex:1;background:#D64545;">&nbsp;</div>
+
+<div style="flex:1;background:#FFFFFF;">&nbsp;</div>
+
+<div style="flex:1;background:#136B77;">&nbsp;</div>
+
+<div style="flex:1;background:#FFFFFF;">&nbsp;</div>
+
+<div style="flex:1;background:#3FBFB0;">&nbsp;</div>
+
+<div style="flex:1;background:#FFFFFF;">&nbsp;</div>
+
+<div style="flex:1;background:#D64545;">&nbsp;</div>
+
+<div style="flex:1;background:#FFFFFF;">&nbsp;</div>
+</div>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:24px 26px;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 8px;font-size:24px;">Where this sits</h2>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:14px;color:#4B5B60;line-height:1.65;margin:0 0 14px;">Four layers. Each answers a smaller question than the one above it, in the same vocabulary.</p>
+
+<div style="border:1px solid #DAD3C2;border-radius:10px;overflow:hidden;background:#FFFFFF;box-shadow:0 6px 20px rgba(10,46,63,0.10);">
+<div style="display:flex;gap:16px;padding:14px 20px;background:#FFFFFF;border-top:1px solid #DAD3C2;align-items:flex-start;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:12px;width:26px;height:26px;border-radius:50%;background:#0A2E3F;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">1</span>
+
+<div style="flex:1;">
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;font-size:12.5px;letter-spacing:0.01em;color:#0A2E3F;margin:2px 0 4px;">How we organize a season</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;color:#152225;line-height:1.5;">The six training phases and the five rules for combining them. Everything below is built on top of it.</div>
+</div>
+</div>
+
+<div style="display:flex;gap:16px;padding:14px 20px;background:#FAF8F2;border-top:1px solid #DAD3C2;align-items:flex-start;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:12px;width:26px;height:26px;border-radius:50%;background:#0A2E3F;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">2</span>
+
+<div style="flex:1;">
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;font-size:12.5px;letter-spacing:0.01em;color:#0A2E3F;margin:2px 0 4px;">How we organize a block</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;color:#152225;line-height:1.5;">The training week inside a phase. Session mix, hard and easy days, how load builds week to week, and where meets and testing land.</div>
+</div>
+</div>
+
+<div style="display:flex;gap:16px;padding:14px 20px;background:#FFFFFF;border-top:1px solid #DAD3C2;align-items:flex-start;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:12px;width:26px;height:26px;border-radius:50%;background:#0A2E3F;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">3</span>
+
+<div style="flex:1;">
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;font-size:12.5px;letter-spacing:0.01em;color:#0A2E3F;margin:2px 0 4px;">How we build a practice</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;color:#152225;line-height:1.5;">The session template, and one way to write a set on the board so every deck reads the same.</div>
+</div>
+</div>
+
+<div style="display:flex;gap:16px;padding:14px 20px;background:#FAF8F2;border-top:1px solid #DAD3C2;align-items:flex-start;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:12px;width:26px;height:26px;border-radius:50%;background:#0A2E3F;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">4</span>
+
+<div style="flex:1;">
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;font-size:12.5px;letter-spacing:0.01em;color:#0A2E3F;margin:2px 0 4px;">How we make it fit the swimmer</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;color:#152225;line-height:1.5;">Same set, same energy system, different prescription. Interval, distance, target, stroke and equipment all move without changing what the set is training.</div>
+</div>
+<span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:9.5px;letter-spacing:0.05em;text-transform:uppercase;background:#136B77;color:#FFFFFF;border-radius:4px;padding:3px 7px;margin-top:3px;">On this page</span></div>
+</div>
+</div>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:24px 26px;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 8px;font-size:24px;">The one rule</h2>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:15px;color:#152225;line-height:1.65;margin:0 0 12px;"><strong>The zone is fixed. The prescription moves.</strong> Everything on this page changes how hard a set is for one swimmer without changing what the set trains. If a change moves a swimmer out of the zone on the board, it has gone too far.</p>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:14.5px;color:#152225;line-height:1.65;margin:0;">This is not extra work at the whiteboard. It is one set, written once, with a small number of adjustments made in the lane. Most of them take a coach a few seconds.</p>
+
+<div style="border-left:4px solid #3FBFB0;background:#EFFAF8;border-radius:0 10px 10px 0;padding:16px 20px;margin:20px 0 0;font-size:14.5px;color:#152225;font-family:Arial, Helvetica, sans-serif;line-height:1.6;"><strong>Change one thing at a time.</strong> Shorten the rest, or add reps, or raise the target. Change two and you no longer know which one worked, and the set often lands in a different zone than the one you wrote.</div>
+</div>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:24px 26px;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 8px;font-size:24px;">The eight levers</h2>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:14px;color:#4B5B60;line-height:1.65;margin:0 0 14px;">These are the adjustments available to you. Almost every set can be fitted to a lane with one or two of them.</p>
+
+<div style="border:1px solid #DAD3C2;border-radius:10px;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;">
+	<tbody>
+		<tr>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Lever</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Example</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">What it does</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Best for</th>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Rest interval</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">8 x 100 on :15 rest</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Everyone gets the same recovery whatever their speed. The single most useful lever for aerobic work, and the fairest.</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">White, Pink, Red</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Send-off, set per lane</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Lane 1 @ 1:20, Lane 2 @ 1:30, Lane 3 @ 1:40</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Keeps a clock set organized while giving each lane roughly equal rest. Set the send-offs from test times, not from guesswork.</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Red, Purple</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Target time or pace</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Hold your 200 goal pace</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">The set defines itself against each swimmer&#39;s own race, so it individualizes without any lane management at all.</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Purple</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Rep count</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">8 x 100 becomes 6 x 100</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Fewer reps at a higher quality. Useful for sprinters, for swimmers returning from illness, and for anyone whose technique goes before the set does.</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Red, Purple</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Distance per rep</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">8 x 100 becomes 8 x 75</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Holds the zone honest for a slower swimmer or a harder stroke, instead of letting the set decay into survival.</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Any</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Stroke or event</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Free, best stroke, or IM order</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Same zone, different demand. This is how one set serves a distance freestyler and a 200 IMer at the same time.</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Any</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Equipment</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Fins, paddles, snorkel, band</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Changes the load or the focus without changing the zone. Also a technique lever, not only a speed one.</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Any</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Position in the range</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Bottom of Red, or top of Red</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">A zone is a band. A younger or newer swimmer sits at the bottom of it; a senior swimmer can work the top. No change to the written set at all.</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Red, Pink</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:24px 26px;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 8px;font-size:24px;">Where targets come from</h2>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:15px;color:#152225;line-height:1.65;margin:0 0 12px;">Individual targets should come from a number, not from a feeling about a swimmer. Club-wide tests give you that number. Because every group runs the same tests at the same points in the season, a swimmer&#39;s targets follow them as they move up.</p>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:14.5px;color:#152225;line-height:1.65;margin:0;">Which tests we use, when they run, and how a result converts into a Red target or a send-off are covered on the club testing page. Until a swimmer has a current test result, set the lane by ability and adjust by what you see.</p>
+
+<div style="border-left:4px solid #3FBFB0;background:#EFFAF8;border-radius:0 10px 10px 0;padding:16px 20px;margin:20px 0 0;font-size:14.5px;color:#152225;font-family:Arial, Helvetica, sans-serif;line-height:1.6;"><strong>12&amp;U swimmers do not need pace targets.</strong> Test them, record it, and show them the improvement. Then let them race the clock rather than chase a number in training.</div>
+</div>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:24px 26px;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 8px;font-size:24px;">Running the lane</h2>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:14px;color:#4B5B60;line-height:1.65;margin:0 0 14px;">The reason coaches avoid individual prescriptions is that a lane gets messy. These six habits handle almost all of it.</p>
+
+<div style="border:1px solid #DAD3C2;border-radius:10px;overflow:hidden;background:#FFFFFF;box-shadow:0 6px 20px rgba(10,46,63,0.10);">
+<div style="display:flex;gap:16px;padding:15px 20px;background:#FFFFFF;border-top:1px solid #DAD3C2;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:13px;width:28px;height:28px;border-radius:50%;background:#136B77;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">1</span>
+
+<div>
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;font-size:13px;letter-spacing:0.02em;color:#0A2E3F;margin:2px 0 5px;">Order the lane by speed</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:13.8px;color:#152225;line-height:1.55;">Fastest leaves first, five seconds between swimmers. Similar swimmers together means similar cycles, and the lane holds itself together.</div>
+</div>
+</div>
+
+<div style="display:flex;gap:16px;padding:15px 20px;background:#FAF8F2;border-top:1px solid #DAD3C2;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:13px;width:28px;height:28px;border-radius:50%;background:#136B77;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">2</span>
+
+<div>
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;font-size:13px;letter-spacing:0.02em;color:#0A2E3F;margin:2px 0 5px;">Three send-offs maximum</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:13.8px;color:#152225;line-height:1.55;">One per lane, or three across the group. More than that and you are managing a spreadsheet instead of coaching.</div>
+</div>
+</div>
+
+<div style="display:flex;gap:16px;padding:15px 20px;background:#FFFFFF;border-top:1px solid #DAD3C2;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:13px;width:28px;height:28px;border-radius:50%;background:#136B77;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">3</span>
+
+<div>
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;font-size:13px;letter-spacing:0.02em;color:#0A2E3F;margin:2px 0 5px;">Regroup at round breaks</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:13.8px;color:#152225;line-height:1.55;">Rest intervals inside a round, everyone back on the top of the clock between rounds. Drift never grows past one round.</div>
+</div>
+</div>
+
+<div style="display:flex;gap:16px;padding:15px 20px;background:#FAF8F2;border-top:1px solid #DAD3C2;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:13px;width:28px;height:28px;border-radius:50%;background:#136B77;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">4</span>
+
+<div>
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;font-size:13px;letter-spacing:0.02em;color:#0A2E3F;margin:2px 0 5px;">Put targets on a lane card, not the board</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:13.8px;color:#152225;line-height:1.55;">The board carries the set. A card at the end of the lane carries the numbers. The board stays readable for everyone.</div>
+</div>
+</div>
+
+<div style="display:flex;gap:16px;padding:15px 20px;background:#FFFFFF;border-top:1px solid #DAD3C2;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:13px;width:28px;height:28px;border-radius:50%;background:#136B77;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">5</span>
+
+<div>
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;font-size:13px;letter-spacing:0.02em;color:#0A2E3F;margin:2px 0 5px;">Say the adjustment out loud</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:13.8px;color:#152225;line-height:1.55;">&quot;Sprinters, six not eight.&quot; Ten seconds of explanation stops a swimmer thinking they are being given less because they are worth less.</div>
+</div>
+</div>
+
+<div style="display:flex;gap:16px;padding:15px 20px;background:#FAF8F2;border-top:1px solid #DAD3C2;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:13px;width:28px;height:28px;border-radius:50%;background:#136B77;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">6</span>
+
+<div>
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;font-size:13px;letter-spacing:0.02em;color:#0A2E3F;margin:2px 0 5px;">Teach the clock</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:13.8px;color:#152225;line-height:1.55;">Reading a rest interval is a skill. Two or three sessions of coaching it, once, pays back for the rest of a swimmer&#39;s career.</div>
+</div>
+</div>
+</div>
+</div>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:24px 26px;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 8px;font-size:24px;">One board, four lanes</h2>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:14.5px;color:#152225;line-height:1.65;margin:0 0 10px;">The whiteboard says this:</p>
+
+<div style="font-family:'Courier New', Courier, monospace;font-size:13.5px;color:#152225;background:#FAF8F2;border:1px solid #DAD3C2;border-radius:8px;padding:12px 16px;margin:0 0 14px;line-height:1.6;"><strong>MAIN SET &nbsp;&middot;&nbsp; 8 x 100 &nbsp;&middot;&nbsp; RED &nbsp;&middot;&nbsp; even pace, hold your stroke count</strong></div>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:14.5px;color:#152225;line-height:1.65;margin:0 0 10px;">The lane card says this:</p>
+
+<div style="border:1px solid #DAD3C2;border-radius:10px;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;">
+	<tbody>
+		<tr>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Lane</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Swims</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Interval</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Focus</th>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Lane 1 &middot; PD1 distance</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">8 x 100 free</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">@ 1:25</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Hold 1:10, even split</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Lane 2 &middot; SD mixed</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">8 x 100 free</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">on :15 rest</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Hold stroke count</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Lane 3 &middot; SD sprinters</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">6 x 100 free</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">on :25 rest</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Faster than lane 2, strong finish</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Lane 4 &middot; AGD1 swimmers</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">8 x 75 free</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">on :15 rest</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Bottom of Red, breathe every 3</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div style="border-left:4px solid #3FBFB0;background:#EFFAF8;border-radius:0 10px 10px 0;padding:16px 20px;margin:20px 0 0;font-size:14.5px;color:#152225;font-family:Arial, Helvetica, sans-serif;line-height:1.6;">Every lane is in Red. Every lane is doing the same set. Nobody is doing less work than anybody else, and it took one line on the board plus four lines on a card.</div>
+</div>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:24px 26px;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 8px;font-size:24px;">What not to individualize</h2>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:14px;color:#4B5B60;line-height:1.65;margin:0 0 14px;">The set has to stay recognisable as one set. These are the parts that hold it together.</p>
+
+<div style="border:1px solid #DAD3C2;border-radius:10px;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;">
+	<tbody>
+		<tr>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Element</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Change it?</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Why</th>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">The zone</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Never</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">If a swimmer cannot hold the zone, change the distance or the rest. Do not let them drift into Purple on a Red set.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">The skill focus</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Never</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">One focus per session, for everyone. It is what makes the group a group.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">The purpose of the set</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Never</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">If two swimmers are training different systems, you have written two sets, not fitted one.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Total rounds</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Rarely</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Cutting a swimmer&#39;s rounds should be a recovery decision, not a convenience. Reduce reps within the round instead.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Interval, reps, distance, target</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Freely</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">These are the levers. Use them.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:24px 26px;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 8px;font-size:24px;">How far to take it by group</h2>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:14px;color:#4B5B60;line-height:1.65;margin:0 0 14px;">Individualization grows with training age, not with stream. Starting too early makes a group feel like a set of individuals who happen to share a pool.</p>
+
+<div style="border:1px solid #DAD3C2;border-radius:10px;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;">
+	<tbody>
+		<tr>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Age band and groups</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Level</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">What that looks like</th>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">10&amp;U<br />
+			<span style="font-weight:400;color:#4B5B60;">TOPS 1, TOPS 2</span></td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Lane level only</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Group by ability. Adjust distance and rest only. No numbers, no targets.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">12&amp;U<br />
+			<span style="font-weight:400;color:#4B5B60;">JD2, JD1, AGD2, PD3</span></td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Lane level</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Lane send-offs by ability. Record test results, but do not set training pace targets yet.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">14&amp;U<br />
+			<span style="font-weight:400;color:#4B5B60;">AGD1, PD2</span></td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Lane level, some individual</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Lane send-offs from test times. Individual targets for one or two swimmers, not the whole group.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">18&amp;U<br />
+			<span style="font-weight:400;color:#4B5B60;">SD, PD1, ND</span></td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Individual within lanes</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Targets from testing for most swimmers. In PD1 and ND, intervals and event work are planned per swimmer against the season map.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;color:#4B5B60;line-height:1.65;margin:14px 0 0;">The same is true away from the intervals. A swimmer at &quot;with reminders&quot; on staying with a focus needs a different prompt from one at &quot;on my own&quot;. The markers and the four-step scale are on The ROW Way.</p>
+
+<div style="border-left:4px solid #3FBFB0;background:#EFFAF8;border-radius:0 10px 10px 0;padding:16px 20px;margin:20px 0 0;font-size:14.5px;color:#152225;font-family:Arial, Helvetica, sans-serif;line-height:1.6;"><strong>A lane is still a team.</strong> Swimmers should leave a session having done something together. If every swimmer has a different number on a card and nothing in common, something has been lost that is worth more than the precision gained.</div>
+</div>
+</div>

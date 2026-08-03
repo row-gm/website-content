@@ -1,0 +1,640 @@
+<div style="max-width:1000px;margin:0 auto;font-family:Arial, Helvetica, sans-serif;background:#F3EFE4;padding:24px;">
+<div style="background:radial-gradient(1100px 500px at 15% -10%, #114C5E 0%, #0A2E3F 55%, #062029 100%);
+color:#FFFFFF;padding:44px 32px;border-radius:14px;"><span style="font-family:'Courier New', Courier, monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;
+color:#FFFFFF;margin-bottom:10px;display:block;">How We Design Training &nbsp;&middot;&nbsp; Layer 2</span>
+<h1 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#FFFFFF;
+font-size:31px;line-height:1.1;font-weight:800;margin:0;">The Training Week</h1>
+
+<p style="max-width:660px;margin:14px 0 0;font-size:15px;color:#CBDDE1;line-height:1.55;font-family:Arial, Helvetica, sans-serif;">How a phase becomes weeks, and a week becomes sessions. This is the layer that turns a season plan into something a coach can actually write on a Sunday night.</p>
+</div>
+
+<div style="height:8px;display:flex;border-radius:4px;overflow:hidden;margin:24px 0;">
+<div style="flex:1;background:#D64545;">&nbsp;</div>
+
+<div style="flex:1;background:#FFFFFF;">&nbsp;</div>
+
+<div style="flex:1;background:#136B77;">&nbsp;</div>
+
+<div style="flex:1;background:#FFFFFF;">&nbsp;</div>
+
+<div style="flex:1;background:#3FBFB0;">&nbsp;</div>
+
+<div style="flex:1;background:#FFFFFF;">&nbsp;</div>
+
+<div style="flex:1;background:#D64545;">&nbsp;</div>
+
+<div style="flex:1;background:#FFFFFF;">&nbsp;</div>
+</div>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:24px 26px;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 8px;font-size:24px;">Where this sits</h2>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:14px;color:#4B5B60;line-height:1.65;margin:0 0 14px;">Four layers. Each answers a smaller question than the one above it, in the same vocabulary.</p>
+
+<div style="border:1px solid #DAD3C2;border-radius:10px;overflow:hidden;background:#FFFFFF;box-shadow:0 6px 20px rgba(10,46,63,0.10);">
+<div style="display:flex;gap:16px;padding:14px 20px;background:#FFFFFF;border-top:1px solid #DAD3C2;align-items:flex-start;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:12px;width:26px;height:26px;border-radius:50%;background:#0A2E3F;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">1</span>
+
+<div style="flex:1;">
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;font-size:12.5px;letter-spacing:0.01em;color:#0A2E3F;margin:2px 0 4px;">How we organize a season</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;color:#152225;line-height:1.5;">The six training phases and the five rules for combining them. Everything below is built on top of it.</div>
+</div>
+</div>
+
+<div style="display:flex;gap:16px;padding:14px 20px;background:#FAF8F2;border-top:1px solid #DAD3C2;align-items:flex-start;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:12px;width:26px;height:26px;border-radius:50%;background:#0A2E3F;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">2</span>
+
+<div style="flex:1;">
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;font-size:12.5px;letter-spacing:0.01em;color:#0A2E3F;margin:2px 0 4px;">How we organize a block</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;color:#152225;line-height:1.5;">The training week inside a phase. Session mix, hard and easy days, how load builds week to week, and where meets and testing land.</div>
+</div>
+<span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:9.5px;letter-spacing:0.05em;text-transform:uppercase;background:#136B77;color:#FFFFFF;border-radius:4px;padding:3px 7px;margin-top:3px;">On this page</span></div>
+
+<div style="display:flex;gap:16px;padding:14px 20px;background:#FFFFFF;border-top:1px solid #DAD3C2;align-items:flex-start;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:12px;width:26px;height:26px;border-radius:50%;background:#0A2E3F;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">3</span>
+
+<div style="flex:1;">
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;font-size:12.5px;letter-spacing:0.01em;color:#0A2E3F;margin:2px 0 4px;">How we build a practice</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;color:#152225;line-height:1.5;">The session template, and one way to write a set on the board so every deck reads the same.</div>
+</div>
+</div>
+
+<div style="display:flex;gap:16px;padding:14px 20px;background:#FAF8F2;border-top:1px solid #DAD3C2;align-items:flex-start;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:12px;width:26px;height:26px;border-radius:50%;background:#0A2E3F;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">4</span>
+
+<div style="flex:1;">
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;font-size:12.5px;letter-spacing:0.01em;color:#0A2E3F;margin:2px 0 4px;">How we make it fit the swimmer</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;color:#152225;line-height:1.5;">Same set, same energy system, different prescription. Interval, distance, target, stroke and equipment all move without changing what the set is training.</div>
+</div>
+</div>
+</div>
+</div>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:24px 26px;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 8px;font-size:24px;">What every week contains</h2>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:14px;color:#4B5B60;line-height:1.65;margin:0 0 14px;">Eight things hold in every phase and every group. Everything else about the week is yours.</p>
+
+<div style="border:1px solid #DAD3C2;border-radius:10px;overflow:hidden;background:#FFFFFF;box-shadow:0 6px 20px rgba(10,46,63,0.10);">
+<div style="display:flex;gap:16px;padding:15px 20px;background:#FFFFFF;border-top:1px solid #DAD3C2;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:13px;width:28px;height:28px;border-radius:50%;background:#136B77;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">1</span>
+
+<div>
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;font-size:13px;letter-spacing:0.02em;color:#0A2E3F;margin:2px 0 5px;">One long aerobic session every week</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:13.8px;color:#152225;line-height:1.55;">In every phase, including Peaking, though it shrinks. It is the session that holds the base together when everything else is getting shorter and faster.</div>
+</div>
+</div>
+
+<div style="display:flex;gap:16px;padding:15px 20px;background:#FAF8F2;border-top:1px solid #DAD3C2;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:13px;width:28px;height:28px;border-radius:50%;background:#136B77;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">2</span>
+
+<div>
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;font-size:13px;letter-spacing:0.02em;color:#0A2E3F;margin:2px 0 5px;">Speed touched at least twice a week</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:13.8px;color:#152225;line-height:1.55;">Short Green work, in every phase, at every age. Speed is lost faster than it is built and it costs almost nothing to maintain.</div>
+</div>
+</div>
+
+<div style="display:flex;gap:16px;padding:15px 20px;background:#FFFFFF;border-top:1px solid #DAD3C2;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:13px;width:28px;height:28px;border-radius:50%;background:#136B77;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">3</span>
+
+<div>
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;font-size:13px;letter-spacing:0.02em;color:#0A2E3F;margin:2px 0 5px;">Never two quality days back to back at 14&amp;U and below</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:13.8px;color:#152225;line-height:1.55;">AGD1, PD2 and every group below them. Put an aerobic or recovery day between. SD, PD1 and ND can stack quality days when the two sessions train different systems, but it should be a decision, not an accident.</div>
+</div>
+</div>
+
+<div style="display:flex;gap:16px;padding:15px 20px;background:#FAF8F2;border-top:1px solid #DAD3C2;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:13px;width:28px;height:28px;border-radius:50%;background:#136B77;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">4</span>
+
+<div>
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;font-size:13px;letter-spacing:0.02em;color:#0A2E3F;margin:2px 0 5px;">Every session names one skill focus</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:13.8px;color:#152225;line-height:1.55;">Written on the board with the set. A week with no stated skill focus is a week of maintenance.</div>
+</div>
+</div>
+
+<div style="display:flex;gap:16px;padding:15px 20px;background:#FFFFFF;border-top:1px solid #DAD3C2;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:13px;width:28px;height:28px;border-radius:50%;background:#136B77;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">5</span>
+
+<div>
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;font-size:13px;letter-spacing:0.02em;color:#0A2E3F;margin:2px 0 5px;">One session a week is genuinely easy</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:13.8px;color:#152225;line-height:1.55;">Not a short hard session. Easy. If nobody in the group is bored during it, it was not recovery.</div>
+</div>
+</div>
+
+<div style="display:flex;gap:16px;padding:15px 20px;background:#FAF8F2;border-top:1px solid #DAD3C2;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:13px;width:28px;height:28px;border-radius:50%;background:#136B77;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">6</span>
+
+<div>
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;font-size:13px;letter-spacing:0.02em;color:#0A2E3F;margin:2px 0 5px;">Dryland does not sit right before a quality swim</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:13.8px;color:#152225;line-height:1.55;">After the swim, or on its own day. Loading tired shoulders before a Purple set trains poor technique and raises injury risk.</div>
+</div>
+</div>
+
+<div style="display:flex;gap:16px;padding:15px 20px;background:#FFFFFF;border-top:1px solid #DAD3C2;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:13px;width:28px;height:28px;border-radius:50%;background:#136B77;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">7</span>
+
+<div>
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;font-size:13px;letter-spacing:0.02em;color:#0A2E3F;margin:2px 0 5px;">Something from The ROW Way in every session</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:13.8px;color:#152225;line-height:1.55;">Not a talk and not a theme week. One named focus, one correction actually checked, one standard held. Mental and character development happens inside sessions or it does not happen.</div>
+</div>
+</div>
+
+<div style="display:flex;gap:16px;padding:15px 20px;background:#FAF8F2;border-top:1px solid #DAD3C2;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:13px;width:28px;height:28px;border-radius:50%;background:#136B77;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">8</span>
+
+<div>
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;font-size:13px;letter-spacing:0.02em;color:#0A2E3F;margin:2px 0 5px;">At least one full day off</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:13.8px;color:#152225;line-height:1.55;">Every group, every week, all year. This is a floor, not a target.</div>
+</div>
+</div>
+</div>
+</div>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:24px 26px;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 8px;font-size:24px;">How many sessions the group trains</h2>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:14px;color:#4B5B60;line-height:1.65;margin:0 0 14px;">Week structure follows the number of sessions, not the age band. A 14&amp;U group at five sessions and an 18&amp;U group at five sessions build a similar week; what differs is the zones inside it.</p>
+
+<div style="border:1px solid #DAD3C2;border-radius:10px;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;">
+	<tbody>
+		<tr>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Sessions per week</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Quality</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Supporting</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">What that means</th>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">1 to 3<br />
+			<span style="font-weight:400;color:#4B5B60;">LTCS, TOPS 2, TOPS 1, JD2</span></td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">0 to 1</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Every session</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">There is no room for a dedicated recovery session. Skills and aerobic work in every session, speed in most. Phases show up as a change of emphasis, not a change of structure.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">4 to 5<br />
+			<span style="font-weight:400;color:#4B5B60;">JD1, AGD2, PD3, AGD1</span></td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">1 to 2</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">2 to 3</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">One clear quality day, two in a heavy Accumulation week. Never back to back. The rest of the week is aerobic and technical.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">6<br />
+			<span style="font-weight:400;color:#4B5B60;">SD, PD2</span></td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">2</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">3 to 4</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">The template on this page is written for this load. Two quality days with at least one day between them, one long aerobic session, one genuinely easy session.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">7 to 8<br />
+			<span style="font-weight:400;color:#4B5B60;">PD1, ND</span></td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">2 to 3</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">4 to 5</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Doubles appear. Quality days can sit closer together when the two sessions train different systems, but that is a planned decision, not a scheduling accident.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div style="border-left:4px solid #3FBFB0;background:#EFFAF8;border-radius:0 10px 10px 0;padding:16px 20px;margin:20px 0 0;font-size:14.5px;color:#152225;font-family:Arial, Helvetica, sans-serif;line-height:1.6;"><strong>Cut supporting sessions first.</strong> When water time is lost, protect the quality session and the long aerobic session. A week that loses its easy session is a week that stopped recovering.</div>
+</div>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:24px 26px;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 8px;font-size:24px;">Junior Pathway weeks</h2>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:14.5px;color:#152225;line-height:1.65;margin:0 0 14px;">TOPS 1, JD2 and JD1 train two to four times a week, before stream placement. There is not enough water time to build a week around a quality day, and there is no reason to. Build every session the same way and let the phase change the emphasis.</p>
+
+<div style="border:1px solid #DAD3C2;border-radius:10px;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;">
+	<tbody>
+		<tr>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">How often</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">What</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Why</th>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Every session</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Skills first</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Technique is the main set. Kick, body position, breathing, starts, turns. Everything else supports it.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Every session</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Short fast swimming</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">10 to 25 metres, full recovery, made into a game. Speed is easiest to build at this stage and hardest to add later.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Most sessions</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Aerobic swimming</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Continuous or long reps at an easy, steady effort. White and Pink. Build the habit of swimming for a while without stopping.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Never</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Quality days, targets, taper</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">No Red or Purple sets, no pace targets, no taper. These swimmers race often and race through.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div style="border-left:4px solid #3FBFB0;background:#EFFAF8;border-radius:0 10px 10px 0;padding:16px 20px;margin:20px 0 0;font-size:14.5px;color:#152225;font-family:Arial, Helvetica, sans-serif;line-height:1.6;">The phases still apply. Introduction after a break, Accumulation through the middle of a block, Consolidation as a lighter week, Transition at the end. What changes is the amount, not the vocabulary. TOPS 2 and Foundation swim once or twice a week; keep it to skills and play.</div>
+</div>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:24px 26px;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 8px;font-size:24px;">Week shapes by phase</h2>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:14px;color:#4B5B60;line-height:1.65;margin:0 0 14px;">Counts assume a six-session week. Scale them with the table below, and cut supporting sessions before quality sessions.</p>
+
+<div style="border:1px solid #DAD3C2;border-radius:10px;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;">
+	<tbody>
+		<tr>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Phase</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Quality sessions</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Supporting sessions</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Speed touches</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Notes</th>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Introduction</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">0 to 1</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">3 to 4</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">2</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Volume rises week to week. Skill sessions dominate. No hard days early.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Accumulation</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">2</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">3 to 4</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">2 to 3</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">The heaviest weeks of the year. Quality days are Red, and Red sits at its lower end.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Consolidation</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">1</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">2 to 3</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">2</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Total volume drops 30 to 40 percent. Keep the quality day, shorten it. Low-priority meets fit here.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Intensification</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">2 to 3</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">2 to 3</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">3</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Quality days are Purple, supported by Red. Recovery between them matters more than in Accumulation.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Peaking</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">2 short</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">1 to 2</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">3</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Everything shortens. Fast work stays, volume goes. Race rehearsal replaces one quality day.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Transition</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">0</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">0 to 2</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">0 to 1</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Optional swimming only. Other sports encouraged. No structure required.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:24px 26px;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 8px;font-size:24px;">How load builds across a block</h2>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:14px;color:#4B5B60;line-height:1.65;margin:0 0 14px;">Three weeks of building, one week of absorbing. That fourth week is the Consolidation phase from Layer 1, used as a repeating unload rather than a one-time event.</p>
+
+<div style="border:1px solid #DAD3C2;border-radius:10px;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;">
+	<tbody>
+		<tr>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Week</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Job</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">What changes</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">What to watch</th>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Week 1</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Introduce</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">New sets appear. Moderate volume. Swimmers learn the pace and the format.</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Should feel manageable. If week 1 buries them, the block is wrong.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Week 2</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Extend</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Same sets, more of them, or less rest. One variable changes, not two.</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Should feel harder than week 1 at the same pace.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Week 3</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Overload</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">The hardest version of the block. Highest volume or the tightest intervals.</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Fatigue is expected here. Watch technique, not times.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Week 4</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Consolidate</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Volume drops 30 to 40 percent. Quality is held so sharpness is not lost.</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Adaptation lands here. This is where the block pays out.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div style="border-left:4px solid #3FBFB0;background:#EFFAF8;border-radius:0 10px 10px 0;padding:16px 20px;margin:20px 0 0;font-size:14.5px;color:#152225;font-family:Arial, Helvetica, sans-serif;line-height:1.6;"><strong>Build on two weeks, not three, at 12&amp;U and below.</strong> JD2, JD1, AGD2 and PD3 usually need the unload after two weeks. AGD1 and PD2 sit either side of the line: use three weeks in Accumulation and two in Intensification.</div>
+</div>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:24px 26px;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 8px;font-size:24px;">Weekly zone balance</h2>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:14px;color:#4B5B60;line-height:1.65;margin:0 0 10px;">Share of weekly distance, as a starting point for SD, PD1 and ND. At 14&amp;U shift Red down and White and Pink up. At 12&amp;U and below, Purple goes to zero. Adjust and record what you actually did.</p>
+
+<div style="margin:0 0 14px;"><span style="display:inline-block;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:9.5px;letter-spacing:0.05em;background:#FFFFFF;color:#152225;border:1px solid #DAD3C2;border-radius:4px;padding:2px 6px;margin:0 3px 3px 0;">WHITE</span> <span style="display:inline-block;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:9.5px;letter-spacing:0.05em;background:#E39BAE;color:#FFFFFF;border-radius:4px;padding:2px 6px;margin:0 3px 3px 0;">PINK</span> <span style="display:inline-block;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:9.5px;letter-spacing:0.05em;background:#D64545;color:#FFFFFF;border-radius:4px;padding:2px 6px;margin:0 3px 3px 0;">RED</span> <span style="display:inline-block;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:9.5px;letter-spacing:0.05em;background:#7A5AA8;color:#FFFFFF;border-radius:4px;padding:2px 6px;margin:0 3px 3px 0;">PURPLE</span> <span style="display:inline-block;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:9.5px;letter-spacing:0.05em;background:#3FA35C;color:#FFFFFF;border-radius:4px;padding:2px 6px;margin:0 3px 3px 0;">GREEN</span></div>
+
+<div style="border:1px solid #DAD3C2;border-radius:10px;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;">
+	<tbody>
+		<tr>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Phase</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Weekly mix</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">% W / Pk / R / Pu / G</th>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Introduction</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">
+			<div style="display:flex;border-radius:4px;overflow:hidden;border:1px solid #DAD3C2;">
+			<div style="flex:30;background:#FFFFFF;border:1px solid #DAD3C2;height:18px;">&nbsp;</div>
+
+			<div style="flex:55;background:#E39BAE;height:18px;">&nbsp;</div>
+
+			<div style="flex:10;background:#D64545;height:18px;">&nbsp;</div>
+
+			<div style="flex:5;background:#3FA35C;height:18px;">&nbsp;</div>
+			</div>
+			</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">30&nbsp;/&nbsp;55&nbsp;/&nbsp;10&nbsp;/&nbsp;0&nbsp;/&nbsp;5</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Accumulation</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">
+			<div style="display:flex;border-radius:4px;overflow:hidden;border:1px solid #DAD3C2;">
+			<div style="flex:15;background:#FFFFFF;border:1px solid #DAD3C2;height:18px;">&nbsp;</div>
+
+			<div style="flex:55;background:#E39BAE;height:18px;">&nbsp;</div>
+
+			<div style="flex:25;background:#D64545;height:18px;">&nbsp;</div>
+
+			<div style="flex:5;background:#3FA35C;height:18px;">&nbsp;</div>
+			</div>
+			</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">15&nbsp;/&nbsp;55&nbsp;/&nbsp;25&nbsp;/&nbsp;0&nbsp;/&nbsp;5</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Consolidation</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">
+			<div style="display:flex;border-radius:4px;overflow:hidden;border:1px solid #DAD3C2;">
+			<div style="flex:30;background:#FFFFFF;border:1px solid #DAD3C2;height:18px;">&nbsp;</div>
+
+			<div style="flex:45;background:#E39BAE;height:18px;">&nbsp;</div>
+
+			<div style="flex:18;background:#D64545;height:18px;">&nbsp;</div>
+
+			<div style="flex:2;background:#7A5AA8;height:18px;">&nbsp;</div>
+
+			<div style="flex:5;background:#3FA35C;height:18px;">&nbsp;</div>
+			</div>
+			</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">30&nbsp;/&nbsp;45&nbsp;/&nbsp;18&nbsp;/&nbsp;2&nbsp;/&nbsp;5</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Intensification</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">
+			<div style="display:flex;border-radius:4px;overflow:hidden;border:1px solid #DAD3C2;">
+			<div style="flex:20;background:#FFFFFF;border:1px solid #DAD3C2;height:18px;">&nbsp;</div>
+
+			<div style="flex:40;background:#E39BAE;height:18px;">&nbsp;</div>
+
+			<div style="flex:25;background:#D64545;height:18px;">&nbsp;</div>
+
+			<div style="flex:10;background:#7A5AA8;height:18px;">&nbsp;</div>
+
+			<div style="flex:5;background:#3FA35C;height:18px;">&nbsp;</div>
+			</div>
+			</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">20&nbsp;/&nbsp;40&nbsp;/&nbsp;25&nbsp;/&nbsp;10&nbsp;/&nbsp;5</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Peaking</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">
+			<div style="display:flex;border-radius:4px;overflow:hidden;border:1px solid #DAD3C2;">
+			<div style="flex:35;background:#FFFFFF;border:1px solid #DAD3C2;height:18px;">&nbsp;</div>
+
+			<div style="flex:40;background:#E39BAE;height:18px;">&nbsp;</div>
+
+			<div style="flex:12;background:#D64545;height:18px;">&nbsp;</div>
+
+			<div style="flex:8;background:#7A5AA8;height:18px;">&nbsp;</div>
+
+			<div style="flex:5;background:#3FA35C;height:18px;">&nbsp;</div>
+			</div>
+			</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">35&nbsp;/&nbsp;40&nbsp;/&nbsp;12&nbsp;/&nbsp;8&nbsp;/&nbsp;5</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Transition</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">
+			<div style="display:flex;border-radius:4px;overflow:hidden;border:1px solid #DAD3C2;">
+			<div style="flex:60;background:#FFFFFF;border:1px solid #DAD3C2;height:18px;">&nbsp;</div>
+
+			<div style="flex:40;background:#E39BAE;height:18px;">&nbsp;</div>
+			</div>
+			</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">60&nbsp;/&nbsp;40&nbsp;/&nbsp;0&nbsp;/&nbsp;0&nbsp;/&nbsp;0</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div style="border-left:4px solid #3FBFB0;background:#EFFAF8;border-radius:0 10px 10px 0;padding:16px 20px;margin:20px 0 0;font-size:14.5px;color:#152225;font-family:Arial, Helvetica, sans-serif;line-height:1.6;">These are planning numbers, not targets to hit. If a week comes out at 20 percent Red instead of 25, nothing is broken. If it comes out at 45, something drifted.</div>
+</div>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:24px 26px;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 8px;font-size:24px;">Adjusting the mix for the swimmer</h2>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:14.5px;color:#152225;line-height:1.65;margin:0 0 16px;">The table above is a group starting point. These are the adjustments worth making, expressed as percentage points moved from the default. They are small on purpose. Two swimmers in the same lane should still be doing recognizably the same week.</p>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:14px;color:#152225;line-height:1.65;margin:0 0 8px;"><strong>By event</strong></p>
+
+<div style="border:1px solid #DAD3C2;border-radius:10px;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;">
+	<tbody>
+		<tr>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Swimmer</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Add</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Take from</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Why</th>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Distance free, 400 and up</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Pink +5, Red +5</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Purple &minus;5, Green &minus;5</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">More time at the low end of Red, longer reps. Keep some Green; distance swimmers still finish races.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">200s and IM</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">No change</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">No change</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">The default mix is written for this swimmer. What changes is stroke distribution inside Red, not the amount of it.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">100s</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Purple +3</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Pink &minus;3</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Slightly more race pace in Intensification. Everything else holds.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">50s and 100s, sprint focus</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Purple +5, Green +5</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Pink &minus;5, Red &minus;5</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Fewer Red metres at a higher quality. This is a shift, not a swap. Sprinters who skip aerobic work cannot repeat a fast swim in a prelim and a final.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:14px;color:#152225;line-height:1.65;margin:20px 0 8px;"><strong>By how the swimmer responds</strong></p>
+
+<div style="border:1px solid #DAD3C2;border-radius:10px;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;">
+	<tbody>
+		<tr>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">What you see</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Adjust</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">What it means</th>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Recovers fast between reps, holds technique late in a set</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Red +5, White &minus;5</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Can carry more quality work in a week. Watch the next block, not the next session.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Slow to recover, technique goes before the set does</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">White +5, Red &minus;5</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">The set was too hard, not the swimmer too weak. Add rest before you subtract reps.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Improves sharply from speed work, little from added volume</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Green +2, Purple +3, Pink &minus;5</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Common in later-maturing sprinters. Shift, do not swap. The aerobic floor still applies.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Improves steadily from volume, flat off speed work</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Pink +5, Purple &minus;5</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Often an early-season picture rather than a permanent one. Recheck at the end of the block.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Growing quickly, coordination is off</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">White +5, Green +5, Red &minus;10</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Protect skill and speed, ease the grind. This is temporary and it is not a setback.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div style="border-left:4px solid #D64545;background:#FBEEEE;border-radius:0 10px 10px 0;padding:16px 20px;margin:20px 0 0;font-size:14.5px;color:#152225;font-family:Arial, Helvetica, sans-serif;line-height:1.6;"><strong>The aerobic floor: White plus Pink never drops below half the week.</strong> In any load phase, at any age, for any specialty. Below that line a swimmer stops building the base that everything else sits on, and the cost shows up two seasons later rather than next month.</div>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;color:#4B5B60;line-height:1.65;margin:16px 0 0;">Event adjustments apply from 14&amp;U up. At 12&amp;U and below nobody is a specialist yet, and response adjustments are usually about growth rather than physiology. How the same set is then fitted to the individual swimmer is Layer 4.</p>
+</div>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:24px 26px;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 8px;font-size:24px;">Where meets and testing land</h2>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:14px;color:#4B5B60;line-height:1.65;margin:0 0 14px;">The calendar has more meets than target meets. Placing them deliberately is most of the skill.</p>
+
+<div style="border:1px solid #DAD3C2;border-radius:10px;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;">
+	<tbody>
+		<tr>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">What</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Where it goes</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Why</th>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Low-priority meet</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Consolidation week</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Volume was already coming down. The swimmer races fresher and the block still ends where planned.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Mid-priority meet</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">End of a block, before the unload</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Race tired on purpose. Use it to test pacing and skills, not to judge fitness.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Target meet</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">End of Peaking</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">The only meets that get a taper. Named before the season starts.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Testing</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">First and last week of a block</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Same test, same conditions, same time of day. A test on a tired Friday is not comparable to one on a fresh Monday.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:24px 26px;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 8px;font-size:24px;">Same week, different swimmers</h2>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:15px;color:#152225;line-height:1.65;margin:0 0 12px;">A zone is a prescription of effort, not of time. Two swimmers in the same Red set, on different intervals, holding different stroke counts, are both doing Red. Nothing about the week has to change for the week to fit the swimmer.</p>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:14px;color:#4B5B60;line-height:1.65;margin:0 0 14px;">Six levers do most of the work. Change one at a time, for the reason you chose it.</p>
+
+<div style="border:1px solid #DAD3C2;border-radius:10px;overflow:hidden;">
+<table style="width:100%;border-collapse:collapse;">
+	<tbody>
+		<tr>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Lever</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">Example</th>
+			<th style="padding:10px 12px;text-align:left;font-family:'Courier New', Courier, monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#0A2E3F;">When to use it</th>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Interval</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">8 x 100 @ 1:20 / 1:30 / 1:40</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">The most common lever. Same rest, different ability. Everyone finishes together.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Target time or pace</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Hold 200 goal pace, whatever that is for you</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">The set is defined by the swimmer&#39;s own race, so it individualizes itself.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Distance</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">8 x 100 / 8 x 75 / 6 x 100</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Keeps the effort and the rest honest for swimmers with different speeds in one lane.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Rest, not interval</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">8 x 100 on 15 seconds rest</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Everyone gets the same recovery regardless of speed. On a shared send-off the fastest swimmer can get four times the rest of the slowest, so they are not doing the same set. Best for aerobic work.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Stroke and event</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Best stroke, second stroke, or IM order</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FFFFFF;line-height:1.45;vertical-align:top;">Same zone, different demand. Lets one set serve sprinters and distance swimmers.</td>
+		</tr>
+		<tr>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;font-weight:700;color:#0A2E3F;">Equipment</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Fins, paddles, snorkel, or none</td>
+			<td style="padding:11px 12px;font-family:Arial, Helvetica, sans-serif;font-size:13.2px;color:#152225;border-top:1px solid #DAD3C2;background:#FAF8F2;line-height:1.45;vertical-align:top;">Changes the load without changing the zone. Also a technique lever, not just a speed one.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div style="border-left:4px solid #3FBFB0;background:#EFFAF8;border-radius:0 10px 10px 0;padding:16px 20px;margin:20px 0 0;font-size:14.5px;color:#152225;font-family:Arial, Helvetica, sans-serif;line-height:1.6;"><strong>This is Layer 4.</strong> The full guide covers lane organization, how to set individual targets from test results, and how to write a board that serves four abilities at once without four sets. In progress.</div>
+</div>
+</div>

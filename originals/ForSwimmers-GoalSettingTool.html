@@ -1,0 +1,959 @@
+<div style="max-width:1000px;margin:0 auto;font-family:Arial, Helvetica, sans-serif;background:#F3EFE4;padding:24px;">
+<div style="background:radial-gradient(1100px 500px at 15% -10%, #114C5E 0%, #0A2E3F 55%, #062029 100%);
+color:#FFFFFF;padding:44px 32px;border-radius:14px;"><span style="font-family:'Courier New', Courier, monospace;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#FFFFFF;margin-bottom:14px;display:block;">ROW Swim Club</span>
+<h1 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#FFFFFF;
+font-size:34px;line-height:1.1;font-weight:800;margin:0;">Goal Setting Tool</h1>
+
+<p style="max-width:660px;margin:16px 0 0;font-size:16px;color:#CBDDE1;line-height:1.6;font-family:Arial, Helvetica, sans-serif;">A simple way to set your next goal time. Take one best time, do a little math, and you have a target for every other distance, plus the splits to swim it.</p>
+</div>
+
+<div style="height:8px;display:flex;border-radius:4px;overflow:hidden;margin:24px 0;">
+<div style="flex:1;background:#D64545;">&nbsp;</div>
+
+<div style="flex:1;background:#FFFFFF;">&nbsp;</div>
+
+<div style="flex:1;background:#136B77;">&nbsp;</div>
+
+<div style="flex:1;background:#FFFFFF;">&nbsp;</div>
+
+<div style="flex:1;background:#3FBFB0;">&nbsp;</div>
+
+<div style="flex:1;background:#FFFFFF;">&nbsp;</div>
+
+<div style="flex:1;background:#D64545;">&nbsp;</div>
+
+<div style="flex:1;background:#FFFFFF;">&nbsp;</div>
+</div>
+<a href="https://row-gm.github.io/row-swimming-math/" style="display:block;text-decoration:none;background:#0A2E3F;border-radius:12px;padding:20px 22px;text-align:center;" target="_blank"><span style="display:inline-block;background:#3FBFB0;color:#0A2E3F;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:15px;padding:14px 28px;border-radius:9px;">Open the calculator &rarr;</span><span style="display:block;font-family:Arial, Helvetica, sans-serif;font-size:14px;color:#CBDDE1;margin-top:14px;line-height:1.5;">In a hurry? Skip the reading. Enter your best time and the tool does all of this for you.</span></a>
+
+<div style="margin:28px 0 0;">
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:24px 26px;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 8px;font-size:24px;">The one rule</h2>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#152225;line-height:1.65;margin:0 0 16px;">When you double the distance, you do not just double the time. You slow down a little. This tool builds that slow-down into the number.</p>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#152225;line-height:1.65;margin:0;"><strong>Double your time, then add the drop-off.</strong> That is the whole idea. The drop-off gets bigger as the race gets longer, because fatigue has more time to build.</p>
+</div>
+</div>
+
+<div style="margin:28px 0 0;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 8px;font-size:24px;">The ladder</h2>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#152225;line-height:1.65;margin:0 0 16px;">Each rung uses the goal time from the rung below it, not your personal best. Build up one step at a time.</p>
+
+<div style="overflow-x:auto;border:1px solid #DAD3C2;border-radius:10px;box-shadow:0 6px 20px rgba(10,46,63,0.10);background:#FFFFFF;">
+<table style="border-collapse:collapse;width:100%;min-width:640px;">
+	<thead>
+		<tr>
+			<th style="width:18%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Step up</th>
+			<th style="width:44%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">What you do</th>
+			<th style="width:38%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Formula</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">50 to 100</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Double it, add 5 seconds</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">50 x 2 + 5</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">100 to 200</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Double it, add 10 seconds</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">100 x 2 + 10</td>
+		</tr>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">200 to 400</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Double it, add 10 to 15 seconds</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">200 x 2 + 10 to 15</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">400 to 800</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Double it, add 25 to 30 seconds</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">400 x 2 + 25 to 30</td>
+		</tr>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">400 to 1500</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Multiply by 4</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">400 x 4</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div style="border-left:4px solid #3FBFB0;background:#EFFAF8;border-radius:0 10px 10px 0;padding:16px 20px;margin:20px 0 0;font-size:14.5px;color:#152225;font-family:Arial, Helvetica, sans-serif;line-height:1.6;"><strong>The 400 goal is a range. Build the 800 and the 1500 from the middle of it.</strong> That keeps every range tight enough to aim at. The 1500 gets no add-on at all, so it lands on a single number.</div>
+</div>
+
+<div style="margin:32px 0 0;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 8px;font-size:24px;">A sample swimmer</h2>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#152225;line-height:1.65;margin:0 0 16px;">Meet Maya. Her best event is the 50 free and she has been <strong>30.00</strong> flat. Here is how she builds the rest of her season goals.</p>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:24px 26px;">
+<div style="display:flex;gap:16px;padding:20px 0;border-top:1px solid #DAD3C2;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:15px;width:34px;height:34px;border-radius:50%;background:#136B77;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">1</span>
+
+<div>
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:16px;margin:0 0 6px;">Start with the best time</h3>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:14.5px;color:#152225;line-height:1.6;">Maya&#39;s best 50 free is <strong>30.00</strong>. That is her starting point.
+
+<div style="font-family:'Courier New', Courier, monospace;font-size:15.5px;font-weight:700;color:#0A2E3F;background:#F3EFE4;border-left:3px solid #3FBFB0;border-radius:0 8px 8px 0;padding:11px 14px;margin:10px 0 0;line-height:1.6;">Best 50 = 30.00</div>
+</div>
+</div>
+</div>
+
+<div style="display:flex;gap:16px;padding:20px 0;border-top:1px solid #DAD3C2;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:15px;width:34px;height:34px;border-radius:50%;background:#136B77;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">2</span>
+
+<div>
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:16px;margin:0 0 6px;">Find the 100 goal</h3>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:14.5px;color:#152225;line-height:1.6;">Double it, then add 5.
+<div style="font-family:'Courier New', Courier, monospace;font-size:15.5px;font-weight:700;color:#0A2E3F;background:#F3EFE4;border-left:3px solid #3FBFB0;border-radius:0 8px 8px 0;padding:11px 14px;margin:10px 0 0;line-height:1.6;">30.00 x 2 = 60.0<br />
+60.0 + 5 = 1:05.0</div>
+</div>
+</div>
+</div>
+
+<div style="display:flex;gap:16px;padding:20px 0;border-top:1px solid #DAD3C2;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:15px;width:34px;height:34px;border-radius:50%;background:#136B77;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">3</span>
+
+<div>
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:16px;margin:0 0 6px;">Find the 200 goal</h3>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:14.5px;color:#152225;line-height:1.6;">Double the 100 goal, then add 10.
+<div style="font-family:'Courier New', Courier, monospace;font-size:15.5px;font-weight:700;color:#0A2E3F;background:#F3EFE4;border-left:3px solid #3FBFB0;border-radius:0 8px 8px 0;padding:11px 14px;margin:10px 0 0;line-height:1.6;">1:05.0 x 2 = 2:10.0<br />
+2:10.0 + 10 = 2:20.0</div>
+</div>
+</div>
+</div>
+
+<div style="display:flex;gap:16px;padding:20px 0;border-top:1px solid #DAD3C2;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:15px;width:34px;height:34px;border-radius:50%;background:#136B77;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">4</span>
+
+<div>
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:16px;margin:0 0 6px;">Find the 400 goal</h3>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:14.5px;color:#152225;line-height:1.6;">Double the 200 goal, then add 10 to 15.
+<div style="font-family:'Courier New', Courier, monospace;font-size:15.5px;font-weight:700;color:#0A2E3F;background:#F3EFE4;border-left:3px solid #3FBFB0;border-radius:0 8px 8px 0;padding:11px 14px;margin:10px 0 0;line-height:1.6;">2:20.0 x 2 = 4:40.0<br />
+4:40.0 + 10 to 15 = 4:50.0 to 4:55.0</div>
+</div>
+</div>
+</div>
+
+<div style="display:flex;gap:16px;padding:20px 0;border-top:1px solid #DAD3C2;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:15px;width:34px;height:34px;border-radius:50%;background:#136B77;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">5</span>
+
+<div>
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:16px;margin:0 0 6px;">Find the 800 and 1500 goals</h3>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:14.5px;color:#152225;line-height:1.6;">Take the middle of the 400 range. Double it and add 25 to 30 for the 800. Multiply it by 4 for the 1500.
+<div style="font-family:'Courier New', Courier, monospace;font-size:15.5px;font-weight:700;color:#0A2E3F;background:#F3EFE4;border-left:3px solid #3FBFB0;border-radius:0 8px 8px 0;padding:11px 14px;margin:10px 0 0;line-height:1.6;">Middle of the 400 range = 4:52.5<br />
+800 = 10:10.0 to 10:15.0<br />
+1500 = 19:30.0</div>
+</div>
+</div>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:12px;margin:20px 0 0;">
+<div style="flex:1;min-width:150px;background:#FFFFFF;border:1px solid #DAD3C2;border-radius:10px;padding:14px 16px;">
+<div style="font-family:'Courier New', Courier, monospace;font-size:11.5px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#4B5B60;margin-bottom:6px;">Best 50</div>
+
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;font-size:21px;color:#0A2E3F;">30.00</div>
+</div>
+
+<div style="flex:1;min-width:150px;background:#FFFFFF;border:1px solid #DAD3C2;border-radius:10px;padding:14px 16px;">
+<div style="font-family:'Courier New', Courier, monospace;font-size:11.5px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#4B5B60;margin-bottom:6px;">Goal 100</div>
+
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;font-size:21px;color:#0A2E3F;">1:05.0</div>
+</div>
+
+<div style="flex:1;min-width:150px;background:#FFFFFF;border:1px solid #DAD3C2;border-radius:10px;padding:14px 16px;">
+<div style="font-family:'Courier New', Courier, monospace;font-size:11.5px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#4B5B60;margin-bottom:6px;">Goal 200</div>
+
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;font-size:21px;color:#0A2E3F;">2:20.0</div>
+</div>
+
+<div style="flex:1;min-width:150px;background:#FFFFFF;border:1px solid #DAD3C2;border-radius:10px;padding:14px 16px;">
+<div style="font-family:'Courier New', Courier, monospace;font-size:11.5px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#4B5B60;margin-bottom:6px;">Goal 400</div>
+
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;font-size:21px;color:#0A2E3F;">4:50.0+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div style="margin:32px 0 0;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 8px;font-size:24px;">Starting somewhere else</h2>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#152225;line-height:1.65;margin:0 0 16px;">Not everyone is a 50 swimmer. If your best event is the 100 or the 200, you run the same math backwards. Subtract the drop-off first, then halve it. Distance events work the same way and are covered further down.</p>
+
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:18px;margin:26px 0 10px;">Your best event is the 100</h3>
+
+<div style="overflow-x:auto;border:1px solid #DAD3C2;border-radius:10px;box-shadow:0 6px 20px rgba(10,46,63,0.10);background:#FFFFFF;">
+<table style="border-collapse:collapse;width:100%;min-width:640px;">
+	<thead>
+		<tr>
+			<th style="width:16%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Goal</th>
+			<th style="width:44%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Formula</th>
+			<th style="width:40%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Maya at 1:05.0</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">50</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">(100 time - 5) / 2</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">30.0</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">200</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">100 time x 2 + 10</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">2:20.0</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:18px;margin:26px 0 10px;">Your best event is the 200</h3>
+
+<div style="overflow-x:auto;border:1px solid #DAD3C2;border-radius:10px;box-shadow:0 6px 20px rgba(10,46,63,0.10);background:#FFFFFF;">
+<table style="border-collapse:collapse;width:100%;min-width:640px;">
+	<thead>
+		<tr>
+			<th style="width:16%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Goal</th>
+			<th style="width:44%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Formula</th>
+			<th style="width:40%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Maya at 2:20.0</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">100</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">(200 time - 10) / 2</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:05.0</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">50</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">(100 goal - 5) / 2</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">30.0</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div style="border-left:4px solid #3FBFB0;background:#EFFAF8;border-radius:0 10px 10px 0;padding:16px 20px;margin:20px 0 0;font-size:14.5px;color:#152225;font-family:Arial, Helvetica, sans-serif;line-height:1.6;">The ladder works in both directions and always lands on the same numbers. A 30.00 fifty, a 1:05.0 hundred and a 2:20.0 two hundred are the same swimmer. That is how you spot which of your events is furthest ahead.</div>
+</div>
+
+<div style="margin:32px 0 0;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 8px;font-size:24px;">Target splits</h2>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#152225;line-height:1.65;margin:0 0 16px;">A goal time tells you where to finish. Target splits tell you how to get there.</p>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#152225;line-height:1.65;margin:0 0 10px;"><strong>Your first 50 is always the fastest.</strong> You dive in and you are fresh, so it comes for free. After that, hold the same time on every 50. Then bring the last 50 home faster: about 0.6 seconds in a 400, and about a second in an 800 or 1500.</p>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#152225;line-height:1.65;margin:0 0 16px;">How much slower your second 50 is than your first is your <strong>drop-off</strong>, and it depends on the stroke. Breaststroke and butterfly drop more than freestyle and backstroke.</p>
+
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:18px;margin:26px 0 10px;">Maya&#39;s target splits, freestyle or backstroke</h3>
+
+<div style="overflow-x:auto;border:1px solid #DAD3C2;border-radius:10px;box-shadow:0 6px 20px rgba(10,46,63,0.10);background:#FFFFFF;">
+<table style="border-collapse:collapse;width:100%;min-width:640px;">
+	<thead>
+		<tr>
+			<th style="width:18%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Race</th>
+			<th style="width:24%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Goal</th>
+			<th style="width:58%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Target 50s</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">100 m</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:05.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">31.5 + 33.5</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">200 m</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">2:20.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">32.8 + 35.8 x 3</td>
+		</tr>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">400 m</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">4:50.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">33.7 + 36.7 x 6 + 36.1</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">800 m</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">10:10.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">35.4 + 38.4 x 14 + 37.4</td>
+		</tr>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1500 m</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">19:30.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">36.1 + 39.1 x 28 + 38.1</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:18px;margin:26px 0 10px;">The same 100 and 200 in breaststroke or butterfly</h3>
+
+<div style="overflow-x:auto;border:1px solid #DAD3C2;border-radius:10px;box-shadow:0 6px 20px rgba(10,46,63,0.10);background:#FFFFFF;">
+<table style="border-collapse:collapse;width:100%;min-width:640px;">
+	<thead>
+		<tr>
+			<th style="width:18%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Race</th>
+			<th style="width:24%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Goal</th>
+			<th style="width:58%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Target 50s</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">100 m</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:05.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">30.5 + 34.5</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">200 m</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">2:20.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">32.0 + 36.0 x 3</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#152225;line-height:1.65;margin:16px 0 0;">Races of 400 and up are freestyle, so there is one table for them.</p>
+
+<div style="border-left:4px solid #3FBFB0;background:#EFFAF8;border-radius:0 10px 10px 0;padding:16px 20px;margin:20px 0 0;font-size:14.5px;color:#152225;font-family:Arial, Helvetica, sans-serif;line-height:1.6;">Splits are rounded to a tenth, so they may add up a few tenths either side of your goal. Swim the numbers, not the total.</div>
+
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:18px;margin:26px 0 10px;">The drop-off, checked after the race</h3>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#152225;line-height:1.65;margin:0 0 16px;">Compare your first 50 to your second 50. That gap is your drop-off. Keep it inside these numbers, whatever your finishing time was.</p>
+
+<div style="overflow-x:auto;border:1px solid #DAD3C2;border-radius:10px;box-shadow:0 6px 20px rgba(10,46,63,0.10);background:#FFFFFF;">
+<table style="border-collapse:collapse;width:100%;min-width:640px;">
+	<thead>
+		<tr>
+			<th style="width:38%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Stroke</th>
+			<th style="width:31%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">100 race</th>
+			<th style="width:31%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">200 and longer</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Freestyle and backstroke</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">2.0 seconds slower</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">3.0 seconds slower</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Breaststroke and butterfly</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">4.0 seconds slower</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">4.0 seconds slower</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#152225;line-height:1.65;margin:16px 0 0;">Inside the number means you paced it well, even if you missed the target. Outside it means you went out too fast.</p>
+
+<div style="border-left:4px solid #D64545;background:#FBEEEE;border-radius:0 10px 10px 0;padding:16px 20px;margin:20px 0 0;font-size:14.5px;color:#152225;font-family:Arial, Helvetica, sans-serif;line-height:1.6;">Going out faster than your target first 50 is the most common mistake in a race. It feels good for one length and costs you the back half. Practise the target pace in training until it feels slow.</div>
+</div>
+
+<div style="margin:32px 0 0;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 8px;font-size:24px;">The medley</h2>
+
+<div style="background:#0A2E3F;color:#FFFFFF;border-radius:10px;padding:10px 16px;margin:0 0 18px;font-family:'Courier New', Courier, monospace;font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;">In development &mdash; testing mode</div>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#152225;line-height:1.65;margin:0 0 16px;">The 200 IM and the 400 IM do not work like the other events. Your medley time is set by the stroke you are <strong>worst</strong> at. Two swimmers with the same 200 free can be ten seconds apart in the 200 IM. One best time cannot predict a medley, so you need a time in all four.</p>
+
+<div style="border-left:4px solid #D64545;background:#FBEEEE;border-radius:0 10px 10px 0;padding:16px 20px;margin:20px 0 0;font-size:14.5px;color:#152225;font-family:Arial, Helvetica, sans-serif;line-height:1.6;"><strong>Never raced one of the four? Race it first.</strong> A medley swimmer needs a time in all four strokes before any of this works.</div>
+
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:18px;margin:26px 0 10px;">Your medley goal</h3>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#152225;line-height:1.65;margin:0 0 16px;">Add your best time in each of the four strokes. Halve the total. Then add a few seconds for the turns and for the work of swimming all four back to back.</p>
+
+<div style="overflow-x:auto;border:1px solid #DAD3C2;border-radius:10px;box-shadow:0 6px 20px rgba(10,46,63,0.10);background:#FFFFFF;">
+<table style="border-collapse:collapse;width:100%;min-width:640px;">
+	<thead>
+		<tr>
+			<th style="width:16%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Medley</th>
+			<th style="width:34%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Times you need</th>
+			<th style="width:50%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Formula</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">200 IM</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Best 100 of each stroke</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">(four 100s) / 2 + 6.5 to 8.5</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">400 IM</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Best 200 of each stroke</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">(four 200s) / 2 + 5 to 10</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div style="border-left:4px solid #3FBFB0;background:#EFFAF8;border-radius:0 10px 10px 0;padding:16px 20px;margin:20px 0 0;font-size:14.5px;color:#152225;font-family:Arial, Helvetica, sans-serif;line-height:1.6;">Your goal comes out as a <strong>range</strong>, never a single number. It is built from your own four strokes, so it already allows for the stroke you are weakest at.</div>
+
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:18px;margin:26px 0 10px;">A second opinion on the 400 IM</h3>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#152225;line-height:1.65;margin:0 0 16px;">If you have raced a 200 IM, you can check the answer a second way.</p>
+
+<div style="font-family:'Courier New', Courier, monospace;font-size:15.5px;font-weight:700;color:#0A2E3F;background:#F3EFE4;border-left:3px solid #3FBFB0;border-radius:0 8px 8px 0;padding:11px 14px;margin:10px 0 0;line-height:1.6;">400 IM = 200 IM x 2 + 20 to 25</div>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#152225;line-height:1.65;margin:16px 0 0;">Use it as a check, not as the answer. If the two overlap, your estimate is solid. If they do not, trust the four-stroke number, and read the gap as a sign that your 200 IM and your 400 IM are at different stages.</p>
+
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:18px;margin:26px 0 10px;">Your leg targets</h3>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#152225;line-height:1.65;margin:0 0 16px;">Each leg takes a fairly steady share of a medley, whatever the swimmer. Multiply the middle of your goal range by the share for each leg.</p>
+
+<div style="overflow-x:auto;border:1px solid #DAD3C2;border-radius:10px;box-shadow:0 6px 20px rgba(10,46,63,0.10);background:#FFFFFF;">
+<table style="border-collapse:collapse;width:100%;min-width:640px;">
+	<thead>
+		<tr>
+			<th style="width:34%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Leg</th>
+			<th style="width:33%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Share of a 200 IM</th>
+			<th style="width:33%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Share of a 400 IM</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Butterfly</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">21.78%</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">22.84%</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Backstroke</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">25.38%</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">25.67%</td>
+		</tr>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Breaststroke</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">29.13%</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">28.49%</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Freestyle</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">23.71%</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">23.00%</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div style="border-left:4px solid #3FBFB0;background:#EFFAF8;border-radius:0 10px 10px 0;padding:16px 20px;margin:20px 0 0;font-size:14.5px;color:#152225;font-family:Arial, Helvetica, sans-serif;line-height:1.6;">The two columns are not the same. Butterfly takes a bigger share of a 400 IM than of a 200 IM, and breaststroke takes a smaller one, so use the column for your race. Breaststroke takes the largest share in both races only because it is the slowest stroke, not because the race is won there.</div>
+
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:18px;margin:26px 0 10px;">Which stroke is holding you back?</h3>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#152225;line-height:1.65;margin:0 0 16px;">Work out what share of your own four-stroke total each stroke takes, then compare it with the benchmark below. A share <strong>bigger</strong> than the benchmark means that stroke is slow for you. It does not matter how fast you are overall, because it is a comparison with yourself.</p>
+
+<div style="overflow-x:auto;border:1px solid #DAD3C2;border-radius:10px;box-shadow:0 6px 20px rgba(10,46,63,0.10);background:#FFFFFF;">
+<table style="border-collapse:collapse;width:100%;min-width:640px;">
+	<thead>
+		<tr>
+			<th style="width:34%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Stroke</th>
+			<th style="width:33%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Share of your four 100s</th>
+			<th style="width:33%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Share of your four 200s</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Butterfly</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">24.48%</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">25.12%</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Backstroke</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">24.65%</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">24.52%</td>
+		</tr>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Breaststroke</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">28.11%</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">28.27%</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Freestyle</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">22.76%</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">22.09%</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#152225;line-height:1.65;margin:16px 0 0;">Within about 0.4 of a percentage point either way is balanced. More than that and the stroke is worth a closer look.</p>
+
+<div style="border-left:4px solid #D64545;background:#FBEEEE;border-radius:0 10px 10px 0;padding:16px 20px;margin:20px 0 0;font-size:14.5px;color:#152225;font-family:Arial, Helvetica, sans-serif;line-height:1.6;"><strong>Use this table for the balance check only.</strong> The leg target shares further up are different numbers, because a flat 100 butterfly sits further behind a flat 100 free than a butterfly leg sits behind a free leg inside a medley.</div>
+
+<div style="border-left:4px solid #3FBFB0;background:#EFFAF8;border-radius:0 10px 10px 0;padding:16px 20px;margin:20px 0 0;font-size:14.5px;color:#152225;font-family:Arial, Helvetica, sans-serif;line-height:1.6;"><strong>If your backstroke or breaststroke reads slow, start there.</strong> Across 1,095 elite swimmers, backstroke and breaststroke moved medley results the most, and butterfly the least. That is the opposite of how it feels. Butterfly comes first and hurts most, so it gets the attention, and it is the leg where extra work pays back least.</div>
+
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:18px;margin:26px 0 10px;">A sample swimmer</h3>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#152225;line-height:1.65;margin:0 0 16px;">Noor has raced all four 100s. Here is what the tool tells her.</p>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:24px 26px;">
+<div style="overflow-x:auto;border:1px solid #DAD3C2;border-radius:10px;box-shadow:0 6px 20px rgba(10,46,63,0.10);background:#FFFFFF;">
+<table style="border-collapse:collapse;width:100%;min-width:640px;">
+	<thead>
+		<tr>
+			<th style="width:22%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Stroke</th>
+			<th style="width:16%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Her 100</th>
+			<th style="width:17%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Her share</th>
+			<th style="width:17%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Benchmark</th>
+			<th style="width:28%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Balance</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Butterfly</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:10.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">24.48%</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">24.48%</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Balanced</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Backstroke</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:12.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">25.17%</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">24.65%</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Relatively slow</td>
+		</tr>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Breaststroke</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:20.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">27.97%</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">28.11%</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Balanced</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Freestyle</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:04.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">22.38%</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">22.76%</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Balanced</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#152225;line-height:1.65;margin:18px 0 0;">Her four 100s add up to 4:46.0. Half of that is 2:23.0, so her 200 IM goal is <strong>2:29.5 to 2:31.5</strong>, and she aims at the middle, 2:30.5.</p>
+
+<div style="overflow-x:auto;border:1px solid #DAD3C2;border-radius:10px;box-shadow:0 6px 20px rgba(10,46,63,0.10);background:#FFFFFF;">
+<table style="border-collapse:collapse;width:100%;min-width:640px;">
+	<thead>
+		<tr>
+			<th style="width:50%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Leg</th>
+			<th style="width:50%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Target 50</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Butterfly</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">32.8</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Backstroke</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">38.2</td>
+		</tr>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Breaststroke</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">43.8</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">Freestyle</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">35.7</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#152225;line-height:1.65;margin:16px 0 0;">Her backstroke reads slow, and backstroke is one of the two strokes that move medley results most. That is where her season should start.</p>
+</div>
+
+<div style="border-left:4px solid #D64545;background:#FBEEEE;border-radius:0 10px 10px 0;padding:16px 20px;margin:20px 0 0;font-size:14.5px;color:#152225;font-family:Arial, Helvetica, sans-serif;line-height:1.6;"><strong>A medley goal is looser than a single-stroke goal.</strong> It is built from four races instead of one. Aim inside the range rather than at one number, and bring it to your coach.</div>
+</div>
+
+<div style="margin:32px 0 0;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 8px;font-size:24px;">Quick reference</h2>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#152225;line-height:1.65;margin:0 0 16px;">Find your best 50 time in the left column and read across. Round to the nearest row.</p>
+
+<div style="overflow-x:auto;border:1px solid #DAD3C2;border-radius:10px;box-shadow:0 6px 20px rgba(10,46,63,0.10);background:#FFFFFF;">
+<table style="border-collapse:collapse;width:100%;min-width:640px;">
+	<thead>
+		<tr>
+			<th style="text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Best 50</th>
+			<th style="text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Goal 100</th>
+			<th style="text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Goal 200</th>
+			<th style="text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Goal 400</th>
+			<th style="text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Goal 800</th>
+			<th style="text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Goal 1500</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">24.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">53.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:56.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">4:02.0 to 4:07.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">8:34.0 to 8:39.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">16:18.0</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">25.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">55.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">2:00.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">4:10.0 to 4:15.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">8:50.0 to 8:55.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">16:50.0</td>
+		</tr>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">26.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">57.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">2:04.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">4:18.0 to 4:23.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">9:06.0 to 9:11.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">17:22.0</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">27.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">59.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">2:08.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">4:26.0 to 4:31.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">9:22.0 to 9:27.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">17:54.0</td>
+		</tr>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">28.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:01.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">2:12.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">4:34.0 to 4:39.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">9:38.0 to 9:43.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">18:26.0</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">29.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:03.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">2:16.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">4:42.0 to 4:47.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">9:54.0 to 9:59.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">18:58.0</td>
+		</tr>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">30.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:05.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">2:20.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">4:50.0 to 4:55.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">10:10.0 to 10:15.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">19:30.0</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">31.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:07.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">2:24.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">4:58.0 to 5:03.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">10:26.0 to 10:31.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">20:02.0</td>
+		</tr>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">32.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:09.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">2:28.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">5:06.0 to 5:11.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">10:42.0 to 10:47.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">20:34.0</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">33.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:11.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">2:32.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">5:14.0 to 5:19.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">10:58.0 to 11:03.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">21:06.0</td>
+		</tr>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">34.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:13.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">2:36.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">5:22.0 to 5:27.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">11:14.0 to 11:19.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">21:38.0</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">35.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:15.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">2:40.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">5:30.0 to 5:35.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">11:30.0 to 11:35.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">22:10.0</td>
+		</tr>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">36.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:17.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">2:44.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">5:38.0 to 5:43.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">11:46.0 to 11:51.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">22:42.0</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">37.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:19.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">2:48.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">5:46.0 to 5:51.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">12:02.0 to 12:07.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">23:14.0</td>
+		</tr>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">38.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:21.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">2:52.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">5:54.0 to 5:59.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">12:18.0 to 12:23.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">23:46.0</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">39.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:23.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">2:56.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">6:02.0 to 6:07.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">12:34.0 to 12:39.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">24:18.0</td>
+		</tr>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">40.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:25.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">3:00.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">6:10.0 to 6:15.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">12:50.0 to 12:55.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">24:50.0</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">41.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:27.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">3:04.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">6:18.0 to 6:23.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">13:06.0 to 13:11.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">25:22.0</td>
+		</tr>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">42.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:29.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">3:08.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">6:26.0 to 6:31.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">13:22.0 to 13:27.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">25:54.0</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">43.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:31.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">3:12.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">6:34.0 to 6:39.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">13:38.0 to 13:43.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">26:26.0</td>
+		</tr>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">44.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:33.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">3:16.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">6:42.0 to 6:47.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">13:54.0 to 13:59.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">26:58.0</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">45.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:35.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">3:20.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">6:50.0 to 6:55.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">14:10.0 to 14:15.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">27:30.0</td>
+		</tr>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">46.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:37.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">3:24.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">6:58.0 to 7:03.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">14:26.0 to 14:31.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">28:02.0</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">47.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:39.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">3:28.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">7:06.0 to 7:11.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">14:42.0 to 14:47.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">28:34.0</td>
+		</tr>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">48.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:41.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">3:32.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">7:14.0 to 7:19.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">14:58.0 to 15:03.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">29:06.0</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">49.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:43.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">3:36.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">7:22.0 to 7:27.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">15:14.0 to 15:19.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">29:38.0</td>
+		</tr>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">50.00</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1:45.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">3:40.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">7:30.0 to 7:35.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">15:30.0 to 15:35.0</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">30:10.0</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div style="border-left:4px solid #D64545;background:#FBEEEE;border-radius:0 10px 10px 0;padding:16px 20px;margin:20px 0 0;font-size:14.5px;color:#152225;font-family:Arial, Helvetica, sans-serif;line-height:1.6;">The 50, 100 and 200 math is the same in every stroke. Just stay in one stroke the whole way up, so a 50 fly builds a 100 fly goal. Distances of 400 and up are freestyle only. Stroke only changes your split targets, not your goal times.</div>
+</div>
+
+<div style="margin:32px 0 0;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 8px;font-size:24px;">How to approach your goals</h2>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#152225;line-height:1.65;margin:0 0 16px;">The ladder gives you six numbers. It does not tell you which one to chase. Work through these three questions in order.</p>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:24px 26px;">
+<div style="display:flex;gap:16px;padding:20px 0;border-top:1px solid #DAD3C2;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:15px;width:34px;height:34px;border-radius:50%;background:#136B77;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">1</span>
+
+<div>
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:16px;margin:0 0 6px;">Are you versatile?</h3>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:14.5px;color:#152225;line-height:1.6;">Run the ladder from your best sprint, then run it again from your best distance event. If the two agree, your range is balanced. If one event lands well ahead of what the other predicts, that event is your real strength and the ladder should be rebuilt from it.
+<div style="font-family:'Courier New', Courier, monospace;font-size:15.5px;font-weight:700;color:#0A2E3F;background:#F3EFE4;border-left:3px solid #3FBFB0;border-radius:0 8px 8px 0;padding:11px 14px;margin:10px 0 0;line-height:1.6;">Ahead of the goal = strength<br />
+Well behind the goal = where to train</div>
+</div>
+</div>
+</div>
+
+<div style="display:flex;gap:16px;padding:20px 0;border-top:1px solid #DAD3C2;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:15px;width:34px;height:34px;border-radius:50%;background:#136B77;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">2</span>
+
+<div>
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:16px;margin:0 0 6px;">Pick your next-phase goals</h3>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:14.5px;color:#152225;line-height:1.6;">Chase what is close. A goal within about 2% of your current time is reachable in one training block. Pick one or two, not six. Six goals is no goals.
+<div style="font-family:'Courier New', Courier, monospace;font-size:15.5px;font-weight:700;color:#0A2E3F;background:#F3EFE4;border-left:3px solid #3FBFB0;border-radius:0 8px 8px 0;padding:11px 14px;margin:10px 0 0;line-height:1.6;">2% of 1:05.0 = 1.3 seconds<br />
+2% of 4:52.5 = 5.9 seconds</div>
+</div>
+</div>
+</div>
+
+<div style="display:flex;gap:16px;padding:20px 0;border-top:1px solid #DAD3C2;"><span style="flex:none;font-family:'Courier New', Courier, monospace;font-weight:700;font-size:15px;width:34px;height:34px;border-radius:50%;background:#136B77;color:#FFFFFF;display:flex;align-items:center;justify-content:center;">3</span>
+
+<div>
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:16px;margin:0 0 6px;">Set one stretch goal for the season</h3>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:14.5px;color:#152225;line-height:1.6;">Something within about 5% is a season target. Further out than that is a longer project. Name it if you want to, but do not judge your season on it.
+<div style="font-family:'Courier New', Courier, monospace;font-size:15.5px;font-weight:700;color:#0A2E3F;background:#F3EFE4;border-left:3px solid #3FBFB0;border-radius:0 8px 8px 0;padding:11px 14px;margin:10px 0 0;line-height:1.6;">5% of 1:05.0 = 3.3 seconds<br />
+5% of 4:52.5 = 14.6 seconds</div>
+</div>
+</div>
+</div>
+</div>
+
+<div style="border-left:4px solid #3FBFB0;background:#EFFAF8;border-radius:0 10px 10px 0;padding:16px 20px;margin:20px 0 0;font-size:14.5px;color:#152225;font-family:Arial, Helvetica, sans-serif;line-height:1.6;"><strong>The 2% and 5% bands start the conversation, they do not end it.</strong> A 10&amp;U swimmer improves faster than an 18&amp;U swimmer, and a swimmer new to an event improves faster than one who has raced it for years. Bring your numbers to your coach.</div>
+
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:18px;margin:26px 0 10px;">If your best event is the 400, 800 or 1500</h3>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#152225;line-height:1.65;margin:0 0 16px;">You run the ladder backwards. Each step up adds a range, so each step down subtracts the middle of that range. The chain lands on single numbers and returns exactly to the time you entered.</p>
+
+<div style="overflow-x:auto;border:1px solid #DAD3C2;border-radius:10px;box-shadow:0 6px 20px rgba(10,46,63,0.10);background:#FFFFFF;">
+<table style="border-collapse:collapse;width:100%;min-width:640px;">
+	<thead>
+		<tr>
+			<th style="width:24%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Your best event</th>
+			<th style="width:26%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Work back to</th>
+			<th style="width:50%;text-align:left;padding:11px 12px;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:12px;background:#0A2E3F;color:#FFFFFF;">Formula</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">400</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">200 goal</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">(PB400 - 12.5) / 2</td>
+		</tr>
+		<tr style="background:#FAF8F2;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">800</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">400 goal</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">(PB800 - 27.5) / 2</td>
+		</tr>
+		<tr style="background:#FFFFFF;">
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">1500</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:Arial, Helvetica, sans-serif;font-size:14.5px;font-weight:700;color:#0A2E3F;white-space:nowrap;">400 goal</td>
+			<td style="padding:12px;border-top:1px solid #DAD3C2;font-family:'Courier New', Courier, monospace;font-size:15px;font-weight:700;color:#0A2E3F;white-space:nowrap;">PB1500 / 4</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#152225;line-height:1.65;margin:16px 0 0;">From your 200 goal, keep going down: the 100 goal is (200 goal minus 10) divided by 2, and the 50 goal is (100 goal minus 5) divided by 2.</p>
+
+<div style="border-left:4px solid #3FBFB0;background:#EFFAF8;border-radius:0 10px 10px 0;padding:16px 20px;margin:20px 0 0;font-size:14.5px;color:#152225;font-family:Arial, Helvetica, sans-serif;line-height:1.6;">Distance swimmers should expect their sprint goals to look soft, and that is real, not a flaw in the math. The world&#39;s best 1500 swimmers are better over 1500 relative to their 400 than the ladder assumes. If you are a distance swimmer, the 50 and 100 goals are a measure of the speed you are missing, not a target you should already be hitting.</div>
+</div>
+
+<div style="margin:32px 0 0;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 8px;font-size:24px;">Try it with your own times</h2>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#152225;line-height:1.65;margin:0 0 16px;">The calculator does every step on this page for you. Enter a best time from any of the six distances, then add your other times to see which goals are closest.</p>
+<a href="https://row-gm.github.io/row-swimming-math/" style="display:block;text-decoration:none;background:#EFFAF8;border:2px solid #3FBFB0;border-radius:14px;padding:26px 24px;text-align:center;" target="_blank"><span style="display:block;font-family:'Courier New', Courier, monospace;font-size:11.5px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#136B77;margin-bottom:10px;">Interactive tool</span><span style="display:block;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;font-size:22px;color:#0A2E3F;line-height:1.2;">Goal Setting Tool Calculator</span><span style="display:block;font-family:Arial, Helvetica, sans-serif;font-size:15px;color:#152225;margin:12px auto 0;max-width:520px;line-height:1.55;">Enter your best time. Get every goal time, every split, and the math behind each one. Works on your phone.</span><span style="display:inline-block;margin-top:20px;background:#0A2E3F;color:#FFFFFF;font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.03em;font-size:16px;padding:16px 34px;border-radius:10px;">Open the calculator &rarr;</span><span style="display:block;font-family:Arial, Helvetica, sans-serif;font-size:13.5px;color:#4B5B60;margin-top:12px;">Opens in a new tab. Nothing to install, nothing to sign in to.</span></a>
+
+<div style="border-left:4px solid #3FBFB0;background:#EFFAF8;border-radius:0 10px 10px 0;padding:16px 20px;margin:20px 0 0;font-size:14.5px;color:#152225;font-family:Arial, Helvetica, sans-serif;line-height:1.6;"><strong>Doing a medley?</strong> Switch the calculator to medley mode at the top. It takes your best 100 or 200 of each stroke, gives you an IM goal and a target for each leg, and tells you which stroke is holding you back. The method is explained below.</div>
+</div>
+
+<div style="margin:32px 0 0;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 8px;font-size:24px;">Common questions</h2>
+
+<div style="border:1px solid #DAD3C2;border-radius:10px;overflow:hidden;box-shadow:0 6px 20px rgba(10,46,63,0.10);background:#FFFFFF;">
+<div style="padding:18px 22px;background:#FFFFFF;border-top:1px solid #DAD3C2;">
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:15.5px;font-weight:700;color:#0A2E3F;margin-bottom:6px;">Are these goals or predictions?</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:14.5px;color:#152225;line-height:1.65;">They are goals. The math gives you a fair target based on speed you have already shown. Training, pacing and race experience decide whether you hit it.</div>
+</div>
+
+<div style="padding:18px 22px;background:#FAF8F2;border-top:1px solid #DAD3C2;">
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:15.5px;font-weight:700;color:#0A2E3F;margin-bottom:6px;">What if I am already faster than my goal time?</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:14.5px;color:#152225;line-height:1.65;">Good news. It means that event is ahead of the rest of your range. Rebuild the ladder using that faster time as your new starting point.</div>
+</div>
+
+<div style="padding:18px 22px;background:#FFFFFF;border-top:1px solid #DAD3C2;">
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:15.5px;font-weight:700;color:#0A2E3F;margin-bottom:6px;">Does this work for short course and long course?</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:14.5px;color:#152225;line-height:1.65;">Run the math within one course. Use a short course best time to set short course goals, and a long course best time to set long course goals. Do not mix the two.</div>
+</div>
+
+<div style="padding:18px 22px;background:#FAF8F2;border-top:1px solid #DAD3C2;">
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:15.5px;font-weight:700;color:#0A2E3F;margin-bottom:6px;">Why is there a range on the 400 and 800?</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:14.5px;color:#152225;line-height:1.65;">Longer races leave more room for pacing differences. The low end suits swimmers with strong endurance. The high end suits swimmers whose speed is ahead of their aerobic base.</div>
+</div>
+
+<div style="padding:18px 22px;background:#FFFFFF;border-top:1px solid #DAD3C2;">
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:15.5px;font-weight:700;color:#0A2E3F;margin-bottom:6px;">My best event is the 400 or 800. What then?</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:14.5px;color:#152225;line-height:1.65;">Work backwards to a 200 goal first, then use the 200 column. Ask your coach to help set that starting number.</div>
+</div>
+
+<div style="padding:18px 22px;background:#FAF8F2;border-top:1px solid #DAD3C2;">
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:15.5px;font-weight:700;color:#0A2E3F;margin-bottom:6px;">Does stroke change my goal times?</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:14.5px;color:#152225;line-height:1.65;">No. The 50, 100 and 200 math is the same in every stroke. Stroke only changes your split targets, because breaststroke and butterfly fade more than freestyle and backstroke over the first 50.</div>
+</div>
+
+<div style="padding:18px 22px;background:#FFFFFF;border-top:1px solid #DAD3C2;">
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:15.5px;font-weight:700;color:#0A2E3F;margin-bottom:6px;">My splits are inside the standard but I missed my goal time.</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:14.5px;color:#152225;line-height:1.65;">Then your opening 50 was too slow. Splits and goal times work together. Check that your first 50 sat inside the opening range for your goal.</div>
+</div>
+
+<div style="padding:18px 22px;background:#FAF8F2;border-top:1px solid #DAD3C2;">
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:15.5px;font-weight:700;color:#0A2E3F;margin-bottom:6px;">Should I use this instead of my coach&#39;s goals?</div>
+
+<div style="font-family:Arial, Helvetica, sans-serif;font-size:14.5px;color:#152225;line-height:1.65;">No. Use it as a starting point for the conversation. Your coach sees your training, your stroke and your race plan, and their target wins.</div>
+</div>
+</div>
+</div>
+
+<div style="border-left:4px solid #3FBFB0;background:#EFFAF8;border-radius:0 10px 10px 0;padding:16px 20px;margin:20px 0 0;font-size:14.5px;color:#152225;font-family:Arial, Helvetica, sans-serif;line-height:1.6;">Questions about your goal times? Talk to your lead coach on deck, or email <strong>office@rowswimming.ca</strong>.</div>
+</div>

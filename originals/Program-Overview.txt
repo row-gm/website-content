@@ -1,0 +1,149 @@
+<div style="max-width:1000px;margin:0 auto;font-family:Arial, Helvetica, sans-serif;background:#F3EFE4;padding:24px;">
+<div style="background:radial-gradient(1100px 500px at 15% -10%, #114C5E 0%, #0A2E3F 55%, #062029 100%);
+color:#FFFFFF;padding:44px 32px;border-radius:14px;"><span style="font-family:'Courier New', Courier, monospace;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;
+color:#FFFFFF;margin-bottom:14px;display:block;">ROW Swim Club</span>
+
+<h1 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#FFFFFF;font-size:clamp(24px, 5vw, 40px);line-height:1.1;font-weight:800;margin:0;">Programs Offered<br />
+2026&ndash;2027 Season</h1>
+
+<p style="max-width:660px;margin:20px 0 0;font-size:17px;color:#CBDDE1;line-height:1.6;font-family:Arial, Helvetica, sans-serif;">Whether your swimmer is just getting started or chasing a national standard, there&rsquo;s a place for them at ROW.</p>
+</div>
+
+<div style="height:8px;display:flex;border-radius:4px;overflow:hidden;margin:24px 0;">
+<div style="flex:1;background:#D64545;">&nbsp;</div>
+
+<div style="flex:1;background:#FFFFFF;">&nbsp;</div>
+
+<div style="flex:1;background:#136B77;">&nbsp;</div>
+
+<div style="flex:1;background:#FFFFFF;">&nbsp;</div>
+
+<div style="flex:1;background:#3FBFB0;">&nbsp;</div>
+
+<div style="flex:1;background:#FFFFFF;">&nbsp;</div>
+
+<div style="flex:1;background:#D64545;">&nbsp;</div>
+
+<div style="flex:1;background:#FFFFFF;">&nbsp;</div>
+</div>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:24px 26px;">
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:15px;color:#152225;line-height:1.65;margin:0 0 12px;">At ROW, we&rsquo;re not just developing faster swimmers. We&rsquo;re helping your child build confidence, discipline, and friendships that last long after the season ends. The groups below are a starting point &mdash; we also consider maturity, attitude, and where your swimmer is in their development when placing them.</p>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:15px;color:#152225;line-height:1.65;margin:0;"><span style="color:#0000FF;"><strong>Not sure where your swimmer fits? </strong></span>Check the guidelines below, then <a href="https://www.rowswimming.ca/page/system/teamreg-shopping?eventId=1761153" target="_blank">book an assessment.</a></p>
+</div>
+
+<div style="margin:32px 0 8px;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 16px;font-size:20px;border-bottom:2px solid #DAD3C2;padding-bottom:10px;">Junior Development Programs &middot; Under 12</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;">
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:20px 22px;box-shadow:0 4px 14px rgba(10,46,63,0.08);">
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:17px;margin:0 0 10px;">ROW Swim Academy (RSA)</h3>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;"><span style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:11px;background:#0A2E3F;color:#FFFFFF;border-radius:5px;padding:3px 9px;">1x/Week</span> <span style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:11px;background:#136B77;color:#FFFFFF;border-radius:5px;padding:3px 9px;">Ages 4&ndash;8 (ideal 5)</span></div>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;color:#4B5B60;margin:0 0 14px;">Junior Development Stream</p>
+<a href="https://www.rowswimming.ca/page/programs/stars" style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;font-weight:700;color:#136B77;text-decoration:none;" target="_blank">View Full Schedule &rarr;</a></div>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:20px 22px;box-shadow:0 4px 14px rgba(10,46,63,0.08);">
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:17px;margin:0 0 10px;">TOPs</h3>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;"><span style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:11px;background:#0A2E3F;color:#FFFFFF;border-radius:5px;padding:3px 9px;">2&ndash;3x/Week</span> <span style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:11px;background:#136B77;color:#FFFFFF;border-radius:5px;padding:3px 9px;">Ages 6&ndash;11 (ideal 7)</span></div>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;color:#4B5B60;margin:0 0 14px;">Junior Development Stream</p>
+<a href="https://www.rowswimming.ca/page/programs/london" style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;font-weight:700;color:#136B77;text-decoration:none;" target="_blank">View Full Schedule &rarr;</a></div>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:20px 22px;box-shadow:0 4px 14px rgba(10,46,63,0.08);">
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:17px;margin:0 0 10px;">Junior Development 2</h3>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;"><span style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:11px;background:#0A2E3F;color:#FFFFFF;border-radius:5px;padding:3px 9px;">3x/Week</span> <span style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:11px;background:#136B77;color:#FFFFFF;border-radius:5px;padding:3px 9px;">Ages 7&ndash;10 (ideal 8)</span></div>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;color:#4B5B60;margin:0 0 14px;">Junior Comp Stream</p>
+<a href="https://www.rowswimming.ca/page/programs/barcelona" style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;font-weight:700;color:#136B77;text-decoration:none;" target="_blank">View Full Schedule &rarr;</a></div>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:20px 22px;box-shadow:0 4px 14px rgba(10,46,63,0.08);">
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:17px;margin:0 0 10px;">Junior Development 1</h3>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;"><span style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:11px;background:#0A2E3F;color:#FFFFFF;border-radius:5px;padding:3px 9px;">4x/Week</span> <span style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:11px;background:#136B77;color:#FFFFFF;border-radius:5px;padding:3px 9px;">Ages 8&ndash;10 (ideal 9)</span></div>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;color:#4B5B60;margin:0 0 14px;">Junior Comp Stream</p>
+<a href="https://www.rowswimming.ca/page/programs/beijing" style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;font-weight:700;color:#136B77;text-decoration:none;" target="_blank">View Full Schedule &rarr;</a></div>
+</div>
+</div>
+
+<div style="margin:32px 0 8px;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 16px;font-size:20px;border-bottom:2px solid #DAD3C2;padding-bottom:10px;">Age Group Development Programs &middot; Ages 12&ndash;16</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;">
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:20px 22px;box-shadow:0 4px 14px rgba(10,46,63,0.08);">
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:17px;margin:0 0 10px;">RSA Age Group</h3>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;"><span style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:11px;background:#0A2E3F;color:#FFFFFF;border-radius:5px;padding:3px 9px;">3x/Week</span> <span style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:11px;background:#136B77;color:#FFFFFF;border-radius:5px;padding:3px 9px;">Ages 12+ (ideal 12)</span></div>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;color:#4B5B60;margin:0 0 14px;">Development Track</p>
+<a href="https://www.rowswimming.ca/page/programs/sydney" style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;font-weight:700;color:#136B77;text-decoration:none;" target="_blank">View Full Schedule &rarr;</a></div>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:20px 22px;box-shadow:0 4px 14px rgba(10,46,63,0.08);">
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:17px;margin:0 0 10px;">RSA Competitive</h3>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;"><span style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:11px;background:#0A2E3F;color:#FFFFFF;border-radius:5px;padding:3px 9px;">4x/Week</span> <span style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:11px;background:#136B77;color:#FFFFFF;border-radius:5px;padding:3px 9px;">Ages 13+ (ideal 13)</span></div>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;color:#4B5B60;margin:0 0 14px;">Development Track (intro to comp)</p>
+<a href="https://www.rowswimming.ca/page/programs/la1" style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;font-weight:700;color:#136B77;text-decoration:none;" target="_blank">View Full Schedule &rarr;</a></div>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:20px 22px;box-shadow:0 4px 14px rgba(10,46,63,0.08);">
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:17px;margin:0 0 10px;">Age Group Development</h3>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;"><span style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:11px;background:#0A2E3F;color:#FFFFFF;border-radius:5px;padding:3px 9px;">5x/Week</span> <span style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:11px;background:#136B77;color:#FFFFFF;border-radius:5px;padding:3px 9px;">Ages 11&ndash;13 (ideal 11)</span></div>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;color:#4B5B60;margin:0 0 14px;">Regional/Development Track</p>
+<a href="https://www.rowswimming.ca/page/programs/paris" style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;font-weight:700;color:#136B77;text-decoration:none;" target="_blank">View Full Schedule &rarr;</a></div>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:20px 22px;box-shadow:0 4px 14px rgba(10,46,63,0.08);">
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:17px;margin:0 0 10px;">Provincial Development 3</h3>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;"><span style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:11px;background:#0A2E3F;color:#FFFFFF;border-radius:5px;padding:3px 9px;">5x/Week</span> <span style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:11px;background:#136B77;color:#FFFFFF;border-radius:5px;padding:3px 9px;">Ages 10&ndash;12 (ideal 11)</span></div>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;color:#4B5B60;margin:0 0 14px;">Provincial Track</p>
+<a href="https://www.rowswimming.ca/page/programs/provincial-development-3" style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;font-weight:700;color:#136B77;text-decoration:none;" target="_blank">View Full Schedule &rarr;</a></div>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:20px 22px;box-shadow:0 4px 14px rgba(10,46,63,0.08);">
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:17px;margin:0 0 10px;">Provincial Development 2</h3>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;"><span style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:11px;background:#0A2E3F;color:#FFFFFF;border-radius:5px;padding:3px 9px;">6x/Week</span> <span style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:11px;background:#136B77;color:#FFFFFF;border-radius:5px;padding:3px 9px;">Ages 11&ndash;13 (ideal 12)</span></div>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;color:#4B5B60;margin:0 0 14px;">Provincial Track</p>
+<a href="https://www.rowswimming.ca/page/programs/provincial-development-2" style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;font-weight:700;color:#136B77;text-decoration:none;" target="_blank">View Full Schedule &rarr;</a></div>
+</div>
+</div>
+
+<div style="margin:32px 0 8px;">
+<h2 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;margin:0 0 16px;font-size:20px;border-bottom:2px solid #DAD3C2;padding-bottom:10px;">Senior Development Programs &middot; Ages 13+</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;">
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:20px 22px;box-shadow:0 4px 14px rgba(10,46,63,0.08);">
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:17px;margin:0 0 10px;">Senior Development</h3>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;"><span style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:11px;background:#0A2E3F;color:#FFFFFF;border-radius:5px;padding:3px 9px;">6x/Week</span> <span style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:11px;background:#136B77;color:#FFFFFF;border-radius:5px;padding:3px 9px;">Ages 14+ (ideal 14)</span></div>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;color:#4B5B60;margin:0 0 14px;">Regional/Development Track</p>
+<a href="https://www.rowswimming.ca/page/programs/seoul" style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;font-weight:700;color:#136B77;text-decoration:none;" target="_blank">View Full Schedule &rarr;</a></div>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:20px 22px;box-shadow:0 4px 14px rgba(10,46,63,0.08);">
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:17px;margin:0 0 10px;">Provincial Development 1</h3>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;"><span style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:11px;background:#0A2E3F;color:#FFFFFF;border-radius:5px;padding:3px 9px;">7x/Week</span> <span style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:11px;background:#136B77;color:#FFFFFF;border-radius:5px;padding:3px 9px;">Ages 13+ (ideal 14+)</span></div>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;color:#4B5B60;margin:0 0 14px;">Provincial Track</p>
+<a href="https://www.rowswimming.ca/page/programs/provincial-development-1" style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;font-weight:700;color:#136B77;text-decoration:none;" target="_blank">View Full Schedule &rarr;</a></div>
+
+<div style="background:#FFFFFF;border:1px solid #DAD3C2;border-radius:12px;padding:20px 22px;box-shadow:0 4px 14px rgba(10,46,63,0.08);">
+<h3 style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.01em;color:#0A2E3F;font-size:17px;margin:0 0 10px;">National Development</h3>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;"><span style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:11px;background:#0A2E3F;color:#FFFFFF;border-radius:5px;padding:3px 9px;">8x/Week</span> <span style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:11px;background:#136B77;color:#FFFFFF;border-radius:5px;padding:3px 9px;">Ages 14+ (ideal 15+)</span></div>
+
+<p style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;color:#4B5B60;margin:0 0 14px;">Provincial/National Track</p>
+<a href="https://www.rowswimming.ca/page/programs/national-development" style="font-family:Arial, Helvetica, sans-serif;font-size:13.5px;font-weight:700;color:#136B77;text-decoration:none;" target="_blank">View Full Schedule &rarr;</a></div>
+</div>
+</div>
+</div>

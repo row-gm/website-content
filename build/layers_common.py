@@ -249,12 +249,12 @@ def layer_state(key, current=None):
 # Rebuilt August 2026 from the 2026-27 Program Structure Executive Summary.
 #
 # WHAT CHANGED, and why old names must not survive anywhere:
-#   TOPS 1 / TOPS 2      ->  TOPS 3x / TOPS 2x   (named for sessions, not rank)
-#   AGD1 / AGD2          ->  AGD 14&U / AGD 12&U (named for age band)
+#   TOPS 1 / TOPS 2      ->  TOPS 1 / TOPS 2   (named for sessions, not rank)
+#   AGD1 / AGD2          ->  AGD 1 / AGD 2 (named for age band)
 #   LTCS                 ->  ROW Swim Academy
 #   RSA Age Group        ->  retired, absorbed into Regional and Recreation
 #   RSA Competitive      ->  retired, same
-#   new                  ->  Recreation pathway, REC-AG 14&U and REC-AG 18&U
+#   new                  ->  Recreation pathway, REC PM and REC AM
 #   new                  ->  SD, PD1, PD2, PD3 and ND carry their age band
 #
 # SIX pathways now, not three streams plus two pre-stream pathways. The summary
@@ -265,19 +265,19 @@ def layer_state(key, current=None):
 PROGRAMS = [
     ("Foundation",  "ROW Swim Academy",              "RSA",          "3 class options",
      "Saturday, 40 minutes each"),
-    ("Junior",      "TOPS 2x",                       "TOPS 2x",      "2",  "2.0"),
-    ("Junior",      "TOPS 3x",                       "TOPS 3x",      "3",  "3.0"),
+    ("Junior",      "TOPS 2",                       "TOPS 2",      "2",  "2.0"),
+    ("Junior",      "TOPS 1",                       "TOPS 1",      "3",  "3.0"),
     ("Junior",      "Junior Development 2",          "JD2",          "3",  "4.0"),
     ("Junior",      "Junior Development 1",          "JD1",          "4",  "5.5"),
-    ("Recreation",  "REC-AG 14&U",                   "REC-AG 14&U",  "3",  "3.5"),
-    ("Recreation",  "REC-AG 18&U",                   "REC-AG 18&U",  "5",  "7.5"),
-    ("Regional",    "Age Group Development 12&U",    "AGD 12&U",     "4",  "5.5"),
-    ("Regional",    "Age Group Development 14&U",    "AGD 14&U",     "5",  "7.5"),
-    ("Regional",    "Senior Development 18&U",       "SD 18&U",      "6",  "9.0"),
-    ("Provincial",  "Provincial Development 3 12&U", "PD3 12&U",     "5",  "7.5"),
-    ("Provincial",  "Provincial Development 2 14&U", "PD2 14&U",     "6",  "9.0"),
-    ("Provincial",  "Provincial Development 1 18&U", "PD1 18&U",     "7",  "12.0"),
-    ("National",    "National Development 18&U",     "ND 18&U",      "8",  "14.0"),
+    ("Recreation",  "REC PM",                   "REC PM",  "3",  "3.5"),
+    ("Recreation",  "REC AM",                   "REC AM",  "5",  "7.5"),
+    ("Regional",    "Age Group Development 2",    "AGD 2",     "4",  "5.5"),
+    ("Regional",    "Age Group Development 1",    "AGD 1",     "5",  "7.5"),
+    ("Regional",    "Senior Development",       "SD",      "6",  "9.0"),
+    ("Provincial",  "Provincial Development 3", "PD3",     "5",  "7.5"),
+    ("Provincial",  "Provincial Development 2", "PD2",     "6",  "9.0"),
+    ("Provincial",  "Provincial Development 1", "PD1",     "7",  "12.0"),
+    ("National",    "National Development",     "ND",      "8",  "14.0"),
 ]
 
 PATHWAYS = ["Foundation", "Junior", "Recreation", "Regional", "Provincial", "National"]
@@ -292,34 +292,34 @@ def pathway(name):
 PATHWAY_PEAKS = [
     ("Foundation",  "ROW Swim Academy",
      "None. Learning to swim, and learning to like it."),
-    ("Junior",      "TOPS 2x, TOPS 3x, JD2, JD1",
+    ("Junior",      "TOPS 2, TOPS 1, JD2, JD1",
      "They race to learn and practise skills."),
-    ("Recreation",  "REC-AG 14&U, REC-AG 18&U",
+    ("Recreation",  "REC PM, REC AM",
      "None. Technique, fitness and a group to be part of."),
-    ("Regional",    "AGD 12&U, AGD 14&U, SD 18&U",
+    ("Regional",    "AGD 2, AGD 1, SD",
      "Western Regional Championships"),
-    ("Provincial",  "PD3 12&U, PD2 14&U, PD1 18&U",
+    ("Provincial",  "PD3, PD2, PD1",
      "OAG short course, OSC long course"),
-    ("National",    "ND 18&U",
+    ("National",    "ND",
      "Swimming Canada Trials and Nationals"),
 ]
 
 # Week structure follows sessions per week, not age band.
 LOAD_BANDS = [
-    ("1 to 3", "RSA, TOPS 2x, TOPS 3x, JD2, REC-AG 14&U"),
-    ("4 to 5", "JD1, AGD 12&U, AGD 14&U, PD3 12&U, REC-AG 18&U"),
-    ("6",      "SD 18&U, PD2 14&U"),
-    ("7 to 8", "PD1 18&U, ND 18&U"),
+    ("1 to 3", "RSA, TOPS 2, TOPS 1, JD2, REC PM"),
+    ("4 to 5", "JD1, AGD 2, AGD 1, PD3, REC AM"),
+    ("6",      "SD, PD2"),
+    ("7 to 8", "PD1, ND"),
 ]
 
 # Zones and phases follow the &Under band. Competitive groups only: the
 # Recreation pathway is not built around peaking or zone percentages, and how
 # far the framework applies to it is an open question for the coaching staff.
 AGE_BANDS = [
-    ("10&U", "TOPS 2x, TOPS 3x"),
-    ("12&U", "JD2, JD1, AGD 12&U, PD3 12&U"),
-    ("14&U", "AGD 14&U, PD2 14&U"),
-    ("18&U", "SD 18&U, PD1 18&U, ND 18&U"),
+    ("10&U", "TOPS 2, TOPS 1"),
+    ("12&U", "JD2, JD1, AGD 2, PD3"),
+    ("14&U", "AGD 1, PD2"),
+    ("18&U", "SD, PD1, ND"),
 ]
 
 # Program pages. Slug matches the nav label, per rule 0. Replaces the older
@@ -332,19 +332,19 @@ PROGRAMS_TREE = f"{BASE}/page/programs"
 
 PROGRAM_SLUGS = {
     "RSA":         "row-swim-academy",
-    "TOPS 2x":     "tops",
-    "TOPS 3x":     "tops",
+    "TOPS 2":     "tops",
+    "TOPS 1":     "tops",
     "JD2":         "junior-development",
     "JD1":         "junior-development",
-    "REC-AG 14&U": "recreation",
-    "REC-AG 18&U": "recreation",
-    "AGD 12&U":    "age-group-development",
-    "AGD 14&U":    "age-group-development",
-    "SD 18&U":     "senior-development",
-    "PD3 12&U":    "provincial-development-3",
-    "PD2 14&U":    "provincial-development-2",
-    "PD1 18&U":    "provincial-development-1",
-    "ND 18&U":     "national-development",
+    "REC PM": "recreation",
+    "REC AM": "recreation",
+    "AGD 2":    "age-group-development",
+    "AGD 1":    "age-group-development",
+    "SD":     "senior-development",
+    "PD3":    "provincial-development-3",
+    "PD2":    "provincial-development-2",
+    "PD1":    "provincial-development-1",
+    "ND":     "national-development",
 }
 
 
@@ -353,9 +353,148 @@ def program_url(short):
     return f"{PROGRAMS_TREE}/{PROGRAM_SLUGS[short]}"
 
 
+# ===================== RSA: sessions and classes =====================
+# The ROW Swim Academy uses two words the rest of the club does not:
+#
+#   SESSION  a ten week block of registration. Three a year: fall, winter, spring.
+#   CLASS    the individual Saturday activity, forty minutes.
+#
+# NOTE: "session" therefore means a ten week block at the Academy and a single
+# pool visit everywhere else. That is the club's usage, recorded here so nobody
+# tries to reconcile the two. On an Academy page, say class for the Saturday
+# activity and session for the registration block, and nothing else.
+RSA_TERMS = {"session": "a ten week block of registration, three a year",
+             "class": "the Saturday activity, forty minutes"}
+
+RSA_SESSIONS = ["Fall", "Winter", "Spring"]
+
+
+# ============== What your swimmer gets, by pathway and stage ==============
+# Positive terms only, and no absolutes. An earlier version defined three of
+# these by what they
+# were not: "not doing the same set", "not when time allows", "not a results
+# printout". A family reading a promise should not have to work out what was
+# being denied.
+#
+# Words like every, always and all are also out. They set the expectation as a
+# guarantee, and a guarantee is what gets held against the club on the one week
+# it cannot be met. These describe how the program is built instead.
+#
+# Scope set by the club, August 2026:
+#   Testing              every group except RSA, Recreation included
+#   Race plans & reviews every group except RSA and Recreation
+#
+# NOTE: the coach hub still lists Testing and Progress, and Racing and Meet
+# Strategy, as PLANNED. These are now public commitments, so that status needs
+# revisiting.
+GETS = {
+ "foundation": [
+  ("A written session plan", "What the classes work on through the ten weeks, shared with\n                            families."),
+  ("A coach on the lane", "One coach per lane, so your swimmer is seen through the class."),
+  ("Work at your own level", "Beginner, intermediate and advanced run together, so a swimmer "
+                             "works at their level and moves up when they are ready."),
+  ("Skills in a set order", "Floating, breathing, front crawl, back crawl and jumping in, "
+                            "taught on a published schedule."),
+  ("Feedback as you go", "What they worked on that morning, from the coach on deck."),
+ ],
+ "junior_tops": [
+  ("A written season plan", "The phases, the skills and the goals for the group, shared with "
+                            "families."),
+  ("A coach on the lane", "Three lanes, five swimmers a lane, a coach per lane."),
+  ("Work set for your swimmer", "Sets adjusted lane by lane, so swimmers work at the right "
+                                "effort for them."),
+  ("Skills on a schedule", "The four strokes, starts, turns and streamline, in a published "
+                           "order."),
+  ("Video they can see themselves in", "Underwater footage, shown to the swimmer."),
+  ("A GoSwim account", "Thousands of videos of age group and elite swimmers, so a skill can be "
+                       "seen before it is tried."),
+  ("Club testing", "The same tests in the same conditions through the season, so a swimmer can "
+                   "see their own progress."),
+  ("A race plan and a review", "Something to aim for before the race, and afterwards what went "
+                               "well and what to change next time."),
+  ("Two progress conversations a year", "With the swimmer and the family, about the goals set "
+                                        "for the phase."),
+ ],
+ "junior_jd": [
+  ("A written season plan", "The phases, the technical priorities and the goals for the group, "
+                            "shared with families."),
+  ("Work set for your swimmer", "Interval, distance and target set so a lane trains together, "
+                                "with swimmers at the right effort for them."),
+  ("Skills on a schedule", "The four strokes, starts, turns, streamline and underwaters, in a "
+                           "published order."),
+  ("Video they can see themselves in", "Underwater footage, shown to the swimmer."),
+  ("A GoSwim account", "Thousands of videos of age group and elite swimmers, so a skill can be "
+                       "seen before it is tried."),
+  ("Dryland with a plan and an owner", "Age-appropriate movement and strength, with someone "
+                                       "accountable for it."),
+  ("Club testing", "The same tests in the same conditions at set points in the season, so "
+                   "progress is measured the same way each time it is taken."),
+  ("Race plans and reviews", "A plan going in and a review afterwards, so a meet teaches "
+                             "something whatever the clock said."),
+  ("Two progress conversations a year", "With the swimmer and the family, about the goals set "
+                                        "for the phase."),
+ ],
+ "recreation": [
+  ("A written season plan", "What the group works on through the year."),
+  ("Four or fewer to a lane", "The smallest lanes in the club, so there is room to work."),
+  ("Your own pace and your own goals", "In a shared lane, at whatever level you arrive at."),
+  ("Skills on a schedule", "Technique taught in a published order, the same way as the "
+                           "competitive groups."),
+  ("Video they can see themselves in", "Underwater footage, shown to the swimmer."),
+  ("A GoSwim account", "So a skill can be seen before it is tried."),
+  ("Club testing", "The same tests the competitive groups do, so you can see your own progress "
+                   "across a season."),
+  ("Two progress conversations a year", "About what your swimmer wants from their swimming."),
+ ],
+ "regional": [
+  ("A written season plan", "The phases, the technical priorities and the objectives, with the "
+                            "peak meet named before the season starts."),
+  ("Work set for your swimmer", "The same set with a different prescription: interval, "
+                                "distance, target and stroke set to the swimmer."),
+  ("Skills on a schedule", "Starts, turns, underwaters and stroke mechanics on a published "
+                           "cycle."),
+  ("Video they can see themselves in", "Underwater footage, shown to the swimmer."),
+  ("A GoSwim account", "For swimmers and coaches across the club."),
+  ("Dryland with a plan and an owner", "Strength and movement matched to the swimmer&rsquo;s "
+                                       "stage."),
+  ("Club testing", "The same tests in the same conditions at set points in the season, so "
+                   "results follow a swimmer as they move up and set their training targets."),
+  ("Race plans and reviews", "A plan going in and a review afterwards, so a meet teaches "
+                             "something whatever the clock said."),
+  ("Two progress conversations a year", "With the swimmer and the family, against the "
+                                        "objectives set for the phase."),
+ ],
+ "provincial": [
+  ("A written season plan", "Built around named peak meets, with the phases mapped week by "
+                            "week."),
+  ("Work set for your swimmer", "Individual targets, and events planned per swimmer against the "
+                                "season map."),
+  ("Skills on a schedule", "Starts, turns, underwaters and stroke mechanics on a published "
+                           "cycle."),
+  ("Video they can see themselves in", "Underwater footage, shown to the swimmer."),
+  ("A GoSwim account", "For swimmers and coaches across the club."),
+  ("Dryland with a plan and an owner", "Strength and movement matched to the swimmer&rsquo;s "
+                                       "stage."),
+  ("Small lanes as the level rises", "ND trains four to a lane, PD1 at five."),
+  ("Club testing", "The same tests in the same conditions at set points in the season, and the "
+                   "results set individual training targets."),
+  ("Race plans and reviews", "Plans by event, a warm-up routine, and a review after the meet."),
+  ("Two progress conversations a year", "With the swimmer and the family, against the "
+                                        "objectives set for the phase."),
+ ],
+}
+
+# Which list each group page uses.
+GETS_FOR = {"RSA": "foundation", "TOPS 1": "junior_tops", "TOPS 2": "junior_tops",
+            "JD1": "junior_jd", "JD2": "junior_jd", "Recreation": "recreation",
+            "AGD 1": "regional", "AGD 2": "regional", "SD": "regional",
+            "PD1": "provincial", "PD2": "provincial", "PD3": "provincial",
+            "ND": "provincial"}
+
+
 # ===================== Program pages, 2026-27 =====================
 # One page per group. Recreation is the single exception: one page carrying both
-# REC-AG options, at the club's direction.
+# Recreation options, at the club's direction.
 #
 # Schedules are from ROW_2026-27_Group_Schedules_12h_v26, the current version.
 # Every page prints DRAFT, NOT YET FINAL above its schedule.
@@ -364,7 +503,7 @@ def program_url(short):
 # abbreviated form. TBC where the summary names no one.
 # (day, time, pool, lanes)
 SCHEDULES = {
-    "ND 18&U": [("Mon", "4:00-6:00 pm", "WLU deep end", "3"),
+    "ND": [("Mon", "4:00-6:00 pm", "WLU deep end", "3"),
                 ("Tue", "6:00-7:30 am", "WLU deep end", "3"),
                 ("Tue", "4:00-6:00 pm", "WLU deep end", "3"),
                 ("Wed", "6:00-7:30 am &middot; 50 m", "WLU deep end", "2"),
@@ -372,36 +511,36 @@ SCHEDULES = {
                 ("Thu", "4:00-5:30 pm", "WLU deep end", "3"),
                 ("Fri", "6:00-7:30 am &middot; 50 m", "WLU deep end", "2"),
                 ("Sat", "6:00-8:00 am", "WLU deep end", "3")],
-    "PD1 18&U": [("Mon", "4:00-6:00 pm", "WLU deep end", "3"),
+    "PD1": [("Mon", "4:00-6:00 pm", "WLU deep end", "3"),
                  ("Tue", "6:00-7:30 am", "WLU deep end", "3"),
                  ("Wed", "6:00-7:30 am &middot; 50 m", "WLU deep end", "2"),
                  ("Wed", "4:00-6:00 pm", "WLU deep end", "3"),
                  ("Thu", "4:00-5:30 pm", "WLU deep end", "3"),
                  ("Fri", "6:00-7:30 am &middot; 50 m", "WLU deep end", "2"),
                  ("Sat", "6:00-8:00 am", "WLU deep end", "3")],
-    "PD2 14&U": [("Mon", "6:00-7:30 pm", "WLU deep end", "3"),
+    "PD2": [("Mon", "6:00-7:30 pm", "WLU deep end", "3"),
                  ("Tue", "4:30-6:00 pm", "WLU deep end", "3"),
                  ("Wed", "6:00-7:30 am &middot; 50 m", "WLU deep end", "2"),
                  ("Thu", "4:30-6:00 pm", "WLU shallow end", "3"),
                  ("Fri", "6:00-7:30 am &middot; 50 m", "WLU deep end", "2"),
                  ("Sat", "6:30-8:00 am", "WLU shallow end", "3")],
-    "PD3 12&U": [("Mon", "6:00-7:30 pm", "WLU deep end", "3"),
+    "PD3": [("Mon", "6:00-7:30 pm", "WLU deep end", "3"),
                  ("Tue", "4:30-6:00 pm", "WLU shallow end", "3"),
                  ("Thu", "4:30-6:00 pm", "WLU shallow end", "3"),
                  ("Fri", "4:30-6:00 pm", "WLU shallow end", "3"),
                  ("Sat", "6:30-8:00 am", "WLU shallow end", "3")],
-    "SD 18&U": [("Mon", "6:00-7:30 am", "WLU deep end", "6"),
+    "SD": [("Mon", "6:00-7:30 am", "WLU deep end", "6"),
                 ("Tue", "6:00-7:30 pm", "WLU deep end", "6"),
                 ("Wed", "4:30-6:00 pm", "WLU shallow end", "6"),
                 ("Thu", "6:00-7:30 am", "WLU deep end", "6"),
                 ("Fri", "4:30-6:00 pm", "WLU deep end", "6"),
                 ("Sat", "6:00-7:30 am", "Cameron Heights", "6")],
-    "AGD 14&U": [("Mon", "6:00-7:30 pm", "Cameron Heights", "6"),
+    "AGD 1": [("Mon", "6:00-7:30 pm", "Cameron Heights", "6"),
                  ("Wed", "6:00-7:30 pm", "WLU deep end", "6"),
                  ("Thu", "6:00-7:30 pm", "WLU shallow end", "6"),
                  ("Fri", "6:00-7:30 pm", "WLU deep end", "6"),
                  ("Sat", "8:00-9:30 am", "WLU deep end", "6")],
-    "AGD 12&U": [("Mon", "4:30-6:00 pm", "Cameron Heights", "6"),
+    "AGD 2": [("Mon", "4:30-6:00 pm", "Cameron Heights", "6"),
                  ("Wed", "6:00-7:30 pm", "WLU shallow end", "6"),
                  ("Fri", "6:00-7:30 pm", "WLU shallow end", "6"),
                  ("Sat", "9:30-10:30 am", "WLU deep end", "6")],
@@ -412,67 +551,74 @@ SCHEDULES = {
     "JD2": [("Mon", "6:30-7:30 pm", "WLU shallow end", "3"),
             ("Thu", "6:30-8:00 pm", "WLU deep end", "3"),
             ("Sat", "8:00-9:30 am", "WLU shallow end", "3")],
-    "RSA": [("Sat", "7:30-10:00 am", "Cameron Heights", "6")],
+    "RSA": [("Sat", "Time slot 1: 7:45-8:25 am<br />Time slot 2: 8:30-9:10 am<br />Time slot 3: 9:15-9:55 am", "Cameron Heights", "6")],
 }
 
 # Group size, worked out from the lanes on each schedule and the swimmers per
 # lane in THE RULES WE APPLIED in the Executive Summary:
 #   ND 4 to a lane, PD1 and SD 5, PD2 PD3 JD1 JD2 6, both AGD 5.8, TOPS 5,
-#   REC-AG 4 or fewer. In the 50 m pool ND 6, PD1 7.5, PD2 9.
+#   REC 4 or fewer. In the 50 m pool ND 6, PD1 7.5, PD2 9.
 #
 # Most come out as a single number because the rule is a whole number and the
 # lane count does not change. Ranges appear only where the rule itself gives one:
-# AGD averages 5.8 a lane, so lanes run at 5 or 6, and the REC-AG groups are
+# AGD averages 5.8 a lane, so lanes run at 5 or 6, and the REC groups are
 # capped rather than targeted.
 # (size, how it is worked out)
 GROUP_SIZE = {
-    "ND 18&U":     ("12",        "3 lanes at 4 a lane. In the 50 m pool, 2 lanes at 6."),
-    "PD1 18&U":    ("15",        "3 lanes at 5 a lane. In the 50 m pool, 2 lanes at 7.5."),
-    "PD2 14&U":    ("18",        "3 lanes at 6 a lane. In the 50 m pool, 2 lanes at 9."),
-    "PD3 12&U":    ("18",        "3 lanes at 6 a lane."),
-    "SD 18&U":     ("30",        "6 lanes at 5 a lane."),
-    "AGD 14&U":    ("30 to 36",  "6 lanes averaging 5.8 a lane, so lanes run at 5 or 6."),
-    "AGD 12&U":    ("30 to 36",  "6 lanes averaging 5.8 a lane, so lanes run at 5 or 6."),
+    "ND":     ("12",        "3 lanes at 4 a lane. In the 50 m pool, 2 lanes at 6."),
+    "PD1":    ("15",        "3 lanes at 5 a lane. In the 50 m pool, 2 lanes at 7.5."),
+    "PD2":    ("18",        "3 lanes at 6 a lane. In the 50 m pool, 2 lanes at 9."),
+    "PD3":    ("18",        "3 lanes at 6 a lane."),
+    "SD":     ("30",        "6 lanes at 5 a lane."),
+    "AGD 1":    ("30 to 36",  "6 lanes averaging 5.8 a lane, so lanes run at 5 or 6."),
+    "AGD 2":    ("30 to 36",  "6 lanes averaging 5.8 a lane, so lanes run at 5 or 6."),
     "JD1":         ("18",        "3 lanes at 6 a lane."),
     "JD2":         ("18",        "3 lanes at 6 a lane."),
-    "TOPS 3x":     ("15 an option", "3 lanes at 5 a lane, with a coach for every lane. "
+    "TOPS 1":     ("15 an option", "3 lanes at 5 a lane, a coach per lane. "
                                     "30 across both options."),
-    "TOPS 2x":     ("15 an option", "3 lanes at 5 a lane, with a coach for every lane. "
+    "TOPS 2":     ("15 an option", "3 lanes at 5 a lane, a coach per lane. "
                                     "45 across all three options."),
     "Recreation":  ("up to 24 and up to 32",
-                    "REC-AG 14&U is 6 lanes at 4 or fewer. REC-AG 18&U runs 5 lanes on Monday "
+                    "REC PM is 6 lanes at 4 or fewer. REC AM runs 5 lanes on Monday "
                     "and Friday and 8 from Tuesday to Thursday, at 4 or fewer."),
-    "RSA":         ("30 a class, 90 in total",
-                    "6 lanes at about 5 a lane, with a coach for every lane, across three "
-                    "Saturday classes."),
+    "RSA":         ("30 a class, 90 in total", "4 to 6 per lane, 1 coach per lane."),
 }
 
 # Groups offered in more than one schedule option. label -> rows.
 OPTIONS = {
-    "TOPS 3x": [("Option 1", [("Mon", "4:30-5:30 pm", "WLU shallow end", "3"),
+    "TOPS 1": [("Option 1", [("Mon", "4:30-5:30 pm", "WLU shallow end", "3"),
                               ("Tue", "6:00-7:00 pm", "WLU shallow end", "3"),
                               ("Thu", "5:30-6:30 pm", "WLU deep end", "3")]),
                 ("Option 2", [("Mon", "5:30-6:30 pm", "WLU shallow end", "3"),
                               ("Wed", "7:00-8:00 pm", "Cameron Heights", "3"),
                               ("Fri", "7:00-8:00 pm", "Cameron Heights", "3")])],
-    "TOPS 2x": [("Option 1", [("Mon", "5:30-6:30 pm", "WLU shallow end", "3"),
+    "TOPS 2": [("Option 1", [("Mon", "5:30-6:30 pm", "WLU shallow end", "3"),
                               ("Wed", "7:00-8:00 pm", "Cameron Heights", "3")]),
                 ("Option 2", [("Tue", "6:00-7:00 pm", "WLU shallow end", "3"),
                               ("Fri", "7:00-8:00 pm", "Cameron Heights", "3")]),
                 ("Option 3", [("Mon", "4:30-5:30 pm", "WLU shallow end", "3"),
                               ("Thu", "5:30-6:30 pm", "WLU deep end", "3")])],
-    "Recreation": [("REC-AG 14&U &middot; 3 sessions, 3.5 hours a week",
+    "Recreation": [("REC PM &middot; evenings &middot; 3 sessions, 3.5 hours a week",
                     [("Mon", "7:30-9:00 pm", "Cameron Heights", "6"),
                      ("Wed", "8:00-9:00 pm", "Cameron Heights", "6"),
                      ("Fri", "8:00-9:00 pm", "Cameron Heights", "6")]),
-                   ("REC-AG 18&U &middot; 5 sessions, 7.5 hours a week, "
-                    "attend the mornings that suit you",
+                   ("REC AM &middot; mornings &middot; 5 sessions, 7.5 hours a week, "
+                    "attend the ones that suit you",
                     [("Mon", "6:00-7:30 am", "Rec Complex", "5"),
                      ("Tue", "6:00-7:30 am", "Rec Complex", "8"),
                      ("Wed", "6:00-7:30 am", "Rec Complex", "8"),
                      ("Thu", "6:00-7:30 am", "Rec Complex", "8"),
                      ("Fri", "6:00-7:30 am", "Rec Complex", "5")])],
 }
+
+# Chip labels, where a group does not fit the default row. RSA is the only one:
+# it has classes and a class length, not sessions and hours a week.
+CHIP_OVERRIDE = {
+    "RSA": [("Pathway", None), ("Classes", "3 options each Saturday"),
+            ("Class length", "40 minutes"), ("Group size", None),
+            ("Lead coach", None), ("Session dates", "TBC")],
+}
+
 
 # (slug, H1, pathway, schedule key, lead coach, sessions, hours, blurb)
 PROGRAM_PAGES = [
@@ -481,58 +627,67 @@ PROGRAM_PAGES = [
   "Where a swimmer starts. A FUNdamentals program for younger swimmers who want a taste of "
   "competitive swimming through a club. The aim is strong technique and water skills that carry "
   "into our junior programs. Saturday mornings at Cameron Heights, with beginner, intermediate "
-  "and advanced levels running together in every class."),
- ("tops-2x", "TOPS 2x", "Junior", "TOPS 2x", "Kaitlyn M", "2", "2.0",
-  "A first taste of training as a group, twice a week. Three schedule options so families can "
-  "pick what suits them. Every option runs three lanes, five swimmers to a lane, with a coach "
-  "for every lane."),
- ("tops-3x", "TOPS 3x", "Junior", "TOPS 3x", "Kaitlyn M", "3", "3.0",
-  "The same program as TOPS 2x with an extra session a week. Two schedule options. Every option "
-  "runs three lanes, five swimmers to a lane, with a coach for every lane."),
+  "and advanced levels together in the same class. Registration runs in ten week "
+  "sessions, three a year: fall, winter and spring."),
+ ("tops-2", "TOPS 2", "Junior", "TOPS 2", "Kaitlyn M", "2", "2.0",
+  "A first taste of training as a group, twice a week, for swimmers around the 10 and under "
+  "age band. Three schedule options so families can "
+  "pick what suits them. Options run three lanes, five swimmers to a lane, with a coach "
+  "per lane."),
+ ("tops-1", "TOPS 1", "Junior", "TOPS 1", "Kaitlyn M", "3", "3.0",
+  "The same program as TOPS 2 with an extra session a week, for swimmers around the 10 and "
+  "under age band. Two schedule options, each running three lanes, five swimmers to a "
+  "lane, with a coach per lane."),
  ("junior-development-2", "Junior Development 2", "Junior", "JD2", "Kaitlyn M", "3", "4.0",
-  "Stroke technique, starts and turns, and a first look at racing strategy. JD2 trains alongside "
+  "For swimmers around the 12 and under age band. Stroke technique, starts and turns, and a "
+  "first look at racing strategy. JD2 trains alongside "
   "JD1 on Monday, Thursday and Saturday with three lanes each, so a swimmer ready to move up does "
   "not have to change everything at once. Swimmers race at local and regional meets."),
  ("junior-development-1", "Junior Development 1", "Junior", "JD1", "Kaitlyn M", "4", "5.5",
-  "The step up from JD2, with a fourth session a week. Stroke technique, starts and turns, and "
+  "The step up from JD2, for swimmers around the 12 and under age band, with a fourth session "
+  "a week. Stroke technique, starts and turns, and "
   "racing strategy. JD1 and JD2 train alongside each other on Monday, Thursday and Saturday. "
   "Swimmers race at local, regional and provincial meets."),
  ("recreation", "Recreation", "Recreation", "Recreation", "TBC", "3 or 5", "3.5 or 7.5",
-  "For swimmers who want to keep swimming without the competitive commitment. Technique, fitness, "
-  "and a group to belong to. Two options: REC-AG 14&U trains three evenings a week at Cameron "
-  "Heights, and REC-AG 18&U has five available mornings at the Rec Complex with swimmers "
-  "attending the ones that suit them."),
- ("age-group-development-12u", "Age Group Development 12&U", "Regional", "AGD 12&U", "TBC",
+  "For swimmers up to 18 who want to keep swimming without the competitive commitment. Technique, "
+  "fitness, and a group to belong to. Two options, and the only difference is when they train. "
+  "<strong>REC PM</strong> is three evenings a week at Cameron Heights. <strong>REC AM</strong> "
+  "has five available mornings at the Rec Complex; swimmers attend the ones that suit them."),
+ ("age-group-development-2", "Age Group Development 2", "Regional", "AGD 2", "TBC",
   "4", "5.5",
-  "The first competitive group, for swimmers around the 12&U band. Refining technique and "
+  "The first competitive group, for swimmers around the 12 and under age band. Refining "
+  "technique and "
   "training skills to compete at the regional level. Evenings only, with no weekday mornings, and "
   "its own lead coach."),
- ("age-group-development-14u", "Age Group Development 14&U", "Regional", "AGD 14&U", "TBC",
+ ("age-group-development-1", "Age Group Development 1", "Regional", "AGD 1", "TBC",
   "5", "7.5",
-  "The step up from AGD 12&U, with a fifth session a week. Refining technique and training skills "
-  "to compete at the regional and provincial level. Evenings only, with no weekday mornings, and "
-  "its own lead coach."),
- ("senior-development", "Senior Development", "Regional", "SD 18&U", "Tyson M", "6", "9.0",
-  "Refining technique and training habits to compete at the regional and provincial level, with "
-  "dryland alongside the swimming. SD trains Saturday mornings at Cameron Heights, and its "
-  "swimmers coach the ROW Swim Academy immediately afterwards."),
- ("provincial-development-3", "Provincial Development 3", "Provincial", "PD3 12&U", "Isabelle D",
+  "The step up from AGD 2, for swimmers around the 14 and under age band, with a fifth session "
+  "a week. Refining technique and training skills to compete at the regional and provincial "
+  "level. Evenings only, with no weekday mornings, and its own lead coach."),
+ ("senior-development", "Senior Development", "Regional", "SD", "Tyson M", "6", "9.0",
+  "For swimmers around the 18 and under age band. Refining technique and training habits to "
+  "compete at the regional and provincial level, with dryland alongside the swimming. SD trains "
+  "Saturday mornings at Cameron Heights, and its swimmers coach the ROW Swim Academy immediately "
+  "afterwards."),
+ ("provincial-development-3", "Provincial Development 3", "Provincial", "PD3", "Isabelle D",
   "5", "7.5",
-  "Stroke technique, starts and turns, and racing strategy, with the goal of competing at the "
-  "provincial level. Five sessions a week with no weekday mornings."),
- ("provincial-development-2", "Provincial Development 2", "Provincial", "PD2 14&U", "Tyson M",
+  "For swimmers around the 12 and under age band. Stroke technique, starts and turns, and "
+  "racing strategy, with the goal of competing at the provincial level. Five sessions a week "
+  "with no weekday mornings."),
+ ("provincial-development-2", "Provincial Development 2", "Provincial", "PD2", "Tyson M",
   "6", "9.0",
-  "Building on PD3 with more time in the water and more racing. Six sessions a week, including "
-  "two weekday mornings and 50 metre training twice a week."),
- ("provincial-development-1", "Provincial Development 1", "Provincial", "PD1 18&U", "Ron F",
-  "7", "12.0",
-  "Stroke skill mastery, goal setting and racing strategy, aiming at Provincial and Canadian Age "
-  "Group Championships. Seven sessions a week with three weekday mornings, one double day, and "
-  "50 metre training twice a week."),
- ("national-development", "National Development", "National", "ND 18&U", "Ron F", "8", "14.0",
-  "The top of the pathway, for swimmers aiming at the provincial, national and international "
-  "level. Eight sessions a week, three weekday mornings, two double days, and 50 metre training "
+  "Building on PD3, for swimmers around the 14 and under age band. More time in the water and "
+  "more racing: six sessions a week, including two weekday mornings and 50 metre training "
   "twice a week."),
+ ("provincial-development-1", "Provincial Development 1", "Provincial", "PD1", "Ron F",
+  "7", "12.0",
+  "For swimmers around the 18 and under age band. Stroke skill mastery, goal setting and "
+  "racing strategy, aiming at Provincial and Canadian Age Group Championships. Seven sessions "
+  "a week with three weekday mornings, one double day, and 50 metre training twice a week."),
+ ("national-development", "National Development", "National", "ND", "Ron F", "8", "14.0",
+  "The top of the pathway, for swimmers around the 18 and under age band aiming at the "
+  "provincial, national and international level. Eight sessions a week, three weekday "
+  "mornings, two double days, and 50 metre training twice a week."),
 ]
 
 

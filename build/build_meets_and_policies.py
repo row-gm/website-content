@@ -43,12 +43,15 @@ def under_review(what):
 
 
 def empty_table(headers, message):
-    """A category with nothing posted in it yet. The live pages do this, and it
-    is better than an empty page: a family can see what will live here."""
+    """A category with nothing posted in it yet. The headings show a family what
+    will live here, and the message sits underneath.
+
+    No colspan: only style and class are safe attributes on a td. The sanitizer
+    rejected data-label for the same reason.
+    """
     ths = "".join(f"<th>{h}</th>" for h in headers)
     return (f'<div class="row-scroll"><table class="row-table"><tbody><tr>{ths}</tr>'
-            f'<tr><td colspan="{len(headers)}" class="row-empty">{message}</td></tr>'
-            f'</tbody></table></div>')
+            f'</tbody></table></div>' + note(message))
 
 
 # ---------------------------------------------------------------------------

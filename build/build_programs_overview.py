@@ -20,16 +20,18 @@ from row_page_helpers import (
 )
 
 from layers_common import PROGRAMS, PATHWAYS, pathway, PATHWAY_PEAKS
+from row_diagrams import pathway_diagram, as_img
 
 
 PATHWAY_INTRO = {
     "Foundation": "Where a swimmer starts. Saturday mornings, forty minutes, and no racing. "
-                  "Every class runs the beginner, intermediate and advanced levels together.",
+                  "Classes run the beginner, intermediate and advanced levels together.",
     "Junior": "The first taste of training as a group. Volume and coaching go up step by step "
               "through TOPS and Junior Development. Swimmers race, but nothing is built around "
               "a championship.",
-    "Recreation": "For swimmers who want to keep swimming without the competitive commitment. "
-                  "Technique, fitness, and a group to belong to.",
+    "Recreation": "For swimmers up to 18 who want to keep swimming without the "
+                  "competitive commitment. Technique, fitness, and a group to belong to. The "
+                  "only difference between the two groups is when they train.",
     "Regional": "The first competitive pathway. Three levels that build on each other, with "
                 "age recommendations rather than hard cut-offs.",
     "Provincial": "For swimmers racing at the provincial level. More sessions, more mornings, "
@@ -47,7 +49,7 @@ PATHWAY_COLOUR = {
 page_hero = hero(
     "ROW Swim Club",
     "Programs Overview",
-    "Every group we offer for the 2026-27 season, from a first Saturday class to eight sessions "
+    "The groups we offer for the 2026-27 season, from a first Saturday class to eight sessions "
     "a week. Whether your swimmer is just starting or chasing a national standard, there is a "
     "place for them at ROW.")
 
@@ -61,6 +63,14 @@ intro = card(
            "confidence, discipline and friendships that last long after the season ends.")
     + body("The groups below are a starting point. When we place a swimmer we also look at "
            "maturity, attitude, and where they are in their own development.", margin="0")
+    + as_img(pathway_diagram(), "The six ROW pathways: Foundation at the base, Junior above "
+                                "it, and Recreation, Regional, Provincial and National rising "
+                                "from there")
+    + note("Read it from the bottom up. Swimmers start at Foundation, move through "
+           "Junior, then into Recreation, Regional or Provincial. National is reached from PD2 "
+           "or PD1 and from nowhere else. The dotted arrows are moves between pathways, and they run "
+           "both ways: Recreation is a different choice rather than a lower one. The red arrows "
+           "mark where a swimmer joins after an assessment.")
     + callout(
         "<strong>An age band is a stage, not a birthday.</strong> Where a swimmer sits close to "
         "the top of a band we will be flexible, so a swimmer who wants to compete is in the "
@@ -103,27 +113,27 @@ peaks_section = card(
 
 WHATS_NEW = [
     ("Age Group Development is now two groups",
-     "One group of about seventy becomes AGD 12&U at four sessions a week and AGD 14&U at five. "
+     "One group of about seventy becomes AGD 2 at four sessions a week and AGD 1 at five. "
      "Each has its own lead coach."),
     ("A Recreation pathway has been added",
-     "REC-AG 14&U trains three evenings a week at Cameron Heights. REC-AG 18&U has five "
-     "available mornings at the Rec Centre, and swimmers attend the ones that suit them."),
+     "REC PM trains three evenings a week at Cameron Heights. REC AM has five "
+     "available mornings at the Rec Complex, and swimmers attend the ones that suit them."),
     ("Junior Development is offered as JD1 and JD2",
      "JD1 trains four times a week and JD2 three. They train alongside each other on Monday, "
      "Thursday and Saturday, with three lanes each."),
     ("TOPS has more schedule options",
-     "TOPS 2x now has three schedule options and TOPS 3x has two. Every option runs three lanes, "
-     "five swimmers to a lane, with one coach for every lane."),
+     "TOPS 2 now has three schedule options and TOPS 1 has two. Options run three lanes, five "
+     "swimmers to a lane, with a coach per lane."),
     ("The ROW Swim Academy moves to Saturday only",
      "Three class options at Cameron Heights, each forty minutes: 7:45, 8:30 and 9:15."),
     ("Session times have been rebuilt",
      "Rather than adjust the old timetable we rebuilt the schedule around the water, the times "
-     "and the coaching we have. Every group schedule is published in full."),
+     "and the coaching we have. The group schedules are published in full."),
 ]
 
 whats_new = card(
     h2("What is new for 2026-27")
-    + lede("Every group keeps its name, and the pathways are unchanged. These are the changes "
+    + lede("The groups keep their names, and the pathways are unchanged. These are the changes "
            "families will notice.")
     + data_table(["Change", "What it means"], [[a, b] for a, b in WHATS_NEW])
     + note("Fees are published with the registration information in mid-August. Dryland "
@@ -132,23 +142,30 @@ whats_new = card(
 
 
 promise = card(
-    h2("What every group gets")
-    + lede("This applies to every competitive program, from TOPS upwards.")
+    h2("What your swimmer gets")
+    + lede("The commitments below hold across the competitive groups. Each group page sets out "
+           "what that looks like at that stage, and the Academy has its own list suited to a "
+           "Saturday class.")
     + data_table(
         ["What", "Detail"],
         [["A written season plan", "The phases, the technical priorities and the objectives for "
                                    "the group, shared with families."],
-         ["Work that fits the swimmer", "Sprint, middle distance and distance swimmers are not "
-                                        "doing the same set."],
-         ["Technical work on a plan", "Starts, turns, underwaters and stroke mechanics taught on "
-                                      "a named cycle, not when time allows."],
-         ["Underwater video", "Used on a regular cadence, with the footage shown to the swimmer."],
-         ["A GoSwim account", "For every swimmer outside the ROW Swim Academy, and every coach. "
-                              "Thousands of videos of age group and elite swimmers, so a swimmer "
-                              "can see a skill before they try it."],
-         ["Dryland with a plan", "And someone who owns it, for every group."],
-         ["Two progress conversations a year", "With the swimmer and the family, against the "
-                                               "objectives set at the start of the phase."]])
+         ["Work set for your swimmer", "Work is set for a swimmer&rsquo;s events and their stage, "
+                                       "inside the same set."],
+         ["Skills on a schedule", "Starts, turns, underwaters and stroke mechanics taught on a "
+                                  "published cycle, in a set order."],
+         ["Video they can see themselves in", "Underwater footage, shown to the swimmer."],
+         ["A GoSwim account", "For swimmers outside the ROW Swim Academy, and for coaches. "
+                              "Thousands of videos of age group and elite swimmers, so a skill "
+                              "can be seen before it is tried."],
+         ["Dryland with a plan and an owner", "And someone accountable for it, in the groups that "
+                                             "do it."],
+         ["Club testing", "The same tests in the same conditions, so progress is measured the "
+                          "same way across the club."],
+         ["Race plans and reviews", "A plan going in and a review afterwards, in the competitive "
+                                    "groups."],
+         ["Two progress conversations a year", "With the swimmer and the family, about the "
+                                              "objectives set for the phase."]])
 )
 
 

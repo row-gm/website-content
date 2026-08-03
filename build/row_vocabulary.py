@@ -66,10 +66,14 @@ RULES = [
      "Layer 3 is The Practice Session. Workout names an activity, not a thing.",
      FIX, 0),
 
+    # "Senior" is only wrong when it means the age band. Senior Development is a
+    # group, and senior coaches, senior officials and senior leadership are all
+    # ordinary English. A rule that flags those gets ignored.
     ("18&U",
-     [r"\bseniors?\b(?!\s+Development)"],
-     "18&U is the age band. Senior Development is a group name and is fine.",
-     CHECK, 0),
+     [r"\bseniors?\b(?!\s+(?:Development|coach|official|position|leadership|"
+      r"staff|management))"],
+     "18&U is the age band. Senior Development, senior coach and senior official "
+     "are all fine. A senior swimmer is not: that is an 18&U swimmer, or a\n     named group.", CHECK, 0),
 
     ("block / cycle",
      [r"\bmesocycle\b", r"\bmacrocycle\b", r"\bmicrocycle\b"],
@@ -89,6 +93,39 @@ RULES = [
       r"\b(?:Development|Provincial|Regional|National|Comp|Competitive|Senior|Junior)\s+Track\b",
       r"\bTracks\b"],
      "Pathway is the word for all six. Stream and Track are both retired.",
+     FIX, 0),
+
+    ("the assessment link in layers_common.py",
+     [r"team-registration\?reg_id", r"New Swimmer Tryouts",
+      r"Schedule a Swimmer Assessment"],
+     "One assessment link, one name. Use URL_ASSESSMENT from layers_common.py "
+     "and call it booking an assessment.", FIX, 0),
+
+    # Never send a family to a coach mid-session. A coach on deck is coaching.
+    ("before or after practice",
+     [r"(?:ask|talk to|speak to|catch)[^.]{0,40}\bon deck\b",
+      r"\bon deck\b[^.]{0,25}(?:if you have|with any question)"],
+     "Point families at before or after a practice, never at a coach on deck.",
+     FIX, 0),
+
+    # The club's promise, settled August 2026. Use PROMISE and MISSION from
+    # layers_common.py rather than retyping either one.
+    ("PROMISE and MISSION in layers_common.py",
+     [r"will cherish long after", r"experiences in competitive swimming"],
+     "Carry, not cherish. Through, not in. Both sentences live in "
+     "layers_common.py so they cannot drift again.", FIX, 0),
+
+    # DECISION, August 2026: group names carry a number, not a session count or
+    # an age band. TOPS 3x became TOPS 1 and TOPS 2x became TOPS 2, because the
+    # lower number is the higher level, matching JD1/JD2 and PD1/2/3. AGD 14&U
+    # became AGD 1 and AGD 12&U became AGD 2. The two Recreation groups are named
+    # for when they train: REC AM in the mornings, REC PM in the evenings.
+    ("the group name in layers_common.py",
+     [r"TOPS ?[23]x", r"AGD ?1[24]&U", r"REC-AG",
+      r"\b(?:SD|PD[123]|ND) ?1[248]&U\b",
+      r"(?:Senior|Provincial|National) Development ?[123]? ?1[248]&U"],
+     "A group name is a name. No age band in it: SD, PD1, PD2, PD3, ND, and the "
+     "same for the long forms. Age ranges belong in the detail on the page.",
      FIX, 0),
 
     # --- retired page and product names ------------------------------------
@@ -146,10 +183,9 @@ RULES = [
      "Practise is the verb. 'Practise the target pace', not 'practice'.",
      CHECK, 0),
 
-    # --- audience ----------------------------------------------------------
-    ("LOAD / UNLOAD / ENTRY",
-     [r"\bBUILDING\b", r"\bEASING\b", r"\bSTARTING\b"],
-     "Family wording. Coach pages use LOAD, UNLOAD, ENTRY.", CHECK, 0),
+    # Audience wording is not a plain vocabulary rule: BUILDING and EASING are
+    # correct on a family page and wrong on a coach page. See check_audience(),
+    # which works in both directions.
 ]
 
 
@@ -171,6 +207,19 @@ BLOCK_END = re.compile(
 #
 # Checked only when a build declares audience="family".
 # (pattern, why it must not cross over)
+# The reverse of COACH_ONLY: family wording that has strayed onto a coach page.
+# BUILDING and EASING are correct on a family page and wrong on a coach one, so
+# this cannot be a plain vocabulary rule. It depends on who the page is for.
+# DECISION, August 2026: families and coaches use ONE vocabulary. The earlier
+# rule gave families BUILDING, EASING and STARTING in place of LOAD, UNLOAD and
+# ENTRY. Dropped, because a swimmer comes home saying the group is in
+# Accumulation and a parent reading a different word for it is worse off.
+FAMILY_ONLY = [
+    (r"Available now|Coming soon",
+     "Family wording for build status. Coach pages use Live, In draft and Planned."),
+]
+
+
 COACH_ONLY = [
     (r"need us (?:a little )?less", "Reads to a family as a plan to sell less coaching."),
     (r"working ourselves out of a job", "Same failure mode, older wording."),
@@ -178,23 +227,32 @@ COACH_ONLY = [
     (r"\bprescrib", "The coach version says what to prescribe. The family version "
                     "says what you will see."),
     (r"tell families", "Instruction to a coach about families, printed for families."),
-    (r"\bLOAD\b|\bUNLOAD\b|\bENTRY\b",
-     "Family pages use BUILDING, EASING and STARTING."),
-    (r"\bLive\b|\bIn draft\b|\bPlanned\b",
-     "Family pages use Available now and Coming soon."),
+    (r"\bIn draft\b",
+     "Build status is for the coach hub, not for families."),
 ]
 
 
 def check_audience(markup, audience):
-    """Flag coach-only lines that have crossed into a family page."""
-    if audience != "family":
+    """Flag wording that has crossed between audiences, in either direction.
+
+    Some words are not right or wrong on their own, only right or wrong for who
+    is reading. BUILDING belongs on a family page and not on a coach one.
+    "Every year they need us less" is the reverse. So this cannot be a plain
+    vocabulary rule; the build has to say who the page is for.
+    """
+    rules = {"family": COACH_ONLY, "coach": FAMILY_ONLY}.get(audience)
+    if not rules:
         return []
     text = visible_text(markup)
     out = []
-    for pat, why in COACH_ONLY:
-        hits = re.findall(pat, text, flags=re.IGNORECASE)
+    for pat, why in rules:
+        # Same convention as the vocabulary rules: a capital in the pattern
+        # means match case. The family badges are all-caps, so BUILDING is
+        # caught while "Building the engine" in ordinary prose is not.
+        flags = 0 if re.search(r"[A-Z]", pat) else re.IGNORECASE
+        hits = re.findall(pat, text, flags=flags)
         if hits:
-            out.append((FIX, "coach-only line on a family page",
+            out.append((FIX, f"wording that does not belong on a {audience} page",
                         ", ".join(sorted({str(h) for h in hits})), len(hits), why))
     return out
 

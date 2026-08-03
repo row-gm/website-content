@@ -34,34 +34,37 @@ def link(url, text):
 # The triangle
 # ---------------------------------------------------------------------------
 
-def corner(cx, cy, colour, label, job):
+MUTED = "#C9CFD1"
+
+
+def corner(cx, cy, colour, label, job, job_y):
+    """A corner of the big triangle. The job label sits outside the triangle,
+    never across the lines: that was the mistake in the first version."""
     return (
-        f'<circle cx="{cx}" cy="{cy}" r="46" fill="{colour}"/>'
-        f'<text x="{cx}" y="{cy + 6}" font-family="{DISP}" font-size="16" fill="#FFFFFF" '
+        f'<circle cx="{cx}" cy="{cy}" r="48" fill="{colour}"/>'
+        f'<text x="{cx}" y="{cy + 6}" font-family="{DISP}" font-size="15" fill="#FFFFFF" '
         f'text-anchor="middle">{label}</text>'
-        f'<text x="{cx}" y="{cy + 74}" font-family="{SANS}" font-size="13" fill="#4B5B60" '
+        f'<text x="{cx}" y="{job_y}" font-family="{SANS}" font-size="13.5" fill="#4B5B60" '
         f'text-anchor="middle">{job}</text>'
     )
 
 
 def triangle_svg():
     s = (
-        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400">'
-        f'<rect width="680" height="400" fill="#FFFFFF"/>'
-        # sides
-        f'<line x1="340" y1="120" x2="140" y2="290" stroke="{LINE}" stroke-width="2"/>'
-        f'<line x1="340" y1="120" x2="540" y2="290" stroke="{LINE}" stroke-width="2"/>'
-        f'<line x1="140" y1="290" x2="540" y2="290" stroke="{LINE}" stroke-width="2"/>'
-        # what each side is
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 450">'
+        f'<rect width="680" height="450" fill="#FFFFFF"/>'
+        f'<line x1="306" y1="138" x2="152" y2="288" stroke="{LINE}" stroke-width="2"/>'
+        f'<line x1="374" y1="138" x2="528" y2="288" stroke="{LINE}" stroke-width="2"/>'
+        f'<line x1="166" y1="322" x2="514" y2="322" stroke="{LINE}" stroke-width="2"/>'
         f'<text x="196" y="196" font-family="{SANS}" font-size="12.5" fill="{INK_SOFT}" '
-        f'text-anchor="middle" transform="rotate(-40 196 196)">the swimmer and the coach</text>'
+        f'text-anchor="middle" transform="rotate(-44 196 196)">swimmer and coach</text>'
         f'<text x="484" y="196" font-family="{SANS}" font-size="12.5" fill="{INK_SOFT}" '
-        f'text-anchor="middle" transform="rotate(40 484 196)">the parent and the coach</text>'
-        f'<text x="340" y="282" font-family="{SANS}" font-size="12.5" fill="{INK_SOFT}" '
-        f'text-anchor="middle">the parent and the swimmer</text>'
-        + corner(340, 74, NAVY, "SWIMMER", "does the work")
-        + corner(140, 290, TEAL, "COACH", "decides the training")
-        + corner(540, 290, RED, "PARENT", "makes it all possible")
+        f'text-anchor="middle" transform="rotate(44 484 196)">parent and coach</text>'
+        f'<text x="340" y="310" font-family="{SANS}" font-size="12.5" fill="{INK_SOFT}" '
+        f'text-anchor="middle">parent and swimmer</text>'
+        + corner(340, 104, NAVY, "SWIMMER", "does the work", 40)
+        + corner(118, 322, TEAL, "COACH", "decides the training", 396)
+        + corner(562, 322, RED, "PARENT", "makes it all possible", 396)
         + f'</svg>'
     )
     b = base64.b64encode(s.encode("utf-8")).decode("ascii")
@@ -70,23 +73,53 @@ def triangle_svg():
             f'border-radius:10px;border:1px solid {LINE};background:#FFFFFF;" />')
 
 
+def small_triangle(leader):
+    """The same triangle at stage size. The corner that leads is full colour and
+    larger; the other two are muted. No labels along the sides: at this size they
+    would be unreadable, and the big triangle above has already explained them.
+
+    Labels sit outside the circles, so nothing overlaps at any size.
+    """
+    PTS = [("swimmer", 130, 74, NAVY, "SWIMMER", 26),
+           ("coach", 54, 176, TEAL, "COACH", 224),
+           ("parent", 206, 176, RED, "PARENT", 224)]
+    out = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 240">'
+           '<rect width="260" height="240" fill="#FFFFFF"/>')
+    for a, b_ in [(0, 1), (0, 2), (1, 2)]:
+        out += (f'<line x1="{PTS[a][1]}" y1="{PTS[a][2]}" x2="{PTS[b_][1]}" '
+                f'y2="{PTS[b_][2]}" stroke="{LINE}" stroke-width="1.5"/>')
+    for key, cx, cy, colour, label, ly in PTS:
+        lead = key == leader
+        out += (f'<circle cx="{cx}" cy="{cy}" r="{34 if lead else 24}" '
+                f'fill="{colour if lead else MUTED}"/>'
+                f'<text x="{cx}" y="{ly}" font-family="{DISP}" '
+                f'font-size="{11.5 if lead else 10.5}" '
+                f'fill="{"#152225" if lead else INK_SOFT}" '
+                f'text-anchor="middle">{label}</text>')
+    out += '</svg>'
+    b = base64.b64encode(out.encode("utf-8")).decode("ascii")
+    return (f'<img src="data:image/svg+xml;base64,{b}" alt="The triangle with the {leader} '
+            f'leading" style="width:100%;max-width:220px;height:auto;display:block;'
+            f'margin:0 auto;" />')
+
+
 # ---------------------------------------------------------------------------
 # Content
 # ---------------------------------------------------------------------------
 
 STAGES = [
-    ("The early years", "ROW Swim Academy, TOPS, Junior Development",
+    ("The early years", "parent", "ROW Swim Academy, TOPS, Junior Development",
      "The parent leads",
      "You run almost everything. Getting there, the kit bag, the food, the sleep, the mood in "
      "the car. Your swimmer&rsquo;s job at this stage is to turn up and enjoy it. The coach is "
      "teaching skills rather than managing a season."),
-    ("The middle years", "Age Group Development, PD3, PD2",
+    ("The middle years", "coach", "Age Group Development, PD3, PD2",
      "The coach leads",
      "The training plan starts driving the week, and the coach is the one holding it. This is "
      "the hardest shift for a parent, because it means stepping back from the content while "
      "staying fully in charge of everything around it. Your swimmer begins owning their own "
      "bag, their own effort, and their own honesty about how a session went."),
-    ("The later years", "Senior Development, PD1, National Development",
+    ("The later years", "swimmer", "Senior Development, PD1, National Development",
      "The swimmer leads",
      "Your swimmer talks to their coach directly, sets their own goals, and decides what to do "
      "when something is not working. You become transport, food, and the person who is glad to "
@@ -138,8 +171,15 @@ page = wrap_page(
     '<div style="margin:24px 0 0;">' + card(
         h2("Who leads changes as they grow")
         + lede("The triangle stays the same shape. What moves is which corner is out in front.")
-        + data_table(["Stage", "Groups", "Who leads", "What that looks like"],
-                     [[a, b, c, d] for a, b, c, d in STAGES])
+        + "".join(
+            f'<div class="row-stage">'
+            f'<div class="row-stage-pic">{small_triangle(who)}</div>'
+            f'<div class="row-stage-text">'
+            f'<div class="row-stage-head">{stage}</div>'
+            f'<div class="row-stage-lead">{lead}</div>'
+            f'<div class="row-stage-groups">{groups}</div>'
+            f'{body(desc, margin="0")}</div></div>'
+            for stage, who, groups, lead, desc in STAGES)
         + callout("<strong>The shifts are the point, not a side effect.</strong> Our goal is a "
                   "swimmer who is an expert in their own performance. That cannot happen if the "
                   "parent is still leading at seventeen, and it will not happen by accident at "
@@ -175,19 +215,6 @@ page = wrap_page(
                "what would you change. Those two hand the thinking back where it belongs.",
                margin="0")) + '</div>',
 
-    '<div style="margin:24px 0 0;">' + card(
-        h2("Read next")
-        + lede("These four pages are the rest of the picture.")
-        + data_table(["Page", "What it covers"], [
-            [link(URL_OUR_DEVELOPMENT_PLAN, "Our Development Plan"),
-             "What we are trying to build, and the four things we develop in every swimmer."],
-            [link(URL_HOW_WE_DEVELOP_SWIMMERS, "The ROW Way"),
-             "The twelve things we are developing, in the swimmer&rsquo;s own words."],
-            [link(URL_THE_GROWTH_SPURT, "The Growth Spurt"),
-             "Why times can stall for months while a swimmer grows."],
-            [link(URL_THE_BIRTHDAY_GAP, "The Birthday Gap"),
-             "Why the fastest twelve year olds are often not the fastest eighteen year olds."],
-        ])) + '</div>',
 )
 
 

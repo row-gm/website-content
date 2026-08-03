@@ -278,12 +278,19 @@ def numbered_row(number, text, i=0):
 
 def data_table(headers, rows):
     """Prose table. Styling is in row_stylesheet.css, including the phone rules
-    that stack each row into a block. data-label carries the column name so a
-    stacked row still says what each value is."""
+    that stack each row into a block.
+
+    The column name is repeated inside each cell in a hidden span, shown only on
+    a phone. An earlier version used a data-label attribute; the CMS sanitizer
+    rejects that, and only style and class are allowed on a td.
+    """
     ths = "".join(f"<th>{x}</th>" for x in headers)
     trs = ""
     for row in rows:
-        tds = "".join(f'<td data-label="{headers[n]}">{c}</td>' for n, c in enumerate(row))
+        tds = ""
+        for n, c in enumerate(row):
+            lbl = f'<span class="row-lbl">{headers[n]}</span>' if headers[n] else ""
+            tds += f"<td>{lbl}{c}</td>"
         trs += f"<tr>{tds}</tr>"
     return (f'<div class="row-scroll"><table class="row-table">'
             f'<tbody><tr>{ths}</tr>{trs}</tbody></table></div>')

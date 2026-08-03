@@ -46,7 +46,7 @@ NON_NEGOTIABLES = [
     "getting shorter and faster.",
     "<strong>Speed touched at least twice a week.</strong> Short Zone 5 work, in every phase, at "
     "every age. Speed is lost faster than it is built and it costs almost nothing to maintain.",
-    "<strong>Never two hard days back to back at 14&U and below.</strong> AGD 14&U, PD2 14&U and every "
+    "<strong>Never two hard days back to back at 14&U and below.</strong> AGD 1, PD2 and every "
     "group below them. Put an aerobic or recovery day between. SD, PD1 and ND can stack hard "
     "days when the two sessions train different systems, but it should be a decision, not an "
     "accident.",
@@ -129,13 +129,13 @@ JUNIOR_ROWS = [
 
 junior_section = card(
     h2("Junior Pathway weeks")
-    + lede("TOPS 3x, JD2 and JD1 train two to four times a week, before pathway placement. There "
+    + lede("TOPS 1, JD2 and JD1 train two to four times a week, before pathway placement. There "
            "is not enough water time to build a week around a hard day, and there is no reason "
            "to. Build every session the same way and let the phase change the emphasis.")
     + data_table(["How often", "What", "Why"], [[a, b, c] for a, b, c in JUNIOR_ROWS])
     + note("The phases still apply. Introduction after a break, Accumulation through the middle of "
         "a block, Consolidation as a lighter week, Transition at the end. What changes is the "
-        "amount, not the vocabulary. TOPS 2x and the ROW Swim Academy swim once or twice a week; "
+        "amount, not the vocabulary. TOPS 2 and the ROW Swim Academy swim once or twice a week; "
         "keep it to "
         "skills and play.",
         margin="14px 0 0")
@@ -196,8 +196,8 @@ block_section = card(
     + data_table(["Week", "Job", "What changes", "What to watch"],
                  [[a, b, c, d] for a, b, c, d in BLOCK_WEEKS])
     + callout(
-        "<strong>Build on two weeks, not three, at 12&U and below.</strong> JD2, JD1, AGD 12&U and "
-        "PD3 usually need the unload after two weeks. AGD 14&U and PD2 14&U sit either side of the line: "
+        "<strong>Build on two weeks, not three, at 12&U and below.</strong> JD2, JD1, AGD 2 and "
+        "PD3 usually need the unload after two weeks. AGD 1 and PD2 sit either side of the line: "
         "use three weeks in Accumulation and two in Intensification.")
 )
 

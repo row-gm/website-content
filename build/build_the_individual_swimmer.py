@@ -135,11 +135,11 @@ board_section = card(
     + note("The lane card says this:", margin="16px 0 14px")
     + data_table(
         ["Lane", "Swims", "Interval", "Focus"],
-        [["Lane 1 &middot; PD1 18&U distance", "8 x 100 free", "@ 1:25", "Hold 1:10, even split"],
-         ["Lane 2 &middot; SD 18&U mixed", "8 x 100 free", "on :15 rest", "Hold stroke count"],
-         ["Lane 3 &middot; SD 18&U sprinters", "6 x 100 free", "on :25 rest",
+        [["Lane 1 &middot; PD1 distance", "8 x 100 free", "@ 1:25", "Hold 1:10, even split"],
+         ["Lane 2 &middot; SD mixed", "8 x 100 free", "on :15 rest", "Hold stroke count"],
+         ["Lane 3 &middot; SD sprinters", "6 x 100 free", "on :25 rest",
           "Faster than lane 2, strong finish"],
-         ["Lane 4 &middot; AGD 12&U swimmers", "8 x 75 free", "on :15 rest",
+         ["Lane 4 &middot; AGD 2 swimmers", "8 x 75 free", "on :15 rest",
           "Bottom of Zone 3, breathe every 3"]])
     + callout(
         "Every lane is in Zone 3. Every lane is doing the same set. Nobody is doing less work "
@@ -169,14 +169,14 @@ not_section = card(
 
 
 BY_GROUP = [
-    ("10&U", "TOPS 2x, TOPS 3x", "Lane level only",
+    ("10&U", "TOPS 2, TOPS 1", "Lane level only",
      "Group by ability. Adjust distance and rest only. No numbers, no targets."),
-    ("12&U", "JD2, JD1, AGD 12&U, PD3 12&U", "Lane level",
+    ("12&U", "JD2, JD1, AGD 2, PD3", "Lane level",
      "Lane send-offs by ability. Record test results, but do not set training pace targets yet."),
-    ("14&U", "AGD 14&U, PD2 14&U", "Lane level, some individual",
+    ("14&U", "AGD 1, PD2", "Lane level, some individual",
      "Lane send-offs from test times. Individual targets for one or two swimmers, not the whole "
      "group."),
-    ("18&U", "SD 18&U, PD1 18&U, ND 18&U", "Individual within lanes",
+    ("18&U", "SD, PD1, ND", "Individual within lanes",
      "Targets from testing for most swimmers. In PD1 and ND, intervals and event work are "
      "planned per swimmer against the season map."),
 ]

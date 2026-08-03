@@ -250,16 +250,16 @@ pathways_section = card(
 # ---------------------------------------------------------------------------
 
 GROUP_ZONES = [
-    ("10&U", "TOPS 2x, TOPS 3x", (1, 2, 5),
+    ("10&U", "TOPS 2, TOPS 1", (1, 2, 5),
      "Skills, play, and aerobic exposure. Speed in short bursts.",
      "No formal Zone 3 or Zone 4 sets. Effort comes from games and racing, not from a target."),
-    ("12&U", "JD2, JD1, AGD 12&U, PD3 12&U", (1, 2, 5),
+    ("12&U", "JD2, JD1, AGD 2, PD3", (1, 2, 5),
      "Aerobic base and pure speed. Skill drives everything.",
      "Zone 3 only in short, low-end designs. No Zone 4 sets."),
-    ("14&U", "AGD 14&U, PD2 14&U", (1, 2, 3, 5),
+    ("14&U", "AGD 1, PD2", (1, 2, 3, 5),
      "Aerobic capacity is the priority. Speed stays year round.",
      "Zone 3 grows through the year. Zone 4 only near peak meets."),
-    ("18&U", "SD 18&U, PD1 18&U, ND 18&U", (1, 2, 3, 4, 5),
+    ("18&U", "SD, PD1, ND", (1, 2, 3, 4, 5),
      "Full range, with Zone 2 and Zone 3 carrying the volume.",
      "Zone 4 with real rest. ND and PD1 plan zone use week by week against the season map."),
 ]

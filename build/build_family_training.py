@@ -49,23 +49,10 @@ def badge(word):
             f'border-radius:4px;padding:3px 8px;">{word}</span>')
 
 
-READ_NEXT = [
-    (URL_OUR_DEVELOPMENT_PLAN, "Our Development Plan",
-     "What we are trying to build, and the four things we develop in every swimmer."),
-    (URL_HOW_WE_DEVELOP_SWIMMERS, "The ROW Way",
-     "The twelve things we are developing, written in the swimmer's own words."),
-    (URL_THE_GROWTH_SPURT, "The Growth Spurt",
-     "Why times can stall for months while a swimmer grows, and what helps."),
-    (URL_THE_BIRTHDAY_GAP, "The Birthday Gap",
-     "Why the fastest twelve year olds are often not the fastest eighteen year olds."),
-]
-
-
-def read_next(skip=""):
-    rows = [[link(u, t), d] for u, t, d in READ_NEXT if t != skip]
-    return card(h2("Read next")
-                + lede("These four pages are the rest of the picture.")
-                + data_table(["Page", "What it covers"], rows))
+# No in-page navigation. These pages sit inside Our Development Plan, the eyebrow
+# says so, and the drop-down lists the section. A card of links to the sibling
+# pages was clutter and a maintenance cost: a new page meant editing every other
+# one. The full list lives on Our Development Plan and nowhere else.
 
 
 # ---------------------------------------------------------------------------
@@ -146,7 +133,6 @@ training_year = wrap_page(
                   "on the same set, are often given different intervals, distances or targets. "
                   "They are doing the same training, fitted to them. Nobody is being given less.")) + '</div>',
 
-    '<div style="margin:24px 0 0;">' + read_next("") + '</div>',
 )
 
 
@@ -196,12 +182,10 @@ what_to_expect = wrap_page(
         h2("Flat patches are part of it")
         + body("Almost every swimmer has stretches with no best times. Some of that is training "
                "phase. Some of it is growth. Very little of it means anything is wrong.")
-        + body("Two pages here go into this properly: "
-               + link(URL_THE_GROWTH_SPURT, "The Growth Spurt")
-               + " on what happens while a swimmer is growing, and "
-               + link(URL_THE_BIRTHDAY_GAP, "The Birthday Gap")
-               + " on why the fastest twelve year olds are often not the fastest eighteen year "
-                 "olds.", margin="0")
+        + body("Two things sit behind most of it. A swimmer&rsquo;s growth spurt changes their "
+               "swimming for a while, and it arrives at very different ages. And because age "
+               "groups run January to December, two swimmers in one group can be almost a year "
+               "apart. Both are covered in this section.", margin="0")
         + callout("Every season adds a layer to the foundation. A season with few best times is "
                   "not a wasted one, and this year and the long run are not in competition.")) + '</div>',
 
@@ -222,7 +206,6 @@ what_to_expect = wrap_page(
                "what their swimmer is working on and why. That is a different conversation from "
                "one about the plan itself, and it is usually the more useful one.", margin="0")) + '</div>',
 
-    '<div style="margin:24px 0 0;">' + read_next("") + '</div>',
 )
 
 

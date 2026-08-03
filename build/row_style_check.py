@@ -32,6 +32,10 @@ ROLES = {
     ("BODY", 13.5, "400", "#152225"): "table cell",
     ("BODY", 13.0, "400", "#136B77"): "phase tagline",
 
+    ("DISPLAY", 12.5, "400", "#0A2E3F"): "layer map, page title",
+    ("MONO", 12.0, "700", "#FFFFFF"): "layer map, numbered circle",
+    ("MONO", 9.0, "700", "#FFFFFF"): "layer map, parent badge",
+
     ("MONO", 15.0, "700", "#FFFFFF"): "step circle",
     ("MONO", 15.0, "700", "#0A2E3F"): "set line, data field",
     ("MONO", 13.0, "700", "#FFFFFF"): "eyebrow, numbered circle",
@@ -54,6 +58,36 @@ PALETTE = {
 }
 
 
+# Attributes the CMS sanitizer accepts. style and class are allowed on every
+# tag; everything else is per tag. Confirmed the hard way: data-label on a td
+# was rejected, which is what this check exists to catch.
+GLOBAL_ATTRS = {"style", "class"}
+TAG_ATTRS = {
+    "a": {"href", "title", "target", "name", "id"},
+    "img": {"src", "alt", "width", "height"},
+    "iframe": {"src", "width", "height", "frameborder", "allowfullscreen"},
+    "col": {"span", "width"},
+    "colgroup": {"span", "width"},
+    "table": {"width", "border", "cellpadding", "cellspacing"},
+    "q": {"cite"},
+    "blockquote": {"cite"},
+}
+
+
+def bad_attributes(markup):
+    """Any attribute the sanitizer will strip, with the tag it was found on."""
+    out = Counter()
+    for tag, attrs in re.findall(r"<([a-z][a-z0-9]*)\s+([^>]*?)/?>", markup, re.I):
+        allowed = GLOBAL_ATTRS | TAG_ATTRS.get(tag.lower(), set())
+        # Match the whole name="value" pair so a query string inside the value
+        # is consumed. Matching bare `name=` read ?eventId= in a URL as an
+        # attribute, which was wrong on eighteen pages.
+        for name in re.findall(r'([a-zA-Z-]+)\s*=\s*"[^"]*"', attrs):
+            if name.lower() not in allowed:
+                out[f"{tag.lower()}({name.lower()})"] += 1
+    return out
+
+
 def roles_used(markup):
     """Every (family, size, weight, colour) that carries text on the page."""
     found = Counter()
@@ -74,7 +108,9 @@ def roles_used(markup):
 
 
 def check(markup):
-    """Return (off_template, off_palette)."""
+    """Return (off_template, off_palette). Attributes are checked separately by
+    bad_attributes(), because a stripped attribute breaks a page outright rather
+    than just making it inconsistent."""
     off_template = {k: n for k, n in roles_used(markup).items() if k not in ROLES}
     off_palette = Counter()
     for hexcode in re.findall(r"#[0-9A-Fa-f]{6}", markup):
@@ -86,11 +122,16 @@ def check(markup):
 def report(path):
     markup = open(path, encoding="utf-8").read()
     tmpl, pal = check(markup)
+    attrs = bad_attributes(markup)
     name = path.split("/")[-1]
-    if not tmpl and not pal:
+    if not tmpl and not pal and not attrs:
         print(f"\n{name}\n  on template")
         return 0
     print(f"\n{name}")
+    if attrs:
+        print("  attributes the CMS will strip")
+        for a, n in sorted(attrs.items(), key=lambda x: -x[1]):
+            print(f"    {a}  x{n}")
     if tmpl:
         print("  text that is not one of the agreed roles")
         for (fam, size, wt, col), n in sorted(tmpl.items(), key=lambda x: -x[1]):
@@ -101,7 +142,7 @@ def report(path):
         print("  colours that are not in the palette")
         for c, n in sorted(pal.items(), key=lambda x: -x[1]):
             print(f"    {c}  x{n}")
-    return len(tmpl) + len(pal)
+    return len(tmpl) + len(pal) + len(attrs)
 
 
 if __name__ == "__main__":

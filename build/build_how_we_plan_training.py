@@ -183,15 +183,15 @@ rules_section = card(
 # ---------------------------------------------------------------------------
 
 MIX_ROWS = [
-    ("10&U", "TOPS 2x, TOPS 3x", "Introduction, Accumulation",
+    ("10&U", "TOPS 2, TOPS 1", "Introduction, Accumulation",
      "Not used", "Long, and encouraged"),
     ("12&U Junior", "JD2, JD1", "Introduction, Accumulation",
      "Not used yet", "1 to 2 weeks, encouraged"),
-    ("12&U competitive", "AGD 12&U, PD3 12&U", "Introduction, Accumulation",
+    ("12&U competitive", "AGD 2, PD3", "Introduction, Accumulation",
      "A few days of lower volume", "1 to 2 weeks, encouraged"),
-    ("14&U", "AGD 14&U, PD2 14&U", "Accumulation, Consolidation",
+    ("14&U", "AGD 1, PD2", "Accumulation, Consolidation",
      "About 1 week, once or twice a year", "1 to 2 weeks per cycle"),
-    ("18&U", "SD 18&U, PD1 18&U, ND 18&U", "All six, two to three cycles",
+    ("18&U", "SD, PD1, ND", "All six, two to three cycles",
      "1 to 3 weeks, two or three times", "1 week, scheduled and protected"),
 ]
 

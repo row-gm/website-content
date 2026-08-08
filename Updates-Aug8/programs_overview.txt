@@ -1,0 +1,425 @@
+<div class="row-wrap">
+<div class="row-hero"><span class="row-eyebrow">ROW Swim Club</span>
+<h1 class="row-h1">Programs Overview</h1>
+
+<p class="row-sub">The groups we offer for the 2026-27 season, from a first Saturday class to eight sessions a week. Whether your swimmer is just starting or chasing a national standard, there is a place for them at ROW.</p>
+</div>
+
+<div style="height:8px;display:flex;border-radius:4px;overflow:hidden;margin:24px 0;">
+<div style="flex:1;background:#D64545;">&nbsp;</div>
+
+<div style="flex:1;background:#FFFFFF;">&nbsp;</div>
+
+<div style="flex:1;background:#136B77;">&nbsp;</div>
+
+<div style="flex:1;background:#FFFFFF;">&nbsp;</div>
+
+<div style="flex:1;background:#3FBFB0;">&nbsp;</div>
+
+<div style="flex:1;background:#FFFFFF;">&nbsp;</div>
+
+<div style="flex:1;background:#D64545;">&nbsp;</div>
+
+<div style="flex:1;background:#FFFFFF;">&nbsp;</div>
+</div>
+
+<div class="row-card">
+<h2 class="row-h2">How our programs fit together</h2>
+
+<p class="row-body" style="margin:0 0 16px;">Our groups are organized into six <strong>pathways</strong>. A pathway describes what a swimmer is training for. Within a pathway, each group adds a little more time in the water and a little more coaching than the one before it.</p>
+
+<p class="row-body" style="margin:0 0 16px;">We are not only developing faster swimmers. We are helping your child build confidence, discipline and friendships that last long after the season ends.</p>
+
+<p class="row-body" style="margin:0;">The groups below are a starting point. When we place a swimmer we also look at maturity, attitude, and where they are in their own development.</p>
+<img alt="The six ROW pathways: Foundation at the base, Junior above it, and Recreation, Regional, Provincial and National rising from there" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5ODAgNjU2Ij48cmVjdCB3aWR0aD0iOTgwIiBoZWlnaHQ9IjY1NiIgZmlsbD0iI0ZGRkZGRiIvPjx0ZXh0IHg9IjkwIiB5PSI5My4wIiBmb250LWZhbWlseT0iJ0FyaWFsIEJsYWNrJywgQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSIgZmlsbD0iIzRCNUI2MCIgdGV4dC1hbmNob3I9ImVuZCI+UEVSRk9STUFOQ0U8L3RleHQ+PHRleHQgeD0iOTAiIHk9IjIwOS4wIiBmb250LWZhbWlseT0iJ0FyaWFsIEJsYWNrJywgQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSIgZmlsbD0iIzRCNUI2MCIgdGV4dC1hbmNob3I9ImVuZCI+REVWRUxPUE1FTlQ8L3RleHQ+PHRleHQgeD0iOTAiIHk9IjMyNS4wIiBmb250LWZhbWlseT0iJ0FyaWFsIEJsYWNrJywgQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSIgZmlsbD0iIzRCNUI2MCIgdGV4dC1hbmNob3I9ImVuZCI+RU5UUlk8L3RleHQ+PHJlY3QgeD0iMTQwLjAiIHk9IjM0IiB3aWR0aD0iMTk3LjUiIGhlaWdodD0iMzQyIiByeD0iMTAiIGZpbGw9IiM0QjVCNjAiIG9wYWNpdHk9IjAuMDciLz48dGV4dCB4PSIyMzguNzUiIHk9IjIyIiBmb250LWZhbWlseT0iJ0FyaWFsIEJsYWNrJywgQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMS41IiBmaWxsPSIjNEI1QjYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5SRUNSRUFUSU9OPC90ZXh0PjxyZWN0IHg9IjM0OS41IiB5PSIzNCIgd2lkdGg9IjE5Ny41IiBoZWlnaHQ9IjM0MiIgcng9IjEwIiBmaWxsPSIjRDY0NTQ1IiBvcGFjaXR5PSIwLjA3Ii8+PHRleHQgeD0iNDQ4LjI1IiB5PSIyMiIgZm9udC1mYW1pbHk9IidBcmlhbCBCbGFjaycsIEFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEuNSIgZmlsbD0iIzRCNUI2MCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UkVHSU9OQUw8L3RleHQ+PHJlY3QgeD0iNTU5LjAiIHk9IjM0IiB3aWR0aD0iMTk3LjUiIGhlaWdodD0iMzQyIiByeD0iMTAiIGZpbGw9IiM3QTVBQTgiIG9wYWNpdHk9IjAuMDciLz48dGV4dCB4PSI2NTcuNzUiIHk9IjIyIiBmb250LWZhbWlseT0iJ0FyaWFsIEJsYWNrJywgQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMS41IiBmaWxsPSIjNEI1QjYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5QUk9WSU5DSUFMPC90ZXh0PjxyZWN0IHg9Ijc2OC41IiB5PSIzNCIgd2lkdGg9IjE5Ny41IiBoZWlnaHQ9IjM0MiIgcng9IjEwIiBmaWxsPSIjMEEyRTNGIiBvcGFjaXR5PSIwLjA3Ii8+PHRleHQgeD0iODY3LjI1IiB5PSIyMiIgZm9udC1mYW1pbHk9IidBcmlhbCBCbGFjaycsIEFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEuNSIgZmlsbD0iIzRCNUI2MCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TkFUSU9OQUw8L3RleHQ+PHJlY3QgeD0iMTUwLjAiIHk9IjE2NCIgd2lkdGg9IjE3Ny41IiBoZWlnaHQ9IjgyIiByeD0iOCIgZmlsbD0iIzhGOTk5QyIvPjx0ZXh0IHg9IjE2Mi4wIiB5PSIxOTEiIGZvbnQtZmFtaWx5PSInQXJpYWwgQmxhY2snLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE5IiBmaWxsPSIjRkZGRkZGIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPlJFQyBBTTwvdGV4dD48cmVjdCB4PSIyNzMuNSIgeT0iMTc1IiB3aWR0aD0iNDQiIGhlaWdodD0iMTciIHJ4PSI4IiBmaWxsPSIjRkZGRkZGIiBvcGFjaXR5PSIwLjkiLz48dGV4dCB4PSIyOTUuNSIgeT0iMTg4IiBmb250LWZhbWlseT0iJ0FyaWFsIEJsYWNrJywgQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMCIgZmlsbD0iIzBBMkUzRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTgmYW1wO1U8L3RleHQ+PHRleHQgeD0iMTYyLjAiIHk9IjIwOCIgZm9udC1mYW1pbHk9IkFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTAuNSIgZmlsbD0iI0NCRERFMSIgdGV4dC1hbmNob3I9InN0YXJ0Ij5SZWNyZWF0aW9uLCBtb3JuaW5nczwvdGV4dD48dGV4dCB4PSIxNjIuMCIgeT0iMjM1IiBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSIgZmlsbD0iI0ZGRkZGRiIgdGV4dC1hbmNob3I9InN0YXJ0IiBmb250LXdlaWdodD0iYm9sZCI+NSBzZXNzaW9ucyBhIHdlZWs8L3RleHQ+PGxpbmUgeDE9IjEwOC4wIiB5MT0iMjI4IiB4Mj0iMTM5LjAiIHkyPSIyMjgiIHN0cm9rZT0iI0MwMzkyQiIgc3Ryb2tlLXdpZHRoPSIyLjIiLz48cG9seWdvbiBwb2ludHM9IjEzOC4wLDIyMyAxMzguMCwyMzMgMTQ2LjAsMjI4ICIgZmlsbD0iI0MwMzkyQiIvPjxyZWN0IHg9IjE1MC4wIiB5PSIyODAiIHdpZHRoPSIxNzcuNSIgaGVpZ2h0PSI4MiIgcng9IjgiIGZpbGw9IiNDMkM3QzkiLz48dGV4dCB4PSIxNjIuMCIgeT0iMzA3IiBmb250LWZhbWlseT0iJ0FyaWFsIEJsYWNrJywgQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOSIgZmlsbD0iIzE1MjIyNSIgdGV4dC1hbmNob3I9InN0YXJ0Ij5SRUMgUE08L3RleHQ+PHJlY3QgeD0iMjczLjUiIHk9IjI5MSIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjE3IiByeD0iOCIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC43NSIvPjx0ZXh0IHg9IjI5NS41IiB5PSIzMDQiIGZvbnQtZmFtaWx5PSInQXJpYWwgQmxhY2snLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmaWxsPSIjMEEyRTNGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xOCZhbXA7VTwvdGV4dD48dGV4dCB4PSIxNjIuMCIgeT0iMzI0IiBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMC41IiBmaWxsPSIjNEI1QjYwIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPlJlY3JlYXRpb24sIGV2ZW5pbmdzPC90ZXh0Pjx0ZXh0IHg9IjE2Mi4wIiB5PSIzNTEiIGZvbnQtZmFtaWx5PSJBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIiBmaWxsPSIjMTUyMjI1IiB0ZXh0LWFuY2hvcj0ic3RhcnQiIGZvbnQtd2VpZ2h0PSJib2xkIj4zIHNlc3Npb25zIGEgd2VlazwvdGV4dD48bGluZSB4MT0iMTA4LjAiIHkxPSIzNDQiIHgyPSIxMzkuMCIgeTI9IjM0NCIgc3Ryb2tlPSIjQzAzOTJCIiBzdHJva2Utd2lkdGg9IjIuMiIvPjxwb2x5Z29uIHBvaW50cz0iMTM4LjAsMzM5IDEzOC4wLDM0OSAxNDYuMCwzNDQgIiBmaWxsPSIjQzAzOTJCIi8+PHJlY3QgeD0iMzU5LjUiIHk9IjQ4IiB3aWR0aD0iMTc3LjUiIGhlaWdodD0iODIiIHJ4PSI4IiBmaWxsPSIjRDY0NTQ1Ii8+PHRleHQgeD0iMzcxLjUiIHk9Ijc1IiBmb250LWZhbWlseT0iJ0FyaWFsIEJsYWNrJywgQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOSIgZmlsbD0iI0ZGRkZGRiIgdGV4dC1hbmNob3I9InN0YXJ0Ij5TRDwvdGV4dD48cmVjdCB4PSI0ODMuMCIgeT0iNTkiIHdpZHRoPSI0NCIgaGVpZ2h0PSIxNyIgcng9IjgiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuOSIvPjx0ZXh0IHg9IjUwNS4wIiB5PSI3MiIgZm9udC1mYW1pbHk9IidBcmlhbCBCbGFjaycsIEFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9IiMwQTJFM0YiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjE4JmFtcDtVPC90ZXh0Pjx0ZXh0IHg9IjM3MS41IiB5PSI5MiIgZm9udC1mYW1pbHk9IkFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTAuNSIgZmlsbD0iI0NCRERFMSIgdGV4dC1hbmNob3I9InN0YXJ0Ij5TZW5pb3IgRGV2ZWxvcG1lbnQ8L3RleHQ+PHRleHQgeD0iMzcxLjUiIHk9IjExOSIgZm9udC1mYW1pbHk9IkFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZpbGw9IiNGRkZGRkYiIHRleHQtYW5jaG9yPSJzdGFydCIgZm9udC13ZWlnaHQ9ImJvbGQiPjYgc2Vzc2lvbnMgYSB3ZWVrPC90ZXh0PjxyZWN0IHg9IjM1OS41IiB5PSIxNjQiIHdpZHRoPSIxNzcuNSIgaGVpZ2h0PSI4MiIgcng9IjgiIGZpbGw9IiNFNjhDOEMiLz48dGV4dCB4PSIzNzEuNSIgeT0iMTkxIiBmb250LWZhbWlseT0iJ0FyaWFsIEJsYWNrJywgQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOSIgZmlsbD0iI0ZGRkZGRiIgdGV4dC1hbmNob3I9InN0YXJ0Ij5BR0QgMTwvdGV4dD48cmVjdCB4PSI0ODMuMCIgeT0iMTc1IiB3aWR0aD0iNDQiIGhlaWdodD0iMTciIHJ4PSI4IiBmaWxsPSIjRkZGRkZGIiBvcGFjaXR5PSIwLjkiLz48dGV4dCB4PSI1MDUuMCIgeT0iMTg4IiBmb250LWZhbWlseT0iJ0FyaWFsIEJsYWNrJywgQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMCIgZmlsbD0iIzBBMkUzRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTQmYW1wO1U8L3RleHQ+PHRleHQgeD0iMzcxLjUiIHk9IjIwOCIgZm9udC1mYW1pbHk9IkFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTAuNSIgZmlsbD0iI0NCRERFMSIgdGV4dC1hbmNob3I9InN0YXJ0Ij5BZ2UgR3JvdXAgRGV2ZWxvcG1lbnQgMTwvdGV4dD48dGV4dCB4PSIzNzEuNSIgeT0iMjM1IiBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSIgZmlsbD0iI0ZGRkZGRiIgdGV4dC1hbmNob3I9InN0YXJ0IiBmb250LXdlaWdodD0iYm9sZCI+NSBzZXNzaW9ucyBhIHdlZWs8L3RleHQ+PGxpbmUgeDE9IjQ0OC4yNSIgeTE9IjE2MCIgeDI9IjQ0OC4yNSIgeTI9IjE0MSIgc3Ryb2tlPSIjMTUyMjI1IiBzdHJva2Utd2lkdGg9IjEuNiIvPjxwb2x5Z29uIHBvaW50cz0iNDQzLjI1LDE0MiA0NTMuMjUsMTQyIDQ0OC4yNSwxMzQiIGZpbGw9IiMxNTIyMjUiLz48cmVjdCB4PSIzNTkuNSIgeT0iMjgwIiB3aWR0aD0iMTc3LjUiIGhlaWdodD0iODIiIHJ4PSI4IiBmaWxsPSIjRjFDMEMwIi8+PHRleHQgeD0iMzcxLjUiIHk9IjMwNyIgZm9udC1mYW1pbHk9IidBcmlhbCBCbGFjaycsIEFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTkiIGZpbGw9IiMxNTIyMjUiIHRleHQtYW5jaG9yPSJzdGFydCI+QUdEIDI8L3RleHQ+PHJlY3QgeD0iNDgzLjAiIHk9IjI5MSIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjE3IiByeD0iOCIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC43NSIvPjx0ZXh0IHg9IjUwNS4wIiB5PSIzMDQiIGZvbnQtZmFtaWx5PSInQXJpYWwgQmxhY2snLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmaWxsPSIjMEEyRTNGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xMiZhbXA7VTwvdGV4dD48dGV4dCB4PSIzNzEuNSIgeT0iMzI0IiBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMC41IiBmaWxsPSIjNEI1QjYwIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPkFnZSBHcm91cCBEZXZlbG9wbWVudCAyPC90ZXh0Pjx0ZXh0IHg9IjM3MS41IiB5PSIzNTEiIGZvbnQtZmFtaWx5PSJBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIiBmaWxsPSIjMTUyMjI1IiB0ZXh0LWFuY2hvcj0ic3RhcnQiIGZvbnQtd2VpZ2h0PSJib2xkIj40IHNlc3Npb25zIGEgd2VlazwvdGV4dD48bGluZSB4MT0iNDQ4LjI1IiB5MT0iMjc2IiB4Mj0iNDQ4LjI1IiB5Mj0iMjU3IiBzdHJva2U9IiMxNTIyMjUiIHN0cm9rZS13aWR0aD0iMS42Ii8+PHBvbHlnb24gcG9pbnRzPSI0NDMuMjUsMjU4IDQ1My4yNSwyNTggNDQ4LjI1LDI1MCIgZmlsbD0iIzE1MjIyNSIvPjxsaW5lIHgxPSIzMTcuNSIgeTE9IjM0NCIgeDI9IjM0OC41IiB5Mj0iMzQ0IiBzdHJva2U9IiNDMDM5MkIiIHN0cm9rZS13aWR0aD0iMi4yIi8+PHBvbHlnb24gcG9pbnRzPSIzNDcuNSwzMzkgMzQ3LjUsMzQ5IDM1NS41LDM0NCAiIGZpbGw9IiNDMDM5MkIiLz48cmVjdCB4PSI1NjkuMCIgeT0iNDgiIHdpZHRoPSIxNzcuNSIgaGVpZ2h0PSI4MiIgcng9IjgiIGZpbGw9IiM3QTVBQTgiLz48dGV4dCB4PSI1ODEuMCIgeT0iNzUiIGZvbnQtZmFtaWx5PSInQXJpYWwgQmxhY2snLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE5IiBmaWxsPSIjRkZGRkZGIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPlBEMTwvdGV4dD48cmVjdCB4PSI2OTIuNSIgeT0iNTkiIHdpZHRoPSI0NCIgaGVpZ2h0PSIxNyIgcng9IjgiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuOSIvPjx0ZXh0IHg9IjcxNC41IiB5PSI3MiIgZm9udC1mYW1pbHk9IidBcmlhbCBCbGFjaycsIEFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9IiMwQTJFM0YiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjE4JmFtcDtVPC90ZXh0Pjx0ZXh0IHg9IjU4MS4wIiB5PSI5MiIgZm9udC1mYW1pbHk9IkFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTAuNSIgZmlsbD0iI0NCRERFMSIgdGV4dC1hbmNob3I9InN0YXJ0Ij5Qcm92aW5jaWFsIERldmVsb3BtZW50IDE8L3RleHQ+PHRleHQgeD0iNTgxLjAiIHk9IjExOSIgZm9udC1mYW1pbHk9IkFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZpbGw9IiNGRkZGRkYiIHRleHQtYW5jaG9yPSJzdGFydCIgZm9udC13ZWlnaHQ9ImJvbGQiPjcgc2Vzc2lvbnMgYSB3ZWVrPC90ZXh0PjxyZWN0IHg9IjU2OS4wIiB5PSIxNjQiIHdpZHRoPSIxNzcuNSIgaGVpZ2h0PSI4MiIgcng9IjgiIGZpbGw9IiNBRDk5QzkiLz48dGV4dCB4PSI1ODEuMCIgeT0iMTkxIiBmb250LWZhbWlseT0iJ0FyaWFsIEJsYWNrJywgQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOSIgZmlsbD0iI0ZGRkZGRiIgdGV4dC1hbmNob3I9InN0YXJ0Ij5QRDI8L3RleHQ+PHJlY3QgeD0iNjkyLjUiIHk9IjE3NSIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjE3IiByeD0iOCIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC45Ii8+PHRleHQgeD0iNzE0LjUiIHk9IjE4OCIgZm9udC1mYW1pbHk9IidBcmlhbCBCbGFjaycsIEFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9IiMwQTJFM0YiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjE0JmFtcDtVPC90ZXh0Pjx0ZXh0IHg9IjU4MS4wIiB5PSIyMDgiIGZvbnQtZmFtaWx5PSJBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwLjUiIGZpbGw9IiNDQkRERTEiIHRleHQtYW5jaG9yPSJzdGFydCI+UHJvdmluY2lhbCBEZXZlbG9wbWVudCAyPC90ZXh0Pjx0ZXh0IHg9IjU4MS4wIiB5PSIyMzUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIiBmaWxsPSIjRkZGRkZGIiB0ZXh0LWFuY2hvcj0ic3RhcnQiIGZvbnQtd2VpZ2h0PSJib2xkIj42IHNlc3Npb25zIGEgd2VlazwvdGV4dD48bGluZSB4MT0iNjU3Ljc1IiB5MT0iMTYwIiB4Mj0iNjU3Ljc1IiB5Mj0iMTQxIiBzdHJva2U9IiMxNTIyMjUiIHN0cm9rZS13aWR0aD0iMS42Ii8+PHBvbHlnb24gcG9pbnRzPSI2NTIuNzUsMTQyIDY2Mi43NSwxNDIgNjU3Ljc1LDEzNCIgZmlsbD0iIzE1MjIyNSIvPjxyZWN0IHg9IjU2OS4wIiB5PSIyODAiIHdpZHRoPSIxNzcuNSIgaGVpZ2h0PSI4MiIgcng9IjgiIGZpbGw9IiNEMkM3RTEiLz48dGV4dCB4PSI1ODEuMCIgeT0iMzA3IiBmb250LWZhbWlseT0iJ0FyaWFsIEJsYWNrJywgQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOSIgZmlsbD0iIzE1MjIyNSIgdGV4dC1hbmNob3I9InN0YXJ0Ij5QRDM8L3RleHQ+PHJlY3QgeD0iNjkyLjUiIHk9IjI5MSIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjE3IiByeD0iOCIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC43NSIvPjx0ZXh0IHg9IjcxNC41IiB5PSIzMDQiIGZvbnQtZmFtaWx5PSInQXJpYWwgQmxhY2snLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmaWxsPSIjMEEyRTNGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xMiZhbXA7VTwvdGV4dD48dGV4dCB4PSI1ODEuMCIgeT0iMzI0IiBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMC41IiBmaWxsPSIjNEI1QjYwIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPlByb3ZpbmNpYWwgRGV2ZWxvcG1lbnQgMzwvdGV4dD48dGV4dCB4PSI1ODEuMCIgeT0iMzUxIiBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSIgZmlsbD0iIzE1MjIyNSIgdGV4dC1hbmNob3I9InN0YXJ0IiBmb250LXdlaWdodD0iYm9sZCI+NSBzZXNzaW9ucyBhIHdlZWs8L3RleHQ+PGxpbmUgeDE9IjY1Ny43NSIgeTE9IjI3NiIgeDI9IjY1Ny43NSIgeTI9IjI1NyIgc3Ryb2tlPSIjMTUyMjI1IiBzdHJva2Utd2lkdGg9IjEuNiIvPjxwb2x5Z29uIHBvaW50cz0iNjUyLjc1LDI1OCA2NjIuNzUsMjU4IDY1Ny43NSwyNTAiIGZpbGw9IiMxNTIyMjUiLz48cmVjdCB4PSI3NzguNSIgeT0iNDgiIHdpZHRoPSIxNzcuNSIgaGVpZ2h0PSI4MiIgcng9IjgiIGZpbGw9IiMwQTJFM0YiLz48dGV4dCB4PSI3OTAuNSIgeT0iNzUiIGZvbnQtZmFtaWx5PSInQXJpYWwgQmxhY2snLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE5IiBmaWxsPSIjRkZGRkZGIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPk5EPC90ZXh0PjxyZWN0IHg9IjkwMi4wIiB5PSI1OSIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjE3IiByeD0iOCIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC45Ii8+PHRleHQgeD0iOTI0LjAiIHk9IjcyIiBmb250LWZhbWlseT0iJ0FyaWFsIEJsYWNrJywgQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMCIgZmlsbD0iIzBBMkUzRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTgmYW1wO1U8L3RleHQ+PHRleHQgeD0iNzkwLjUiIHk9IjkyIiBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMC41IiBmaWxsPSIjQ0JEREUxIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPk5hdGlvbmFsIERldmVsb3BtZW50PC90ZXh0Pjx0ZXh0IHg9Ijc5MC41IiB5PSIxMTkiIGZvbnQtZmFtaWx5PSJBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIiBmaWxsPSIjRkZGRkZGIiB0ZXh0LWFuY2hvcj0ic3RhcnQiIGZvbnQtd2VpZ2h0PSJib2xkIj44IHNlc3Npb25zIGEgd2VlazwvdGV4dD48bGluZSB4MT0iNTQ2LjAiIHkxPSI4OS4wIiB4Mj0iNTYwLjAiIHkyPSI4OS4wIiBzdHJva2U9IiM0QjVCNjAiIHN0cm9rZS13aWR0aD0iMS4zIiBzdHJva2UtZGFzaGFycmF5PSI0IDMiLz48cG9seWdvbiBwb2ludHM9IjUzOS4wLDg5LjAgNTQ2LjAsODQuNSA1NDYuMCw5My41IiBmaWxsPSIjNEI1QjYwIi8+PHBvbHlnb24gcG9pbnRzPSI1NjcuMCw4OS4wIDU2MC4wLDkzLjUgNTYwLjAsODQuNSIgZmlsbD0iIzRCNUI2MCIvPjxsaW5lIHgxPSI3NTUuNSIgeTE9Ijg5LjAiIHgyPSI3NjkuNSIgeTI9Ijg5LjAiIHN0cm9rZT0iIzRCNUI2MCIgc3Ryb2tlLXdpZHRoPSIxLjMiIHN0cm9rZS1kYXNoYXJyYXk9IjQgMyIvPjxwb2x5Z29uIHBvaW50cz0iNzQ4LjUsODkuMCA3NTUuNSw4NC41IDc1NS41LDkzLjUiIGZpbGw9IiM0QjVCNjAiLz48cG9seWdvbiBwb2ludHM9Ijc3Ni41LDg5LjAgNzY5LjUsOTMuNSA3NjkuNSw4NC41IiBmaWxsPSIjNEI1QjYwIi8+PGxpbmUgeDE9IjMzNi41IiB5MT0iMjA1LjAiIHgyPSIzNTAuNSIgeTI9IjIwNS4wIiBzdHJva2U9IiM0QjVCNjAiIHN0cm9rZS13aWR0aD0iMS4zIiBzdHJva2UtZGFzaGFycmF5PSI0IDMiLz48cG9seWdvbiBwb2ludHM9IjMyOS41LDIwNS4wIDMzNi41LDIwMC41IDMzNi41LDIwOS41IiBmaWxsPSIjNEI1QjYwIi8+PHBvbHlnb24gcG9pbnRzPSIzNTcuNSwyMDUuMCAzNTAuNSwyMDkuNSAzNTAuNSwyMDAuNSIgZmlsbD0iIzRCNUI2MCIvPjxsaW5lIHgxPSI1NDYuMCIgeTE9IjIwNS4wIiB4Mj0iNTYwLjAiIHkyPSIyMDUuMCIgc3Ryb2tlPSIjNEI1QjYwIiBzdHJva2Utd2lkdGg9IjEuMyIgc3Ryb2tlLWRhc2hhcnJheT0iNCAzIi8+PHBvbHlnb24gcG9pbnRzPSI1MzkuMCwyMDUuMCA1NDYuMCwyMDAuNSA1NDYuMCwyMDkuNSIgZmlsbD0iIzRCNUI2MCIvPjxwb2x5Z29uIHBvaW50cz0iNTY3LjAsMjA1LjAgNTYwLjAsMjA5LjUgNTYwLjAsMjAwLjUiIGZpbGw9IiM0QjVCNjAiLz48bGluZSB4MT0iMzM2LjUiIHkxPSIzMjEuMCIgeDI9IjM1MC41IiB5Mj0iMzIxLjAiIHN0cm9rZT0iIzRCNUI2MCIgc3Ryb2tlLXdpZHRoPSIxLjMiIHN0cm9rZS1kYXNoYXJyYXk9IjQgMyIvPjxwb2x5Z29uIHBvaW50cz0iMzI5LjUsMzIxLjAgMzM2LjUsMzE2LjUgMzM2LjUsMzI1LjUiIGZpbGw9IiM0QjVCNjAiLz48cG9seWdvbiBwb2ludHM9IjM1Ny41LDMyMS4wIDM1MC41LDMyNS41IDM1MC41LDMxNi41IiBmaWxsPSIjNEI1QjYwIi8+PGxpbmUgeDE9IjU0Ni4wIiB5MT0iMzIxLjAiIHgyPSI1NjAuMCIgeTI9IjMyMS4wIiBzdHJva2U9IiM0QjVCNjAiIHN0cm9rZS13aWR0aD0iMS4zIiBzdHJva2UtZGFzaGFycmF5PSI0IDMiLz48cG9seWdvbiBwb2ludHM9IjUzOS4wLDMyMS4wIDU0Ni4wLDMxNi41IDU0Ni4wLDMyNS41IiBmaWxsPSIjNEI1QjYwIi8+PHBvbHlnb24gcG9pbnRzPSI1NjcuMCwzMjEuMCA1NjAuMCwzMjUuNSA1NjAuMCwzMTYuNSIgZmlsbD0iIzRCNUI2MCIvPjxsaW5lIHgxPSIzMjkuNiIgeTE9IjMwNi4zIiB4Mj0iMzU3LjQiIHkyPSIyMTkuNyIgc3Ryb2tlPSIjNEI1QjYwIiBzdHJva2Utd2lkdGg9IjEuMyIgc3Ryb2tlLWRhc2hhcnJheT0iNCAzIi8+PHBvbHlnb24gcG9pbnRzPSIzMjcuNSwzMTMuMCAzMjUuMywzMDUuMCAzMzMuOSwzMDcuNyIgZmlsbD0iIzRCNUI2MCIvPjxwb2x5Z29uIHBvaW50cz0iMzU5LjUsMjEzLjAgMzYxLjcsMjIxLjAgMzUzLjEsMjE4LjMiIGZpbGw9IiM0QjVCNjAiLz48bGluZSB4MT0iMzI5LjYiIHkxPSIyMTkuNyIgeDI9IjM1Ny40IiB5Mj0iMzA2LjMiIHN0cm9rZT0iIzRCNUI2MCIgc3Ryb2tlLXdpZHRoPSIxLjMiIHN0cm9rZS1kYXNoYXJyYXk9IjQgMyIvPjxwb2x5Z29uIHBvaW50cz0iMzI3LjUsMjEzLjAgMzMzLjksMjE4LjMgMzI1LjMsMjIxLjAiIGZpbGw9IiM0QjVCNjAiLz48cG9seWdvbiBwb2ludHM9IjM1OS41LDMxMy4wIDM1My4xLDMwNy43IDM2MS43LDMwNS4wIiBmaWxsPSIjNEI1QjYwIi8+PHRleHQgeD0iOTAiIHk9IjQ3NS4wIiBmb250LWZhbWlseT0iJ0FyaWFsIEJsYWNrJywgQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSIgZmlsbD0iIzRCNUI2MCIgdGV4dC1hbmNob3I9ImVuZCI+SlVOSU9SPC90ZXh0PjxyZWN0IHg9IjE0MC4wIiB5PSI0MzAiIHdpZHRoPSIxOTcuNSIgaGVpZ2h0PSI4MiIgcng9IjgiIGZpbGw9IiNCOEQzRDYiLz48dGV4dCB4PSIxNTIuMCIgeT0iNDU3IiBmb250LWZhbWlseT0iJ0FyaWFsIEJsYWNrJywgQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOSIgZmlsbD0iIzE1MjIyNSIgdGV4dC1hbmNob3I9InN0YXJ0Ij5UT1BTIDI8L3RleHQ+PHJlY3QgeD0iMjgzLjUiIHk9IjQ0MSIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjE3IiByeD0iOCIgZmlsbD0iI0ZGRkZGRiIgb3BhY2l0eT0iMC43NSIvPjx0ZXh0IHg9IjMwNS41IiB5PSI0NTQiIGZvbnQtZmFtaWx5PSInQXJpYWwgQmxhY2snLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmaWxsPSIjMEEyRTNGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xMCZhbXA7VTwvdGV4dD48dGV4dCB4PSIxNTIuMCIgeT0iNDc0IiBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMC41IiBmaWxsPSIjNEI1QjYwIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPlRPUFMsIHR3byBhIHdlZWs8L3RleHQ+PHRleHQgeD0iMTUyLjAiIHk9IjUwMSIgZm9udC1mYW1pbHk9IkFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZpbGw9IiMxNTIyMjUiIHRleHQtYW5jaG9yPSJzdGFydCIgZm9udC13ZWlnaHQ9ImJvbGQiPjIgc2Vzc2lvbnMgYSB3ZWVrPC90ZXh0PjxsaW5lIHgxPSIxMDIiIHkxPSI0NzEuMCIgeDI9IjEzNyIgeTI9IjQ3MS4wIiBzdHJva2U9IiNDMDM5MkIiIHN0cm9rZS13aWR0aD0iMi4yIi8+PHBvbHlnb24gcG9pbnRzPSIxMzYsNDY2LjAgMTM2LDQ3Ni4wIDE0NCw0NzEuMCAiIGZpbGw9IiNDMDM5MkIiLz48cmVjdCB4PSIzNDkuNSIgeT0iNDMwIiB3aWR0aD0iMTk3LjUiIGhlaWdodD0iODIiIHJ4PSI4IiBmaWxsPSIjOTdCRUMzIi8+PHRleHQgeD0iMzYxLjUiIHk9IjQ1NyIgZm9udC1mYW1pbHk9IidBcmlhbCBCbGFjaycsIEFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTkiIGZpbGw9IiMxNTIyMjUiIHRleHQtYW5jaG9yPSJzdGFydCI+VE9QUyAxPC90ZXh0PjxyZWN0IHg9IjQ5My4wIiB5PSI0NDEiIHdpZHRoPSI0NCIgaGVpZ2h0PSIxNyIgcng9IjgiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuNzUiLz48dGV4dCB4PSI1MTUuMCIgeT0iNDU0IiBmb250LWZhbWlseT0iJ0FyaWFsIEJsYWNrJywgQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMCIgZmlsbD0iIzBBMkUzRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTAmYW1wO1U8L3RleHQ+PHRleHQgeD0iMzYxLjUiIHk9IjQ3NCIgZm9udC1mYW1pbHk9IkFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTAuNSIgZmlsbD0iIzRCNUI2MCIgdGV4dC1hbmNob3I9InN0YXJ0Ij5UT1BTLCB0aHJlZSBhIHdlZWs8L3RleHQ+PHRleHQgeD0iMzYxLjUiIHk9IjUwMSIgZm9udC1mYW1pbHk9IkFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZpbGw9IiMxNTIyMjUiIHRleHQtYW5jaG9yPSJzdGFydCIgZm9udC13ZWlnaHQ9ImJvbGQiPjMgc2Vzc2lvbnMgYSB3ZWVrPC90ZXh0PjxsaW5lIHgxPSIzMzUuNSIgeTE9IjQ3MS4wIiB4Mj0iMzQwLjUiIHkyPSI0NzEuMCIgc3Ryb2tlPSIjMTUyMjI1IiBzdHJva2Utd2lkdGg9IjEuNiIvPjxwb2x5Z29uIHBvaW50cz0iMzM5LjUsNDY2LjAgMzM5LjUsNDc2LjAgMzQ3LjUsNDcxLjAgIiBmaWxsPSIjMTUyMjI1Ii8+PHJlY3QgeD0iNTU5LjAiIHk9IjQzMCIgd2lkdGg9IjE5Ny41IiBoZWlnaHQ9IjgyIiByeD0iOCIgZmlsbD0iIzc2QTlCMCIvPjx0ZXh0IHg9IjU3MS4wIiB5PSI0NTciIGZvbnQtZmFtaWx5PSInQXJpYWwgQmxhY2snLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE5IiBmaWxsPSIjRkZGRkZGIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPkpEMjwvdGV4dD48cmVjdCB4PSI3MDIuNSIgeT0iNDQxIiB3aWR0aD0iNDQiIGhlaWdodD0iMTciIHJ4PSI4IiBmaWxsPSIjRkZGRkZGIiBvcGFjaXR5PSIwLjkiLz48dGV4dCB4PSI3MjQuNSIgeT0iNDU0IiBmb250LWZhbWlseT0iJ0FyaWFsIEJsYWNrJywgQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMCIgZmlsbD0iIzBBMkUzRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTImYW1wO1U8L3RleHQ+PHRleHQgeD0iNTcxLjAiIHk9IjQ3NCIgZm9udC1mYW1pbHk9IkFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTAuNSIgZmlsbD0iI0NCRERFMSIgdGV4dC1hbmNob3I9InN0YXJ0Ij5KdW5pb3IgRGV2ZWxvcG1lbnQgMjwvdGV4dD48dGV4dCB4PSI1NzEuMCIgeT0iNTAxIiBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSIgZmlsbD0iI0ZGRkZGRiIgdGV4dC1hbmNob3I9InN0YXJ0IiBmb250LXdlaWdodD0iYm9sZCI+MyBzZXNzaW9ucyBhIHdlZWs8L3RleHQ+PGxpbmUgeDE9IjU0NS4wIiB5MT0iNDcxLjAiIHgyPSI1NTAuMCIgeTI9IjQ3MS4wIiBzdHJva2U9IiMxNTIyMjUiIHN0cm9rZS13aWR0aD0iMS42Ii8+PHBvbHlnb24gcG9pbnRzPSI1NDkuMCw0NjYuMCA1NDkuMCw0NzYuMCA1NTcuMCw0NzEuMCAiIGZpbGw9IiMxNTIyMjUiLz48cmVjdCB4PSI3NjguNSIgeT0iNDMwIiB3aWR0aD0iMTk3LjUiIGhlaWdodD0iODIiIHJ4PSI4IiBmaWxsPSIjNTU5NDlEIi8+PHRleHQgeD0iNzgwLjUiIHk9IjQ1NyIgZm9udC1mYW1pbHk9IidBcmlhbCBCbGFjaycsIEFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTkiIGZpbGw9IiNGRkZGRkYiIHRleHQtYW5jaG9yPSJzdGFydCI+SkQxPC90ZXh0PjxyZWN0IHg9IjkxMi4wIiB5PSI0NDEiIHdpZHRoPSI0NCIgaGVpZ2h0PSIxNyIgcng9IjgiIGZpbGw9IiNGRkZGRkYiIG9wYWNpdHk9IjAuOSIvPjx0ZXh0IHg9IjkzNC4wIiB5PSI0NTQiIGZvbnQtZmFtaWx5PSInQXJpYWwgQmxhY2snLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmaWxsPSIjMEEyRTNGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xMiZhbXA7VTwvdGV4dD48dGV4dCB4PSI3ODAuNSIgeT0iNDc0IiBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMC41IiBmaWxsPSIjQ0JEREUxIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPkp1bmlvciBEZXZlbG9wbWVudCAxPC90ZXh0Pjx0ZXh0IHg9Ijc4MC41IiB5PSI1MDEiIGZvbnQtZmFtaWx5PSJBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIiBmaWxsPSIjRkZGRkZGIiB0ZXh0LWFuY2hvcj0ic3RhcnQiIGZvbnQtd2VpZ2h0PSJib2xkIj40IHNlc3Npb25zIGEgd2VlazwvdGV4dD48bGluZSB4MT0iNzU0LjUiIHkxPSI0NzEuMCIgeDI9Ijc1OS41IiB5Mj0iNDcxLjAiIHN0cm9rZT0iIzE1MjIyNSIgc3Ryb2tlLXdpZHRoPSIxLjYiLz48cG9seWdvbiBwb2ludHM9Ijc1OC41LDQ2Ni4wIDc1OC41LDQ3Ni4wIDc2Ni41LDQ3MS4wICIgZmlsbD0iIzE1MjIyNSIvPjxsaW5lIHgxPSI4NjcuMjUiIHkxPSI0MzAiIHgyPSI4NjcuMjUiIHkyPSI0MDQiIHN0cm9rZT0iIzE1MjIyNSIgc3Ryb2tlLXdpZHRoPSIxLjYiLz48bGluZSB4MT0iMjM4Ljc1IiB5MT0iNDA0IiB4Mj0iODY3LjI1IiB5Mj0iNDA0IiBzdHJva2U9IiMxNTIyMjUiIHN0cm9rZS13aWR0aD0iMS42Ii8+PGxpbmUgeDE9IjIzOC43NSIgeTE9IjQwNCIgeDI9IjIzOC43NSIgeTI9IjM3MyIgc3Ryb2tlPSIjMTUyMjI1IiBzdHJva2Utd2lkdGg9IjEuNiIvPjxwb2x5Z29uIHBvaW50cz0iMjMzLjc1LDM3NCAyNDMuNzUsMzc0IDIzOC43NSwzNjYiIGZpbGw9IiMxNTIyMjUiLz48bGluZSB4MT0iNDQ4LjI1IiB5MT0iNDA0IiB4Mj0iNDQ4LjI1IiB5Mj0iMzczIiBzdHJva2U9IiMxNTIyMjUiIHN0cm9rZS13aWR0aD0iMS42Ii8+PHBvbHlnb24gcG9pbnRzPSI0NDMuMjUsMzc0IDQ1My4yNSwzNzQgNDQ4LjI1LDM2NiIgZmlsbD0iIzE1MjIyNSIvPjxsaW5lIHgxPSI2NTcuNzUiIHkxPSI0MDQiIHgyPSI2NTcuNzUiIHkyPSIzNzMiIHN0cm9rZT0iIzE1MjIyNSIgc3Ryb2tlLXdpZHRoPSIxLjYiLz48cG9seWdvbiBwb2ludHM9IjY1Mi43NSwzNzQgNjYyLjc1LDM3NCA2NTcuNzUsMzY2IiBmaWxsPSIjMTUyMjI1Ii8+PHRleHQgeD0iOTAiIHk9IjYwMy4wIiBmb250LWZhbWlseT0iJ0FyaWFsIEJsYWNrJywgQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSIgZmlsbD0iIzRCNUI2MCIgdGV4dC1hbmNob3I9ImVuZCI+Rk9VTkRBVElPTjwvdGV4dD48cmVjdCB4PSIxNDAiIHk9IjU1OCIgd2lkdGg9IjgyNiIgaGVpZ2h0PSI4MiIgcng9IjgiIGZpbGw9IiNCRUU5RTQiLz48dGV4dCB4PSIxNTIiIHk9IjU4NSIgZm9udC1mYW1pbHk9IidBcmlhbCBCbGFjaycsIEFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTkiIGZpbGw9IiMxNTIyMjUiIHRleHQtYW5jaG9yPSJzdGFydCI+UlNBPC90ZXh0PjxyZWN0IHg9IjkxMiIgeT0iNTY5IiB3aWR0aD0iNDQiIGhlaWdodD0iMTciIHJ4PSI4IiBmaWxsPSIjRkZGRkZGIiBvcGFjaXR5PSIwLjc1Ii8+PHRleHQgeD0iOTM0IiB5PSI1ODIiIGZvbnQtZmFtaWx5PSInQXJpYWwgQmxhY2snLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmaWxsPSIjMEEyRTNGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj44JmFtcDtVPC90ZXh0Pjx0ZXh0IHg9IjE1MiIgeT0iNjAyIiBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMC41IiBmaWxsPSIjNEI1QjYwIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPlJPVyBTd2ltIEFjYWRlbXk8L3RleHQ+PHRleHQgeD0iMTUyIiB5PSI2MjkiIGZvbnQtZmFtaWx5PSJBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIiBmaWxsPSIjMTUyMjI1IiB0ZXh0LWFuY2hvcj0ic3RhcnQiIGZvbnQtd2VpZ2h0PSJib2xkIj4zIFNhdHVyZGF5IGNsYXNzZXMsIDQwIG1pbiBlYWNoPC90ZXh0PjxsaW5lIHgxPSIxMDIiIHkxPSI1OTkuMCIgeDI9IjEzNyIgeTI9IjU5OS4wIiBzdHJva2U9IiNDMDM5MkIiIHN0cm9rZS13aWR0aD0iMi4yIi8+PHBvbHlnb24gcG9pbnRzPSIxMzYsNTk0LjAgMTM2LDYwNC4wIDE0NCw1OTkuMCAiIGZpbGw9IiNDMDM5MkIiLz48bGluZSB4MT0iMjAwIiB5MT0iNTU0IiB4Mj0iMjAwIiB5Mj0iNTIzIiBzdHJva2U9IiMxNTIyMjUiIHN0cm9rZS13aWR0aD0iMS42Ii8+PHBvbHlnb24gcG9pbnRzPSIxOTUsNTI0IDIwNSw1MjQgMjAwLDUxNiIgZmlsbD0iIzE1MjIyNSIvPjx0ZXh0IHg9Ijc4Ni41IiB5PSIyODIiIGZvbnQtZmFtaWx5PSInQXJpYWwgQmxhY2snLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwLjUiIGZpbGw9IiMwQTJFM0YiIHRleHQtYW5jaG9yPSJzdGFydCI+SE9XIFRPIFJFQUQ8L3RleHQ+PGxpbmUgeDE9Ijc5NC41IiB5MT0iMzE2IiB4Mj0iNzk0LjUiIHkyPSIzMDUiIHN0cm9rZT0iIzE1MjIyNSIgc3Ryb2tlLXdpZHRoPSIxLjYiLz48cG9seWdvbiBwb2ludHM9Ijc4OS41LDMwNiA3OTkuNSwzMDYgNzk0LjUsMjk4IiBmaWxsPSIjMTUyMjI1Ii8+PGxpbmUgeDE9Ijc5My41IiB5MT0iMzM4LjAiIHgyPSI3OTcuNSIgeTI9IjMzOC4wIiBzdHJva2U9IiM0QjVCNjAiIHN0cm9rZS13aWR0aD0iMS4zIiBzdHJva2UtZGFzaGFycmF5PSI0IDMiLz48cG9seWdvbiBwb2ludHM9Ijc4Ni41LDMzOC4wIDc5My41LDMzMy41IDc5My41LDM0Mi41IiBmaWxsPSIjNEI1QjYwIi8+PHBvbHlnb24gcG9pbnRzPSI4MDQuNSwzMzguMCA3OTcuNSwzNDIuNSA3OTcuNSwzMzMuNSIgZmlsbD0iIzRCNUI2MCIvPjxsaW5lIHgxPSI3ODYuNSIgeTE9IjM2MCIgeDI9Ijc5Ny41IiB5Mj0iMzYwIiBzdHJva2U9IiNDMDM5MkIiIHN0cm9rZS13aWR0aD0iMi4yIi8+PHBvbHlnb24gcG9pbnRzPSI3OTYuNSwzNTUgNzk2LjUsMzY1IDgwNC41LDM2MCAiIGZpbGw9IiNDMDM5MkIiLz48dGV4dCB4PSI4MTIuNSIgeT0iMzEyIiBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI5LjUiIGZpbGw9IiM0QjVCNjAiIHRleHQtYW5jaG9yPSJzdGFydCI+cHJvZ3Jlc3Npb24gdG8gdGhlIG5leHQgZ3JvdXA8L3RleHQ+PHRleHQgeD0iODEyLjUiIHk9IjM0MiIgZm9udC1mYW1pbHk9IkFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iOS41IiBmaWxsPSIjNEI1QjYwIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPnRyYW5zZmVyIGJldHdlZW4gcGF0aHdheXMsIGVpdGhlciB3YXk8L3RleHQ+PHRleHQgeD0iODEyLjUiIHk9IjM2NCIgZm9udC1mYW1pbHk9IkFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iOS41IiBmaWxsPSIjNEI1QjYwIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPndoZXJlIGEgbmV3IHN3aW1tZXIgam9pbnM8L3RleHQ+PC9zdmc+" style="width:100%;height:auto;display:block;border-radius:10px;border:1px solid #DAD3C2;background:#FFFFFF;" />
+<p class="row-note" style="margin:16px 0 0;">Read it from the bottom up. Swimmers start at Foundation, move through Junior, then into Recreation, Regional or Provincial. National is reached from PD2 or PD1 and from nowhere else. The dotted arrows are moves between pathways, and they run both ways: Recreation is a different choice rather than a lower one. The red arrows mark where a swimmer joins after an assessment.</p>
+
+<div class="row-call"><strong>An age band is a stage, not a birthday.</strong> Where a swimmer sits close to the top of a band we will be flexible, so a swimmer who wants to compete is in the group that suits them rather than the one their birth year puts them in.</div>
+</div>
+
+<div style="margin:24px 0 0;">
+<div class="row-card">
+<div style="border-left:5px solid #136B77;padding:0 0 0 16px;margin:0 0 14px;">
+<div style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#4B5B60;margin:0 0 4px;">Pathway</div>
+
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;font-size:24px;line-height:1.15;">Foundation</div>
+</div>
+
+<p class="row-note" style="margin:0 0 14px;">Where a swimmer starts. Saturday mornings, forty minutes, and no racing. Classes run the beginner, intermediate and advanced levels together.</p>
+
+<div class="row-scroll">
+<table class="row-table">
+	<tbody>
+		<tr>
+			<th>Group</th>
+			<th>Short name</th>
+			<th>Sessions a week</th>
+			<th>Hours a week</th>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Group</span>ROW Swim Academy</td>
+			<td><span class="row-lbl">Short name</span>RSA</td>
+			<td><span class="row-lbl">Sessions a week</span>3 class options</td>
+			<td><span class="row-lbl">Hours a week</span>Saturday, 40 minutes each</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div style="margin:24px 0 0;">
+<div class="row-card">
+<div style="border-left:5px solid #0A2E3F;padding:0 0 0 16px;margin:0 0 14px;">
+<div style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#4B5B60;margin:0 0 4px;">Pathway</div>
+
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;font-size:24px;line-height:1.15;">Junior</div>
+</div>
+
+<p class="row-note" style="margin:0 0 14px;">The first taste of training as a group. Volume and coaching go up step by step through TOPS and Junior Development. Swimmers race, but nothing is built around a championship.</p>
+
+<div class="row-scroll">
+<table class="row-table">
+	<tbody>
+		<tr>
+			<th>Group</th>
+			<th>Short name</th>
+			<th>Sessions a week</th>
+			<th>Hours a week</th>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Group</span>TOPS 2</td>
+			<td><span class="row-lbl">Short name</span>TOPS 2</td>
+			<td><span class="row-lbl">Sessions a week</span>2</td>
+			<td><span class="row-lbl">Hours a week</span>2.0</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Group</span>TOPS 1</td>
+			<td><span class="row-lbl">Short name</span>TOPS 1</td>
+			<td><span class="row-lbl">Sessions a week</span>3</td>
+			<td><span class="row-lbl">Hours a week</span>3.0</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Group</span>Junior Development 2</td>
+			<td><span class="row-lbl">Short name</span>JD2</td>
+			<td><span class="row-lbl">Sessions a week</span>3</td>
+			<td><span class="row-lbl">Hours a week</span>4.0</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Group</span>Junior Development 1</td>
+			<td><span class="row-lbl">Short name</span>JD1</td>
+			<td><span class="row-lbl">Sessions a week</span>4</td>
+			<td><span class="row-lbl">Hours a week</span>5.5</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div style="margin:24px 0 0;">
+<div class="row-card">
+<div style="border-left:5px solid #136B77;padding:0 0 0 16px;margin:0 0 14px;">
+<div style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#4B5B60;margin:0 0 4px;">Pathway</div>
+
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;font-size:24px;line-height:1.15;">Recreation</div>
+</div>
+
+<p class="row-note" style="margin:0 0 14px;">For swimmers up to 18 who want to keep swimming without the competitive commitment. Technique, fitness, and a group to belong to. The only difference between the two groups is when they train.</p>
+
+<div class="row-scroll">
+<table class="row-table">
+	<tbody>
+		<tr>
+			<th>Group</th>
+			<th>Short name</th>
+			<th>Sessions a week</th>
+			<th>Hours a week</th>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Group</span>REC PM</td>
+			<td><span class="row-lbl">Short name</span>REC PM</td>
+			<td><span class="row-lbl">Sessions a week</span>3</td>
+			<td><span class="row-lbl">Hours a week</span>3.5</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Group</span>REC AM</td>
+			<td><span class="row-lbl">Short name</span>REC AM</td>
+			<td><span class="row-lbl">Sessions a week</span>5</td>
+			<td><span class="row-lbl">Hours a week</span>7.5</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div style="margin:24px 0 0;">
+<div class="row-card">
+<div style="border-left:5px solid #D64545;padding:0 0 0 16px;margin:0 0 14px;">
+<div style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#4B5B60;margin:0 0 4px;">Pathway</div>
+
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;font-size:24px;line-height:1.15;">Regional</div>
+</div>
+
+<p class="row-note" style="margin:0 0 14px;">The first competitive pathway. Three levels that build on each other, with age recommendations rather than hard cut-offs.</p>
+
+<div class="row-scroll">
+<table class="row-table">
+	<tbody>
+		<tr>
+			<th>Group</th>
+			<th>Short name</th>
+			<th>Sessions a week</th>
+			<th>Hours a week</th>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Group</span>Age Group Development 2</td>
+			<td><span class="row-lbl">Short name</span>AGD 2</td>
+			<td><span class="row-lbl">Sessions a week</span>4</td>
+			<td><span class="row-lbl">Hours a week</span>5.5</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Group</span>Age Group Development 1</td>
+			<td><span class="row-lbl">Short name</span>AGD 1</td>
+			<td><span class="row-lbl">Sessions a week</span>5</td>
+			<td><span class="row-lbl">Hours a week</span>7.5</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Group</span>Senior Development</td>
+			<td><span class="row-lbl">Short name</span>SD</td>
+			<td><span class="row-lbl">Sessions a week</span>6</td>
+			<td><span class="row-lbl">Hours a week</span>9.0</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div style="margin:24px 0 0;">
+<div class="row-card">
+<div style="border-left:5px solid #0A2E3F;padding:0 0 0 16px;margin:0 0 14px;">
+<div style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#4B5B60;margin:0 0 4px;">Pathway</div>
+
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;font-size:24px;line-height:1.15;">Provincial</div>
+</div>
+
+<p class="row-note" style="margin:0 0 14px;">For swimmers racing at the provincial level. More sessions, more mornings, and a season built around peak meets.</p>
+
+<div class="row-scroll">
+<table class="row-table">
+	<tbody>
+		<tr>
+			<th>Group</th>
+			<th>Short name</th>
+			<th>Sessions a week</th>
+			<th>Hours a week</th>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Group</span>Provincial Development 3</td>
+			<td><span class="row-lbl">Short name</span>PD3</td>
+			<td><span class="row-lbl">Sessions a week</span>5</td>
+			<td><span class="row-lbl">Hours a week</span>7.5</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Group</span>Provincial Development 2</td>
+			<td><span class="row-lbl">Short name</span>PD2</td>
+			<td><span class="row-lbl">Sessions a week</span>6</td>
+			<td><span class="row-lbl">Hours a week</span>9.0</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Group</span>Provincial Development 1</td>
+			<td><span class="row-lbl">Short name</span>PD1</td>
+			<td><span class="row-lbl">Sessions a week</span>7</td>
+			<td><span class="row-lbl">Hours a week</span>12.0</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div style="margin:24px 0 0;">
+<div class="row-card">
+<div style="border-left:5px solid #D64545;padding:0 0 0 16px;margin:0 0 14px;">
+<div style="font-family:'Courier New', Courier, monospace;font-weight:700;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#4B5B60;margin:0 0 4px;">Pathway</div>
+
+<div style="font-family:'Arial Black', Arial, Helvetica, sans-serif;text-transform:uppercase;letter-spacing:0.02em;color:#0A2E3F;font-size:24px;line-height:1.15;">National</div>
+</div>
+
+<p class="row-note" style="margin:0 0 14px;">The top of the pathway. Eight sessions a week, including 50 metre training and double days, aimed at Trials and Nationals.</p>
+
+<div class="row-scroll">
+<table class="row-table">
+	<tbody>
+		<tr>
+			<th>Group</th>
+			<th>Short name</th>
+			<th>Sessions a week</th>
+			<th>Hours a week</th>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Group</span>National Development</td>
+			<td><span class="row-lbl">Short name</span>ND</td>
+			<td><span class="row-lbl">Sessions a week</span>8</td>
+			<td><span class="row-lbl">Hours a week</span>14.0</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div style="margin:24px 0 0;">
+<div class="row-card">
+<h2 class="row-h2">What each pathway is working towards</h2>
+
+<p class="row-note" style="margin:0 0 14px;">Only the last three pathways build a season around a peak meet. The others race often and race through, and that is by design rather than something missing.</p>
+
+<div class="row-scroll">
+<table class="row-table">
+	<tbody>
+		<tr>
+			<th>Pathway</th>
+			<th>Groups</th>
+			<th>Peak meet</th>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Pathway</span>Foundation</td>
+			<td><span class="row-lbl">Groups</span>ROW Swim Academy</td>
+			<td><span class="row-lbl">Peak meet</span>None. Learning to swim, and learning to like it.</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Pathway</span>Junior</td>
+			<td><span class="row-lbl">Groups</span>TOPS 2, TOPS 1, JD2, JD1</td>
+			<td><span class="row-lbl">Peak meet</span>They race to learn and practise skills.</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Pathway</span>Recreation</td>
+			<td><span class="row-lbl">Groups</span>REC PM, REC AM</td>
+			<td><span class="row-lbl">Peak meet</span>None. Technique, fitness and a group to be part of.</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Pathway</span>Regional</td>
+			<td><span class="row-lbl">Groups</span>AGD 2, AGD 1, SD</td>
+			<td><span class="row-lbl">Peak meet</span>Western Regional Championships</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Pathway</span>Provincial</td>
+			<td><span class="row-lbl">Groups</span>PD3, PD2, PD1</td>
+			<td><span class="row-lbl">Peak meet</span>OAG short course, OSC long course</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Pathway</span>National</td>
+			<td><span class="row-lbl">Groups</span>ND</td>
+			<td><span class="row-lbl">Peak meet</span>Swimming Canada Trials and Nationals</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div style="margin:24px 0 0;">
+<div class="row-card">
+<h2 class="row-h2">What your swimmer gets</h2>
+
+<p class="row-note" style="margin:0 0 14px;">The commitments below hold across the competitive groups. Each group page sets out what that looks like at that stage, and the Academy has its own list suited to a Saturday class.</p>
+
+<div class="row-scroll">
+<table class="row-table">
+	<tbody>
+		<tr>
+			<th>What</th>
+			<th>Detail</th>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">What</span>A written season plan</td>
+			<td><span class="row-lbl">Detail</span>The phases, the technical priorities and the objectives for the group, shared with families.</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">What</span>Work set for your swimmer</td>
+			<td><span class="row-lbl">Detail</span>Work is set for a swimmer&rsquo;s events and their stage, inside the same set.</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">What</span>Skills on a schedule</td>
+			<td><span class="row-lbl">Detail</span>Starts, turns, underwaters and stroke mechanics taught on a published cycle, in a set order.</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">What</span>Video they can see themselves in</td>
+			<td><span class="row-lbl">Detail</span>Underwater footage, shown to the swimmer.</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">What</span>A GoSwim account</td>
+			<td><span class="row-lbl">Detail</span>For swimmers outside the ROW Swim Academy, and for coaches. Thousands of videos of age group and elite swimmers, so a skill can be seen before it is tried.</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">What</span>Dryland with a plan and an owner</td>
+			<td><span class="row-lbl">Detail</span>And someone accountable for it, in the groups that do it.</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">What</span>Club testing</td>
+			<td><span class="row-lbl">Detail</span>The same tests in the same conditions, so progress is measured the same way across the club.</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">What</span>Race plans and reviews</td>
+			<td><span class="row-lbl">Detail</span>A plan going in and a review afterwards, in the competitive groups.</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">What</span>Two progress conversations a year</td>
+			<td><span class="row-lbl">Detail</span>With the swimmer and the family, about the objectives set for the phase.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div style="margin:24px 0 0;">
+<div class="row-card">
+<h2 class="row-h2">What is new for 2026-27</h2>
+
+<p class="row-note" style="margin:0 0 14px;">The groups keep their names, and the pathways are unchanged. These are the changes families will notice.</p>
+
+<div class="row-scroll">
+<table class="row-table">
+	<tbody>
+		<tr>
+			<th>Change</th>
+			<th>What it means</th>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Change</span>Age Group Development is now two groups</td>
+			<td><span class="row-lbl">What it means</span>One group of about seventy becomes AGD 2 at four sessions a week and AGD 1 at five. Each has its own lead coach.</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Change</span>A Recreation pathway has been added</td>
+			<td><span class="row-lbl">What it means</span>REC PM trains three evenings a week at Cameron Heights. REC AM has five available mornings at the Rec Complex, and swimmers attend the ones that suit them.</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Change</span>Junior Development is offered as JD1 and JD2</td>
+			<td><span class="row-lbl">What it means</span>JD1 trains four times a week and JD2 three. They train alongside each other on Monday, Thursday and Saturday, with three lanes each.</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Change</span>TOPS has more schedule options</td>
+			<td><span class="row-lbl">What it means</span>TOPS 2 now has three schedule options and TOPS 1 has two. Options run three lanes, five swimmers to a lane, with a coach per lane.</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Change</span>The ROW Swim Academy moves to Saturday only</td>
+			<td><span class="row-lbl">What it means</span>Three class options at Cameron Heights, each forty minutes: 7:45, 8:30 and 9:15.</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Change</span>Session times have been rebuilt</td>
+			<td><span class="row-lbl">What it means</span>Rather than adjust the old timetable we rebuilt the schedule around the water, the times and the coaching we have. The group schedules are published in full.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<p class="row-note" style="margin:16px 0 0;">Fees are published with the registration information in mid-August. Dryland schedules and the meet schedule are published as soon as they are confirmed.</p>
+</div>
+</div>
+
+<div class="row-call"><strong>Not sure where your swimmer fits?</strong> Book a new swimmer assessment, or ask a coach before or after practice. Written criteria for moving between groups, and between pathways, are published at the start of the season.</div>
+</div>

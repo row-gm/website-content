@@ -33,8 +33,8 @@
 
 <div class="row-chip"><b>Class length</b> <span>40 minutes</span></div>
 
-<div class="row-chip"><b>Group size</b> <span>5 swimmers / class<br />
-1 coach / class</span></div>
+<div class="row-chip"><b>Group size</b> <span>6 a class<br />
+36 in the pool a block</span></div>
 
 <div class="row-chip"><b>Lead coach</b> <span>Andrew M</span></div>
 
@@ -44,7 +44,7 @@
 <div class="row-card">
 <h2 class="row-h2">About this group</h2>
 
-<p class="row-body" style="margin:0;">Where a swimmer starts. A FUNdamentals program for younger swimmers who want a taste of competitive swimming through a club. The aim is strong technique and water skills that carry into our junior programs. Saturday mornings at Cameron Heights, with beginner, intermediate and advanced levels together in the same class. Registration runs in ten week sessions, three a year: fall, winter and spring.</p>
+<p class="row-body" style="margin:0;">Where a swimmer starts. A FUNdamentals program for younger swimmers who want a taste of competitive swimming through a club. The aim is strong technique and water skills that carry into our junior programs. Saturday mornings at Cameron Heights. Classes are small: six swimmers, one coach, one lane. Six classes run at the same time, in three 40 minute blocks. Registration runs in ten week sessions, three a year: fall, winter and spring.</p>
 </div>
 
 <div style="margin:24px 0 0;">
@@ -72,7 +72,7 @@
 </table>
 </div>
 
-<p class="row-note" style="margin:16px 0 0;"><strong>Group size:</strong> 4 to 6 per lane, 1 coach per lane.</p>
+<p class="row-note" style="margin:16px 0 0;"><strong>Group size:</strong> 6 swimmers a class, with a coach and a lane for each class. Six classes run at once, so there are 36 swimmers in the pool in each 40 minute block, and 108 across the morning.</p>
 
 <p class="row-note" style="margin:16px 0 0;">Registration runs in ten week sessions: fall, winter, spring. Dates are confirmed before each one opens.</p>
 </div>

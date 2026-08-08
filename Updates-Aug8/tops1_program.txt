@@ -30,7 +30,7 @@
 
 <div class="row-chip"><b>Hours a week</b> <span>3.0</span></div>
 
-<div class="row-chip"><b>Group size</b> <span>15 an option</span></div>
+<div class="row-chip"><b>Group size</b> <span>up to 28 or up to 21</span></div>
 
 <div class="row-chip"><b>Lead coach</b> <span>Kaitlyn M</span></div>
 
@@ -40,7 +40,7 @@
 <div class="row-card">
 <h2 class="row-h2">About this group</h2>
 
-<p class="row-body" style="margin:0;">For swimmers around the 10 and under age band. Two schedule options, each running three lanes, five swimmers to a lane, with a coach per lane.&nbsp;&nbsp;TOPS 1 swimmers are invited to attend ROW-hosted introductory swimming competitions in December and May, and up to 2 additional single day events in nearby towns (eg. Guelph, Cambridge, Milton).</p>
+<p class="row-body" style="margin:0;">For swimmers around the 10 and under age band. Two schedule options, one at Cameron Heights and one at Laurier, so families can pick the nights and the pool that suit them. TOPS 1 swimmers are invited to attend ROW-hosted introductory swimming competitions in December and May, and up to 2 additional single day events in nearby towns (eg. Guelph, Cambridge, Milton).</p>
 </div>
 
 <div style="margin:24px 0 0;">
@@ -49,7 +49,7 @@
 
 <div class="row-draft"><b>UPDATED BUT not yet final</b> <span>These times are still being confirmed and may change before the season starts.</span></div>
 
-<div class="row-opt">Option 1</div>
+<div class="row-opt">Option 1 &middot; Cameron Heights</div>
 
 <div class="row-scroll">
 <table class="row-table">
@@ -62,12 +62,45 @@
 		</tr>
 		<tr>
 			<td><span class="row-lbl">Day</span>Mon</td>
-			<td><span class="row-lbl">Time</span>4:30-5:30 pm</td>
+			<td><span class="row-lbl">Time</span>7:00-8:00 pm</td>
+			<td><span class="row-lbl">Pool</span>Cameron Heights</td>
+			<td><span class="row-lbl">Lanes</span>4</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Day</span>Wed</td>
+			<td><span class="row-lbl">Time</span>7:00-8:00 pm</td>
+			<td><span class="row-lbl">Pool</span>Cameron Heights</td>
+			<td><span class="row-lbl">Lanes</span>4</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Day</span>Fri</td>
+			<td><span class="row-lbl">Time</span>7:00-8:00 pm</td>
+			<td><span class="row-lbl">Pool</span>Cameron Heights</td>
+			<td><span class="row-lbl">Lanes</span>4</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="row-opt">Option 2 &middot; Laurier</div>
+
+<div class="row-scroll">
+<table class="row-table">
+	<tbody>
+		<tr>
+			<th>Day</th>
+			<th>Time</th>
+			<th>Pool</th>
+			<th>Lanes</th>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Day</span>Tue</td>
+			<td><span class="row-lbl">Time</span>7:00-8:00 pm</td>
 			<td><span class="row-lbl">Pool</span>WLU shallow end</td>
 			<td><span class="row-lbl">Lanes</span>3</td>
 		</tr>
 		<tr>
-			<td><span class="row-lbl">Day</span>Tue</td>
+			<td><span class="row-lbl">Day</span>Wed</td>
 			<td><span class="row-lbl">Time</span>6:00-7:00 pm</td>
 			<td><span class="row-lbl">Pool</span>WLU shallow end</td>
 			<td><span class="row-lbl">Lanes</span>3</td>
@@ -75,40 +108,7 @@
 		<tr>
 			<td><span class="row-lbl">Day</span>Thu</td>
 			<td><span class="row-lbl">Time</span>5:30-6:30 pm</td>
-			<td><span class="row-lbl">Pool</span>WLU deep end</td>
-			<td><span class="row-lbl">Lanes</span>3</td>
-		</tr>
-	</tbody>
-</table>
-</div>
-
-<div class="row-opt">Option 2</div>
-
-<div class="row-scroll">
-<table class="row-table">
-	<tbody>
-		<tr>
-			<th>Day</th>
-			<th>Time</th>
-			<th>Pool</th>
-			<th>Lanes</th>
-		</tr>
-		<tr>
-			<td><span class="row-lbl">Day</span>Mon</td>
-			<td><span class="row-lbl">Time</span>5:30-6:30 pm</td>
 			<td><span class="row-lbl">Pool</span>WLU shallow end</td>
-			<td><span class="row-lbl">Lanes</span>3</td>
-		</tr>
-		<tr>
-			<td><span class="row-lbl">Day</span>Wed</td>
-			<td><span class="row-lbl">Time</span>7:00-8:00 pm</td>
-			<td><span class="row-lbl">Pool</span>Cameron Heights</td>
-			<td><span class="row-lbl">Lanes</span>3</td>
-		</tr>
-		<tr>
-			<td><span class="row-lbl">Day</span>Fri</td>
-			<td><span class="row-lbl">Time</span>7:00-8:00 pm</td>
-			<td><span class="row-lbl">Pool</span>Cameron Heights</td>
 			<td><span class="row-lbl">Lanes</span>3</td>
 		</tr>
 	</tbody>
@@ -117,7 +117,7 @@
 
 <p class="row-note" style="margin:16px 0 0;">WLU = Wilfrid Laurier University &middot; Cameron Heights &middot; Rec Complex = Waterloo Recreation Complex. A version using the 24 hour clock is published alongside this one.</p>
 
-<p class="row-note" style="margin:16px 0 0;"><strong>Group size:</strong> 15 an option. 3 lanes at 5 a lane, a coach per lane. 30 across both options. A group keeps the same lanes through a practice.</p>
+<p class="row-note" style="margin:16px 0 0;"><strong>Group size:</strong> Option 1 takes up to 28, at 4 lanes and 7 a lane. Option 2 takes up to 21, at 3 lanes and 7 a lane. A group keeps the same lanes through a practice.</p>
 </div>
 </div>
 

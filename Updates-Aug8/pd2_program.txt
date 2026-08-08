@@ -28,9 +28,9 @@
 
 <div class="row-chip"><b>Sessions a week</b> <span>6</span></div>
 
-<div class="row-chip"><b>Hours a week</b> <span>9.0</span></div>
+<div class="row-chip"><b>Hours a week</b> <span>9.5</span></div>
 
-<div class="row-chip"><b>Group size</b> <span>18</span></div>
+<div class="row-chip"><b>Group size</b> <span>up to 27</span></div>
 
 <div class="row-chip"><b>Lead coach</b> <span>Tyson M</span></div>
 
@@ -60,39 +60,39 @@
 		</tr>
 		<tr>
 			<td><span class="row-lbl">Day</span>Mon</td>
-			<td><span class="row-lbl">Time</span>6:00-7:30 pm</td>
+			<td><span class="row-lbl">Time</span>6:00-8:00 pm</td>
 			<td><span class="row-lbl">Pool</span>WLU deep end</td>
-			<td><span class="row-lbl">Lanes</span>3</td>
+			<td><span class="row-lbl">Lanes</span>6</td>
 		</tr>
 		<tr>
 			<td><span class="row-lbl">Day</span>Tue</td>
-			<td><span class="row-lbl">Time</span>4:30-6:00 pm</td>
+			<td><span class="row-lbl">Time</span>5:30-7:00 pm</td>
 			<td><span class="row-lbl">Pool</span>WLU deep end</td>
-			<td><span class="row-lbl">Lanes</span>3</td>
-		</tr>
-		<tr>
-			<td><span class="row-lbl">Day</span>Wed</td>
-			<td><span class="row-lbl">Time</span>6:00-7:30 am &middot; 50 m</td>
-			<td><span class="row-lbl">Pool</span>WLU deep end</td>
-			<td><span class="row-lbl">Lanes</span>2</td>
+			<td><span class="row-lbl">Lanes</span>6</td>
 		</tr>
 		<tr>
 			<td><span class="row-lbl">Day</span>Thu</td>
-			<td><span class="row-lbl">Time</span>4:30-6:00 pm</td>
-			<td><span class="row-lbl">Pool</span>WLU shallow end</td>
-			<td><span class="row-lbl">Lanes</span>3</td>
+			<td><span class="row-lbl">Time</span>6:00-7:30 am</td>
+			<td><span class="row-lbl">Pool</span>WLU deep end</td>
+			<td><span class="row-lbl">Lanes</span>6</td>
 		</tr>
 		<tr>
 			<td><span class="row-lbl">Day</span>Fri</td>
 			<td><span class="row-lbl">Time</span>6:00-7:30 am &middot; 50 m</td>
 			<td><span class="row-lbl">Pool</span>WLU deep end</td>
-			<td><span class="row-lbl">Lanes</span>2</td>
+			<td><span class="row-lbl">Lanes</span>3</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Day</span>Fri</td>
+			<td><span class="row-lbl">Time</span>6:00-7:30 pm</td>
+			<td><span class="row-lbl">Pool</span>WLU deep end</td>
+			<td><span class="row-lbl">Lanes</span>6</td>
 		</tr>
 		<tr>
 			<td><span class="row-lbl">Day</span>Sat</td>
-			<td><span class="row-lbl">Time</span>6:30-8:00 am</td>
-			<td><span class="row-lbl">Pool</span>WLU shallow end</td>
-			<td><span class="row-lbl">Lanes</span>3</td>
+			<td><span class="row-lbl">Time</span>7:30-9:00 am</td>
+			<td><span class="row-lbl">Pool</span>WLU deep end</td>
+			<td><span class="row-lbl">Lanes</span>6</td>
 		</tr>
 	</tbody>
 </table>
@@ -100,7 +100,7 @@
 
 <p class="row-note" style="margin:16px 0 0;">WLU = Wilfrid Laurier University &middot; Cameron Heights &middot; Rec Complex = Waterloo Recreation Complex. A version using the 24 hour clock is published alongside this one.</p>
 
-<p class="row-note" style="margin:16px 0 0;"><strong>Group size:</strong> 18. 3 lanes at 6 a lane. In the 50 m pool, 2 lanes at 9. A group keeps the same lanes through a practice.</p>
+<p class="row-note" style="margin:16px 0 0;"><strong>Group size:</strong> up to 27. 6 lanes at 4 or 5 a lane. In the 50 m pool, 3 lanes at 9 a lane. A group keeps the same lanes through a practice.</p>
 
 <div class="row-call"><strong>Dryland is not in the times above.</strong> <span style="color: rgb(21, 34, 37); font-family: Arial, Helvetica, sans-serif; font-size: 14.5px; background-color: rgb(239, 250, 248);">Dryland schedules and room access are being confirmed with Laurier, and will be published as soon as confirmed.</span></div>
 </div>

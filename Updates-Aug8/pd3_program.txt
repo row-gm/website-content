@@ -2,7 +2,7 @@
 <div class="row-hero"><span class="row-eyebrow">Provincial pathway</span>
 <h1 class="row-h1">Provincial Development 3</h1>
 
-<p class="row-sub">The first step in ou Provincial Development pathway, for swimmers graduating from ROW Junior pathway development.</p>
+<p class="row-sub">The first step in our Provincial Development pathway, for swimmers graduating from ROW Junior pathway development.</p>
 </div>
 
 <div style="height:8px;display:flex;border-radius:4px;overflow:hidden;margin:24px 0;">
@@ -28,9 +28,9 @@
 
 <div class="row-chip"><b>Sessions a week</b> <span>5</span></div>
 
-<div class="row-chip"><b>Hours a week</b> <span>7.5</span></div>
+<div class="row-chip"><b>Hours a week</b> <span>7.0</span></div>
 
-<div class="row-chip"><b>Group size</b> <span>18</span></div>
+<div class="row-chip"><b>Group size</b> <span>up to 18</span></div>
 
 <div class="row-chip"><b>Lead coach</b> <span>Isabelle D</span></div>
 
@@ -61,30 +61,30 @@
 		<tr>
 			<td><span class="row-lbl">Day</span>Mon</td>
 			<td><span class="row-lbl">Time</span>6:00-7:30 pm</td>
-			<td><span class="row-lbl">Pool</span>WLU deep end</td>
+			<td><span class="row-lbl">Pool</span>WLU shallow end</td>
 			<td><span class="row-lbl">Lanes</span>3</td>
 		</tr>
 		<tr>
 			<td><span class="row-lbl">Day</span>Tue</td>
-			<td><span class="row-lbl">Time</span>4:30-6:00 pm</td>
+			<td><span class="row-lbl">Time</span>5:30-7:00 pm</td>
 			<td><span class="row-lbl">Pool</span>WLU shallow end</td>
 			<td><span class="row-lbl">Lanes</span>3</td>
 		</tr>
 		<tr>
 			<td><span class="row-lbl">Day</span>Thu</td>
-			<td><span class="row-lbl">Time</span>4:30-6:00 pm</td>
+			<td><span class="row-lbl">Time</span>6:00-7:30 am</td>
 			<td><span class="row-lbl">Pool</span>WLU shallow end</td>
 			<td><span class="row-lbl">Lanes</span>3</td>
 		</tr>
 		<tr>
 			<td><span class="row-lbl">Day</span>Fri</td>
-			<td><span class="row-lbl">Time</span>4:30-6:00 pm</td>
+			<td><span class="row-lbl">Time</span>6:00-7:30 pm</td>
 			<td><span class="row-lbl">Pool</span>WLU shallow end</td>
 			<td><span class="row-lbl">Lanes</span>3</td>
 		</tr>
 		<tr>
 			<td><span class="row-lbl">Day</span>Sat</td>
-			<td><span class="row-lbl">Time</span>6:30-8:00 am</td>
+			<td><span class="row-lbl">Time</span>7:30-8:30 am</td>
 			<td><span class="row-lbl">Pool</span>WLU shallow end</td>
 			<td><span class="row-lbl">Lanes</span>3</td>
 		</tr>
@@ -94,7 +94,7 @@
 
 <p class="row-note" style="margin:16px 0 0;">WLU = Wilfrid Laurier University &middot; Cameron Heights &middot; Rec Complex = Waterloo Recreation Complex. A version using the 24 hour clock is published alongside this one.</p>
 
-<p class="row-note" style="margin:16px 0 0;"><strong>Group size:</strong> 18. 3 lanes at 6 a lane. A group keeps the same lanes through a practice.</p>
+<p class="row-note" style="margin:16px 0 0;"><strong>Group size:</strong> up to 18. 3 lanes at 6 a lane. A group keeps the same lanes through a practice.</p>
 
 <div class="row-call"><strong>Dryland is not in the times above.</strong> <span style="color: rgb(21, 34, 37); font-family: Arial, Helvetica, sans-serif; font-size: 14.5px; background-color: rgb(239, 250, 248);">Dryland schedules and room access are being confirmed with Laurier, and will be published as soon as confirmed.</span></div>
 </div>

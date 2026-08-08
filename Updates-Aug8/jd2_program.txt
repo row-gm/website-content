@@ -28,9 +28,9 @@
 
 <div class="row-chip"><b>Sessions a week</b> <span>3</span></div>
 
-<div class="row-chip"><b>Hours a week</b> <span>4.0</span></div>
+<div class="row-chip"><b>Hours a week</b> <span>4.5</span></div>
 
-<div class="row-chip"><b>Group size</b> <span>18</span></div>
+<div class="row-chip"><b>Group size</b> <span>up to 21</span></div>
 
 <div class="row-chip"><b>Lead coach</b> <span>Kaitlyn M</span></div>
 
@@ -40,7 +40,7 @@
 <div class="row-card">
 <h2 class="row-h2">About this group</h2>
 
-<p class="row-body" style="margin:0;">For swimmers around the 12 and under age band. Stroke technique, starts and turns, and a first look at racing strategy. JD2 trains alongside JD1 on Monday, Thursday and Saturday with three lanes each, so a swimmer ready to move up does not have to change everything at once. Swimmers race at local and regional swim meets.</p>
+<p class="row-body" style="margin:0;">For swimmers around the 12 and under age band. Stroke technique, starts and turns, and a first look at racing strategy. JD2 has its own schedule and its own path forward, so a swimmer ready to move up to JD1 takes one clear step. Swimmers race at local and regional swim meets.</p>
 </div>
 
 <div style="margin:24px 0 0;">
@@ -60,19 +60,19 @@
 		</tr>
 		<tr>
 			<td><span class="row-lbl">Day</span>Mon</td>
-			<td><span class="row-lbl">Time</span>6:30-7:30 pm</td>
+			<td><span class="row-lbl">Time</span>6:00-7:30 pm</td>
+			<td><span class="row-lbl">Pool</span>WLU shallow end</td>
+			<td><span class="row-lbl">Lanes</span>3</td>
+		</tr>
+		<tr>
+			<td><span class="row-lbl">Day</span>Wed</td>
+			<td><span class="row-lbl">Time</span>6:00-7:30 pm</td>
 			<td><span class="row-lbl">Pool</span>WLU shallow end</td>
 			<td><span class="row-lbl">Lanes</span>3</td>
 		</tr>
 		<tr>
 			<td><span class="row-lbl">Day</span>Thu</td>
-			<td><span class="row-lbl">Time</span>6:30-8:00 pm</td>
-			<td><span class="row-lbl">Pool</span>WLU deep end</td>
-			<td><span class="row-lbl">Lanes</span>3</td>
-		</tr>
-		<tr>
-			<td><span class="row-lbl">Day</span>Sat</td>
-			<td><span class="row-lbl">Time</span>8:00-9:30 am</td>
+			<td><span class="row-lbl">Time</span>5:30-7:00 pm</td>
 			<td><span class="row-lbl">Pool</span>WLU shallow end</td>
 			<td><span class="row-lbl">Lanes</span>3</td>
 		</tr>
@@ -82,7 +82,7 @@
 
 <p class="row-note" style="margin:16px 0 0;">WLU = Wilfrid Laurier University &middot; Cameron Heights &middot; Rec Complex = Waterloo Recreation Complex. A version using the 24 hour clock is published alongside this one.</p>
 
-<p class="row-note" style="margin:16px 0 0;"><strong>Group size:</strong> 18. 3 lanes at 6 a lane. A group keeps the same lanes through a practice.</p>
+<p class="row-note" style="margin:16px 0 0;"><strong>Group size:</strong> up to 21. 3 lanes at 7 a lane. A group keeps the same lanes through a practice.</p>
 
 <div class="row-call"><strong>Dryland is not in the times above.</strong> Dryland schedules and room access are being confirmed with Laurier, and will be published as soon as confirmed.</div>
 </div>

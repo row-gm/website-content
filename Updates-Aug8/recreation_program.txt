@@ -30,12 +30,12 @@
 
 <div class="row-chip"><b>Hours a week</b> <span>3.0 or 4.5</span></div>
 
-<div class="row-chip"><b>Group size</b> <span>up to 24</span></div>
+<div class="row-chip"><b>Group size</b> <span>4-5 per lane</span></div>
 
-<div class="row-chip"><b>Lead coach</b> <span>REC PM: Andrew M<br />
+<div class="row-chip"><b>Lead coach</b> <span>REC PM: TBC<br />
 REC AM: TBC</span></div>
 
-<div class="row-chip"><b>Season start</b> <span>TBC</span></div>
+<div class="row-chip"><b>Season start</b> <span>Week of September 21, 2026</span></div>
 </div>
 
 <div class="row-card">
@@ -48,7 +48,7 @@ REC AM: TBC</span></div>
 <div class="row-card">
 <h2 class="row-h2">2026-27 schedule</h2>
 
-<div class="row-draft"><b>UPDATED BUT not yet final</b> <span>These times are still being confirmed and may change before the season starts.</span></div>
+<div class="row-draft"><b>nearly final</b> <span>These times are still being confirmed and may change before the season starts.</span></div>
 
 <div class="row-opt">REC PM &middot; evenings &middot; 3 sessions, 3 hours a week</div>
 

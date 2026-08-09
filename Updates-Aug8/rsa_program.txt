@@ -1,5 +1,6 @@
 <div class="row-wrap">
 <div class="row-hero"><span class="row-eyebrow">Foundation pathway</span>
+
 <h1 class="row-h1">ROW Swim Academy</h1>
 
 <p class="row-sub">Where a swimmer starts.</p>
@@ -38,13 +39,13 @@
 
 <div class="row-chip"><b>Lead coach</b> <span>Andrew M</span></div>
 
-<div class="row-chip"><b>Session dates</b> <span>TBC</span></div>
+<div class="row-chip"><b>Session STARTS</b> <span>Saturday, September 26, 2026</span></div>
 </div>
 
 <div class="row-card">
 <h2 class="row-h2">About this group</h2>
 
-<p class="row-body" style="margin:0;">Where a swimmer starts. A FUNdamentals program for younger swimmers who want a taste of competitive swimming through a club. The aim is strong technique and water skills that carry into our junior programs. Saturday mornings at Cameron Heights. Classes are small: six swimmers, one coach, one lane. Six classes run at the same time, in three 40 minute blocks. Registration runs in ten week sessions, three a year: fall, winter and spring.</p>
+<p class="row-body" style="margin:0;">Where a swimmer starts. A FUNdamentals program for younger swimmers who want a taste of competitive swimming through a club. The aim is strong technique and water skills that carry into our junior programs. Saturday mornings at Cameron Heights. Classes are small: six swimmers, one coach, one lane. Six classes run at the same time, in three 40 minute blocks. Beginner, intermediate and advanced levels train together in the same class. Registration runs in ten week sessions, three a year: fall, winter and spring.</p>
 </div>
 
 <div style="margin:24px 0 0;">
@@ -61,7 +62,7 @@
 			<th>Lanes</th>
 		</tr>
 		<tr>
-			<td><span class="row-lbl">Day</span>Sat</td>
+			<td><span class="row-lbl">Day</span>Saturday</td>
 			<td><span class="row-lbl">Time</span>Time slot 1: 7:45-8:25 am<br />
 			Time slot 2: 8:30-9:10 am<br />
 			Time slot 3: 9:15-9:55 am</td>

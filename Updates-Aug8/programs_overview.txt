@@ -57,7 +57,7 @@
 			<th>Hours a week</th>
 		</tr>
 		<tr>
-			<td><span class="row-lbl">Group</span>ROW Swim Academy</td>
+			<td><span class="row-lbl">Group</span><a href="https://www.rowswimming.ca/page/programs/row-swim-academy">ROW Swim Academy</a></td>
 			<td><span class="row-lbl">Short name</span>RSA</td>
 			<td><span class="row-lbl">Sessions a week</span>3 class options</td>
 			<td><span class="row-lbl">Hours a week</span>Saturday, 40 minutes each</td>
@@ -88,25 +88,25 @@
 			<th>Hours a week</th>
 		</tr>
 		<tr>
-			<td><span class="row-lbl">Group</span>TOPS 2</td>
+			<td><span class="row-lbl">Group</span><a href="https://www.rowswimming.ca/page/programs/tops-2">TOPS 2</a></td>
 			<td><span class="row-lbl">Short name</span>TOPS 2</td>
 			<td><span class="row-lbl">Sessions a week</span>2</td>
 			<td><span class="row-lbl">Hours a week</span>2.0</td>
 		</tr>
 		<tr>
-			<td><span class="row-lbl">Group</span>TOPS 1</td>
+			<td><span class="row-lbl">Group</span><a href="https://www.rowswimming.ca/page/programs/tops-1">TOPS 1</a></td>
 			<td><span class="row-lbl">Short name</span>TOPS 1</td>
 			<td><span class="row-lbl">Sessions a week</span>3</td>
 			<td><span class="row-lbl">Hours a week</span>3.0</td>
 		</tr>
 		<tr>
-			<td><span class="row-lbl">Group</span>Junior Development 2</td>
+			<td><span class="row-lbl">Group</span><a href="https://www.rowswimming.ca/page/programs/junior-development-2">Junior Development 2</a></td>
 			<td><span class="row-lbl">Short name</span>JD2</td>
 			<td><span class="row-lbl">Sessions a week</span>3</td>
 			<td><span class="row-lbl">Hours a week</span>4.5</td>
 		</tr>
 		<tr>
-			<td><span class="row-lbl">Group</span>Junior Development 1</td>
+			<td><span class="row-lbl">Group</span><a href="https://www.rowswimming.ca/page/programs/junior-development-1">Junior Development 1</a></td>
 			<td><span class="row-lbl">Short name</span>JD1</td>
 			<td><span class="row-lbl">Sessions a week</span>4</td>
 			<td><span class="row-lbl">Hours a week</span>5.5</td>
@@ -137,13 +137,13 @@
 			<th>Hours a week</th>
 		</tr>
 		<tr>
-			<td><span class="row-lbl">Group</span>REC PM</td>
+			<td><span class="row-lbl">Group</span><a href="https://www.rowswimming.ca/page/programs/recreation-groups">REC PM</a></td>
 			<td><span class="row-lbl">Short name</span>REC PM</td>
 			<td><span class="row-lbl">Sessions a week</span>3</td>
 			<td><span class="row-lbl">Hours a week</span>3.0</td>
 		</tr>
 		<tr>
-			<td><span class="row-lbl">Group</span>REC AM</td>
+			<td><span class="row-lbl">Group</span><a href="https://www.rowswimming.ca/page/programs/recreation-groups">REC AM</a></td>
 			<td><span class="row-lbl">Short name</span>REC AM</td>
 			<td><span class="row-lbl">Sessions a week</span>3</td>
 			<td><span class="row-lbl">Hours a week</span>4.5</td>
@@ -174,19 +174,19 @@
 			<th>Hours a week</th>
 		</tr>
 		<tr>
-			<td><span class="row-lbl">Group</span>Age Group Development 2</td>
+			<td><span class="row-lbl">Group</span><a href="https://www.rowswimming.ca/page/programs/age-group-development-2">Age Group Development 2</a></td>
 			<td><span class="row-lbl">Short name</span>AGD 2</td>
 			<td><span class="row-lbl">Sessions a week</span>4</td>
 			<td><span class="row-lbl">Hours a week</span>4.5</td>
 		</tr>
 		<tr>
-			<td><span class="row-lbl">Group</span>Age Group Development 1</td>
+			<td><span class="row-lbl">Group</span><a href="https://www.rowswimming.ca/page/programs/age-group-development-1">Age Group Development 1</a></td>
 			<td><span class="row-lbl">Short name</span>AGD 1</td>
 			<td><span class="row-lbl">Sessions a week</span>5</td>
 			<td><span class="row-lbl">Hours a week</span>6.5</td>
 		</tr>
 		<tr>
-			<td><span class="row-lbl">Group</span>Senior Development</td>
+			<td><span class="row-lbl">Group</span><a href="https://www.rowswimming.ca/page/programs/senior-development">Senior Development</a></td>
 			<td><span class="row-lbl">Short name</span>SD</td>
 			<td><span class="row-lbl">Sessions a week</span>6</td>
 			<td><span class="row-lbl">Hours a week</span>9.0</td>
@@ -217,19 +217,19 @@
 			<th>Hours a week</th>
 		</tr>
 		<tr>
-			<td><span class="row-lbl">Group</span>Provincial Development 3</td>
+			<td><span class="row-lbl">Group</span><a href="https://www.rowswimming.ca/page/programs/provincial-development-3">Provincial Development 3</a></td>
 			<td><span class="row-lbl">Short name</span>PD3</td>
 			<td><span class="row-lbl">Sessions a week</span>5</td>
 			<td><span class="row-lbl">Hours a week</span>7.0</td>
 		</tr>
 		<tr>
-			<td><span class="row-lbl">Group</span>Provincial Development 2</td>
+			<td><span class="row-lbl">Group</span><a href="https://www.rowswimming.ca/page/programs/provincial-development-2">Provincial Development 2</a></td>
 			<td><span class="row-lbl">Short name</span>PD2</td>
 			<td><span class="row-lbl">Sessions a week</span>6</td>
 			<td><span class="row-lbl">Hours a week</span>9.5</td>
 		</tr>
 		<tr>
-			<td><span class="row-lbl">Group</span>Provincial Development 1</td>
+			<td><span class="row-lbl">Group</span><a href="https://www.rowswimming.ca/page/programs/provincial-development-1">Provincial Development 1</a></td>
 			<td><span class="row-lbl">Short name</span>PD1</td>
 			<td><span class="row-lbl">Sessions a week</span>7</td>
 			<td><span class="row-lbl">Hours a week</span>10.5</td>
@@ -260,7 +260,7 @@
 			<th>Hours a week</th>
 		</tr>
 		<tr>
-			<td><span class="row-lbl">Group</span>National Development</td>
+			<td><span class="row-lbl">Group</span><a href="https://www.rowswimming.ca/page/programs/national-development">National Development</a></td>
 			<td><span class="row-lbl">Short name</span>ND</td>
 			<td><span class="row-lbl">Sessions a week</span>8</td>
 			<td><span class="row-lbl">Hours a week</span>12.5</td>
@@ -288,12 +288,12 @@
 		<tr>
 			<td><span class="row-lbl">Pathway</span>Foundation</td>
 			<td><span class="row-lbl">Groups</span>ROW Swim Academy</td>
-			<td><span class="row-lbl">Peak meet</span>None. Learning to swim, and learning to like it.</td>
+			<td><span class="row-lbl">Peak meet</span>None. Learning to swim fast, and learning to love it.</td>
 		</tr>
 		<tr>
 			<td><span class="row-lbl">Pathway</span>Junior</td>
 			<td><span class="row-lbl">Groups</span>TOPS 2, TOPS 1, JD2, JD1</td>
-			<td><span class="row-lbl">Peak meet</span>They race to learn and practise skills.</td>
+			<td><span class="row-lbl">Peak meet</span>We race to learn and practice skills.</td>
 		</tr>
 		<tr>
 			<td><span class="row-lbl">Pathway</span>Recreation</td>
@@ -308,12 +308,12 @@
 		<tr>
 			<td><span class="row-lbl">Pathway</span>Provincial</td>
 			<td><span class="row-lbl">Groups</span>PD3, PD2, PD1</td>
-			<td><span class="row-lbl">Peak meet</span>OAG short course, OSC long course</td>
+			<td><span class="row-lbl">Peak meet</span>Ontario Age Groups, Ontario Swimming Championships</td>
 		</tr>
 		<tr>
 			<td><span class="row-lbl">Pathway</span>National</td>
 			<td><span class="row-lbl">Groups</span>ND</td>
-			<td><span class="row-lbl">Peak meet</span>Swimming Canada Trials and Nationals</td>
+			<td><span class="row-lbl">Peak meet</span>Swimming Canada Trials and Nationals &amp; Beyond!</td>
 		</tr>
 	</tbody>
 </table>
@@ -323,7 +323,7 @@
 
 <div style="margin:24px 0 0;">
 <div class="row-card">
-<h2 class="row-h2">What your swimmer gets</h2>
+<h2 class="row-h2">HOW WE SUPPORT YOUR SWIMMERS GOAL</h2>
 
 <p class="row-note" style="margin:0 0 14px;">The commitments below hold across the competitive groups. Each group page sets out what that looks like at that stage, and the Academy has its own list suited to a Saturday class.</p>
 
@@ -421,5 +421,7 @@
 </div>
 </div>
 
-<div class="row-call"><strong>Not sure where your swimmer fits?</strong> Book a new swimmer assessment, or ask a coach before or after practice. Written criteria for moving between groups, and between pathways, are published at the start of the season.</div>
+<div class="row-call"><strong>Not sure where your swimmer fits?</strong><br />
+<br />
+<strong><a href="https://www.rowswimming.ca/page/system/teamreg-shopping?eventId=1761153" target="_blank">Book a new swimmer assessment</a>,</strong> or ask a coach before or after practice. Written criteria for moving between groups, and between pathways, are published at the start of the season.</div>
 </div>

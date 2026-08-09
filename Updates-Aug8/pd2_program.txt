@@ -34,7 +34,7 @@
 
 <div class="row-chip"><b>Lead coach</b> <span>Tyson M</span></div>
 
-<div class="row-chip"><b>Season start</b> <span>TBC</span></div>
+<div class="row-chip"><b>Season start</b> <span>Week of September 14, 2026</span></div>
 </div>
 
 <div class="row-card">
@@ -47,7 +47,7 @@
 <div class="row-card">
 <h2 class="row-h2">2026-27 schedule</h2>
 
-<div class="row-draft"><b>updated but not yet final</b> <span>These times are still being confirmed and may change before the season starts.</span></div>
+<div class="row-draft"><b>nearly final</b> <span>These times are still being confirmed and may change before the season starts.</span></div>
 
 <div class="row-scroll">
 <table class="row-table">

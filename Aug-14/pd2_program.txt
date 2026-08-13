@@ -1,0 +1,148 @@
+<div class="row-wrap">
+<div class="row-hero"><span class="row-eyebrow">Provincial pathway</span>
+<h1 class="row-h1">Provincial Development 2</h1>
+
+<p class="row-sub">Building on PD3, for swimmers around the 14 and under age band. More time in the water and more racing: six sessions a week, including weekday mornings and weekly 50-metre training.</p>
+</div>
+
+<div style="height:8px;display:flex;border-radius:4px;overflow:hidden;margin:24px 0;">
+<div style="flex:1;background:#D64545;">&nbsp;</div>
+
+<div style="flex:1;background:#FFFFFF;">&nbsp;</div>
+
+<div style="flex:1;background:#136B77;">&nbsp;</div>
+
+<div style="flex:1;background:#FFFFFF;">&nbsp;</div>
+
+<div style="flex:1;background:#3FBFB0;">&nbsp;</div>
+
+<div style="flex:1;background:#FFFFFF;">&nbsp;</div>
+
+<div style="flex:1;background:#D64545;">&nbsp;</div>
+
+<div style="flex:1;background:#FFFFFF;">&nbsp;</div>
+</div>
+
+<div class="row-chips">
+<div class="row-chip"><b>Pathway</b> <span>Provincial</span></div>
+
+<div class="row-chip"><b>Sessions a week</b> <span>6</span></div>
+
+<div class="row-chip"><b>Hours a week</b> <span>9.5</span></div>
+
+<div class="row-chip"><b>Group size</b> <span>up to 27</span></div>
+
+<div class="row-chip"><b>Lead coach</b> <span>Tyson M</span></div>
+
+<div class="row-chip"><b>Season start</b> <span>Week of September 14, 2026</span></div>
+</div>
+
+<div class="row-card">
+<h2 class="row-h2">About this group</h2>
+
+<p class="row-body" style="margin:0;">Building on PD3, for swimmers around the 14 and under age band. More time in the water and more racing: six sessions a week, including weekday mornings and weekly 50-metre training.</p>
+</div>
+
+<div style="margin:24px 0 0;">
+<div class="row-card">
+<h2 class="row-h2">2026-27 schedule</h2>
+
+<div class="row-scroll">
+<table class="row-table">
+	<tbody>
+		<tr>
+			<th>Day</th>
+			<th>Time</th>
+			<th>ACTIVITY</th>
+			<th>SPACE</th>
+		</tr>
+		<tr>
+			<td style="background:#FAF8F2;"><span class="row-lbl">Day</span>Mon</td>
+			<td style="background:#FAF8F2;"><span class="row-lbl">Time</span>5:15-5:45 pm<br />
+			6:00&ndash;8:00 pm</td>
+			<td style="background:#FAF8F2;"><span class="row-lbl">Activity</span>Dryland<br />
+			Swim</td>
+			<td style="background:#FAF8F2;"><span class="row-lbl">Space</span>Studio<br />
+			WLU deep end &middot; 6 lanes</td>
+		</tr>
+		<tr>
+			<td style="background:#FFFFFF;"><span class="row-lbl">Day</span>Tue</td>
+			<td style="background:#FFFFFF;"><span class="row-lbl">Time</span>5:30&ndash;7:00 pm<br />
+			7:00-7:30 pm</td>
+			<td style="background:#FFFFFF;"><span class="row-lbl">Activity</span>Swim<br />
+			Dryland</td>
+			<td style="background:#FFFFFF;"><span class="row-lbl">Space</span>WLU deep end &middot; 6 lanes<br />
+			Pool deck</td>
+		</tr>
+		<tr>
+			<td style="background:#FAF8F2;"><span class="row-lbl">Day</span>Thu</td>
+			<td style="background:#FAF8F2;"><span class="row-lbl">Time</span>6:00&ndash;7:30 am</td>
+			<td style="background:#FAF8F2;"><span class="row-lbl">Activity</span>Swim</td>
+			<td style="background:#FAF8F2;"><span class="row-lbl">Space</span>WLU deep end &middot; 6 lanes</td>
+		</tr>
+		<tr>
+			<td style="background:#FFFFFF;"><span class="row-lbl">Day</span>Fri</td>
+			<td style="background:#FFFFFF;"><span class="row-lbl">Time</span>6:00&ndash;7:30 am &middot; 50 m<br />
+			6:00&ndash;7:30 pm</td>
+			<td style="background:#FFFFFF;"><span class="row-lbl">Activity</span>Swim<br />
+			Swim</td>
+			<td style="background:#FFFFFF;"><span class="row-lbl">Space</span>WLU whole pool &middot; 3 lanes<br />
+			WLU deep end &middot; 6 lanes</td>
+		</tr>
+		<tr>
+			<td style="background:#FAF8F2;"><span class="row-lbl">Day</span>Sat</td>
+			<td style="background:#FAF8F2;"><span class="row-lbl">Time</span>6:45-7:15 am<br />
+			7:30&ndash;9:00 am</td>
+			<td style="background:#FAF8F2;"><span class="row-lbl">Activity</span>Dryland<br />
+			Swim</td>
+			<td style="background:#FAF8F2;"><span class="row-lbl">Space</span>Studio<br />
+			WLU deep end &middot; 6 lanes</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<p class="row-note" style="margin:16px 0 0;">WLU = Wilfrid Laurier University.</p>
+
+<p class="row-note" style="margin:16px 0 0;"><strong>Group size:</strong> up to 27. 6 lanes at 4 to 5 a lane. In the 50 m pool, 3 lanes at 9 a lane.</p>
+
+<p class="row-note" style="margin:16px 0 0;"><strong>Dryland schedule and room access are being confirmed.</strong></p>
+</div>
+</div>
+
+<div style="margin:24px 0 0;">
+<div class="row-card">
+<h2 class="row-h2">How this group fits the plan</h2>
+
+<p class="row-body" style="margin:0 0 16px;">ROW groups share one development plan. It sets out what we are developing, how training is built, and why a swimmer&rsquo;s progress does not run in a straight line.</p>
+
+<p class="row-body" style="margin:0;">How the programs connect as swimmers develop is on <a class="row-link" href="https://www.rowswimming.ca/page/programs" target="_blank">Programs Overview</a>. What we are developing, and why, is in <a class="row-link" href="https://www.rowswimming.ca/page/our-development-plan" target="_blank">Our Development Plan</a>.</p>
+</div>
+</div>
+
+<div style="margin:24px 0 0;">
+<div class="row-card">
+<h2 class="row-h2">What to Expect</h2>
+
+<ul style="margin:0;padding:0 0 0 18px;">
+	<li class="row-body" style="margin:0 0 12px;"><strong>All four development dimensions at provincial level.</strong> Physical, Technical, Mental, and Character are all explicitly coached. The standard at PD2 reflects where the pathway is heading.</li>
+	<li class="row-body" style="margin:0 0 12px;"><strong>Versatility across the season.</strong> All four strokes continue to be developed and tracked. The Goal Setting Tool shows where your times are ahead and where the work needs to go.</li>
+	<li class="row-body" style="margin:0 0 12px;"><strong>Training organized by phase.</strong> The season is built in deliberate phases. Each block has a purpose, and the week is designed to match it.</li>
+	<li class="row-body" style="margin:0 0 12px;"><strong>Goal setting and ownership.</strong> Swimmers use the Goal Setting Tool and set targets with their coach. Taking ownership of those targets is part of what PD2 develops.</li>
+	<li class="row-body" style="margin:0 0 12px;"><strong>Long-course racing.</strong> 50m pools change pacing, stroke mechanics, and race feel. Racing well in one is a specific skill that is developed here.</li>
+	<li class="row-body" style="margin:0 0 12px;"><strong>Individual development within the group.</strong> Coaching is adapted to each swimmer&rsquo;s events, stage, and current needs.</li>
+	<li class="row-body" style="margin:0;"><strong>GoSwim and underwater video.</strong> Coaches use GoSwim reference clips and the underwater camera in sessions for individual stroke feedback.</li>
+</ul>
+</div>
+</div>
+
+<div style="margin:24px 0 0;">
+<div class="row-card">
+<h2 class="row-h2">Equipment</h2>
+
+<p class="row-body" style="margin:0;">See the <a class="row-link" href="https://www.rowswimming.ca/page/for-swimmers/row-equipment-list" target="_blank">ROW Equipment List</a> for this group&rsquo;s equipment standards.</p>
+</div>
+</div>
+
+<div style="margin:24px 0 0;"><a class="row-cta" href="https://www.rowswimming.ca/page/system/teamreg-shopping?eventId=1761153" target="_blank"><b>Not sure where your swimmer fits?</b><span>Book an assessment and we will place them in the right group from day one.</span><em>Book an assessment &rarr;</em></a></div>
+</div>

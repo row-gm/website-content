@@ -16,6 +16,10 @@ Two levels:
     CHECK   a class is defined and nothing uses it. Usually harmless, sometimes
             a rename that left the old rule behind. A person decides.
 
+Unused classes are only reported with --all, because "unused" is meaningless
+against one page: every page uses a handful of the forty. Pass --all with the
+whole page set when you want that list.
+
 Exit code is 1 if anything is at FIX, so it can gate a build.
 """
 
@@ -56,7 +60,7 @@ def classes_defined(stylesheet):
     return set(DEFINE.findall(text))
 
 
-def report(stylesheet, paths):
+def report(stylesheet, paths, show_unused=False):
     defined = classes_defined(stylesheet)
     used = classes_used(paths)
 
@@ -66,7 +70,7 @@ def report(stylesheet, paths):
     print(f"\n{stylesheet}  ({len(defined)} classes defined, "
           f"{len(used)} referenced across {len(paths)} file(s))")
 
-    if not missing and not unused:
+    if not missing and not (unused and show_unused):
         print("  clean")
         return 0
 
@@ -79,7 +83,7 @@ def report(stylesheet, paths):
             print(f"    {name}  used in {len(where)} file(s): {shown}{more}")
             print("        Not in the stylesheet. Renders unstyled.")
 
-    if unused:
+    if unused and show_unused:
         print(f"  {CHECK}")
         for name in unused:
             print(f"    {name}")
@@ -91,7 +95,9 @@ def report(stylesheet, paths):
 
 if __name__ == "__main__":
     args = sys.argv[1:]
+    show_unused = "--all" in args
+    args = [a for a in args if a != "--all"]
     if len(args) < 2:
         print(__doc__)
         sys.exit(0)
-    sys.exit(1 if report(args[0], args[1:]) else 0)
+    sys.exit(1 if report(args[0], args[1:], show_unused) else 0)

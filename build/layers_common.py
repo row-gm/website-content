@@ -104,6 +104,37 @@ MISSION = ("The mission of the Region of Waterloo Swim Club is to create experie
            "competitive swimming that positively shape our swimmers, families, and coaches "
            "long after their time with the club has ended.")
 
+# The goal statement. It leads the framework, so it must be word-identical
+# everywhere. Four versions were live at once, and two of them were emitted by
+# our own build scripts:
+#   graduate athletes ... experts in their own performance
+#   graduate athletes ... experts in themselves and their own performance
+#   graduate swimmers ... experts in themselves and their own performance
+#   a swimmer who is an expert in their own performance
+#
+# Settled 14 August 2026. SWIMMERS, not athletes: this is a swim club writing to
+# families, and swimmer is the plainer word. THEMSELVES AND, not just their own
+# performance: dropping it drops the character dimension, which is half of what
+# the twelve markers measure.
+GOAL = ("graduate swimmers who are experts in themselves and their own performance")
+
+# The sentence as it usually appears. Use this rather than retyping either half.
+GOAL_SENTENCE = f"Our goal is to {GOAL}."
+
+# The family form. Same claim, addressed to the parent reading it. Sanctioned
+# 14 August 2026 rather than forcing the plural into every sentence, which
+# produces worse writing.
+#
+# Named GOAL_FAMILY, not GOAL_SINGULAR, because the constraint is audience and
+# not grammar: "your swimmer" is right on The Role of Parents and wrong on a
+# coach page. check_audience() catches it if it strays.
+#
+# Both halves must match GOAL: an expert in THEMSELVES AND their own
+# performance, never one without the other. Two sanctioned forms, not four.
+GOAL_FAMILY = ("for your swimmer to be an expert in themselves and their own performance")
+
+GOAL_FAMILY_SENTENCE = f"Our goal is {GOAL_FAMILY}."
+
 FOUNDED = 1976
 
 

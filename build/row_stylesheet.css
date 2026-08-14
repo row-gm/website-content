@@ -1,7 +1,16 @@
 /* ROW shared stylesheet.
    Paste into the page's custom CSS field. The CMS scopes it to this page's
-   content, so every page needs its own copy. Generated from row_page_helpers.py
-   so it cannot drift from the build scripts. */
+   content, so every page needs its own copy.
+
+   This file is the source, not a generated artefact. Nothing regenerates it.
+   Run row_css_check.py over the build scripts after editing, which fails if a
+   script uses a class this file does not define. That check is what stops the
+   drift; an earlier comment here claimed a generator did, and there was none.
+
+   Structure and typography live here. Colour that varies per row stays inline,
+   because it comes from data: ZONES in layers_common.py, the layer-map states,
+   the age flags. A clean-up that purges every inline style will break the zone
+   tables. */
 
 .row-wrap  { max-width:1000px; margin:0 auto; background:#F3EFE4; padding:24px;
              font-family:Arial, Helvetica, sans-serif; }
@@ -78,6 +87,23 @@
 .row-person-pic { flex:none; width:180px; }
 .row-person-text { flex:1; min-width:260px; }
 .row-photo { width:100%; height:auto; display:block; border-radius:10px; }
+
+/* Stages and people. Same shape as .row-person: a picture beside a block of
+   text. Used for the three stages on The Role of Parents, and for named people
+   on the coach, officiating and Olympian pages. These six were referenced by the
+   build scripts and never defined, so names and roles rendered unstyled on three
+   published pages. */
+.row-stage { display:flex; gap:22px; align-items:flex-start; padding:20px 0;
+             border-top:1px solid #DAD3C2; flex-wrap:wrap; }
+.row-stage-pic  { flex:none; width:110px; }
+.row-stage-text { flex:1; min-width:260px; }
+.row-stage-head { font-family:'Arial Black', Arial, sans-serif; font-size:16px;
+             color:#0A2E3F; line-height:1.25; margin:0 0 3px; }
+.row-stage-lead { font-family:'Courier New', Courier, monospace; font-weight:700;
+             font-size:11px; letter-spacing:0.06em; text-transform:uppercase;
+             color:#4B5B60; margin:0 0 6px; }
+.row-stage-groups { font-size:13px; color:#4B5B60; line-height:1.5; margin:0 0 8px; }
+
 .row-logo  { max-width:260px; height:auto; display:block; margin:0 0 16px; }
 .row-logo-sm { max-width:110px; height:auto; display:block; }
 .row-lbl   { display:none; }
@@ -101,4 +127,7 @@
   .row-table td .row-lbl { display:block; font-weight:700; color:#4B5B60;
                            font-size:11px; text-transform:uppercase;
                            letter-spacing:0.06em; margin-bottom:2px; }
+  .row-stage, .row-person { gap:14px; }
+  .row-stage-pic  { width:84px; }
+  .row-person-pic { width:130px; }
 }

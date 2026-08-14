@@ -108,6 +108,21 @@ RULES = [
      "Point families at before or after a practice, never at a coach on deck.",
      FIX, 0),
 
+    # DECISION, 14 August 2026: the goal statement is one sentence, word for
+    # word. Four versions were live at once and two came from our own build
+    # scripts. SWIMMERS, not athletes. THEMSELVES AND, not just their own
+    # performance: dropping it drops the character dimension.
+    # Use GOAL or GOAL_SENTENCE from layers_common.py rather than retyping it.
+    # GOAL_SINGULAR is sanctioned for sentences where the plural will not fit.
+    # The lookbehind is what does the work: it passes both forms and catches
+    # either one truncated to 'their own performance' alone.
+    ("GOAL in layers_common.py",
+     [r"graduate athletes",
+      r"(?<!themselves and )their own performance"],
+     "One goal statement: graduate swimmers who are experts in themselves and "
+     "their own performance. Athletes is retired here, and 'their own "
+     "performance' on its own drops the character half.", FIX, 0),
+
     # The club's promise, settled August 2026. Use PROMISE and MISSION from
     # layers_common.py rather than retyping either one.
     ("PROMISE and MISSION in layers_common.py",
@@ -217,6 +232,9 @@ BLOCK_END = re.compile(
 FAMILY_ONLY = [
     (r"Available now|Coming soon",
      "Family wording for build status. Coach pages use Live, In draft and Planned."),
+    (r"your swimmer",
+     "Addresses the parent. A coach page says the swimmer, or names the group. "
+     "GOAL_FAMILY carries this wording and belongs on family pages only."),
 ]
 
 

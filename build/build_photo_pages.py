@@ -59,18 +59,27 @@ def mail(a):
     return f'<strong class="row-link">{a}</strong>'
 
 
-def img(name, alt, cls="row-photo"):
-    """Embed an image from build/images as a data URI."""
+def img(name, alt, cls="row-photo", style=""):
+    """Embed an image from build/images as a data URI.
+
+    style is for object-position only. The stylesheet crops every photo to 3:4
+    from the top, which is right for a portrait. A few of these are landscape
+    action shots where the swimmer sits off-centre, and a centred crop cuts the
+    face. That value depends on the individual photo, so it belongs inline, the
+    same as the zone colours do.
+    """
     path = os.path.join(IMG_DIR, name)
     ext = os.path.splitext(name)[1].lower()
     with open(path, "rb") as f:
         b64 = base64.b64encode(f.read()).decode("ascii")
-    return (f'<img src="data:image/{MIME[ext]};base64,{b64}" alt="{alt}" class="{cls}" />')
+    attr = f' style="{style}"' if style else ""
+    return (f'<img src="data:image/{MIME[ext]};base64,{b64}" alt="{alt}" '
+            f'class="{cls}"{attr} />')
 
 
-def person(photo, name, role, bio, note_=""):
+def person(photo, name, role, bio, note_="", crop=""):
     return (f'<div class="row-person">'
-            f'<div class="row-person-pic">{img(photo, name)}</div>'
+            f'<div class="row-person-pic">{img(photo, name, style=crop)}</div>'
             f'<div class="row-person-text">'
             f'<div class="row-stage-head">{name}</div>'
             f'<div class="row-stage-lead">{role}</div>'
@@ -196,7 +205,7 @@ SWIMMERS = [
      "Fratesi moved to ROW at 15 to train under Dean Boles and set a Canadian record in the 200 m "
      "backstroke at the 2001 World Championships. At the Athens Games she missed the final by two "
      "hundredths of a second. She later became a medical student at the University of Ottawa.",
-     ""),
+     "", "object-position:left top;"),
     ("oly-keith-beavers.jpg", "Keith Beavers", "2004 Athens &middot; 2008 Beijing",
      "Orangeville-born, Beavers trained under Bud McAllister and Dean Boles at ROW&rsquo;s "
      "national training centre. He competed at two Olympics, placing seventh in the 200 m "

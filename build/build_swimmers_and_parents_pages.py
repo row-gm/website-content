@@ -168,7 +168,7 @@ club_records = wrap_page(
 # ---------------------------------------------------------------------------
 
 EQUIPMENT = [
-    ("ROW Swim Academy", "RSA",
+    ("ROW Swim Academy", "All ROW Swim Academy classes",
      ["Kickboard", "Goggles", "ROW swim cap"]),
     ("TOPS", "TOPS 2 and TOPS 1",
      ["Short blade fins", "Kickboard", "ROW swim cap", "Water bottle",
@@ -188,7 +188,8 @@ EQUIPMENT = [
       "Racing or practice suit: Speedo Endurance level, black", "ROW t-shirt for meets",
       "ROW pants, jacket or sweater to keep warm"]),
     ("Recreation", "REC AM and REC PM",
-     ["Fins", "Kickboard", "ROW swim cap", "Water bottle", "Practice suit, black"]),
+     ["Fins", "Kickboard", "ROW swim cap", "Water bottle",
+      "Racing or practice suit: Speedo Endurance level, black", "ROW t-shirt for meets"]),
     ("Provincial Development 3", "PD3",
      ["Short blade fins", "Snorkel, Finis junior", "Kickboard", "Small junior pull buoy",
       "ROW swim cap", "Water bottle", "Yoga mat for dryland",

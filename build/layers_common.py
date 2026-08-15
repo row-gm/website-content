@@ -151,6 +151,14 @@ URL_ASSESSMENT = f"{BASE}/page/system/teamreg-shopping?eventId=1761153"
 
 URL_EQUIPMENT_LIST = f"{BASE}/page/for-swimmers/row-equipment-list"
 
+# Fees, payment schedule and the 2026-27 fee table. Linked from every program
+# page chip. Added 14 August 2026.
+URL_REGISTRATION_FEES = f"{BASE}/page/for-parents/registration-fees"
+
+# Coaching and staff openings. Linked from the Join our team block on the
+# Coaches and Operations Team page. Added 15 August 2026.
+URL_CAREERS = f"{BASE}/page/about/row-careers"
+
 URL_FOR_SWIMMERS = f"{BASE}/page/for-swimmers"
 
 # The interactive calculator is hosted off-site because the CMS sanitizer strips <script>.
@@ -281,7 +289,8 @@ def layer_state(key, current=None):
 #
 # WHAT CHANGED, and why old names must not survive anywhere:
 #   TOPS 1 / TOPS 2      ->  TOPS 1 / TOPS 2   (named for sessions, not rank)
-#   AGD1 / AGD2          ->  AGD 1 / AGD 2 (named for age band)
+#   AGD1 / AGD2          ->  AGD 1 / AGD 2   (numbered like JD and PD; the
+#                            lower number is the higher level)
 #   LTCS                 ->  ROW Swim Academy
 #   RSA Age Group        ->  retired, absorbed into Regional and Recreation
 #   RSA Competitive      ->  retired, same
@@ -346,6 +355,10 @@ LOAD_BANDS = [
 # Zones and phases follow the &Under band. Competitive groups only: the
 # Recreation pathway is not built around peaking or zone percentages, and how
 # far the framework applies to it is an open question for the coaching staff.
+# Two columns, band and groups. This is a lookup, not a name: it is how a coach
+# or a parent answers which Peaking rule applies to a group. KEPT DELIBERATELY,
+# 14 August 2026, when the parenthetical form "AGD 2 (12&U)" was banned. The
+# band never trails the name; it lives in its own column here.
 AGE_BANDS = [
     ("10&U", "TOPS 2, TOPS 1"),
     ("12&U", "JD2, JD1, AGD 2, PD3"),

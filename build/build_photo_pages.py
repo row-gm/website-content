@@ -29,7 +29,7 @@ from row_page_helpers import (
     list_shell, numbered_row, data_table, lede,
 )
 
-from layers_common import BASE, URL_FOR_SWIMMERS
+from layers_common import BASE, URL_FOR_SWIMMERS, URL_CAREERS
 
 IMG_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "images")
 MIME = {".jpg": "jpeg", ".jpeg": "jpeg", ".png": "png", ".webp": "webp"}
@@ -120,7 +120,7 @@ STAFF = [
      "national coaching award, and is NCCP Level 2 certified."),
     ("coach-russ-franklin.jpg", "Russ Franklin", "Lead mentor coach",
      "Born in Winnipeg, Russ spent the first 35 years of his career coaching on the West "
-     "Island of Montreal, as head coach of the Pointe-Claire Swim Club and then the "
+     "Island of Montreal, at the Pointe-Claire Swim Club and then as head coach of the "
      "Beaconsfield Bluefins. From 1986 on, his swimmers competed for Canada year after "
      "year, including qualifiers for the Sydney 2000 and "
      "Beijing 2008 Olympic Games. He came to Ontario in 2011 as head coach of both ROW and "
@@ -149,14 +149,12 @@ coaches = wrap_page(
          + lede("Group assignments for the 2026-27 season. A lead coach for AGD 1, AGD 2 and the "
                 "Recreation groups is currently being recruited.")
          + "".join(person(*s) for s in STAFF)),
-    '<div style="margin:24px 0 0;">' + card(
-        h2("How we develop coaches")
-        + body("A club cannot promise long-term development to swimmers and treat its coaches as "
-               "interchangeable. Every ROW coach has a development plan: certification, time on "
-               "deck with a mentor, and support to take on more as they are ready. Assistant "
-               "roles are a route into the job, not a holding pattern.")
-        + body("ROW alumni coach here too. SD swimmers take the ROW Swim Academy on Saturday "
-               "mornings, fifteen minutes after finishing their own session.", margin="0")) + '</div>',
+    f'<a class="row-cta" href="{URL_CAREERS}" target="_blank">'
+    '<b>Join our team</b>'
+    '<span>We are recruiting. Every ROW coach gets a development plan: certification, '
+    'time on deck with a mentor, and support to take on more when they are ready. '
+    'Assistant roles are a route into the job, not a holding pattern.</span>'
+    '<em>See ROW Careers</em></a>',
 )
 
 

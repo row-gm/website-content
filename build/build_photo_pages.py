@@ -93,38 +93,51 @@ def person(photo, name, role, bio, note_="", crop=""):
 # ---------------------------------------------------------------------------
 
 STAFF = [
-    ("coach-ron-forrest.jpg", "Ron Forrest", "Lead coach &middot; ND and PD1",
+    ("coach-ron-forrest.jpg", "Ron Forrest", "Lead coach &middot; PD1",
      "Ron began as an age group swimmer with ROW before a 25-year coaching career that included "
      "two decades as Head Coach and Program Director of the Fort Worth Area Swim Team. His "
      "athletes have included an Olympic gold medallist, an Olympic qualifier and world record "
      "holder, a Para-swimming world record holder, and numerous Pan-American, Commonwealth and "
      "NCAA competitors. He was named Texas Swimming Senior Coach of the Year in 2002 and 2004."),
+    ("coach-connor-watson.jpg", "Connor Watson", "Lead coach &middot; ND and athletic development",
+     "An NCCP certified Senior Coach with more than 10 years on deck, Connor has worked with "
+     "swimmers from their first race through to national qualifiers, and with age group, "
+     "varsity and Masters athletes. He began coaching at ROW from 2011 to 2014, then moved "
+     "to Sudbury Laurentian and Club Warriors, and most recently was head coach at Cambridge "
+     "Aquajets. He returns to ROW this season. He holds a diploma in Physical Fitness "
+     "Management from Cambrian College and a degree in Sport and Physical Education from "
+     "Laurentian University."),
     ("coach-tyson-macdonald.jpg", "Tyson MacDonald", "Lead coach &middot; PD2 and SD",
-     "A recently retired competitive swimmer who represented Canada internationally, most "
-     "recently earning three medals at the 2023 Para Pan American Games in Santiago. Tyson swam "
-     "at Wilfrid Laurier University from 2015 to 2020 and brings that experience onto the deck."),
+     "Tyson swam for ROW before going on to represent Canada internationally, most "
+     "recently winning three medals at the 2023 Para Pan American Games in Santiago. He "
+     "swam at Wilfrid Laurier University from 2015 to 2020, and has brought that "
+     "experience back onto the ROW deck as a coach."),
     ("coach-kaitlyn-schultz.jpg", "Kaitlyn Schultz", "Lead coach &middot; JD1, JD2 and TOPS",
      "With ROW since 2009 and more than 30 years in Ontario swimming, Kaitlyn coached at Champion "
      "Swim Club before becoming Head Coach of Variety Village Flames in 2008, working with both "
      "able-bodied and Paralympic swimmers. One of her athletes qualified for two consecutive "
      "Paralympic World Championship teams. She holds a Speedo Award of Excellence and a CSTCA "
      "national coaching award, and is NCCP Level 2 certified."),
-    ("coach-chloe-hughes.jpg", "Chloe Hughes", "Lead coach &middot; ROW Swim Academy",
-     "In her fourth season on full-time staff, Chloe&rsquo;s connection to ROW goes back to 2011 "
-     "as a competitive swimmer. She joined the coaching team in 2016 and now works with athletes "
-     "aged four to sixteen. She holds a degree in English from the University of Guelph and is an "
-     "Ontario Certified Teacher completing a Master&rsquo;s in Professional Education at Western."),
-    ("coach-russ-franklin.jpg", "Russ Franklin", "Mentor coach &middot; every group",
-     "Now in his 51st year of coaching, roughly 30 of them as a head coach, Russ has guided "
-     "provincial and national medallists and athletes who went on to represent Canada "
-     "internationally, including at the Olympics. He works across every competitive group, at "
-     "training and at meets, so what he knows is passed on while he is here to pass it on."),
-    ("coach-andrew-moss.jpg", "Andrew Moss", "General Manager",
-     "Andrew brings 15 years of coaching experience, from age group swimmers through to "
-     "Olympic-calibre athletes, along with another 15 years in senior leadership at Swim BC, "
-     "Swimming Canada, the Canadian Sport Institute Ontario and Golf Ontario. Since 2018 he has "
-     "focused on executive and life coaching, and recently completed the 11-month Clipper Round "
-     "the World Yacht Race."),
+    ("coach-russ-franklin.jpg", "Russ Franklin", "Lead mentor coach",
+     "Born in Winnipeg, Russ spent the first 35 years of his career coaching on the West "
+     "Island of Montreal, as head coach of the Pointe-Claire Swim Club and then the "
+     "Beaconsfield Bluefins. From 1986 on, his swimmers competed for Canada year after "
+     "year, including qualifiers for the Sydney 2000 and "
+     "Beijing 2008 Olympic Games. He came to Ontario in 2011 as head coach of both ROW and "
+     "the Laurier varsity team, and later led Club Warriors here in Waterloo. Now in his "
+     "51st year, he has coached swimmers from their first race to the national level, and "
+     "has always coached for the long term: each swimmer developing at their own pace, to "
+     "reach their potential as a person as well as an athlete. As lead mentor coach he "
+     "works at training and at meets, developing our coaches as well as our swimmers."),
+    ("coach-andrew-moss.jpg", "Andrew Moss", "Director of Swimming &amp; General Manager",
+     "Andrew is a three-time swimming parent, so he knows the sport from the stands as well "
+     "as the deck. He brings over 35 years in coaching and high performance leadership "
+     "&mdash; 15 in swim coaching, from age group swimmers through to Olympic Games medal "
+     "winners, and 20 in senior leadership roles at Swim BC, Swimming Canada, the Canadian "
+     "Sport Institute Ontario and Golf Ontario, then in executive coaching. At ROW he leads "
+     "two sides of the club, swimming and operations, so both work to one plan for every "
+     "member. He recently finished the 11-month Clipper Round the World Yacht Race, which "
+     "he says changed how he thinks about leading."),
 ]
 
 coaches = wrap_page(

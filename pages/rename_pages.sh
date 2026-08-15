@@ -1,0 +1,35 @@
+#!/bin/sh
+# Adds the section prefix to every page file already in the repo.
+# Run from inside pages/.  Files added today are already named correctly.
+# row_home_embed.html is left alone; it is not inside a section.
+# Files replaced by today's uploads are not listed; they are already correct,
+# and the four stale ones were deleted earlier.
+
+git mv row_about_us_embed.html row_about_about_us_embed.html
+git mv row_board_committees_embed.html row_about_board_committees_embed.html
+git mv row_board_of_directors_embed.html row_about_board_of_directors_embed.html
+git mv row_clothing_and_equipment_embed.html row_swimmers_clothing_and_equipment_embed.html
+git mv row_club_info_and_policies_embed.html row_about_club_info_and_policies_embed.html
+git mv row_club_newsletters_embed.html row_news_club_newsletters_embed.html
+git mv row_club_records_embed.html row_swimmers_club_records_embed.html
+git mv row_coaches_and_operations_team_embed.html row_about_coaches_and_operations_team_embed.html
+git mv row_coaching_at_row_embed.html row_coaches_coaching_at_row_embed.html
+git mv row_equipment_list_embed.html row_swimmers_equipment_list_embed.html
+git mv row_for_parents_embed.html row_parents_for_parents_embed.html
+git mv row_for_swimmers_embed.html row_swimmers_for_swimmers_embed.html
+git mv row_fpp_reporting_and_tracking_embed.html row_parents_fpp_reporting_and_tracking_embed.html
+git mv row_home_footer_embed.html row_home_footer_embed.html
+git mv row_home_main_body_embed.html row_home_main_body_embed.html
+git mv row_hosted_meets_embed.html row_meets_hosted_meets_embed.html
+git mv row_how_to_get_involved_embed.html row_about_how_to_get_involved_embed.html
+git mv row_how_we_design_training_embed.html row_coaches_how_we_design_training_embed.html
+git mv row_how_we_plan_training_embed.html row_coaches_how_we_plan_training_embed.html
+git mv row_meet_and_event_schedule_embed.html row_meets_meet_and_event_schedule_embed.html
+git mv row_officiating_embed.html row_parents_officiating_embed.html
+git mv row_our_olympians_and_paralympians_embed.html row_about_our_olympians_and_paralympians_embed.html
+git mv row_pool_locations_embed.html row_about_pool_locations_embed.html
+git mv row_programs_overview_embed.html row_programs_programs_overview_embed.html
+git mv row_sport_safety_embed.html row_parents_sport_safety_embed.html
+git mv row_the_individual_swimmer_embed.html row_coaches_the_individual_swimmer_embed.html
+git mv row_the_practice_session_embed.html row_coaches_the_practice_session_embed.html
+git mv row_the_training_week_embed.html row_coaches_the_training_week_embed.html

@@ -13,23 +13,23 @@ VERIFIED if someone has actually compared the two.
 | **UNVERIFIED** | Never compared. The repo copy may be stale, missing or wrong. |
 | **NOT IN REPO** | Live page with no file and no build script anywhere. |
 
-Counts: **1 verified**, **13 pending paste**, **34 unverified**, **8 not in repo**, 56 pages total.
+Counts: **14 verified**, **0 pending paste**, **34 unverified**, **8 not in repo**, 56 pages total.
 
 | Section | Page URL | Repo file | Build script | Status | Checked | Notes |
 |---|---|---|---|---|---|---|
-| Programs | `programs/row-swim-academy` | `row_swim_academy_embed.html` | `build_program_pages.py  STALE` | **PENDING PASTE** | 15 Aug 2026 |  |
-| Programs | `programs/tops-2` | `row_tops_2_embed.html` | `build_program_pages.py  STALE` | **PENDING PASTE** | 15 Aug 2026 |  |
-| Programs | `programs/tops-1` | `row_tops_1_embed.html` | `build_program_pages.py  STALE` | **PENDING PASTE** | 15 Aug 2026 |  |
-| Programs | `programs/junior-development-2` | `row_junior_development_2_embed.html` | `build_program_pages.py  STALE` | **PENDING PASTE** | 15 Aug 2026 |  |
-| Programs | `programs/junior-development-1` | `row_junior_development_1_embed.html` | `build_program_pages.py  STALE` | **PENDING PASTE** | 15 Aug 2026 |  |
-| Programs | `programs/recreation-groups` | `row_recreation_embed.html` | `build_program_pages.py  STALE` | **PENDING PASTE** | 15 Aug 2026 |  |
-| Programs | `programs/age-group-development-2` | `row_age_group_development_2_embed.html` | `build_program_pages.py  STALE` | **PENDING PASTE** | 15 Aug 2026 |  |
-| Programs | `programs/age-group-development-1` | `row_age_group_development_1_embed.html` | `build_program_pages.py  STALE` | **PENDING PASTE** | 15 Aug 2026 |  |
-| Programs | `programs/senior-development` | `row_senior_development_embed.html` | `build_program_pages.py  STALE` | **PENDING PASTE** | 15 Aug 2026 | SD also had CMS paste junk removed |
-| Programs | `programs/provincial-development-3` | `row_provincial_development_3_embed.html` | `build_program_pages.py  STALE` | **PENDING PASTE** | 15 Aug 2026 |  |
-| Programs | `programs/provincial-development-2` | `row_provincial_development_2_embed.html` | `build_program_pages.py  STALE` | **PENDING PASTE** | 15 Aug 2026 |  |
-| Programs | `programs/provincial-development-1` | `row_provincial_development_1_embed.html` | `build_program_pages.py  STALE` | **PENDING PASTE** | 15 Aug 2026 |  |
-| Programs | `programs/national-development` | `row_national_development_embed.html` | `build_program_pages.py  STALE` | **PENDING PASTE** | 15 Aug 2026 |  |
+| Programs | `programs/row-swim-academy` | `row_swim_academy_embed.html` | `build_program_pages.py  STALE` | **VERIFIED** | 15 Aug 2026 |  |
+| Programs | `programs/tops-2` | `row_tops_2_embed.html` | `build_program_pages.py  STALE` | **VERIFIED** | 15 Aug 2026 |  |
+| Programs | `programs/tops-1` | `row_tops_1_embed.html` | `build_program_pages.py  STALE` | **VERIFIED** | 15 Aug 2026 |  |
+| Programs | `programs/junior-development-2` | `row_junior_development_2_embed.html` | `build_program_pages.py  STALE` | **VERIFIED** | 15 Aug 2026 |  |
+| Programs | `programs/junior-development-1` | `row_junior_development_1_embed.html` | `build_program_pages.py  STALE` | **VERIFIED** | 15 Aug 2026 |  |
+| Programs | `programs/recreation-groups` | `row_recreation_embed.html` | `build_program_pages.py  STALE` | **VERIFIED** | 15 Aug 2026 |  |
+| Programs | `programs/age-group-development-2` | `row_age_group_development_2_embed.html` | `build_program_pages.py  STALE` | **VERIFIED** | 15 Aug 2026 |  |
+| Programs | `programs/age-group-development-1` | `row_age_group_development_1_embed.html` | `build_program_pages.py  STALE` | **VERIFIED** | 15 Aug 2026 |  |
+| Programs | `programs/senior-development` | `row_senior_development_embed.html` | `build_program_pages.py  STALE` | **VERIFIED** | 15 Aug 2026 | SD also had CMS paste junk removed |
+| Programs | `programs/provincial-development-3` | `row_provincial_development_3_embed.html` | `build_program_pages.py  STALE` | **VERIFIED** | 15 Aug 2026 |  |
+| Programs | `programs/provincial-development-2` | `row_provincial_development_2_embed.html` | `build_program_pages.py  STALE` | **VERIFIED** | 15 Aug 2026 |  |
+| Programs | `programs/provincial-development-1` | `row_provincial_development_1_embed.html` | `build_program_pages.py  STALE` | **VERIFIED** | 15 Aug 2026 |  |
+| Programs | `programs/national-development` | `row_national_development_embed.html` | `build_program_pages.py  STALE` | **VERIFIED** | 15 Aug 2026 |  |
 | Programs | `programs` | `row_programs_embed.html` | `build_programs_overview.py` | **UNVERIFIED** | — |  |
 | Programs | `programs/row-pool-locations` | `row_row_pool_locations_embed.html` | `build_about_and_home.py` | **UNVERIFIED** | — |  |
 | Programs | `programs/row-camps--summer-team` | `row_row_camps_summer_team_embed.html` | `build_program_pages.py` | **UNVERIFIED** | — |  |
@@ -75,6 +75,34 @@ Counts: **1 verified**, **13 pending paste**, **34 unverified**, **8 not in repo
 | Safety | `sport-safety` | `row_sport_safety_embed.html` | `various` | **UNVERIFIED** | — |  |
 
 ---
+
+## Changed 15 August 2026
+
+The 13 program pages were pulled from live, edited, pasted back and committed.
+They are the only pages anyone has confirmed match the site.
+
+Applied to them in that pass:
+
+- The goal statement, per section 15 of the decisions record
+- `specialisation` to `specialization`, `toward` to `towards`
+- `taper` to Peaking, the phase name
+- `AGD1` and `AGD2` to `AGD 1` and `AGD 2`
+- Phone table labels changed from Pool and Lanes to Activity and Space, so they
+  match the column headers
+- The Fees chip, linking to registration and fees
+- Group sizes on ROW Swim Academy, TOPS 1 and TOPS 2
+- New descriptions on Age Group Development 1 and 2, and Senior Development
+- CMS paste junk removed from Senior Development
+
+Still open on these pages:
+
+- Four pages phrase the age band differently: TOPS 1, TOPS 2 and PD2 say "around
+  the N and under age band"; PD3 says "primarily 10 to 12 years old". The rest
+  say "for swimmers N and under", which is the plainer form and the one to keep.
+- AGD 1 and AGD 2 no longer state an age at all. Deliberate or not, it needs a
+  decision.
+- Phase wording still varies: AGD 2 says "loading, sharpening, and recovering",
+  PD3 says "building, sharpening, peaking". Neither matches the six phase names.
 
 ## How to verify a page
 

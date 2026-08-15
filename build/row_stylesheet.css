@@ -1,133 +1,153 @@
-/* ROW shared stylesheet.
-   Paste into the page's custom CSS field. The CMS scopes it to this page's
-   content, so every page needs its own copy.
+.row-wrap { max-width:1000px; margin:0 auto; background:#F3EFE4; padding:24px;
+            font-family:Arial, Helvetica, sans-serif; color:#152225; }
 
-   This file is the source, not a generated artefact. Nothing regenerates it.
-   Run row_css_check.py over the build scripts after editing, which fails if a
-   script uses a class this file does not define. That check is what stops the
-   drift; an earlier comment here claimed a generator did, and there was none.
+.row-wrap p { font-size:14.5px; color:#152225; line-height:1.65; margin:0 0 16px; }
+.row-wrap h1 { font-family:'Arial Black', Arial, sans-serif; text-transform:uppercase;
+            font-size:clamp(24px, 5vw, 40px); line-height:1.1; font-weight:800;
+            color:#0A2E3F; margin:0 0 12px; }
+.row-wrap h2 { font-family:'Arial Black', Arial, sans-serif; text-transform:uppercase;
+            letter-spacing:0.02em; color:#0A2E3F; font-size:24px; margin:0 0 8px; }
+.row-wrap h3 { font-family:'Arial Black', Arial, sans-serif; font-size:16px;
+            color:#0A2E3F; line-height:1.25; margin:18px 0 3px; }
+.row-wrap h4 { font-family:'Courier New', Courier, monospace; font-weight:700;
+            font-size:11px; letter-spacing:0.06em; text-transform:uppercase;
+            color:#4B5B60; margin:0 0 6px; }
+.row-wrap ul, .row-wrap ol { margin:0 0 16px; padding-left:22px; }
+.row-wrap li { font-size:14.5px; color:#152225; line-height:1.7; margin-bottom:10px; }
+.row-wrap a { color:#136B77; font-weight:700; }
+.row-wrap b, .row-wrap strong { font-weight:700; color:#0A2E3F; }
+.row-wrap blockquote { border-left:4px solid #3FBFB0; background:#EFFAF8;
+            border-radius:0 10px 10px 0; padding:16px 20px; margin:20px 0;
+            font-size:14.5px; color:#152225; line-height:1.6; }
+.row-wrap table { width:100%; border-collapse:collapse; }
+.row-wrap th { background:#0A2E3F; color:#FFFFFF; font-family:'Courier New', Courier, monospace;
+            font-weight:700; font-size:11px; letter-spacing:0.06em; text-transform:uppercase;
+            padding:10px 14px; text-align:left; }
+.row-wrap td { font-size:13.5px; color:#152225; padding:11px 14px;
+            border-top:1px solid #DAD3C2; line-height:1.45; vertical-align:top; }
+.row-wrap img { max-width:100%; height:auto; }
+.row-wrap hr { border:none; border-top:1px solid #DAD3C2; margin:24px 0; }
 
-   Structure and typography live here. Colour that varies per row stays inline,
-   because it comes from data: ZONES in layers_common.py, the layer-map states,
-   the age flags. A clean-up that purges every inline style will break the zone
-   tables. */
+.row-wrap .row-hero { background:radial-gradient(1100px 500px at 15% -10%, #114C5E 0%, #0A2E3F 55%, #062029 100%);
+            color:#FFFFFF; padding:44px 32px; border-radius:14px; }
+.row-wrap .row-hero p { color:#CBDDE1; }
+.row-wrap .row-hero h1, .row-wrap .row-hero h2, .row-wrap .row-hero h3 { color:#FFFFFF; }
+.row-wrap .row-hero a { color:#3FBFB0; }
+.row-wrap .row-hero b, .row-wrap .row-hero strong { color:#FFFFFF; }
+.row-wrap .row-eyebrow { font-family:'Courier New', Courier, monospace; font-size:13px; font-weight:700;
+            letter-spacing:0.14em; text-transform:uppercase; color:#FFFFFF;
+            margin-bottom:14px; display:block; }
+.row-wrap .row-h1 { font-family:'Arial Black', Arial, sans-serif; text-transform:uppercase;
+            font-size:clamp(24px, 5vw, 40px); line-height:1.1; font-weight:800;
+            color:#FFFFFF; margin:0; }
+.row-wrap .row-sub { max-width:660px; margin:16px 0 0; font-size:16px; color:#CBDDE1; line-height:1.6; }
+.row-wrap .row-h2 { font-family:'Arial Black', Arial, sans-serif; text-transform:uppercase;
+            letter-spacing:0.02em; color:#0A2E3F; font-size:24px; margin:0 0 8px; }
+.row-wrap .row-body { font-size:14.5px; color:#152225; line-height:1.65; margin:0 0 16px; }
+.row-wrap .row-note { font-size:14px; color:#4B5B60; line-height:1.65; margin:16px 0 0; }
+.row-wrap .row-card { background:#FFFFFF; border:1px solid #DAD3C2; border-radius:12px; padding:24px 26px; }
+.row-wrap .row-call { border-left:4px solid #3FBFB0; background:#EFFAF8; border-radius:0 10px 10px 0;
+            padding:16px 20px; margin:20px 0 0; font-size:14.5px; color:#152225; line-height:1.6; }
+.row-wrap .row-warn { border-left-color:#D64545; background:#FBEEEE; }
+.row-wrap .row-scroll { overflow-x:auto; border:1px solid #DAD3C2; border-radius:10px; background:#FFFFFF; }
+.row-wrap .row-table { width:100%; border-collapse:collapse; }
+.row-wrap .row-table th { background:#0A2E3F; color:#FFFFFF; font-family:'Courier New', Courier, monospace;
+            font-weight:700; font-size:11px; letter-spacing:0.06em; text-transform:uppercase;
+            padding:10px 14px; text-align:left; }
+.row-wrap .row-table td { font-size:13.5px; color:#152225; padding:11px 14px;
+            border-top:1px solid #DAD3C2; line-height:1.45; vertical-align:top; }
+.row-wrap .row-table td:first-child { font-weight:700; color:#0A2E3F; }
+.row-wrap .row-table tr:nth-child(even) td { background:#FAF8F2; }
+.row-wrap .row-chips { display:flex; flex-wrap:wrap; gap:14px; margin:0 0 24px; }
+.row-wrap .row-chip { flex:1; min-width:150px; background:#FFFFFF; border:1px solid #DAD3C2;
+            border-radius:10px; padding:14px 18px; }
+.row-wrap .row-chip b { display:block; font-family:'Courier New', Courier, monospace; font-size:10.5px;
+            font-weight:700; letter-spacing:0.08em; text-transform:uppercase;
+            color:#4B5B60; margin-bottom:4px; }
+.row-wrap .row-chip span { font-size:14.5px; font-weight:700; color:#152225; }
+.row-wrap .row-cta { display:block; text-decoration:none; background:#0A2E3F; border-radius:12px;
+            padding:26px 24px; text-align:center; }
+.row-wrap .row-cta b { display:block; font-family:'Arial Black', Arial, sans-serif; text-transform:uppercase;
+            font-size:clamp(17px, 3vw, 22px); color:#FFFFFF; line-height:1.2; }
+.row-wrap .row-cta span { display:block; font-size:14.5px; color:#CBDDE1; margin:12px auto 0;
+            max-width:520px; line-height:1.55; }
+.row-wrap .row-cta em { display:inline-block; margin-top:18px; background:#136B77; color:#FFFFFF;
+            font-family:'Arial Black', Arial, sans-serif; text-transform:uppercase;
+            letter-spacing:0.03em; font-size:15px; font-style:normal;
+            padding:14px 30px; border-radius:9px; }
+.row-wrap .row-link { color:#136B77; font-weight:700; }
+.row-wrap .row-draft { background:#D64545; color:#FFFFFF; border-radius:10px; padding:14px 20px;
+            margin:0 0 16px; text-align:center; }
+.row-wrap .row-draft b { font-family:'Arial Black', Arial, sans-serif; text-transform:uppercase;
+            letter-spacing:0.08em; font-size:clamp(15px, 3.5vw, 19px); color:#FFFFFF; }
+.row-wrap .row-draft span { display:block; font-size:14px; margin-top:6px; }
+.row-wrap .row-opt { font-family:'Arial Black', Arial, sans-serif; text-transform:uppercase;
+            color:#0A2E3F; font-size:16px; margin:22px 0 10px; }
+.row-wrap .row-quote { background:radial-gradient(900px 400px at 85% 110%, #114C5E 0%, #0A2E3F 55%, #062029 100%);
+            border-radius:14px; padding:36px 32px; text-align:center; }
+.row-wrap .row-quote b { display:block; font-family:'Arial Black', Arial, sans-serif; color:#FFFFFF;
+            font-size:40px; line-height:1; margin-bottom:4px; }
+.row-wrap .row-quote p { font-family:'Arial Black', Arial, sans-serif; text-transform:uppercase;
+            color:#FFFFFF; font-size:clamp(15px, 2.6vw, 19px); line-height:1.35;
+            max-width:720px; margin:0 auto; }
+.row-wrap .row-quote span { display:block; width:60px; height:4px; background:#3FBFB0;
+            border-radius:2px; margin:20px auto 0; }
+.row-wrap .row-quote p.row-address { text-transform:none; font-size:clamp(14px, 2.4vw, 17px);
+            line-height:1.55; }
+.row-wrap .row-ul { margin:0; padding-left:22px; }
+.row-wrap .row-li { font-size:14.5px; color:#152225; line-height:1.7; margin-bottom:10px; }
+.row-wrap .row-tag { display:inline-block; font-family:'Courier New', Courier, monospace;
+            font-weight:700; font-size:10px; letter-spacing:0.04em; text-transform:uppercase;
+            background:#136B77; color:#FFFFFF; border-radius:4px; padding:3px 8px;
+            margin-left:6px; white-space:nowrap; }
+.row-wrap .row-pill { display:inline-block; font-family:'Courier New', Courier, monospace;
+            font-weight:700; font-size:10px; letter-spacing:0.04em; text-transform:uppercase;
+            border-radius:4px; padding:3px 8px; white-space:nowrap;
+            background:#136B77; color:#FFFFFF; }
+.row-wrap .row-faq { margin:8px 0 0; }
+.row-wrap .row-faq-i { border-top:1px solid #DAD3C2; padding:14px 0; }
+.row-wrap .row-faq-i:first-child { border-top:none; padding-top:0; }
+.row-wrap .row-faq-q { font-family:'Arial Black', Arial, sans-serif; font-size:15px;
+            color:#0A2E3F; line-height:1.3; margin:0 0 6px; }
+.row-wrap .row-faq-a { font-size:14.5px; color:#152225; line-height:1.65; margin:0; }
 
-.row-wrap  { max-width:1000px; margin:0 auto; background:#F3EFE4; padding:24px;
-             font-family:Arial, Helvetica, sans-serif; }
-.row-hero  { background:radial-gradient(1100px 500px at 15% -10%, #114C5E 0%, #0A2E3F 55%, #062029 100%);
-             color:#FFFFFF; padding:44px 32px; border-radius:14px; }
-.row-eyebrow { font-family:'Courier New', Courier, monospace; font-size:13px; font-weight:700;
-             letter-spacing:0.14em; text-transform:uppercase; color:#FFFFFF;
-             margin-bottom:14px; display:block; }
-.row-h1    { font-family:'Arial Black', Arial, sans-serif; text-transform:uppercase;
-             font-size:clamp(24px, 5vw, 40px); line-height:1.1; font-weight:800;
-             color:#FFFFFF; margin:0; }
-.row-sub   { max-width:660px; margin:16px 0 0; font-size:16px; color:#CBDDE1; line-height:1.6; }
-.row-h2    { font-family:'Arial Black', Arial, sans-serif; text-transform:uppercase;
-             letter-spacing:0.02em; color:#0A2E3F; font-size:24px; margin:0 0 8px; }
-.row-body  { font-size:14.5px; color:#152225; line-height:1.65; margin:0 0 16px; }
-.row-note  { font-size:14px; color:#4B5B60; line-height:1.65; margin:16px 0 0; }
-.row-card  { background:#FFFFFF; border:1px solid #DAD3C2; border-radius:12px; padding:24px 26px; }
-.row-call  { border-left:4px solid #3FBFB0; background:#EFFAF8; border-radius:0 10px 10px 0;
-             padding:16px 20px; margin:20px 0 0; font-size:14.5px; color:#152225; line-height:1.6; }
-.row-warn  { border-left-color:#D64545; background:#FBEEEE; }
-.row-scroll { overflow-x:auto; border:1px solid #DAD3C2; border-radius:10px; background:#FFFFFF; }
-.row-table { width:100%; border-collapse:collapse; }
-.row-table th { background:#0A2E3F; color:#FFFFFF; font-family:'Courier New', Courier, monospace;
-             font-weight:700; font-size:11px; letter-spacing:0.06em; text-transform:uppercase;
-             padding:10px 14px; text-align:left; }
-.row-table td { font-size:13.5px; color:#152225; padding:11px 14px;
-             border-top:1px solid #DAD3C2; line-height:1.45; vertical-align:top; }
-.row-table td:first-child { font-weight:700; color:#0A2E3F; }
-.row-table tr:nth-child(even) td { background:#FAF8F2; }
-.row-chips { display:flex; flex-wrap:wrap; gap:14px; margin:0 0 24px; }
-.row-chip  { flex:1; min-width:150px; background:#FFFFFF; border:1px solid #DAD3C2;
-             border-radius:10px; padding:14px 18px; }
-.row-chip b { display:block; font-family:'Courier New', Courier, monospace; font-size:10.5px;
-             font-weight:700; letter-spacing:0.08em; text-transform:uppercase;
-             color:#4B5B60; margin-bottom:4px; }
-.row-chip span { font-size:14.5px; font-weight:700; color:#152225; }
-.row-cta   { display:block; text-decoration:none; background:#0A2E3F; border-radius:12px;
-             padding:26px 24px; text-align:center; }
-.row-cta b { display:block; font-family:'Arial Black', Arial, sans-serif; text-transform:uppercase;
-             font-size:clamp(17px, 3vw, 22px); color:#FFFFFF; line-height:1.2; }
-.row-cta span { display:block; font-size:14.5px; color:#CBDDE1; margin:12px auto 0;
-             max-width:520px; line-height:1.55; }
-.row-cta em { display:inline-block; margin-top:18px; background:#136B77; color:#FFFFFF;
-             font-family:'Arial Black', Arial, sans-serif; text-transform:uppercase;
-             letter-spacing:0.03em; font-size:15px; font-style:normal;
-             padding:14px 30px; border-radius:9px; }
-.row-link  { color:#136B77; font-weight:700; }
-.row-draft { background:#D64545; color:#FFFFFF; border-radius:10px; padding:14px 20px;
-             margin:0 0 16px; text-align:center; }
-.row-draft b { font-family:'Arial Black', Arial, sans-serif; text-transform:uppercase;
-             letter-spacing:0.08em; font-size:clamp(15px, 3.5vw, 19px); }
-.row-draft span { display:block; font-size:14px; margin-top:6px; }
-.row-opt   { font-family:'Arial Black', Arial, sans-serif; text-transform:uppercase;
-             color:#0A2E3F; font-size:16px; margin:22px 0 10px; }
-.row-quote { background:radial-gradient(900px 400px at 85% 110%, #114C5E 0%, #0A2E3F 55%, #062029 100%);
-             border-radius:14px; padding:36px 32px; text-align:center; }
-.row-quote b { display:block; font-family:'Arial Black', Arial, sans-serif; color:#FFFFFF;
-             font-size:40px; line-height:1; margin-bottom:4px; }
-.row-quote p { font-family:'Arial Black', Arial, sans-serif; text-transform:uppercase;
-             color:#FFFFFF; font-size:clamp(15px, 2.6vw, 19px); line-height:1.35;
-             max-width:720px; margin:0 auto; }
-.row-quote span { display:block; width:60px; height:4px; background:#3FBFB0;
-             border-radius:2px; margin:20px auto 0; }
-.row-quote p.row-address { text-transform:none; font-size:clamp(14px, 2.4vw, 17px);
-             line-height:1.55; }
-.row-ul    { margin:0; padding-left:22px; }
-.row-li    { font-size:14.5px; color:#152225; line-height:1.7; margin-bottom:10px; }
-.row-tag   { display:inline-block; font-family:'Courier New', Courier, monospace;
-             font-weight:700; font-size:10px; letter-spacing:0.04em; text-transform:uppercase;
-             background:#136B77; color:#FFFFFF; border-radius:4px; padding:3px 8px;
-             margin-left:6px; white-space:nowrap; }
-.row-person { display:flex; gap:22px; align-items:flex-start; padding:20px 0;
-             border-top:1px solid #DAD3C2; flex-wrap:wrap; }
-.row-person-pic { flex:none; width:180px; }
-.row-person-text { flex:1; min-width:260px; }
-.row-photo { width:100%; height:auto; display:block; border-radius:10px; }
+.row-wrap .row-person, .row-wrap .row-stage { display:flex; gap:22px; align-items:flex-start;
+            padding:20px 0; border-top:1px solid #DAD3C2; flex-wrap:wrap; }
+.row-wrap .row-person-pic { flex:none; width:180px; }
+.row-wrap .row-person-text { flex:1; min-width:260px; }
+.row-wrap .row-stage-pic { flex:none; width:110px; }
+.row-wrap .row-stage-text { flex:1; min-width:260px; }
+.row-wrap .row-stage-head { font-family:'Arial Black', Arial, sans-serif; font-size:16px;
+            color:#0A2E3F; line-height:1.25; margin:0 0 3px; }
+.row-wrap .row-stage-lead { font-family:'Courier New', Courier, monospace; font-weight:700;
+            font-size:11px; letter-spacing:0.06em; text-transform:uppercase;
+            color:#4B5B60; margin:0 0 6px; }
+.row-wrap .row-stage-groups { font-size:13px; color:#4B5B60; line-height:1.5; margin:0 0 8px; }
+.row-wrap .row-person-text h3, .row-wrap .row-stage-text h3 { margin:0 0 3px; }
+.row-wrap .row-photo { width:100%; aspect-ratio:3/4; object-fit:cover;
+            object-position:center top; display:block; border-radius:10px; }
+.row-wrap .row-logo { max-width:260px; height:auto; display:block; margin:0 0 16px; }
+.row-wrap .row-logo-sm { max-width:110px; height:auto; display:block; }
+.row-wrap .row-lbl { display:none; }
+.row-wrap .row-lbl-in { display:block; font-weight:400; font-size:10px; letter-spacing:0.04em;
+            text-transform:none; opacity:0.8; margin-top:2px; }
+.row-wrap .row-empty { font-style:italic; color:#4B5B60; }
+.row-wrap .row-mono { font-family:'Courier New', Courier, monospace; font-size:15px;
+            font-weight:700; color:#0A2E3F; }
 
-/* Stages and people. Same shape as .row-person: a picture beside a block of
-   text. Used for the three stages on The Role of Parents, and for named people
-   on the coach, officiating and Olympian pages. These six were referenced by the
-   build scripts and never defined, so names and roles rendered unstyled on three
-   published pages. */
-.row-stage { display:flex; gap:22px; align-items:flex-start; padding:20px 0;
-             border-top:1px solid #DAD3C2; flex-wrap:wrap; }
-.row-stage-pic  { flex:none; width:110px; }
-.row-stage-text { flex:1; min-width:260px; }
-.row-stage-head { font-family:'Arial Black', Arial, sans-serif; font-size:16px;
-             color:#0A2E3F; line-height:1.25; margin:0 0 3px; }
-.row-stage-lead { font-family:'Courier New', Courier, monospace; font-weight:700;
-             font-size:11px; letter-spacing:0.06em; text-transform:uppercase;
-             color:#4B5B60; margin:0 0 6px; }
-.row-stage-groups { font-size:13px; color:#4B5B60; line-height:1.5; margin:0 0 8px; }
-
-.row-logo  { max-width:260px; height:auto; display:block; margin:0 0 16px; }
-.row-logo-sm { max-width:110px; height:auto; display:block; }
-.row-lbl   { display:none; }
-.row-lbl-in { display:block; font-weight:400; font-size:10px; letter-spacing:0.04em;
-             text-transform:none; opacity:0.8; margin-top:2px; }
-.row-empty { font-style:italic; color:#4B5B60; }
-.row-mono  { font-family:'Courier New', Courier, monospace; font-size:15px;
-             font-weight:700; color:#0A2E3F; }
-
-/* Phones. The only at-rule the CMS allows, and the reason this is worth doing:
-   tables can stop scrolling sideways and stack instead. */
 @media (max-width: 600px) {
   .row-wrap { padding:12px; }
-  .row-hero { padding:28px 20px; }
-  .row-card { padding:18px 16px; }
-  .row-scroll { overflow-x:visible; border:none; }
-  .row-table thead { display:none; }
-  .row-table tr:first-child { display:none; }
-  .row-table tr { display:block; border-top:1px solid #DAD3C2; padding:10px 0; }
-  .row-table td { display:block; border:none; padding:4px 12px; }
-  .row-table td .row-lbl { display:block; font-weight:700; color:#4B5B60;
-                           font-size:11px; text-transform:uppercase;
-                           letter-spacing:0.06em; margin-bottom:2px; }
-  .row-stage, .row-person { gap:14px; }
-  .row-stage-pic  { width:84px; }
-  .row-person-pic { width:130px; }
+  .row-wrap .row-hero { padding:28px 20px; }
+  .row-wrap .row-card { padding:18px 16px; }
+  .row-wrap .row-scroll { overflow-x:visible; border:none; }
+  .row-wrap table thead { display:none; }
+  .row-wrap .row-table tr:first-child { display:none; }
+  .row-wrap table tr { display:block; border-top:1px solid #DAD3C2; padding:10px 0; }
+  .row-wrap table td { display:block; border:none; padding:4px 12px; }
+  .row-wrap .row-table td .row-lbl { display:block; font-weight:700; color:#4B5B60;
+            font-size:11px; text-transform:uppercase;
+            letter-spacing:0.06em; margin-bottom:2px; }
+  .row-wrap .row-person, .row-wrap .row-stage { gap:14px; }
+  .row-wrap .row-stage-pic { width:84px; }
+  .row-wrap .row-person-pic { width:130px; }
 }

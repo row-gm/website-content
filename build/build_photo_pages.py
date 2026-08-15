@@ -174,7 +174,8 @@ SWIMMERS = [
     ("oly-laura-nicholls.jpg", "Laura Nicholls", "1996 Atlanta &middot; 2000 Sydney",
      "A Kitchener native who joined ROW at five, Nicholls became one of Canada&rsquo;s fastest "
      "freestyle sprinters, competing at two Olympics and setting a Canadian record in the 50 m "
-     "freestyle. She went on to become head coach of the Oakville Aquatic Club.", ""),
+     "freestyle. She went on to become head coach of the Oakville Aquatic Club, and now the "
+     "Guelph Marlins Aquatic Club.", ""),
     ("oly-jennifer-button.jpg", "Jennifer Button", "2000 Sydney",
      "Button moved to Waterloo at 13 and trained under coach Dean Boles, becoming one of the "
      "country&rsquo;s top butterfly swimmers. At the Sydney Games she competed in four events, "
@@ -186,7 +187,8 @@ SWIMMERS = [
      "Michael Phelps, plus bronze in the 4x100 m medley relay.", ""),
     ("oly-jessica-tuomela.jpg", "Jessica Tuomela",
      "Paralympian &middot; 2000 Sydney &middot; 2004 Athens &middot; 2008 Beijing",
-     "Blind since early childhood, Tuomela trained with ROW at Wilfrid Laurier as a freestyle "
+     "Blind since early childhood, Tuomela trained under coach Bud McAllister at Wilfrid Laurier "
+     "as a freestyle "
      "sprint specialist, guided in the pool by a tapper who signalled when she neared the wall. "
      "She won Paralympic silver in the 50 m freestyle at Sydney 2000 and competed at three "
      "consecutive Games.", ""),
@@ -219,7 +221,8 @@ OLY_COACHES = [
     ("oly-bud-mcallister.jpg", "Bud McAllister", "National team coach &middot; USA and Canada",
      "An internationally renowned coach who has led national programs for both the United States "
      "and Canada, McAllister headed ROW&rsquo;s national training centre, where he coached "
-     "Takashi Yamamoto and Keith Beavers. His swimmers have combined for five Olympic medals and "
+     "Takashi Yamamoto, Jessica Tuomela and Keith Beavers. His swimmers have combined for five "
+     "Olympic medals and "
      "two Olympic records. He was named Canadian Coach of the Year in 2002.", ""),
     ("oly-dean-boles.jpg", "Dean Boles", "Now CEO and CTO &middot; Swim Ontario",
      "Boles joined ROW in 1980 as a national-level swimmer before turning to coaching a year "
@@ -229,7 +232,8 @@ OLY_COACHES = [
      "CEO and Chief Technical Officer of Swim Ontario since 2019.", ""),
     ("oly-hans-witolla.jpg", "Hans Witolla",
      "Now Lead Age Group Coach &middot; Richmond Hill Aquatic Club",
-     "Witolla coached at the Guelph Marlins and as an assistant with the University of Guelph "
+     "Witolla has had a long coaching career, starting in Brantford, Ontario. He coached at the "
+     "Guelph Marlins and as an assistant with the University of Guelph "
      "Gryphons before moving to the Waterloo region, where he served as Wilfrid Laurier&rsquo;s "
      "head coach and a senior coach with ROW. He coached Alec Elliot from age 12 through "
      "Elliot&rsquo;s Rio 2016 Paralympic debut and the 2018 Pan Pacific Para Swimming "

@@ -159,6 +159,10 @@ URL_REGISTRATION_FEES = f"{BASE}/page/for-parents/registration-fees"
 # Coaches and Operations Team page. Added 15 August 2026.
 URL_CAREERS = f"{BASE}/page/about/row-careers"
 
+# Volunteer roles, club wishlist and sponsorship. Replaced the dead
+# /page/for-parents/support-row on 15 August 2026.
+URL_GET_INVOLVED = f"{BASE}/page/for-parents/how-to-get-involved"
+
 URL_FOR_SWIMMERS = f"{BASE}/page/for-swimmers"
 
 # The interactive calculator is hosted off-site because the CMS sanitizer strips <script>.

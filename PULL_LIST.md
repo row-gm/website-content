@@ -10,27 +10,10 @@ Step 2 applies to every page, not only the ones that change. The stylesheet
 gained block spacing on 15 August, so any page still on the old copy looks
 cramped next to one on the new copy.
 
-## Meets and events
-
-**Start here.** Link text was changed in the repo on 15 August and never checked against live, so the repo and the site disagree right now.
-
-- [ ] `https://www.rowswimming.ca/page/events/row-hosted-meets`  
-      → `row_meets_hosted_meets_embed.html`  
-      Link text edited 15 Aug but never diffed against live
-
 ## For parents
 
 **Start here.** Officiating also needs the new CSS before the official names render at all.
 
-- [ ] `https://www.rowswimming.ca/page/for-parents/officiating`  
-      → `row_parents_officiating_embed.html`  
-      Link text edited 15 Aug but never diffed. 594 KB
-- [ ] `https://www.rowswimming.ca/page/for-parents`  
-      → `row_parents_for_parents_embed.html`
-- [ ] `https://www.rowswimming.ca/page/for-parents/parent-guide`  
-      → `row_parents_how_to_get_involved_embed.html`
-- [ ] `https://www.rowswimming.ca/page/for-parents/fpp-guide`  
-      → `row_parents_fpp_reporting_and_tracking_embed.html`
 
 ## For coaches
 
@@ -120,7 +103,7 @@ Programs Overview uses RSA once. ROW Swim Academy is the name now.
 
 ---
 
-**29 pages.** 28 are already verified; `PAGE_STATUS.md` has the full table.
+**0 pages.** 33 are already verified; `PAGE_STATUS.md` has the full table.
 
 ## While you are pasting CSS anyway
 

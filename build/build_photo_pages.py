@@ -384,7 +384,7 @@ officiating = wrap_page(
         + lede("Senior officials mentor and supervise other volunteers. All of them need deck "
                "experience first, and some, like Referee, need certification in several other "
                "roles.")
-        + img("off-referee.jpg", "A senior official on deck")
+        + img("off-referee.jpg", "The five levels of official, from Level I to Level V", cls="row-figure")
         + data_table(["Position", "What you do", "Why it matters"],
                      [[a, b, c] for a, b, c in SENIOR_ROLES])
         + note("Interested in a senior position? Get familiar with the "
@@ -396,7 +396,7 @@ officiating = wrap_page(
         + body("Membership of any swim club in Canada comes with the expectation that families "
                "help run meets. At ROW that means three things.")
         + list_shell("".join(numbered_row(i + 1, t, i=i) for i, t in enumerate(EXPECTATIONS)))
-        + img("off-registration.jpg", "Officials at the admin desk")
+        + img("off-registration.jpg", "A poster reading Our Swimmers Need You", cls="row-figure")
         + lede("To work on deck you must also:")
         + list_shell("".join(numbered_row(i + 1, t, i=i) for i, t in enumerate(MUST)))
         + callout("Time spent helping run meets earns Family Participation Program points. Our "
@@ -416,8 +416,8 @@ officiating = wrap_page(
                       ["Volunteers needed a meet", "35 to 85"]])
         + body("Volunteering at a home meet supports the club and saves you the travel. The "
                "current schedule is on " + link(URL_HOSTED_MEETS, "ROW Hosted Meets")
-               + ", and whether your swimmer is entered is on the "
-               + link(URL_MEET_SCHEDULE, "Meet and Event Schedule") + ".", margin="16px 0 0")
+               + ". To check whether your swimmer is entered, log into your ROW Swim Club "
+               "account on this website.", margin="16px 0 0")
         + callout("<strong>Want to do more?</strong> If you have helped for a season or more, "
                   "consider joining Meet Management, the group behind the scenes that makes "
                   "hosting possible. Email " + mail(MEETMGR) + ".")) + '</div>',

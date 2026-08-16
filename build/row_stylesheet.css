@@ -64,6 +64,8 @@
 .row-wrap .row-table td { font-size:13.5px; color:#152225; padding:11px 14px;
             border-top:1px solid #DAD3C2; line-height:1.45; vertical-align:top; }
 .row-wrap .row-table td:first-child { font-weight:700; color:#0A2E3F; }
+.row-wrap .row-nowrap { white-space:nowrap; }
+.row-wrap .row-table.row-nohead tr:first-child { display:none; }
 .row-wrap .row-table tr:nth-child(even) td { background:#FAF8F2; }
 .row-wrap .row-chips { display:flex; flex-wrap:wrap; gap:14px; margin:24px 0 0; }
 .row-wrap .row-chip { flex:1; min-width:150px; background:#FFFFFF; border:1px solid #DAD3C2;
@@ -121,6 +123,29 @@
 .row-wrap .row-grid-h { font-size:15.5px; font-weight:700; color:#0A2E3F; margin:0 0 6px; }
 .row-wrap .row-grid-c { padding:18px 22px; background:#FFFFFF; border-top:1px solid #DAD3C2; }
 .row-wrap .row-grid-alt { background:#FAF8F2; }
+.row-wrap .row-jump { display:flex; align-items:baseline; gap:16px; margin:0 0 18px;
+            flex-wrap:wrap; }
+.row-wrap .row-jump-l { text-decoration:none; color:#0A2E3F; font-weight:600; font-size:14px;
+            display:flex; align-items:center; gap:8px; padding:10px 8px; }
+.row-wrap .row-band { background:#FFFFFF; border-radius:10px;
+            box-shadow:0 6px 20px rgba(10,46,63,0.10); padding:14px 20px; margin:0 0 10px;
+            display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+.row-wrap .row-pull { font-family:'Arial Black', Arial, sans-serif; font-size:15px;
+            color:#136B77; font-style:italic; line-height:1.5; margin:0 0 14px; }
+.row-wrap .row-stats { display:flex; flex-wrap:wrap; gap:14px; margin:34px 0 0; }
+.row-wrap .row-stat { background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.16);
+            border-radius:10px; padding:14px 18px; min-width:150px; flex:1; }
+.row-wrap .row-stat-n { font-family:'Courier New', Courier, monospace; font-size:26px;
+            font-weight:700; color:#3FBFB0; }
+.row-wrap .row-stat-l { font-size:12.5px; color:#B9CCD0; text-transform:uppercase;
+            letter-spacing:0.06em; margin-top:2px; }
+.row-wrap .row-centre { text-align:center; margin:26px 0; }
+.row-wrap .row-foot { margin:44px 0 0; background:#0A2E3F; color:#B9CCD0; padding:34px 24px;
+            text-align:center; font-size:14px; border-radius:14px; }
+.row-wrap .row-foot-in { max-width:600px; margin:0 auto; }
+.row-wrap .row-foot p { color:#B9CCD0; }
+.row-wrap .row-foot strong, .row-wrap .row-foot b { color:#FFFFFF; }
+
 .row-wrap .row-bar { height:8px; display:flex; border-radius:4px; overflow:hidden; margin:24px 0; }
 .row-wrap .row-bar-seg { flex:1; }
 
@@ -153,14 +178,21 @@
 .row-wrap .row-stage-pic { flex:none; width:110px; }
 .row-wrap .row-stage-text { flex:1; min-width:260px; }
 .row-wrap .row-stage-head { font-family:'Arial Black', Arial, sans-serif; font-size:16px;
-            color:#0A2E3F; line-height:1.25; margin:0 0 3px; }
-.row-wrap .row-stage-lead { font-family:'Courier New', Courier, monospace; font-weight:700;
-            font-size:11px; letter-spacing:0.06em; text-transform:uppercase;
-            color:#4B5B60; margin:0 0 6px; }
+            color:#0A2E3F; line-height:1.25; margin:22px 0 4px; }
+.row-wrap .row-person-text > .row-stage-head:first-child,
+.row-wrap .row-stage-text > .row-stage-head:first-child { margin-top:0; }
+.row-wrap .row-stage-lead { font-size:14px; font-weight:700; color:#4B5B60;
+            line-height:1.5; margin:0 0 8px; }
 .row-wrap .row-stage-groups { font-size:13px; color:#4B5B60; line-height:1.5; margin:0 0 8px; }
 .row-wrap .row-person-text h3, .row-wrap .row-stage-text h3 { margin:0 0 3px; }
-.row-wrap .row-photo { width:100%; aspect-ratio:3/4; object-fit:cover;
-            object-position:center top; display:block; border-radius:10px; }
+.row-wrap .row-photo { max-width:100%; height:auto; display:block; border-radius:10px; }
+.row-wrap .row-person-pic .row-photo,
+.row-wrap .row-stage-pic .row-photo { width:100%; }
+.row-wrap .row-figure { display:block; max-width:300px; height:auto;
+            margin:18px 0; border-radius:10px; }
+.row-wrap .row-person-pic .row-photo,
+.row-wrap .row-stage-pic .row-photo { aspect-ratio:3/4; object-fit:cover;
+            object-position:center top; }
 .row-wrap .row-logo { max-width:260px; height:auto; display:block; margin:0 0 16px; }
 .row-wrap .row-logo-sm { max-width:110px; height:auto; display:block; }
 .row-wrap .row-lbl { display:none; }

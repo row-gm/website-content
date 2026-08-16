@@ -1,12 +1,19 @@
 .row-wrap { max-width:1000px; margin:0 auto; background:#F3EFE4; padding:24px;
             font-family:Arial, Helvetica, sans-serif; color:#152225; }
 
+.row-wrap > * { margin-top:24px; }
+.row-wrap > *:first-child { margin-top:0; }
+.row-wrap .row-card > *:first-child,
+.row-wrap .row-hero > *:first-child,
+.row-wrap .row-call > *:first-child,
+.row-wrap .row-quote > *:first-child { margin-top:0; }
+
 .row-wrap p { font-size:14.5px; color:#152225; line-height:1.65; margin:0 0 16px; }
 .row-wrap h1 { font-family:'Arial Black', Arial, sans-serif; text-transform:uppercase;
             font-size:clamp(24px, 5vw, 40px); line-height:1.1; font-weight:800;
             color:#0A2E3F; margin:0 0 12px; }
 .row-wrap h2 { font-family:'Arial Black', Arial, sans-serif; text-transform:uppercase;
-            letter-spacing:0.02em; color:#0A2E3F; font-size:24px; margin:0 0 8px; }
+            letter-spacing:0.02em; color:#0A2E3F; font-size:24px; margin:26px 0 10px; }
 .row-wrap h3 { font-family:'Arial Black', Arial, sans-serif; font-size:16px;
             color:#0A2E3F; line-height:1.25; margin:18px 0 3px; }
 .row-wrap h4 { font-family:'Courier New', Courier, monospace; font-weight:700;
@@ -28,7 +35,7 @@
 .row-wrap img { max-width:100%; height:auto; }
 .row-wrap hr { border:none; border-top:1px solid #DAD3C2; margin:24px 0; }
 
-.row-wrap .row-hero { background:radial-gradient(1100px 500px at 15% -10%, #114C5E 0%, #0A2E3F 55%, #062029 100%);
+.row-wrap .row-hero { margin:0; background:radial-gradient(1100px 500px at 15% -10%, #114C5E 0%, #0A2E3F 55%, #062029 100%);
             color:#FFFFFF; padding:44px 32px; border-radius:14px; }
 .row-wrap .row-hero p { color:#CBDDE1; }
 .row-wrap .row-hero h1, .row-wrap .row-hero h2, .row-wrap .row-hero h3 { color:#FFFFFF; }
@@ -42,14 +49,14 @@
             color:#FFFFFF; margin:0; }
 .row-wrap .row-sub { max-width:660px; margin:16px 0 0; font-size:16px; color:#CBDDE1; line-height:1.6; }
 .row-wrap .row-h2 { font-family:'Arial Black', Arial, sans-serif; text-transform:uppercase;
-            letter-spacing:0.02em; color:#0A2E3F; font-size:24px; margin:0 0 8px; }
+            letter-spacing:0.02em; color:#0A2E3F; font-size:24px; margin:26px 0 10px; }
 .row-wrap .row-body { font-size:14.5px; color:#152225; line-height:1.65; margin:0 0 16px; }
 .row-wrap .row-note { font-size:14px; color:#4B5B60; line-height:1.65; margin:16px 0 0; }
 .row-wrap .row-card { background:#FFFFFF; border:1px solid #DAD3C2; border-radius:12px; padding:24px 26px; }
 .row-wrap .row-call { border-left:4px solid #3FBFB0; background:#EFFAF8; border-radius:0 10px 10px 0;
             padding:16px 20px; margin:20px 0 0; font-size:14.5px; color:#152225; line-height:1.6; }
 .row-wrap .row-warn { border-left-color:#D64545; background:#FBEEEE; }
-.row-wrap .row-scroll { overflow-x:auto; border:1px solid #DAD3C2; border-radius:10px; background:#FFFFFF; }
+.row-wrap .row-scroll { margin:18px 0 0; overflow-x:auto; border:1px solid #DAD3C2; border-radius:10px; background:#FFFFFF; }
 .row-wrap .row-table { width:100%; border-collapse:collapse; }
 .row-wrap .row-table th { background:#0A2E3F; color:#FFFFFF; font-family:'Courier New', Courier, monospace;
             font-weight:700; font-size:11px; letter-spacing:0.06em; text-transform:uppercase;
@@ -58,7 +65,7 @@
             border-top:1px solid #DAD3C2; line-height:1.45; vertical-align:top; }
 .row-wrap .row-table td:first-child { font-weight:700; color:#0A2E3F; }
 .row-wrap .row-table tr:nth-child(even) td { background:#FAF8F2; }
-.row-wrap .row-chips { display:flex; flex-wrap:wrap; gap:14px; margin:0 0 24px; }
+.row-wrap .row-chips { display:flex; flex-wrap:wrap; gap:14px; margin:24px 0 0; }
 .row-wrap .row-chip { flex:1; min-width:150px; background:#FFFFFF; border:1px solid #DAD3C2;
             border-radius:10px; padding:14px 18px; }
 .row-wrap .row-chip b { display:block; font-family:'Courier New', Courier, monospace; font-size:10.5px;
@@ -104,6 +111,34 @@
             font-weight:700; font-size:10px; letter-spacing:0.04em; text-transform:uppercase;
             border-radius:4px; padding:3px 8px; white-space:nowrap;
             background:#136B77; color:#FFFFFF; }
+.row-wrap .row-chip-l { font-family:'Courier New', Courier, monospace; font-size:11.5px;
+            font-weight:700; letter-spacing:0.1em; text-transform:uppercase;
+            color:#4B5B60; margin:0 0 6px; }
+.row-wrap .row-chip-v { font-family:'Arial Black', Arial, sans-serif; font-size:19px;
+            color:#0A2E3F; line-height:1.2; }
+.row-wrap .row-framed { border:1px solid #DAD3C2; border-radius:10px; overflow:hidden;
+            box-shadow:0 6px 20px rgba(10,46,63,0.10); background:#FFFFFF; }
+.row-wrap .row-grid-h { font-size:15.5px; font-weight:700; color:#0A2E3F; margin:0 0 6px; }
+.row-wrap .row-grid-c { padding:18px 22px; background:#FFFFFF; border-top:1px solid #DAD3C2; }
+.row-wrap .row-grid-alt { background:#FAF8F2; }
+.row-wrap .row-bar { height:8px; display:flex; border-radius:4px; overflow:hidden; margin:24px 0; }
+.row-wrap .row-bar-seg { flex:1; }
+
+.row-wrap .row-step { display:flex; gap:16px; align-items:flex-start; padding:16px 0;
+            border-top:1px solid #DAD3C2; }
+.row-wrap .row-step:first-child { border-top:none; padding-top:0; }
+.row-wrap .row-step-n { flex:none; width:30px; height:30px; border-radius:50%;
+            background:#0A2E3F; color:#FFFFFF; font-family:'Arial Black', Arial, sans-serif;
+            font-size:14px; line-height:30px; text-align:center; }
+.row-wrap .row-step-t { font-family:'Arial Black', Arial, sans-serif; font-size:15px;
+            color:#0A2E3F; line-height:1.3; margin:0 0 4px; }
+.row-wrap .row-step-b { font-size:14.5px; color:#152225; line-height:1.65; margin:0; }
+.row-wrap .row-btn { display:inline-block; text-decoration:none; background:#136B77;
+            color:#FFFFFF; font-family:'Arial Black', Arial, sans-serif;
+            text-transform:uppercase; letter-spacing:0.03em; font-size:14px;
+            padding:12px 26px; border-radius:9px; }
+.row-wrap .row-btn-alt { background:#FFFFFF; color:#136B77; border:2px solid #136B77; }
+
 .row-wrap .row-faq { margin:8px 0 0; }
 .row-wrap .row-faq-i { border-top:1px solid #DAD3C2; padding:14px 0; }
 .row-wrap .row-faq-i:first-child { border-top:none; padding-top:0; }

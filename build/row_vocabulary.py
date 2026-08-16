@@ -143,6 +143,23 @@ RULES = [
      "same for the long forms. Age ranges belong in the detail on the page.",
      FIX, 0),
 
+    # DECISION, 14 August 2026: an age band never trails a group name. "AGD 2
+    # (12&U)" and "AGD 1 (14&U)" caused more confusion than they solved: the
+    # band looked like part of the name, and a swimmer who moved groups seemed
+    # to change age. The group name is the name. Full stop.
+    #
+    # This does NOT ban the age-band tables. AGE_BANDS in layers_common.py and
+    # MIX_ROWS on How We Plan Training pair a band with its groups in two
+    # columns, which is a lookup and not a name. That is how a coach answers
+    # which Peaking rule applies to their group. Kept deliberately.
+    ("the group name on its own",
+     [r"\b(?:RSA|TOPS|JD|AGD|SD|PD|ND|REC)[ ]?[123]?[ ]?\((?:1[0248] ?&(?:amp;)? ?U)\)",
+      r"\b(?:Age Group|Junior|Senior|Provincial|National) Development[ ]?[123]?[ ]?"
+      r"\((?:1[0248] ?&(?:amp;)? ?U)\)"],
+     "An age band never trails a group name. Write AGD 2, not AGD 2 (12&U). The "
+     "band belongs in its own column in an age-band table, never in brackets "
+     "after the name.", FIX, 0),
+
     # --- retired page and product names ------------------------------------
     ("How We Design Training", [r"How We Train\b"],
      "Retired title. Collided with the hub.", FIX, 0),

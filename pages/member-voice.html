@@ -501,32 +501,32 @@
 
   <!-- ── STEP: Concern Type ───────────────────────────────────────────── -->
   <div class="card" id="step-concern-type">
-    <div class="step-title">Who or what is this about?</div>
-    <div class="step-help">Choose the option that best fits. This helps us route your submission to the right person.</div>
+    <div class="step-title">What brings you here today?</div>
+    <div class="step-help">Pick the option that feels closest to your situation. It helps us make sure your message gets to the right person at the club.</div>
     <div class="choices">
       <label class="choice" id="choice-swimmer">
         <input type="radio" name="concernType" value="swimmer">
         <div>
-          <div class="choice-label">A swimmer on my family account</div>
-          <div class="choice-desc">A concern related to your registered swimmer's experience at ROW.</div>
+          <div class="choice-label">Something to do with my swimmer</div>
+          <div class="choice-desc">Coaching, behaviour, competitions, or anything else related to your swimmer's experience at ROW.</div>
         </div>
       </label>
       <label class="choice" id="choice-adult">
         <input type="radio" name="concernType" value="adult">
         <div>
-          <div class="choice-label">An interaction between adults</div>
-          <div class="choice-desc">A concern about how a parent, coach, staff member, or volunteer behaved toward you or another adult.</div>
+          <div class="choice-label">Something that happened between adults</div>
+          <div class="choice-desc">A situation involving a parent, coach, staff member, or volunteer — not directly about a swimmer.</div>
         </div>
       </label>
       <label class="choice" id="choice-other">
         <input type="radio" name="concernType" value="other">
         <div>
           <div class="choice-label">Something else</div>
-          <div class="choice-desc">A general question or concern that does not fit the above.</div>
+          <div class="choice-desc">A question, idea, or concern that does not quite fit the options above — share it here and we will sort out where it goes.</div>
         </div>
       </label>
     </div>
-    <div class="field-error" id="err-concern-type">Please choose one option to continue.</div>
+    <div class="field-error" id="err-concern-type">Please choose one option so we can point your message in the right direction.</div>
     <div class="nav">
       <span></span>
       <button class="btn btn-primary" onclick="fromConcernType()">Continue &rarr;</button>
@@ -535,18 +535,18 @@
 
   <!-- ── STEP: About You ─────────────────────────────────────────────── -->
   <div class="card hidden" id="step-about-you">
-    <div class="step-title">About You</div>
-    <div class="step-help">Your contact information stays within club leadership and is only used to follow up on your submission. There are no consequences for raising a concern in good faith.</div>
+    <div class="step-title">A little about you</div>
+    <div class="step-help">Your contact information stays with club leadership and is only used to follow up with you. There are no consequences for speaking up in good faith.</div>
 
     <div class="field">
-      <label for="f-name">Your full name</label>
+      <label for="f-name">Your name</label>
       <input type="text" id="f-name" placeholder="First and last name">
-      <div class="field-error" id="err-name">Please enter your name.</div>
+      <div class="field-error" id="err-name">We'll need your name to follow up with you.</div>
     </div>
     <div class="field">
       <label for="f-email">Your email address</label>
       <input type="email" id="f-email" placeholder="you@example.com">
-      <div class="field-error" id="err-email">Please enter a valid email address.</div>
+      <div class="field-error" id="err-email">Please check your email address — we'll use it to send your confirmation.</div>
     </div>
     <div class="field">
       <label for="f-phone">Phone number <span class="optional">(optional)</span></label>
@@ -561,10 +561,10 @@
         <option>The swimmer — I am submitting this myself</option>
         <option>Other</option>
       </select>
-      <div class="field-error" id="err-role">Please select your relationship to the swimmer.</div>
+      <div class="field-error" id="err-role">Please let us know how you're connected to the swimmer.</div>
     </div>
     <div class="field hidden" id="adult-role-field">
-      <label for="f-adult-role">Your role at the club</label>
+      <label for="f-adult-role">Your role at ROW</label>
       <select id="f-adult-role">
         <option value="">— Select —</option>
         <option>Parent or guardian</option>
@@ -572,7 +572,7 @@
         <option>Guest or spectator</option>
         <option>Other</option>
       </select>
-      <div class="field-error" id="err-adult-role">Please select your role.</div>
+      <div class="field-error" id="err-adult-role">Please let us know your role at the club.</div>
     </div>
 
     <div class="nav">
@@ -583,13 +583,13 @@
 
   <!-- ── STEP: About Your Swimmer ────────────────────────────────────── -->
   <div class="card hidden" id="step-swimmer-info">
-    <div class="step-title">About Your Swimmer</div>
-    <div class="step-help">This form is for concerns that relate to a swimmer registered to your family account.</div>
+    <div class="step-title">About your swimmer</div>
+    <div class="step-help">Just a few quick details so we can connect your message to the right file.</div>
 
     <div class="field">
       <label for="f-swim-first">Swimmer's first name</label>
       <input type="text" id="f-swim-first" placeholder="First name">
-      <div class="field-error" id="err-swim-first">Please enter the swimmer's first name.</div>
+      <div class="field-error" id="err-swim-first">Please enter the swimmer's first name so we can connect this to the right file.</div>
     </div>
     <div class="field">
       <label for="f-swim-last">Swimmer's last name</label>
@@ -609,60 +609,60 @@
 
   <!-- ── STEP: Category (swimmer path) ──────────────────────────────── -->
   <div class="card hidden" id="step-category">
-    <div class="step-title">What is your concern about?</div>
-    <div class="step-help">Choose the category that best fits. The next step will show the relevant ROW policy before you describe what happened.</div>
+    <div class="step-title">What is this about?</div>
+    <div class="step-help">Pick the category that feels closest. We will share the relevant ROW policy before you describe what happened, so you know exactly where things stand.</div>
     <div class="choices" id="category-choices">
       <label class="choice">
         <input type="radio" name="category" value="Conduct or behaviour">
         <div>
           <div class="choice-label">Conduct or behaviour</div>
-          <div class="choice-desc">Bullying, harassment, cyberbullying, physical aggression, or inappropriate online behaviour.</div>
+          <div class="choice-desc">Something to do with how someone behaved — bullying, harassment, or inappropriate behaviour in person or online.</div>
         </div>
       </label>
       <label class="choice">
         <input type="radio" name="category" value="Coaching or training">
         <div>
           <div class="choice-label">Coaching or training</div>
-          <div class="choice-desc">Training decisions, group placement, or how a coach interacted with your swimmer.</div>
+          <div class="choice-desc">A question or concern about training decisions, group placement, or how a coach is working with your swimmer.</div>
         </div>
       </label>
       <label class="choice">
         <input type="radio" name="category" value="Club policies or administration">
         <div>
           <div class="choice-label">Club policies or administration</div>
-          <div class="choice-desc">Registration, fees, communication, or how a policy was applied.</div>
+          <div class="choice-desc">Something to do with registration, fees, communication, or how a club policy was applied to your family.</div>
         </div>
       </label>
       <label class="choice">
         <input type="radio" name="category" value="Competition or meet-related">
         <div>
           <div class="choice-label">Competition or meet-related</div>
-          <div class="choice-desc">Behaviour or decisions at a ROW-hosted or attended swim meet.</div>
+          <div class="choice-desc">Something that happened at a swim meet — how someone behaved, or how your swimmer was treated.</div>
         </div>
       </label>
       <label class="choice">
         <input type="radio" name="category" value="Safe Sport">
         <div>
           <div class="choice-label">Safe Sport — serious misconduct</div>
-          <div class="choice-desc">Physical abuse, sexual misconduct, psychological maltreatment, or grooming behaviour.</div>
+          <div class="choice-desc">Serious misconduct under the Safe Sport framework. You can also contact Swim Ontario directly at any time — you do not need to go through ROW first.</div>
         </div>
       </label>
       <label class="choice">
         <input type="radio" name="category" value="Just need to be heard">
         <div>
           <div class="choice-label">I just need to be heard</div>
-          <div class="choice-desc">Something is on your mind and you want someone at the club to know — without triggering a formal process.</div>
+          <div class="choice-desc">Something is on your mind and you want someone at the club to know. No formal process — just a way to share what you're experiencing.</div>
         </div>
       </label>
       <label class="choice">
         <input type="radio" name="category" value="Something else">
         <div>
           <div class="choice-label">Something else</div>
-          <div class="choice-desc">Your concern does not fit the above categories.</div>
+          <div class="choice-desc">If it does not fit anywhere else, share it here. We will figure out where it belongs.</div>
         </div>
       </label>
     </div>
-    <div class="field-error" id="err-category">Please choose a category to continue.</div>
+    <div class="field-error" id="err-category">Please choose a category so we can point you in the right direction.</div>
     <div class="nav">
       <button class="btn btn-secondary" onclick="goTo('step-swimmer-info')">&#8592; Back</button>
       <button class="btn btn-primary" onclick="fromCategory()">Continue &rarr;</button>
@@ -674,9 +674,9 @@
     <!-- Content is injected by JS based on selected category -->
     <div id="category-detail-content"></div>
     <div class="field">
-      <label for="f-description" id="description-label">Please describe what happened</label>
-      <textarea id="f-description" placeholder="Describe the situation in your own words. You do not need to have all the details."></textarea>
-      <div class="field-error" id="err-description">Please describe your concern before continuing.</div>
+      <label for="f-description" id="description-label">Tell us what happened</label>
+      <textarea id="f-description" placeholder="Share what happened in your own words. You do not need to have every detail."></textarea>
+      <div class="field-error" id="err-description">Please share a bit about what happened before continuing.</div>
     </div>
     <div class="nav">
       <button class="btn btn-secondary" onclick="goTo('step-category')">&#8592; Back</button>
@@ -686,27 +686,27 @@
 
   <!-- ── STEP: Adult Interaction Detail ─────────────────────────────── -->
   <div class="card hidden" id="step-adult-detail">
-    <div class="step-title">What happened?</div>
-    <div class="step-help">Describe the interaction as clearly as you can. You do not need all the details.</div>
+    <div class="step-title">Tell us what happened</div>
+    <div class="step-help">Share as much or as little as you are comfortable with. You do not need to have all the details.</div>
 
     <div class="field">
-      <label for="f-adult-who">Who was involved?</label>
-      <input type="text" id="f-adult-who" placeholder="e.g. A coach, another parent — no need for names if you prefer">
-      <div class="field-help">You do not need to name anyone specifically.</div>
+      <label for="f-adult-who">Who was involved? <span class="optional">(optional)</span></label>
+      <input type="text" id="f-adult-who" placeholder="e.g. a coach, another parent — no names needed if you'd rather not">
+      <div class="field-help">You do not need to name anyone if you are not comfortable doing so.</div>
     </div>
     <div class="field">
-      <label for="f-adult-category">How would you describe the concern?</label>
+      <label for="f-adult-category">How would you describe what happened?</label>
       <select id="f-adult-category">
         <option value="">— Select —</option>
-        <option value="Adult interaction — conduct or behaviour">Conduct or behaviour — something that felt disrespectful, intimidating, or inappropriate</option>
+        <option value="Adult interaction — conduct or behaviour">Conduct or behaviour — something that felt disrespectful, intimidating, or out of line</option>
         <option value="Adult interaction — something else">Something else</option>
       </select>
-      <div class="field-error" id="err-adult-category">Please select a category.</div>
+      <div class="field-error" id="err-adult-category">Please give us a general sense of what happened so we can route this correctly.</div>
     </div>
     <div class="field">
-      <label for="f-adult-description">Please describe what happened</label>
-      <textarea id="f-adult-description" placeholder="Include when and where it happened, and any context that would help leadership understand the situation."></textarea>
-      <div class="field-error" id="err-adult-description">Please describe what happened before continuing.</div>
+      <label for="f-adult-description">Tell us more</label>
+      <textarea id="f-adult-description" placeholder="When and where did it happen? Any background that would help club leadership understand the situation is welcome."></textarea>
+      <div class="field-error" id="err-adult-description">Please share a bit about what happened before continuing.</div>
     </div>
 
     <div class="nav">
@@ -717,32 +717,32 @@
 
   <!-- ── STEP: Have You Raised This? ────────────────────────────────── -->
   <div class="card hidden" id="step-raised">
-    <div class="step-title">Have you raised this concern yet?</div>
-    <div class="step-help">This helps club leadership understand the context of your submission. It does not affect whether or how your concern is reviewed.</div>
+    <div class="step-title">Have you been able to raise this yet?</div>
+    <div class="step-help">This helps us understand where things are at. It does not affect whether or how your concern is reviewed.</div>
     <div class="choices">
       <label class="choice">
         <input type="radio" name="raised" value="Yes — I have already had that conversation">
         <div>
-          <div class="choice-label">Yes — I have already raised it</div>
-          <div class="choice-desc">You have spoken with the coach, a staff member, or someone else involved.</div>
+          <div class="choice-label">Yes — I have already spoken with someone</div>
+          <div class="choice-desc">You have had a conversation with a coach, staff member, or someone else involved.</div>
         </div>
       </label>
       <label class="choice">
         <input type="radio" name="raised" value="Not yet">
         <div>
           <div class="choice-label">Not yet</div>
-          <div class="choice-desc">You have not yet raised this directly with the people involved.</div>
+          <div class="choice-desc">You have not had a chance to raise it directly with the people involved.</div>
         </div>
       </label>
       <label class="choice">
         <input type="radio" name="raised" value="Not possible or appropriate to raise directly">
         <div>
-          <div class="choice-label">It is not possible or appropriate to raise it directly</div>
-          <div class="choice-desc">The nature of the concern makes a direct conversation unsuitable.</div>
+          <div class="choice-label">It is not possible or safe to raise it directly</div>
+          <div class="choice-desc">The nature of the situation makes a direct conversation unsuitable or unsafe.</div>
         </div>
       </label>
     </div>
-    <div class="field-error" id="err-raised">Please choose one option to continue.</div>
+    <div class="field-error" id="err-raised">Please let us know where things are at before continuing.</div>
     <div class="nav">
       <button class="btn btn-secondary" id="raised-back-btn" onclick="goTo('step-category-detail')">&#8592; Back</button>
       <button class="btn btn-primary" onclick="fromRaised()">Continue &rarr;</button>
@@ -752,25 +752,25 @@
   <!-- ── STEP: Soft Gate ─────────────────────────────────────────────── -->
   <div class="card hidden" id="step-soft-gate">
     <div class="step-title">A quick note before you continue</div>
-    <div class="step-help">The people involved — whether a coach, a staff member, or another family — often share your interest in a good outcome. A direct conversation gives them a chance to respond before a formal record exists.</div>
-    <p style="font-size:14px;color:var(--ink);line-height:1.65;margin-bottom:20px;">Submitting here is always an option, and it does not close off a direct conversation. But if you have not tried that yet, it is worth considering first.</p>
+    <div class="step-help">Most of the time, the people involved — a coach, a staff member, another family — want the same good outcome you do. A direct conversation gives everyone a chance to clear things up before a formal record is created.</div>
+    <p style="font-size:14px;color:var(--ink);line-height:1.65;margin-bottom:20px;">You can always submit here — and that does not close the door on a conversation. But if you have not tried talking it through yet, it may be worth doing that first.</p>
     <p style="font-size:13px;color:var(--ink-soft);line-height:1.5;margin-bottom:20px;">Not sure who to contact? Email <a href="mailto:office@rowswimming.ca">office@rowswimming.ca</a> and we can help.</p>
     <div class="choices">
       <label class="choice">
         <input type="radio" name="softGate" value="will-talk-first">
         <div>
-          <div class="choice-label">I will have that conversation first</div>
-          <div class="choice-desc">I do not need to submit this right now.</div>
+          <div class="choice-label">I will try that conversation first</div>
+          <div class="choice-desc">I do not need to submit this right now — I will come back if I need to.</div>
         </div>
       </label>
       <label class="choice">
         <input type="radio" name="softGate" value="still-submitting">
         <div>
-          <div class="choice-label">I understand, and I would still like to submit this concern</div>
+          <div class="choice-label">I understand, and I would still like to submit this</div>
         </div>
       </label>
     </div>
-    <div class="field-error" id="err-soft-gate">Please choose one option to continue.</div>
+    <div class="field-error" id="err-soft-gate">Please choose one option so we know how to proceed.</div>
     <div class="nav">
       <button class="btn btn-secondary" onclick="goTo('step-raised')">&#8592; Back</button>
       <button class="btn btn-primary" onclick="fromSoftGate()">Continue &rarr;</button>
@@ -780,9 +780,9 @@
   <!-- ── STEP: Soft Exit ─────────────────────────────────────────────── -->
   <div class="card hidden" id="step-soft-exit">
     <div class="soft-exit">
-      <div class="step-title">Good luck with the conversation</div>
-      <p>This form will be here if you need it. If things do not resolve as you hoped, come back and submit at any time.</p>
-      <p style="margin-top:12px;">Questions? Email <a href="mailto:office@rowswimming.ca">office@rowswimming.ca</a>.</p>
+      <div class="step-title">We hope it goes well</div>
+      <p>This form will be here whenever you need it. If things do not resolve the way you hoped, come back and submit at any time — no need to start over.</p>
+      <p style="margin-top:12px;">Questions? We are happy to help. Email <a href="mailto:office@rowswimming.ca">office@rowswimming.ca</a>.</p>
       <div style="margin-top:24px;">
         <button class="btn btn-secondary" onclick="goTo('step-soft-gate')">&#8592; Go back</button>
         &nbsp;
@@ -793,51 +793,51 @@
 
   <!-- ── STEP: Outcome ───────────────────────────────────────────────── -->
   <div class="card hidden" id="step-outcome">
-    <div class="step-title">What would you like us to do?</div>
-    <div class="step-help">Choose one option. This helps us set the right expectations and route your submission to the right person. You can always follow up by email if your needs change.</div>
+    <div class="step-title">What would be most helpful for you?</div>
+    <div class="step-help">Choose the option that feels right. This helps us respond in the way that works best for you. You can always follow up by email if your needs change.</div>
     <div class="choices">
       <label class="choice">
         <input type="radio" name="outcome" value="Just let me know you received this">
         <div>
           <div class="choice-label">Just let me know you received this</div>
-          <div class="choice-desc">Acknowledgement only — no other action needed.</div>
+          <div class="choice-desc">A simple acknowledgement is all I need right now.</div>
         </div>
       </label>
       <label class="choice">
         <input type="radio" name="outcome" value="Please acknowledge this and note it on our file">
         <div>
           <div class="choice-label">Acknowledge and note it on file</div>
-          <div class="choice-desc">You want a record kept, but no formal response required.</div>
+          <div class="choice-desc">I would like this on record, but I am not asking for a formal response at this time.</div>
         </div>
       </label>
       <label class="choice">
         <input type="radio" name="outcome" value="Contact me to talk through this informally">
         <div>
-          <div class="choice-label">Contact me to talk this through informally</div>
-          <div class="choice-desc">A conversation rather than a written response.</div>
+          <div class="choice-label">Reach out for an informal conversation</div>
+          <div class="choice-desc">I would rather talk it through than receive a written response.</div>
         </div>
       </label>
       <label class="choice">
         <input type="radio" name="outcome" value="I would like a formal written response from club leadership">
         <div>
-          <div class="choice-label">Formal written response from club leadership</div>
+          <div class="choice-label">A formal written response from club leadership</div>
         </div>
       </label>
       <label class="choice">
         <input type="radio" name="outcome" value="I would like this reviewed by the Board of Directors">
         <div>
-          <div class="choice-label">Reviewed by the Board of Directors</div>
+          <div class="choice-label">I would like this reviewed by the Board of Directors</div>
         </div>
       </label>
       <label class="choice">
         <input type="radio" name="outcome" value="I would like this referred to Swim Ontario's Safe Sport process">
         <div>
           <div class="choice-label">Referred to Swim Ontario's Safe Sport process</div>
-          <div class="choice-desc">You may also contact Swim Ontario directly at any time — you do not need to go through ROW first.</div>
+          <div class="choice-desc">You can also contact Swim Ontario directly at any time — you do not need to go through ROW first.</div>
         </div>
       </label>
     </div>
-    <div class="field-error" id="err-outcome">Please choose one option to continue.</div>
+    <div class="field-error" id="err-outcome">Please let us know what would be most helpful so we can respond the right way.</div>
     <div class="nav">
       <button class="btn btn-secondary" id="outcome-back-btn" onclick="goTo('step-raised')">&#8592; Back</button>
       <button class="btn btn-primary" onclick="fromOutcome()">Continue &rarr;</button>
@@ -846,15 +846,15 @@
 
   <!-- ── STEP: Additional Info ───────────────────────────────────────── -->
   <div class="card hidden" id="step-additional">
-    <div class="step-title">Anything else?</div>
-    <div class="step-help">This is optional. Add anything else that would help club leadership understand your situation or respond effectively.</div>
+    <div class="step-title">Anything else you'd like to add?</div>
+    <div class="step-help">Totally optional. If there is anything else that would help us understand or respond, add it here.</div>
     <div class="field">
       <label for="f-additional">Additional information <span class="optional">(optional)</span></label>
-      <textarea id="f-additional" placeholder="Any other context, background, or information..."></textarea>
+      <textarea id="f-additional" placeholder="Any other context or background that might help..."></textarea>
     </div>
 
     <div class="alert" id="safe-sport-alert" style="display:none;">
-      <strong>Reminder:</strong> You may contact Swim Ontario's Safe Sport office directly at any time — <a href="https://www.swimontario.com/sport-safety/" target="_blank">swimontario.com/sport-safety</a>. You do not need to go through ROW first. If there is an immediate risk to anyone, contact police or child protective services first.
+      <strong>A reminder:</strong> You can contact Swim Ontario's Safe Sport office directly at any time — <a href="https://www.swimontario.com/sport-safety/" target="_blank">swimontario.com/sport-safety</a>. You do not need to go through ROW first. If there is an immediate risk to anyone, please contact police or child protective services first.
     </div>
 
     <!-- Honeypot — hidden from humans, bots fill it in -->
@@ -874,10 +874,10 @@
           <path d="M8 16l6 6 10-10" stroke="#0A2E3F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
-      <h2>Submission Received</h2>
-      <p>Thank you. ROW Swim Club leadership has received your submission and will review it.</p>
-      <p>You will receive a confirmation email shortly. You can expect an acknowledgement within two business days.</p>
-      <p style="margin-top:20px;font-size:13px;color:var(--ink-soft);">For urgent concerns, contact <a href="mailto:office@rowswimming.ca">office@rowswimming.ca</a> directly.</p>
+      <h2>Thank you for reaching out</h2>
+      <p>Your submission has reached ROW Swim Club leadership and will be reviewed. We are glad you shared this with us.</p>
+      <p>Check your email — a confirmation is on its way. We will be in touch within two business days.</p>
+      <p style="margin-top:20px;font-size:13px;color:var(--ink-soft);">For anything urgent, you can reach us directly at <a href="mailto:office@rowswimming.ca">office@rowswimming.ca</a>.</p>
       <div style="margin-top:28px;">
         <a class="btn btn-navy" href="https://www.rowswimming.ca">Return to rowswimming.ca</a>
       </div>
@@ -888,7 +888,7 @@
   <div class="card hidden" id="step-error">
     <div class="success">
       <h2 style="color:var(--red);">Something went wrong</h2>
-      <p>Your submission could not be sent. Please try again, or email us directly at <a href="mailto:office@rowswimming.ca">office@rowswimming.ca</a>.</p>
+      <p>We were not able to send your submission. Please try again — or if the problem keeps happening, reach us directly at <a href="mailto:office@rowswimming.ca">office@rowswimming.ca</a> and we will help.</p>
       <div style="margin-top:24px;">
         <button class="btn btn-secondary" onclick="goTo('step-additional')">&#8592; Try again</button>
       </div>
@@ -1147,58 +1147,58 @@
       title: 'Conduct or Behaviour',
       helpTitle: 'What falls here',
       helpItems: [
-        'Bullying: repeated or serious behaviour that demeans, intimidates, or humiliates',
-        'Cyberbullying: harmful behaviour in messaging apps, social media, or gaming chat',
-        'Harassment: unwelcome conduct based on identity, appearance, or beliefs',
+        'Repeated or serious behaviour that puts someone down, intimidates, or excludes',
+        'Hurtful behaviour in group chats, social media, or other online spaces',
+        'Unwelcome comments based on identity, appearance, or beliefs',
         'Physical aggression or threats',
-        'Inappropriate online posts involving ROW members'
+        'Inappropriate posts involving ROW members online'
       ],
       policy: '<a href="https://www.rowswimming.ca/page/about/code-of-conduct" target="_blank">Code of Conduct</a>',
       descLabel: 'Please describe what happened',
-      descHelp: 'Include who was involved, when and where it happened, and any witnesses. You do not need all the details.',
+      descHelp: 'Tell us what happened in your own words. Who was involved, and when and where did it happen? You do not need every detail.',
     },
     'Coaching or training': {
       badge: '#136B77', tag: 'Coaching',
       title: 'Coaching or Training',
       helpTitle: 'What falls here',
       helpItems: [
-        'Questions or concerns about a specific training decision',
-        'Concerns about how a decision was communicated',
-        'Disagreements about group placement or program fit',
-        'Concerns about how a coach interacted with your swimmer (outside of Safe Sport territory)'
+        'A specific training or program decision that concerns you',
+        'How a decision was shared — or not shared — with your family',
+        'Questions about group placement or program fit',
+        'How a coach has been working with your swimmer'
       ],
-      note: 'Coaches and families share the same goal — helping your swimmer grow and succeed. A coach may read a situation differently than you do, or take an approach that is not immediately obvious from the outside. In many cases, a direct conversation is the most effective first step.',
+      note: 'Coaches and families are on the same side — helping your swimmer grow and do well. A coach may see a situation differently than you do, or have reasons for a decision that are not immediately obvious. In many cases, a direct conversation is the most useful first step, and we are happy to help you get there.',
       policy: '<a href="https://www.rowswimming.ca/page/our-development-plan/the-role-of-parents" target="_blank">The Role of Parents</a> &middot; <a href="https://www.rowswimming.ca/page/our-development-plan" target="_blank">Our Development Plan</a>',
       descLabel: 'Please describe your concern',
-      descHelp: 'Include the specific training decision, practice, or interaction. If you have already spoken with the coach, include what was said.',
+      descHelp: 'Tell us about the specific situation. If you have already spoken with the coach, it helps to include what was said.',
     },
     'Club policies or administration': {
       badge: '#4B5B60', tag: 'Policy',
       title: 'Club Policies or Administration',
       helpTitle: 'What falls here',
       helpItems: [
-        'Questions or concerns about registration fees or payment',
-        'Concerns about how a policy was applied',
-        'Concerns about communication from the office or Board',
-        'Requests for a policy to be reviewed or reconsidered'
+        'A question about fees, registration, or how a payment was handled',
+        'How a club policy was applied to your family',
+        'Communication you received — or expected and did not receive — from the office or Board',
+        'A policy you would like to see revisited'
       ],
       policy: '<a href="https://www.rowswimming.ca/page/for-parents/registration-fees" target="_blank">Registration Fees</a> &middot; <a href="https://www.rowswimming.ca/page/for-parents" target="_blank">For Parents</a>',
       descLabel: 'Please describe your concern',
-      descHelp: 'Include the specific policy or situation. Naming the policy helps us respond faster.',
+      descHelp: 'Share what is on your mind. If you know which policy this relates to, mention it — it helps us respond faster.',
     },
     'Competition or meet-related': {
       badge: '#3FBFB0', tag: 'Meets',
       title: 'Competition or Meet-Related',
       helpTitle: 'What falls here',
       helpItems: [
-        'Behaviour of parents, coaches, or officials during a meet',
-        'How your swimmer was handled at a ROW-hosted or attended meet',
-        'Concerns about entry decisions, heat assignments, or timing',
-        'Disputes about results (note: official results are governed by Swim Ontario rules)'
+        'How someone behaved at a meet — parents, coaches, or officials',
+        'How your swimmer was treated at a ROW-hosted or attended meet',
+        'Questions about entry decisions, heat assignments, or timing',
+        'Results disputes — note that official results are governed by Swim Ontario rules'
       ],
       policy: '<a href="https://www.rowswimming.ca/page/about/code-of-conduct" target="_blank">Code of Conduct at meets</a>',
       descLabel: 'Please describe what happened',
-      descHelp: 'Include the meet name, date, and location if you know them.',
+      descHelp: 'Tell us what happened. The meet name, date, and location are helpful if you know them.',
     },
     'Safe Sport': {
       badge: '#D64545', tag: 'Safe Sport',
@@ -1210,24 +1210,24 @@
         'Sexual harassment or sexual misconduct',
         'Emotional or psychological abuse',
         'Grooming behaviour',
-        'Any conduct that may fall under the UCCMS (Universal Code of Conduct to Prevent and Address Maltreatment in Sport)'
+        'Conduct that may fall under the UCCMS — the Universal Code of Conduct to Prevent and Address Maltreatment in Sport'
       ],
-      note: 'You may submit this form and contact Swim Ontario directly — you do not have to choose one. You do not need to go through ROW before contacting Swim Ontario.',
+      note: 'You can submit this form and contact Swim Ontario at the same time — you do not have to choose one. You never need to go through ROW before reaching out to Swim Ontario.',
       policy: '<a href="https://www.swimontario.com/sport-safety/" target="_blank">Swim Ontario Safe Sport</a>',
       descLabel: 'Please describe your concern',
-      descHelp: 'Include who was involved, when and where it happened, and any witnesses. You do not need all the details. This information stays within club leadership and is handled with strict confidentiality.',
+      descHelp: 'Tell us what happened in your own words — who was involved, when and where, and any witnesses you are aware of. You do not need every detail. This information stays within club leadership and is treated with full confidentiality.',
     },
     'Just need to be heard': {
       badge: '#136B77', tag: 'General',
       title: 'I Just Need to Be Heard',
-      note: 'Sometimes something is bothering you and you just want someone at the club to know — without triggering a formal process. That is a completely valid use of this form. Whatever you share here will be read by club leadership.',
+      note: 'Sometimes something is on your mind and you just want someone at the club to know about it — without any formal process. That is completely fine, and it is exactly what this is here for. Whatever you share will be read by club leadership.',
       descLabel: 'Tell us what is on your mind',
-      descHelp: 'There is no right format. Just tell us what is happening.',
+      descHelp: 'No right or wrong way to do this. Just tell us what is on your mind.',
     },
     'Something else': {
       badge: '#136B77', tag: 'General',
       title: 'Something Else',
-      note: 'If your concern does not fit another category, describe it here. Club leadership will review it and route it to the right person.',
+      note: 'If it does not quite fit anywhere else, this is the place to share it. Club leadership will read it and make sure it gets to the right person.',
       descLabel: 'Please describe your concern or feedback',
       descHelp: '',
     },

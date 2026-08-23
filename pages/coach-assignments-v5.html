@@ -184,91 +184,91 @@ const DATA = {
     {
       "name": "AGD 1",
       "required": 3,
-      "schedule": "Mon CH 5:30\u20137 pm \u00b7 Tue RC 6\u20137:30 am \u00b7 Wed/Thu WLU-D 7\u20138 pm \u00b7 Sat CH 6\u20137:30 am",
+      "schedule": "Mon - CH - 5:30\u20137 pm \u00b7 Tue - RC - 6\u20137:30 am \u00b7 Wed - WLU - 7\u20138 pm \u00b7 Thu - WLU - 7\u20138 pm \u00b7 Sat - CH - 6\u20137:30 am",
       "note": "",
       "lanes": 6
     },
     {
       "name": "AGD 2",
       "required": 3,
-      "schedule": "Mon WLU 6\u20137:30 am \u00b7 Tue WLU-D 7\u20138:30 pm \u00b7 Thu RC 6\u20137:30 am \u00b7 Fri WLU 7:30\u20138:30 pm",
+      "schedule": "Mon - WLU - 6\u20137:30 am \u00b7 Tue - WLU - 7\u20138:30 pm \u00b7 Thu - RC - 6\u20137:30 am \u00b7 Fri - WLU - 7:30\u20138:30 pm",
       "note": "",
       "lanes": 6
     },
     {
       "name": "JD 1",
       "required": 3,
-      "schedule": "Tue 7:00\u20138:30 pm \u00b7 Thu 6:00\u20137:30 am \u00b7 Fri 6:30\u20138:00 pm \u00b7 Sat 9:00\u201310:30 am \u2014 WLU",
+      "schedule": "Tue - WLU - 7:00\u20138:30 pm \u00b7 Thu - WLU - 6:00\u20137:30 am \u00b7 Fri - WLU - 6:30\u20138:00 pm \u00b7 Sat - WLU - 9:00\u201310:30 am",
       "note": "",
       "lanes": 3
     },
     {
       "name": "JD 2",
       "required": 2,
-      "schedule": "Mon WLU 6:30\u20138 pm \u00b7 Wed WLU 6\u20137:30 pm \u00b7 Thu WLU 5:30\u20137 pm",
+      "schedule": "Mon - WLU - 6:30\u20138 pm \u00b7 Wed - WLU - 6\u20137:30 pm \u00b7 Thu - WLU - 5:30\u20137 pm",
       "note": "",
       "lanes": 3
     },
     {
       "name": "Rec PM",
       "required": 2,
-      "schedule": "Mon / Wed / Fri \u2014 CH 8\u20139 pm",
+      "schedule": "Mon - CH - 8\u20139 pm \u00b7 Wed - CH - 8\u20139 pm \u00b7 Fri - CH - 8\u20139 pm",
       "note": "",
       "lanes": 6
     },
     {
       "name": "TOPS 1-1",
       "required": 2,
-      "schedule": "Mon / Wed / Fri \u2014 CH 7\u20138 pm",
+      "schedule": "Mon - CH - 7\u20138 pm \u00b7 Wed - CH - 7\u20138 pm \u00b7 Fri - CH - 7\u20138 pm",
       "note": "Drew: Mon+Fri only",
       "lanes": 4
     },
     {
       "name": "TOPS 1-2",
       "required": 2,
-      "schedule": "Tue WLU-S 7:30\u20138:30 pm \u00b7 Wed WLU-S 6:30\u20137:30 pm \u00b7 Thu WLU-S 7\u20138 pm",
+      "schedule": "Tue - WLU - 7:30\u20138:30 pm \u00b7 Wed - WLU - 6:30\u20137:30 pm \u00b7 Thu - WLU - 7\u20138 pm",
       "note": "",
       "lanes": 3
     },
     {
       "name": "TOPS 2-1",
       "required": 1,
-      "schedule": "Mon / Wed \u2014 CH 7\u20138 pm",
+      "schedule": "Mon - CH - 7\u20138 pm \u00b7 Wed - CH - 7\u20138 pm",
       "note": "",
       "lanes": 1
     },
     {
       "name": "TOPS 2-2",
       "required": 1,
-      "schedule": "Wed / Fri \u2014 CH 7\u20138 pm",
+      "schedule": "Wed - CH - 7\u20138 pm \u00b7 Fri - CH - 7\u20138 pm",
       "note": "",
       "lanes": 1
     },
     {
       "name": "TOPS 2-3",
       "required": 1,
-      "schedule": "Mon / Fri \u2014 CH 7\u20138 pm",
+      "schedule": "Mon - CH - 7\u20138 pm \u00b7 Fri - CH - 7\u20138 pm",
       "note": "",
       "lanes": 1
     },
     {
       "name": "TOPS 2-4",
       "required": 3,
-      "schedule": "Tue / Thu \u2014 WLU Pool S 5:30\u20136:30 pm",
+      "schedule": "Tue - WLU - 5:30\u20136:30 pm \u00b7 Thu - WLU - 5:30\u20136:30 pm",
       "note": "Stacks with TOPS 2-5",
       "lanes": 3
     },
     {
       "name": "TOPS 2-5",
       "required": 3,
-      "schedule": "Tue / Thu \u2014 WLU Pool S 6:30\u20137:30 pm",
+      "schedule": "Tue - WLU - 6:30\u20137:30 pm \u00b7 Thu - WLU - 6:30\u20137:30 pm",
       "note": "Stacks with TOPS 2-4",
       "lanes": 3
     },
     {
       "name": "RSA",
       "required": 7,
-      "schedule": "Saturday \u2014 CH 7:30\u201310 am",
+      "schedule": "Sat - CH - 7:30\u201310 am",
       "note": "",
       "lanes": 6
     }
@@ -1022,7 +1022,7 @@ DATA.groups.forEach((g, i) => {
       <span class="fill-status ${statusClass}">${statusLabel}</span>
     </div>
     <div class="card-body">
-      <div class="schedule">${g.schedule}</div>
+      <div class="schedule">${g.schedule.split(' · ').join('<br>')}</div>
       ${stackNote}
       <div class="slots">${slots}</div>
     </div>`;
@@ -1034,8 +1034,8 @@ const coachScheduleEl = document.getElementById('coach-schedule');
 
 // Coach-specific schedule overrides (coach → group name → custom schedule)
 const SCHEDULE_OVERRIDES = {
-  'Violet': { 'JD 1': 'Tue 7:00–8:30 pm · Thu 6:00–7:30 am · Fri 6:30–8:00 pm' },
-  'Drew':   { 'TOPS 1-1': 'Mon / Fri — CH 7–8 pm' },
+  'Violet': { 'JD 1': 'Tue - WLU - 7:00–8:30 pm · Thu - WLU - 6:00–7:30 am · Fri - WLU - 6:30–8:00 pm' },
+  'Drew':   { 'TOPS 1-1': 'Mon - CH - 7–8 pm · Fri - CH - 7–8 pm' },
 };
 
 // Build coach → groups map

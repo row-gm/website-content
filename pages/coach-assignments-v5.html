@@ -1010,7 +1010,7 @@ DATA.groups.forEach((g, i) => {
 
   const stackNote = g.note ? `<div class="stack-note">⟳ ${g.note}</div>` : '';
   const statusClass = tentative ? 'tentative' : done ? 'done' : 'open';
-  const statusLabel = tentative ? `${filled}/3 Tentative` : `${filled}/${g.required}`;
+  const statusLabel = tentative ? `${filled} coaches · tentative` : `${filled} coaches`;
 
   card.innerHTML = `
     <div class="card-top">

@@ -87,6 +87,8 @@
   .slots { display: flex; flex-wrap: wrap; gap: 4px; }
   .slot { font-size: 0.72rem; font-weight: 500; padding: 3px 8px; border-radius: 4px; border: 1px dashed var(--border); color: var(--muted); }
   .slot.filled-slot { background: var(--assigned-bg); color: var(--assigned-tx); border: none; border-radius: 4px; }
+  .slot.volunteer-slot { background: #E8E0F0; color: #5A3A7A; border: 1px solid #B094CC; border-radius: 4px; }
+  html.dark .slot.volunteer-slot { background: #2E1A44; color: #C4A0E8; border-color: #7A50A8; }
 
   /* ── MATRIX ── */
   .matrix-wrap { overflow-x: auto; border-radius: 8px; }
@@ -219,7 +221,7 @@ const DATA = {
       "required": 2,
       "schedule": "Mon / Wed / Fri \u2014 CH 7\u20138 pm",
       "note": "Drew: Mon+Fri only",
-      "lanes": 3
+      "lanes": 4
     },
     {
       "name": "TOPS 1-2",
@@ -282,6 +284,7 @@ const DATA = {
     "Elise",
     "Gabby",
     "Inderpreet",
+    "Kaitlyn",
     "Ksenia",
     "Oliver",
     "Patrick",
@@ -302,6 +305,7 @@ const DATA = {
       "Connor"
     ],
     "JD 1": [
+      "Kaitlyn",
       "Sebastian",
       "Oliver",
       "Violet"
@@ -356,6 +360,13 @@ const DATA = {
     ]
   },
   "tentative": [],
+  "volunteers": {
+    "JD 1": [
+      "Sebastian",
+      "Oliver",
+      "Violet"
+    ]
+  },
   "matrix": {
     "Allison": {
       "AGD 1": "ineligible",
@@ -506,6 +517,21 @@ const DATA = {
       "TOPS 2-4": "available",
       "TOPS 2-5": "available",
       "RSA": "assigned"
+    },
+    "Kaitlyn": {
+      "AGD 1": "ineligible",
+      "AGD 2": "ineligible",
+      "JD 1": "assigned",
+      "JD 2": "ineligible",
+      "Rec PM": "ineligible",
+      "TOPS 1-1": "ineligible",
+      "TOPS 1-2": "ineligible",
+      "TOPS 2-1": "ineligible",
+      "TOPS 2-2": "ineligible",
+      "TOPS 2-3": "ineligible",
+      "TOPS 2-4": "ineligible",
+      "TOPS 2-5": "ineligible",
+      "RSA": "ineligible"
     },
     "Ksenia": {
       "AGD 1": "assigned",
@@ -972,9 +998,13 @@ DATA.groups.forEach((g, i) => {
   const card = document.createElement('div');
   card.className = 'group-card' + (tentative ? ' tentative' : done ? ' filled' : '');
 
+  const groupVolunteers = (DATA.volunteers && DATA.volunteers[g.name]) || [];
   const slots = Array.from({length: Math.max(g.required, assigned.length)}, (_, si) => {
     const coach = assigned[si];
-    if (coach) return `<span class="slot filled-slot">${coach}</span>`;
+    if (coach) {
+      const cls = groupVolunteers.includes(coach) ? 'volunteer-slot' : 'filled-slot';
+      return `<span class="slot ${cls}">${coach}</span>`;
+    }
     return `<span class="slot">open</span>`;
   }).join('');
 

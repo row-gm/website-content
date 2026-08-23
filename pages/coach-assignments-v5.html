@@ -367,6 +367,9 @@ const DATA = {
       "Violet"
     ]
   },
+  "hide_from_schedule": [
+    "Kaitlyn"
+  ],
   "matrix": {
     "Allison": {
       "AGD 1": "ineligible",
@@ -1015,7 +1018,7 @@ DATA.groups.forEach((g, i) => {
   card.innerHTML = `
     <div class="card-top">
       <span class="priority-badge">#${i+1}</span>
-      <span class="group-name">${g.name}<span class="lanes-note">(${g.lanes} lanes)</span></span>
+      <span class="group-name">${g.name}<span class="lanes-note">(${g.lanes} ${g.lanes === 1 ? 'lane' : 'lanes'})</span></span>
       <span class="fill-status ${statusClass}">${statusLabel}</span>
     </div>
     <div class="card-body">
@@ -1047,7 +1050,9 @@ DATA.groups.forEach(g => {
 });
 
 // Render a card per coach who has assignments, in alphabetical order
+const hideFromSchedule = new Set(DATA.hide_from_schedule || []);
 DATA.coaches.forEach(coach => {
+  if (hideFromSchedule.has(coach)) return;
   const groups = coachGroups[coach];
   if (!groups || groups.length === 0) return;
 

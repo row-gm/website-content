@@ -296,7 +296,6 @@ const DATA = {
     "Devin",
     "Drew",
     "Edward",
-    "Elan",
     "Elise",
     "Gabby",
     "Inderpreet",
@@ -322,6 +321,7 @@ const DATA = {
     ],
     "JD 1": [
       "Kaitlyn",
+      "Allison",
       "Sebastian",
       "Oliver",
       "Violet"
@@ -350,17 +350,16 @@ const DATA = {
       "Devin"
     ],
     "TOPS 2-4": [
-      "Elan",
       "Gabby",
-      "Edward"
+      "Edward",
+      "Inderpreet"
     ],
     "TOPS 2-5": [
-      "Elan",
       "Gabby",
-      "Edward"
+      "Edward",
+      "Inderpreet"
     ],
     "RSA": [
-      "Devin",
       "Ksenia",
       "Trystan",
       "Edward",
@@ -390,16 +389,16 @@ const DATA = {
     "Allison": {
       "AGD 1": "ineligible",
       "AGD 2": "ineligible",
-      "JD 1": "ineligible",
+      "JD 1": "assigned",
       "JD 2": "assigned",
       "Rec PM": "ineligible",
       "TOPS 1-1": "ineligible",
-      "TOPS 1-2": "blocked:JD 2",
+      "TOPS 1-2": "blocked:JD 1,JD 2",
       "TOPS 2-1": "ineligible",
       "TOPS 2-2": "ineligible",
       "TOPS 2-3": "blocked:JD 2",
       "TOPS 2-4": "blocked:JD 2",
-      "TOPS 2-5": "blocked:JD 2",
+      "TOPS 2-5": "blocked:JD 1,JD 2",
       "RSA": "ineligible"
     },
     "Anna": {
@@ -445,7 +444,7 @@ const DATA = {
       "TOPS 2-3": "assigned",
       "TOPS 2-4": "ineligible",
       "TOPS 2-5": "blocked:TOPS 1-2",
-      "RSA": "assigned"
+      "RSA": "available"
     },
     "Drew": {
       "AGD 1": "ineligible",
@@ -476,21 +475,6 @@ const DATA = {
       "TOPS 2-4": "assigned",
       "TOPS 2-5": "assigned",
       "RSA": "assigned"
-    },
-    "Elan": {
-      "AGD 1": "ineligible",
-      "AGD 2": "ineligible",
-      "JD 1": "ineligible",
-      "JD 2": "ineligible",
-      "Rec PM": "ineligible",
-      "TOPS 1-1": "ineligible",
-      "TOPS 1-2": "ineligible",
-      "TOPS 2-1": "ineligible",
-      "TOPS 2-2": "ineligible",
-      "TOPS 2-3": "ineligible",
-      "TOPS 2-4": "assigned",
-      "TOPS 2-5": "assigned",
-      "RSA": "ineligible"
     },
     "Elise": {
       "AGD 1": "ineligible",
@@ -526,15 +510,15 @@ const DATA = {
       "AGD 1": "ineligible",
       "AGD 2": "ineligible",
       "JD 1": "ineligible",
-      "JD 2": "blocked:TOPS 2-2",
+      "JD 2": "blocked:TOPS 2-2,TOPS 2-4,TOPS 2-5",
       "Rec PM": "ineligible",
       "TOPS 1-1": "blocked:TOPS 2-2",
-      "TOPS 1-2": "blocked:TOPS 2-2",
+      "TOPS 1-2": "blocked:TOPS 2-2,TOPS 2-5",
       "TOPS 2-1": "blocked:TOPS 2-2",
       "TOPS 2-2": "assigned",
       "TOPS 2-3": "blocked:TOPS 2-2",
-      "TOPS 2-4": "available",
-      "TOPS 2-5": "available",
+      "TOPS 2-4": "assigned",
+      "TOPS 2-5": "assigned",
       "RSA": "assigned"
     },
     "Kaitlyn": {
@@ -661,10 +645,8 @@ const DATA = {
   "spare": {
     "Allison": [
       "Mon CH",
-      "Tue WLU",
       "Wed CH",
-      "Fri CH",
-      "Fri WLU"
+      "Fri CH"
     ],
     "Connor": [
       "Mon WLU",
@@ -700,9 +682,7 @@ const DATA = {
     "Inderpreet": [
       "Mon CH",
       "Mon WLU",
-      "Tue WLU",
-      "Wed WLU",
-      "Thu WLU"
+      "Wed WLU"
     ],
     "Ksenia": [
       "Mon WLU",
@@ -820,44 +800,6 @@ const DATA = {
           "Mon CH"
         ],
         "of": 2
-      }
-    ],
-    "Elan": [
-      {
-        "group": "AGD 1",
-        "can": [
-          "Thu WLU"
-        ],
-        "of": 3
-      },
-      {
-        "group": "AGD 2",
-        "can": [
-          "Tue WLU"
-        ],
-        "of": 2
-      },
-      {
-        "group": "JD 1",
-        "can": [
-          "Tue WLU"
-        ],
-        "of": 2
-      },
-      {
-        "group": "JD 2",
-        "can": [
-          "Thu WLU"
-        ],
-        "of": 3
-      },
-      {
-        "group": "TOPS 1-2",
-        "can": [
-          "Tue WLU",
-          "Thu WLU"
-        ],
-        "of": 3
       }
     ],
     "Elise": [

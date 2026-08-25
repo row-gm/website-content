@@ -244,8 +244,9 @@ const coachScheduleEl = document.getElementById('coach-schedule');
 
 // Coach-specific schedule overrides (coach → group name → custom schedule)
 const SCHEDULE_OVERRIDES = {
-  'Violet': { 'JD 1': 'Tue - WLU - 7:00–8:30 pm · Thu - WLU - 6:00–7:30 am · Fri - WLU - 6:30–8:00 pm' },
-  'Drew':   { 'TOPS 1-1': 'Mon - CH - 7–8 pm · Fri - CH - 7–8 pm' },
+  'Violet':  { 'JD 1':         'Tue - WLU - 7:00–8:30 pm · Thu - WLU - 6:00–7:30 am · Fri - WLU - 6:30–8:00 pm' },
+  'Drew':    { 'TOPS 1-1':     'Mon - CH - 7–8 pm · Fri - CH - 7–8 pm' },
+  'Trystan': { 'SD Assistant': 'Tue - WLU - 4–6:30 pm · Wed - WLU - 5–7 pm · Thu - WLU - 4–6 pm · Fri - WLU - 4:30–6 pm · Sat - WLU - 6–8:30 am' },
 };
 
 // Build coach → groups map
@@ -283,7 +284,7 @@ DATA.coaches.forEach(coach => {
         <div class="coach-group-label">
           <span class="coach-group-name">${g.name}</span>
         </div>
-        <div class="coach-group-schedule">${((SCHEDULE_OVERRIDES[coach] && SCHEDULE_OVERRIDES[coach][g.name]) || g.schedule).split(' · ').join('<br>')}${g.name === 'RSA' && ['Connor','Ksenia','Trystan'].includes(coach) ? '<br><em>(Rotating Supervisor)</em>' : ''}</div>
+        <div class="coach-group-schedule">${((SCHEDULE_OVERRIDES[coach] && SCHEDULE_OVERRIDES[coach][g.name]) || g.schedule).split(' · ').join('<br>')}${g.name === 'RSA' && ['Ksenia','Trystan'].includes(coach) ? '<br><em>(Supervisor)</em>' : ''}</div>
       </div>
       ${divider}`;
   }).join('');

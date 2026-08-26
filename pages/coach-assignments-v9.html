@@ -643,10 +643,7 @@ const DATA = {
       "slot_grid": [
         {
           "slot": "Mon_CH",
-          "status": "assigned",
-          "groups": [
-            "TOPS 2-3"
-          ]
+          "status": "spare"
         },
         {
           "slot": "Mon_WLU",
@@ -678,27 +675,16 @@ const DATA = {
         },
         {
           "slot": "Fri_CH",
-          "status": "assigned",
-          "groups": [
-            "TOPS 2-3"
-          ]
+          "status": "unavailable"
         },
         {
           "slot": "Fri_WLU",
           "status": "unavailable"
         }
       ],
-      "assigned_hours": 4.5,
-      "total_hours": 8.5,
+      "assigned_hours": 2.5,
+      "total_hours": 6.5,
       "groups": [
-        {
-          "group": "TOPS 2-3",
-          "slots": [
-            "Mon CH",
-            "Fri CH"
-          ],
-          "hours": 2.0
-        },
         {
           "group": "TOPS 2-4",
           "slots": [
@@ -1202,7 +1188,10 @@ const DATA = {
       "slot_grid": [
         {
           "slot": "Mon_CH",
-          "status": "spare"
+          "status": "assigned",
+          "groups": [
+            "TOPS 2-3"
+          ]
         },
         {
           "slot": "Mon_WLU",
@@ -1235,15 +1224,18 @@ const DATA = {
         },
         {
           "slot": "Fri_CH",
-          "status": "spare"
+          "status": "assigned",
+          "groups": [
+            "TOPS 2-3"
+          ]
         },
         {
           "slot": "Fri_WLU",
           "status": "spare"
         }
       ],
-      "assigned_hours": 3.75,
-      "total_hours": 3.0,
+      "assigned_hours": 5.75,
+      "total_hours": 5.0,
       "groups": [
         {
           "group": "TOPS 1-2",
@@ -1253,6 +1245,14 @@ const DATA = {
             "Thu WLU"
           ],
           "hours": 3.75
+        },
+        {
+          "group": "TOPS 2-3",
+          "slots": [
+            "Mon CH",
+            "Fri CH"
+          ],
+          "hours": 2.0
         }
       ]
     },
@@ -1567,7 +1567,7 @@ const DATA = {
       "Inderpreet"
     ],
     "TOPS 2-3": [
-      "Edward"
+      "Patrick"
     ],
     "TOPS 2-4": [
       "Gabby",
@@ -1709,9 +1709,9 @@ const DATA = {
       "Rec PM": "partial",
       "TOPS 1-1": "partial",
       "TOPS 1-2": "blocked:TOPS 2-5",
-      "TOPS 2-1": "blocked:TOPS 2-3",
+      "TOPS 2-1": "available",
       "TOPS 2-2": "partial",
-      "TOPS 2-3": "assigned",
+      "TOPS 2-3": "partial",
       "TOPS 2-4": "assigned",
       "TOPS 2-5": "assigned",
       "SD Assistant": "partial",
@@ -1835,11 +1835,11 @@ const DATA = {
       "JD 1": "ineligible",
       "JD 2": "ineligible",
       "Rec PM": "blocked:TOPS 1-2",
-      "TOPS 1-1": "blocked:TOPS 1-2",
+      "TOPS 1-1": "blocked:TOPS 1-2,TOPS 2-3",
       "TOPS 1-2": "assigned",
-      "TOPS 2-1": "blocked:TOPS 1-2",
-      "TOPS 2-2": "blocked:TOPS 1-2",
-      "TOPS 2-3": "available",
+      "TOPS 2-1": "blocked:TOPS 1-2,TOPS 2-3",
+      "TOPS 2-2": "blocked:TOPS 1-2,TOPS 2-3",
+      "TOPS 2-3": "assigned",
       "TOPS 2-4": "ineligible",
       "TOPS 2-5": "blocked:TOPS 1-2",
       "SD Assistant": "ineligible",
@@ -1959,6 +1959,7 @@ const DATA = {
       "Fri CH"
     ],
     "Edward": [
+      "Mon CH",
       "Mon WLU",
       "Wed CH",
       "Wed WLU"
@@ -1996,10 +1997,8 @@ const DATA = {
       "Fri WLU"
     ],
     "Patrick": [
-      "Mon CH",
       "Mon WLU",
       "Wed CH",
-      "Fri CH",
       "Fri WLU"
     ],
     "Sebastian": [
@@ -2134,6 +2133,13 @@ const DATA = {
         "group": "TOPS 2-2",
         "can": [
           "Wed CH"
+        ],
+        "of": 2
+      },
+      {
+        "group": "TOPS 2-3",
+        "can": [
+          "Mon CH"
         ],
         "of": 2
       },

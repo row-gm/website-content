@@ -478,7 +478,7 @@
   <div class="hero">
     <span class="hero-eyebrow">ROW Swim Club</span>
     <h1>Member Voice</h1>
-    <p>Your experience at ROW matters. Whether you have a question, a concern, or something on your mind — this is where you share it. Every submission reaches club leadership.</p>
+    <p>Your experience at ROW matters. Whether you have a concern, a question, positive feedback, or an idea to share — this is where to do it. Every submission reaches club leadership.</p>
   </div>
 
   <!-- Lane stripe -->
@@ -522,9 +522,20 @@
         <input type="radio" name="concernType" value="other">
         <div>
           <div class="choice-label">Something else</div>
-          <div class="choice-desc">A question, idea, or concern that does not quite fit the options above — share it here and we will sort out where it goes.</div>
+          <div class="choice-desc">A question or concern that does not quite fit the options above — share it here and we will sort out where it goes.</div>
         </div>
       </label>
+      <label class="choice" id="choice-feedback">
+        <input type="radio" name="concernType" value="feedback">
+        <div>
+          <div class="choice-label">Positive feedback or a suggestion</div>
+          <div class="choice-desc">Something is going well that you want the club to know about, or you have an idea that could make ROW better.</div>
+        </div>
+      </label>
+    </div>
+    <div class="info-box" id="direct-convo-note" style="margin-top:18px;margin-bottom:0;display:none;">
+      <h3>A quick note before you begin</h3>
+      <p>If your concern is about a coach or another person at the club, a direct conversation often resolves things quickly — and you won't need to put it all in writing. Not sure who to contact? Email <a href="mailto:office@rowswimming.ca">office@rowswimming.ca</a> and we can help. The form will ask about this again later, but it is worth keeping in mind before you start.</p>
     </div>
     <div class="field-error" id="err-concern-type">Please choose one option so we can point your message in the right direction.</div>
     <div class="nav">
@@ -1000,6 +1011,9 @@
     if (val === 'adult' || val === 'other') {
       document.getElementById('role-field').classList.add('hidden');
       document.getElementById('adult-role-field').classList.remove('hidden');
+    } else if (val === 'feedback') {
+      document.getElementById('role-field').classList.add('hidden');
+      document.getElementById('adult-role-field').classList.add('hidden');
     } else {
       document.getElementById('role-field').classList.remove('hidden');
       document.getElementById('adult-role-field').classList.add('hidden');
@@ -1007,6 +1021,13 @@
 
     goTo('step-about-you');
   }
+
+  // Show/hide early conversation note when concern type is chosen
+  document.addEventListener('change', function(e) {
+    if (e.target.name !== 'concernType') return;
+    var note = document.getElementById('direct-convo-note');
+    note.style.display = (e.target.value === 'feedback') ? 'none' : 'block';
+  });
 
   function fromAboutYou() {
     var name  = val('f-name');
@@ -1024,7 +1045,7 @@
     if (state.concernType === 'swimmer') {
       var role = val('f-role');
       if (!role) { showErr('err-role'); valid = false; } else hideErr('err-role');
-    } else {
+    } else if (state.concernType !== 'feedback') {
       var arole = val('f-adult-role');
       if (!arole) { showErr('err-adult-role'); valid = false; } else hideErr('err-adult-role');
     }
@@ -1034,10 +1055,21 @@
     state.name  = name;
     state.email = email;
     state.phone = val('f-phone');
-    state.role  = state.concernType === 'swimmer' ? val('f-role') : val('f-adult-role');
+    if (state.concernType === 'swimmer') {
+      state.role = val('f-role');
+    } else if (state.concernType === 'feedback') {
+      state.role = 'ROW member';
+    } else {
+      state.role = val('f-adult-role');
+    }
 
     if (state.concernType === 'swimmer') {
       goTo('step-swimmer-info');
+    } else if (state.concernType === 'feedback') {
+      state.raised = 'Not applicable — feedback or suggestion';
+      injectCategoryDetail('Feedback');
+      document.getElementById('outcome-back-btn').onclick = function() { goTo('step-category-detail'); };
+      goTo('step-category-detail');
     } else {
       goTo('step-adult-detail');
     }
@@ -1072,8 +1104,8 @@
     hideErr('err-description');
     state.description = desc;
 
-    // Safe Sport and Vent bypass the raised/gate steps
-    if (state.category === 'Safe Sport' || state.category === 'Just need to be heard') {
+    // Safe Sport, Vent, and Feedback bypass the raised/gate steps
+    if (state.category === 'Safe Sport' || state.category === 'Just need to be heard' || state.concernType === 'feedback') {
       document.getElementById('outcome-back-btn').onclick = function() { goTo('step-category-detail'); };
       goTo('step-outcome');
     } else {
@@ -1230,6 +1262,13 @@
       note: 'If it does not quite fit anywhere else, this is the place to share it. Club leadership will read it and make sure it gets to the right person.',
       descLabel: 'Please describe your concern or feedback',
       descHelp: '',
+    },
+    'Feedback': {
+      badge: '#3FBFB0', tag: 'Feedback',
+      title: 'Positive Feedback or Suggestion',
+      note: 'We love to hear what is working well — and good ideas for making ROW better. Everything you share goes directly to club leadership and is always welcome.',
+      descLabel: 'What would you like to share?',
+      descHelp: 'Tell us about what is going well, or describe your idea. There is no wrong way to share this.',
     },
   };
 

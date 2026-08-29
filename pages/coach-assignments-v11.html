@@ -584,10 +584,7 @@ const DATA = {
         },
         {
           "slot": "Tue_WLU",
-          "status": "assigned",
-          "groups": [
-            "JD 1"
-          ]
+          "status": "spare"
         },
         {
           "slot": "Wed_CH",
@@ -607,24 +604,12 @@ const DATA = {
         },
         {
           "slot": "Fri_WLU",
-          "status": "assigned",
-          "groups": [
-            "JD 1"
-          ]
+          "status": "spare"
         }
       ],
-      "assigned_hours": 2.5,
-      "total_hours": 6.0,
-      "groups": [
-        {
-          "group": "JD 1",
-          "slots": [
-            "Tue WLU",
-            "Fri WLU"
-          ],
-          "hours": 2.5
-        }
-      ]
+      "assigned_hours": 0.0,
+      "total_hours": 0,
+      "groups": []
     },
     {
       "coach": "Edward",
@@ -946,7 +931,7 @@ const DATA = {
         }
       ],
       "assigned_hours": 4.5,
-      "total_hours": 8.5,
+      "total_hours": 6.0,
       "groups": [
         {
           "group": "TOPS 2-2",
@@ -971,11 +956,6 @@ const DATA = {
             "Thu WLU"
           ],
           "hours": 2.5
-        },
-        {
-          "group": "RSA",
-          "slots": [],
-          "hours": 0
         }
       ]
     },
@@ -1668,8 +1648,7 @@ const DATA = {
       "Connor"
     ],
     "JD 1": [
-      "Kaitlyn",
-      "Drew"
+      "Kaitlyn"
     ],
     "JD 2": [
       "Allison",
@@ -1704,7 +1683,6 @@ const DATA = {
       "Connor",
       "Edward",
       "Gabby",
-      "Inderpreet",
       "Violet",
       "Mannat",
       "Oliver A",
@@ -1741,21 +1719,21 @@ const DATA = {
     ]
   },
   "confirmed": [
-    "Ruby S",
-    "Drew",
-    "Allison",
-    "Patrick",
-    "Connor",
+    "Violet",
+    "Mannat",
+    "Tysen",
     "Oliver A",
     "Elise",
-    "Tysen",
+    "Ruby S",
+    "Connor",
+    "Patrick",
+    "Allison",
     "Ksenia",
-    "Edward",
-    "Trystan",
-    "Gabby",
     "Inderpreet",
-    "Violet",
-    "Mannat"
+    "Trystan",
+    "Edward",
+    "Drew",
+    "Gabby"
   ],
   "hide_from_schedule": [
     "Kaitlyn",
@@ -1829,14 +1807,14 @@ const DATA = {
     "Drew": {
       "AGD 1": "ineligible",
       "AGD 2": "ineligible",
-      "JD 1": "assigned",
+      "JD 1": "ineligible",
       "JD 2": "ineligible",
       "Rec PM": "ineligible",
-      "TOPS 1-1": "blocked:JD 1",
-      "TOPS 1-2": "blocked:JD 1",
+      "TOPS 1-1": "available",
+      "TOPS 1-2": "available",
       "TOPS 2-1": "available",
-      "TOPS 2-2": "blocked:JD 1",
-      "TOPS 2-3": "blocked:JD 1",
+      "TOPS 2-2": "available",
+      "TOPS 2-3": "available",
       "TOPS 2-4": "ineligible",
       "TOPS 2-5": "ineligible",
       "SD Assistant": "ineligible",
@@ -1920,7 +1898,7 @@ const DATA = {
       "TOPS 2-4": "assigned",
       "TOPS 2-5": "assigned",
       "SD Assistant": "partial",
-      "RSA": "assigned"
+      "RSA": "available"
     },
     "Kaitlyn": {
       "AGD 1": "ineligible",
@@ -2145,10 +2123,12 @@ const DATA = {
     "Drew": [
       "Mon CH",
       "Mon WLU",
+      "Tue WLU",
       "Wed CH",
       "Wed WLU",
       "Thu WLU",
-      "Fri CH"
+      "Fri CH",
+      "Fri WLU"
     ],
     "Edward": [
       "Mon CH",

@@ -22,6 +22,7 @@
 .row-wrap ul, .row-wrap ol { margin:0 0 16px; padding-left:22px; }
 .row-wrap li { font-size:14.5px; color:#152225; line-height:1.7; margin-bottom:10px; }
 .row-wrap a { color:#136B77; font-weight:700; }
+.row-wrap a[target="_blank"] { text-decoration:underline; }
 .row-wrap b, .row-wrap strong { font-weight:700; color:#0A2E3F; }
 .row-wrap blockquote { border-left:4px solid #3FBFB0; background:#EFFAF8;
             border-radius:0 10px 10px 0; padding:16px 20px; margin:20px 0;
@@ -64,6 +65,9 @@
 .row-wrap .row-table td { font-size:13.5px; color:#152225; padding:11px 14px;
             border-top:1px solid #DAD3C2; line-height:1.45; vertical-align:top; }
 .row-wrap .row-table td:first-child { font-weight:700; color:#0A2E3F; }
+.row-wrap .row-table th:first-child { width:80%; }
+.row-wrap .row-table th:last-child { width:20%; text-align:center; }
+.row-wrap .row-table td.row-nowrap { text-align:center; }
 .row-wrap .row-nowrap { white-space:nowrap; }
 .row-wrap .row-fee-table { width:100%; border-collapse:collapse; }
 .row-wrap .row-fee-table th { padding:7px 8px; font-family:'Courier New', Courier, monospace;

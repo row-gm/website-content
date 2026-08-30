@@ -1,0 +1,522 @@
+<title>ROW Coaching Team</title>
+
+<style>
+  :root {
+    --bg:              #EEF4FC;
+    --surface:         #FFFFFF;
+    --surface-2:       #E4EDF8;
+    --border:          #D0DFF0;
+    --text-1:          #0A1628;
+    --text-2:          #3A546E;
+    --text-3:          #7090B0;
+    --accent:          #1A56DB;
+    --accent-bg:       #EBF1FF;
+    --vol-bg:          #F1F5F9;
+    --vol-text:        #5A7A99;
+    --chip-bg:         #E4EDF8;
+    --chip-text:       #3A546E;
+    --chip-active-bg:  #1A56DB;
+    --chip-active-text:#FFFFFF;
+    --shadow-card:     0 1px 3px rgba(10,22,40,.07), 0 2px 8px rgba(10,22,40,.05);
+    --shadow-hd:       0 1px 4px rgba(10,22,40,.10);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:              #070F1C;
+      --surface:         #0D1E35;
+      --surface-2:       #0F2440;
+      --border:          #1A3356;
+      --text-1:          #E4EEFF;
+      --text-2:          #86AACC;
+      --text-3:          #4E7099;
+      --accent:          #5B8FFF;
+      --accent-bg:       #0D2044;
+      --vol-bg:          #0D1E35;
+      --vol-text:        #4E7099;
+      --chip-bg:         #0F2440;
+      --chip-text:       #86AACC;
+      --chip-active-bg:  #5B8FFF;
+      --chip-active-text:#070F1C;
+      --shadow-card:     0 1px 3px rgba(0,0,0,.3), 0 2px 8px rgba(0,0,0,.2);
+      --shadow-hd:       0 1px 4px rgba(0,0,0,.4);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:              #070F1C;
+    --surface:         #0D1E35;
+    --surface-2:       #0F2440;
+    --border:          #1A3356;
+    --text-1:          #E4EEFF;
+    --text-2:          #86AACC;
+    --text-3:          #4E7099;
+    --accent:          #5B8FFF;
+    --accent-bg:       #0D2044;
+    --vol-bg:          #0D1E35;
+    --vol-text:        #4E7099;
+    --chip-bg:         #0F2440;
+    --chip-text:       #86AACC;
+    --chip-active-bg:  #5B8FFF;
+    --chip-active-text:#070F1C;
+    --shadow-card:     0 1px 3px rgba(0,0,0,.3), 0 2px 8px rgba(0,0,0,.2);
+    --shadow-hd:       0 1px 4px rgba(0,0,0,.4);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-size: 15px;
+    background: var(--bg);
+    color: var(--text-1);
+    line-height: 1.55;
+    min-height: 100vh;
+    padding-bottom: 52px;
+  }
+
+  /* ── Header ── */
+  .header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow-hd);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    padding: 16px 36px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .logo-mark {
+    width: 36px; height: 36px;
+    background: var(--accent);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .wordmark {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-1);
+    letter-spacing: -.2px;
+    line-height: 1.15;
+  }
+  .wordmark span {
+    display: block;
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--text-3);
+    letter-spacing: .3px;
+    text-transform: uppercase;
+  }
+
+  /* ── Toolbar ── */
+  .toolbar {
+    max-width: 1080px;
+    margin: 24px auto 16px;
+    padding: 0 36px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .toolbar-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: var(--text-3);
+    margin-right: 2px;
+  }
+  .chip {
+    font-size: 12.5px;
+    font-weight: 500;
+    padding: 5px 13px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background: var(--chip-bg);
+    color: var(--chip-text);
+    transition: background .15s, color .15s;
+  }
+  .chip:hover { opacity: .82; }
+  .chip.active { background: var(--chip-active-bg); color: var(--chip-active-text); }
+
+  /* ── Grid ── */
+  .grid {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 36px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 16px;
+  }
+
+  /* ── Card ── */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: var(--shadow-card);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: box-shadow .15s;
+  }
+  .card:hover { box-shadow: 0 4px 16px rgba(10,22,40,.12); }
+
+  .card-head {
+    padding: 16px 18px 12px;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface-2);
+  }
+  .card-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-1);
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+  .pos-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+  .pos-tag {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 7px;
+    border-radius: 4px;
+    line-height: 1.5;
+    white-space: nowrap;
+  }
+  .pos-tag.coaching  { background: var(--accent-bg); color: var(--accent); }
+  .pos-tag.volunteer { background: var(--vol-bg);    color: var(--vol-text); }
+
+  /* ── Bio ── */
+  .card-body {
+    padding: 14px 18px;
+    flex: 1;
+  }
+  .bio {
+    font-size: 13.5px;
+    color: var(--text-2);
+    line-height: 1.6;
+  }
+
+  /* ── Footer ── */
+  .page-footer {
+    max-width: 1080px;
+    margin: 20px auto 0;
+    padding: 0 36px;
+  }
+  .footer-note { font-size: 11.5px; color: var(--text-3); }
+
+  .card.hidden { display: none; }
+
+  @media (max-width: 600px) {
+    .header { padding: 14px 16px; }
+    .toolbar, .grid, .page-footer { padding: 0 14px; }
+    .toolbar { margin-top: 18px; }
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<!-- ── Header ── -->
+<div class="header">
+  <div class="logo-mark">
+    <svg width="20" height="20" viewBox="0 0 22 22" fill="none">
+      <path d="M3 15 Q7 9 11 13 Q15 17 19 7" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="11" cy="5" r="2" fill="white" opacity=".65"/>
+    </svg>
+  </div>
+  <div class="wordmark">
+    Meet Your Coaches
+    <span>ROW Swim Club · 2026–27 Season</span>
+  </div>
+</div>
+
+<!-- ── Toolbar ── -->
+<div class="toolbar">
+  <span class="toolbar-label">Show</span>
+  <button class="chip active" data-filter="all">All</button>
+  <button class="chip" data-filter="staff">Coaching Staff</button>
+  <button class="chip" data-filter="volunteer">Volunteers</button>
+</div>
+
+<!-- ── Cards ── -->
+<div class="grid" id="grid">
+
+  <!-- Gabby Hui -->
+  <div class="card" data-volunteer="false">
+    <div class="card-head">
+      <div class="card-name">Gabby Hui</div>
+      <div class="pos-tags">
+        <span class="pos-tag coaching">Rec PM</span>
+        <span class="pos-tag coaching">TOPS 1-1</span>
+        <span class="pos-tag coaching">TOPS 2-4</span>
+        <span class="pos-tag coaching">TOPS 2-5</span>
+        <span class="pos-tag coaching">RSA</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <p class="bio">Gabby has been part of the ROW family for about three years, coaching across TOPS and RSA — including summer camps. She holds her Swimming 101 and Standard First Aid certifications and loves helping young swimmers build confidence and better technique.</p>
+    </div>
+  </div>
+
+  <!-- Trystan Stokes -->
+  <div class="card" data-volunteer="false">
+    <div class="card-head">
+      <div class="card-name">Trystan Stokes</div>
+      <div class="pos-tags">
+        <span class="pos-tag coaching">AGD 2</span>
+        <span class="pos-tag coaching">SD Assistant</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <p class="bio">Trystan has been with ROW for four years and has coached across a wide range of groups — from Learn to Swim through to Junior Development. He holds his Swimming 101 certification.</p>
+    </div>
+  </div>
+
+  <!-- Drew Amphlett -->
+  <div class="card" data-volunteer="false">
+    <div class="card-head">
+      <div class="card-name">Drew Amphlett</div>
+      <div class="pos-tags">
+        <span class="pos-tag coaching">JD 1</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <p class="bio">Drew is a lifelong competitive swimmer from Milton who has coached across a range of age groups and skill levels, from fundamentals through to technique work.</p>
+    </div>
+  </div>
+
+  <!-- Inderpreet Saggo -->
+  <div class="card" data-volunteer="false">
+    <div class="card-head">
+      <div class="card-name">Inderpreet Saggo</div>
+      <div class="pos-tags">
+        <span class="pos-tag coaching">TOPS 2-2</span>
+        <span class="pos-tag coaching">TOPS 2-4</span>
+        <span class="pos-tag coaching">TOPS 2-5</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <p class="bio">Inderpreet brings over 15 years of competitive swimming experience, including national-level competition. She holds her National Lifeguard, Bronze Cross, Bronze Medallion, and Standard First Aid certifications, and currently teaches swimming at the University of Waterloo.</p>
+    </div>
+  </div>
+
+  <!-- Elise McManus -->
+  <div class="card" data-volunteer="false">
+    <div class="card-head">
+      <div class="card-name">Elise McManus</div>
+      <div class="pos-tags">
+        <span class="pos-tag coaching">JD 2</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <p class="bio">Elise swam competitively for 11 years with the Toronto Swim Club and has taught swimming to kids of all ages and abilities. She holds her National Lifeguard certification and brings extra experience from camp coaching and strength and conditioning work.</p>
+    </div>
+  </div>
+
+  <!-- Allison McGregor -->
+  <div class="card" data-volunteer="false">
+    <div class="card-head">
+      <div class="card-name">Allison McGregor</div>
+      <div class="pos-tags">
+        <span class="pos-tag coaching">AGD 2</span>
+        <span class="pos-tag coaching">JD 2</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <p class="bio">Allison is from Guelph and has three years of coaching experience with the Blue Marlins' pre-competitive group. She also runs her own private swim lessons and is currently studying at the University of Waterloo.</p>
+    </div>
+  </div>
+
+  <!-- Ksenia Titioura -->
+  <div class="card" data-volunteer="false">
+    <div class="card-head">
+      <div class="card-name">Ksenia Titioura</div>
+      <div class="pos-tags">
+        <span class="pos-tag coaching">AGD 1</span>
+        <span class="pos-tag coaching">AGD 2</span>
+        <span class="pos-tag coaching">RSA</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <p class="bio">Ksenia has been part of ROW since 2012 — first as a competitive swimmer, then as a coach starting in 2019. She has coached RSA, TOPS, AGD, and summer camps across all age groups, and holds her Swimming 101 certification.</p>
+    </div>
+  </div>
+
+  <!-- Connor Cartier -->
+  <div class="card" data-volunteer="false">
+    <div class="card-head">
+      <div class="card-name">Connor Cartier</div>
+      <div class="pos-tags">
+        <span class="pos-tag coaching">AGD 1</span>
+        <span class="pos-tag coaching">RSA</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <p class="bio">Connor brings 15 years of competitive swimming experience, including three years at the varsity level and competition at the national level. Learning from coaches with many different styles has given him a strong base in stroke technique and athlete development.</p>
+    </div>
+  </div>
+
+  <!-- Tysen Wong -->
+  <div class="card" data-volunteer="false">
+    <div class="card-head">
+      <div class="card-name">Tysen Wong</div>
+      <div class="pos-tags">
+        <span class="pos-tag coaching">Rec PM</span>
+        <span class="pos-tag coaching">TOPS 1-1</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <p class="bio">Tysen has been a ROW member for years and has spent the last couple of seasons coaching TOPS and helping with summer programs. He knows the club's culture inside and out and is excited to keep building on it this season.</p>
+    </div>
+  </div>
+
+  <!-- Patrick Organisciak -->
+  <div class="card" data-volunteer="false">
+    <div class="card-head">
+      <div class="card-name">Patrick Organisciak</div>
+      <div class="pos-tags">
+        <span class="pos-tag coaching">TOPS 1-2</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <p class="bio">Patrick swam with ROW last season and has also coached with Lakeshore Swim Club and the City of Toronto's SPLASH program. He focuses on clear technique feedback and keeping workouts fun and well-organised for his athletes.</p>
+    </div>
+  </div>
+
+  <!-- Edward Nache -->
+  <div class="card" data-volunteer="false">
+    <div class="card-head">
+      <div class="card-name">Edward Nache</div>
+      <div class="pos-tags">
+        <span class="pos-tag coaching">TOPS 2-4</span>
+        <span class="pos-tag coaching">TOPS 2-5</span>
+        <span class="pos-tag coaching">RSA</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <p class="bio">Edward started his swimming career right here at ROW and went on to compete at the varsity level. He's back to bring that experience to the next generation of ROW swimmers, with a strong focus on the team culture he built through competitive sport.</p>
+    </div>
+  </div>
+
+  <!-- Mannat Sukhija -->
+  <div class="card" data-volunteer="false">
+    <div class="card-head">
+      <div class="card-name">Mannat Sukhija</div>
+      <div class="pos-tags">
+        <span class="pos-tag coaching">TOPS 2-1</span>
+        <span class="pos-tag coaching">RSA</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <p class="bio">Mannat swam with ROW from 2014 to 2019 and recently graduated from the University of Waterloo with a degree in Kinesiology. She has experience working with children aged 4 to 12 and is excited to give back to the community that shaped her as a swimmer.</p>
+    </div>
+  </div>
+
+  <!-- Anna Gomis Flores -->
+  <div class="card" data-volunteer="true">
+    <div class="card-head">
+      <div class="card-name">Anna Gomis Flores</div>
+      <div class="pos-tags">
+        <span class="pos-tag volunteer">Volunteer Coach</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <p class="bio">Anna has been part of ROW for eight years — the last two as a coach. She volunteered with the summer program before stepping into a coaching role, and loves passing on the same excitement her own coaches gave her.</p>
+    </div>
+  </div>
+
+  <!-- Sebastian Hui -->
+  <div class="card" data-volunteer="true">
+    <div class="card-head">
+      <div class="card-name">Sebastian Hui</div>
+      <div class="pos-tags">
+        <span class="pos-tag volunteer">Volunteer Coach</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <p class="bio">Sebastian is a current ROW National Development swimmer who has volunteered three summers at club camps, working with swimmers from age 10 and up. He holds his National Lifeguard and Standard First Aid certifications.</p>
+    </div>
+  </div>
+
+  <!-- Oliver Middleton -->
+  <div class="card" data-volunteer="true">
+    <div class="card-head">
+      <div class="card-name">Oliver Middleton</div>
+      <div class="pos-tags">
+        <span class="pos-tag volunteer">Volunteer Coach</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <p class="bio">Oliver has been a ROW swimmer for six years and wants to share his love of the sport with the younger kids coming up behind him. He holds his Emergency First Aid, Bronze Cross, and Bronze Medallion, and is working toward his National Lifeguard certification.</p>
+    </div>
+  </div>
+
+  <!-- Oliver Aikins -->
+  <div class="card" data-volunteer="true">
+    <div class="card-head">
+      <div class="card-name">Oliver Aikins</div>
+      <div class="pos-tags">
+        <span class="pos-tag volunteer">Volunteer Coach</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <p class="bio">Oliver has been a ROW member for four years and is entering his fifth year in Senior Development. He has spent the last two years volunteering as an assistant coach with the Swim Academy — something he calls the highlight of his time at the club.</p>
+    </div>
+  </div>
+
+  <!-- Kate Hutzal -->
+  <div class="card" data-volunteer="true">
+    <div class="card-head">
+      <div class="card-name">Kate Hutzal</div>
+      <div class="pos-tags">
+        <span class="pos-tag volunteer">Volunteer Coach</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <p class="bio">Kate has been part of ROW for nearly 10 years and is currently training in National Development. She recently completed her LIT program at summer camp and holds her Bronze Cross and First Aid certification, with her National Lifeguard on the way.</p>
+    </div>
+  </div>
+
+  <!-- Ruby Szpirglas -->
+  <div class="card" data-volunteer="true">
+    <div class="card-head">
+      <div class="card-name">Ruby Szpirglas</div>
+      <div class="pos-tags">
+        <span class="pos-tag volunteer">Volunteer Coach</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <p class="bio">Ruby has been a ROW swimmer since age 10 and has spent the last two years volunteering with the Swim Academy. She holds her Bronze Cross and Intermediate First Aid, and has been recognised with ROW's Attendance, Above and Beyond, and Most Spirited awards.</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- ── Footer ── -->
+<div class="page-footer">
+  <span class="footer-note">ROW Swim Club · 2026–27 Season</span>
+</div>
+
+<script>
+  const chips = document.querySelectorAll('.chip');
+  const cards = document.querySelectorAll('#grid .card');
+
+  function filter(f) {
+    cards.forEach(c => {
+      const show =
+        f === 'all'       ? true :
+        f === 'staff'     ? c.dataset.volunteer === 'false' :
+        f === 'volunteer' ? c.dataset.volunteer === 'true'  : true;
+      c.classList.toggle('hidden', !show);
+    });
+  }
+
+  chips.forEach(ch => {
+    ch.addEventListener('click', () => {
+      chips.forEach(c => c.classList.remove('active'));
+      ch.classList.add('active');
+      filter(ch.dataset.filter);
+    });
+  });
+</script>

@@ -1,0 +1,3049 @@
+<title>ROW Coaching Tracker</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  :root {
+    --bg: #EEF3F8;
+    --surface: #FFFFFF;
+    --navy: #0C2340;
+    --pool: #1A8FCF;
+    --text: #0C1E30;
+    --muted: #5A7A9A;
+    --border: #C5D5E5;
+    --assigned-bg: #1A8FCF;
+    --assigned-tx: #fff;
+    --avail-bg: #E4F5EC;
+    --avail-bd: #27AE60;
+    --avail-tx: #145E30;
+    --blocked-bg: #FEF1E8;
+    --blocked-bd: #D4660A;
+    --blocked-tx: #7A3000;
+    --inelig-bg: #F0F0F0;
+    --inelig-tx: #999;
+    --warn-bg: #FFF9E5;
+    --warn-bd: #F9A825;
+    --warn-tx: #8A6000;
+    --filled-bg: #E4F5EC;
+    --filled-bd: #27AE60;
+    --rock-stripe: #0C2340;
+  }
+  /* Single dark block — applied via JS class, not CSS media query */
+  html.dark {
+    --bg: #2C3E52;
+    --surface: #374F66;
+    --navy: #1E4878;
+    --pool: #5BC8EF;
+    --text: #D0E4F4;
+    --muted: #A8C4D8;
+    --border: #3A5470;
+    --assigned-bg: #1E88C8;
+    --avail-bg: #0A2A18;
+    --avail-bd: #27AE60;
+    --avail-tx: #50D890;
+    --blocked-bg: #2A1404;
+    --blocked-bd: #D4660A;
+    --blocked-tx: #F0A060;
+    --inelig-bg: #1E2D3E;
+    --inelig-tx: #4A6078;
+    --warn-bg: #2A2200;
+    --warn-bd: #F9A825;
+    --warn-tx: #F0C040;
+    --filled-bg: #0A2A18;
+    --filled-bd: #27AE60;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); padding: 20px 20px 40px; }
+
+  .header { margin-bottom: 22px; display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+  .header-text h1 { font-size: 1.15rem; font-weight: 700; color: var(--text); }
+  .header-text .sub { font-size: 0.78rem; color: var(--muted); margin-top: 3px; }
+  .theme-toggle { flex-shrink: 0; background: var(--surface); border: 1px solid var(--border); border-radius: 6px;
+                  padding: 5px 9px; cursor: pointer; font-size: 0.85rem; color: var(--muted);
+                  display: flex; align-items: center; gap: 5px; transition: background 0.15s; }
+  .theme-toggle:hover { background: var(--border); }
+
+  /* ── GROUP CARDS ── */
+  .section-title { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+                   color: var(--muted); margin: 0 0 10px; }
+
+  .groups { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 10px; margin-bottom: 30px; }
+
+  .group-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+  .group-card.filled { border-color: var(--filled-bd); }
+
+  .card-top { display: flex; align-items: center; gap: 8px; padding: 9px 12px 7px; border-bottom: 1px solid var(--border); }
+  .priority-badge { font-size: 0.6rem; font-weight: 700; background: var(--navy); color: #fff;
+                    border-radius: 3px; padding: 2px 5px; letter-spacing: 0.05em; flex-shrink: 0; }
+  .group-name { font-weight: 700; font-size: 0.88rem; flex: 1; }
+  .lanes-note { font-weight: 400; font-size: 0.75rem; color: var(--muted); margin-left: 4px; }
+  .fill-status { font-size: 0.7rem; font-weight: 700; padding: 2px 7px; border-radius: 10px; flex-shrink: 0; }
+  .fill-status.open { background: #E53935; color: #fff; border: 1px solid #B71C1C; }
+  html.dark .fill-status.open { background: #C62828; color: #fff; border-color: #FF5252; }
+  .fill-status.done { background: var(--filled-bg); color: var(--avail-tx); border: 1px solid var(--filled-bd); }
+  .fill-status.tentative { background: #FFF3CD; color: #7A5C00; border: 1px solid #E0A800; }
+  html.dark .fill-status.tentative { background: #3A2E00; color: #FFD966; border-color: #E0A800; }
+  .group-card.tentative { border-color: #E0A800; }
+  .slot.supervisor-slot { background: #DDEEFF; color: #1A4A7A; border: 1px solid #6AAAD4; border-radius: 4px; }
+  html.dark .slot.supervisor-slot { background: #0A1E33; color: #80C4E8; border-color: #2A6A9A; }
+
+  .card-body { padding: 8px 12px 10px; }
+  .schedule { font-size: 0.7rem; color: var(--muted); margin-bottom: 6px; line-height: 1.5; }
+  .stack-note { font-size: 0.65rem; color: var(--avail-bd); font-weight: 600; margin-bottom: 6px; }
+
+  .slots { display: flex; flex-wrap: wrap; gap: 4px; }
+  .slot { font-size: 0.72rem; font-weight: 500; padding: 3px 8px; border-radius: 4px; border: 1px dashed #E53935; color: #E53935; }
+  html.dark .slot { border-color: #FF5252; color: #FF5252; }
+  .slot.filled-slot { background: var(--assigned-bg); color: var(--assigned-tx); border: none; border-radius: 4px; }
+  .slot.volunteer-slot { background: #E8E0F0; color: #5A3A7A; border: 1px solid #B094CC; border-radius: 4px; }
+  html.dark .slot.volunteer-slot { background: #2E1A44; color: #C4A0E8; border-color: #7A50A8; }
+
+  /* ── MATRIX ── */
+  .matrix-wrap { overflow-x: auto; border-radius: 8px; }
+  table { border-collapse: collapse; min-width: 900px; width: 100%; background: var(--surface);
+          border-radius: 8px; overflow: hidden; border: 1px solid var(--border); font-size: 0.72rem; }
+  thead th { background: var(--navy); color: #fff; font-weight: 600; padding: 7px 8px;
+             font-size: 0.65rem; letter-spacing: 0.04em; text-align: center; white-space: nowrap; border: none; }
+  thead th.coach-col { text-align: left; padding-left: 12px; min-width: 90px; }
+  tbody tr:nth-child(even) td { background: rgba(0,0,0,0.04); }
+  html.dark tbody tr:nth-child(even) td { background: rgba(255,255,255,0.06); }
+  html.dark .cell.partial { background: #2C1F00; color: #F5C842; border-color: #A07800; }
+  tbody td { padding: 5px 6px; border: 1px solid var(--border); text-align: center; vertical-align: middle; }
+  tbody td.coach-name { font-weight: 600; text-align: left; padding-left: 12px; color: var(--text); white-space: nowrap; }
+
+  .cell { display: inline-block; padding: 2px 6px; border-radius: 3px; font-size: 0.65rem; font-weight: 600;
+          letter-spacing: 0.02em; white-space: nowrap; }
+  .cell.assigned  { background: var(--assigned-bg); color: #fff; }
+  .cell.available { background: #B8C4CC; color: #1A2A3A; border: none; }
+  .cell.partial   { background: #FEF3C7; color: #78450A; border: 1px solid #F5C842; }
+  .cell.blocked   { background: var(--blocked-bg); color: var(--blocked-tx); border: 1px solid var(--blocked-bd); font-size: 0.58rem; }
+  .cell.ineligible { background: var(--inelig-bg); color: var(--inelig-tx); }
+  /* Closed / tentative columns — TDs plain so row stripe is uniform */
+  td.col-closed, td.col-tentative { /* no special background or opacity */ }
+  th.col-tentative { color: #E0A800; }
+
+  /* ── SCHEDULE BY COACH ── */
+  .coach-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; margin-bottom: 30px; }
+  .coach-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+  .coach-card.confirmed { border: 2px solid #27AE60; }
+  .coach-card.confirmed::before {
+    content: '';
+    display: block;
+    height: 4px;
+    background: #27AE60;
+  }
+  .confirmed-badge {
+    font-size: 0.62rem;
+    font-weight: 700;
+    background: #27AE60;
+    color: #fff;
+    border-radius: 3px;
+    padding: 2px 6px;
+    letter-spacing: 0.04em;
+    flex-shrink: 0;
+  }
+  html.dark .coach-card.confirmed { border-color: #50D890; }
+  html.dark .coach-card.confirmed::before { background: #50D890; }
+  html.dark .confirmed-badge { background: #27AE60; }
+  .coach-card-top { background: var(--navy); color: #fff; padding: 8px 12px; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  .coach-card-name { font-size: 0.9rem; font-weight: 700; }
+  .coach-card-count { font-size: 0.65rem; font-weight: 500; opacity: 0.7; margin-top: 1px; }
+  .hours-chip { flex-shrink: 0; background: rgba(255,255,255,0.15); color: #fff; font-size: 0.65rem;
+               font-weight: 600; padding: 2px 7px; border-radius: 10px; letter-spacing: 0.02em; }
+  .coach-card-body { padding: 8px 12px 10px; display: flex; flex-direction: column; gap: 7px; }
+  .coach-group-row { display: flex; flex-direction: column; gap: 2px; }
+  .coach-group-label { display: flex; align-items: center; gap: 6px; }
+  .coach-group-name { font-size: 0.78rem; font-weight: 700; color: var(--pool); }
+  .coach-group-schedule { font-size: 0.67rem; color: var(--muted); line-height: 1.4; }
+  .coach-group-divider { border: none; border-top: 1px solid var(--border); margin: 0; }
+
+  /* ── LEGEND ── */
+  .legend { display: flex; gap: 12px; flex-wrap: wrap; margin: 10px 0 14px; font-size: 0.7rem; }
+  .legend-item { display: flex; align-items: center; gap: 5px; }
+  .ls { width: 28px; height: 14px; border-radius: 3px; border: 1px solid; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 0.55rem; font-weight: 700; color: #fff; }
+  .ls.assigned  { background: var(--assigned-bg); border-color: var(--assigned-bg); color: #fff; }
+  .ls.available { background: #B8C4CC; border-color: #B8C4CC; color: #1A2A3A; }
+  .ls.partial   { background: #FEF3C7; border-color: #F5C842; color: #78450A; }
+  .ls.blocked   { background: var(--blocked-bg); border-color: var(--blocked-bd); color: var(--blocked-tx); }
+  .ls.inelig    { background: var(--inelig-bg); border-color: var(--border); color: var(--inelig-tx); }
+</style>
+
+<script>
+(function () {
+  var STORAGE_KEY = 'row-tracker-theme';
+
+  function getSystemDark() {
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+
+  function applyTheme() {
+    var stored = localStorage.getItem(STORAGE_KEY);
+    var isDark = stored === 'dark' || (stored !== 'light' && getSystemDark());
+    document.documentElement.classList.toggle('dark', isDark);
+    var btn = document.getElementById('theme-toggle-btn');
+    if (btn) btn.textContent = isDark ? '☀ Light' : '☾ Dark';
+  }
+
+  window._toggleTheme = function () {
+    var stored = localStorage.getItem(STORAGE_KEY);
+    var isDark = stored === 'dark' || (stored !== 'light' && getSystemDark());
+    localStorage.setItem(STORAGE_KEY, isDark ? 'light' : 'dark');
+    applyTheme();
+  };
+
+  applyTheme();
+  if (window.matchMedia) {
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyTheme);
+  }
+})();
+</script>
+
+<div class="header">
+  <div class="header-text">
+    <h1>ROW Swim Club — 2026–27 Coaching Tracker</h1>
+    <p class="sub">2026–27 Season · Coaching assignments by group · Updated Sep 06</p>
+  </div>
+  <button class="theme-toggle" id="theme-toggle-btn" onclick="window._toggleTheme()">☾ Dark</button>
+</div>
+
+<p class="section-title">Groups</p>
+<div class="groups" id="groups"></div>
+
+<p class="section-title">Schedule by coach</p>
+<div class="coach-grid" id="coach-schedule"></div>
+
+
+<script>
+const DATA = {
+  "groups": [
+    {
+      "name": "AGD 1",
+      "required": 2,
+      "schedule": "Mon - CH - 5:30\u20137 pm \u00b7 Tue - RC - 6\u20137:30 am \u00b7 Wed - WLU - 7\u20138 pm \u00b7 Thu - WLU - 7\u20138 pm \u00b7 Sat - CH - 6\u20137:30 am",
+      "note": "",
+      "lanes": 6,
+      "tag": "Andrew/Russ"
+    },
+    {
+      "name": "AGD 2",
+      "required": 3,
+      "schedule": "Mon - WLU - 6\u20137:30 am \u00b7 Tue - WLU - 7\u20138:30 pm \u00b7 Thu - RC - 6\u20137:30 am \u00b7 Fri - WLU - 7:30\u20138:30 pm",
+      "note": "",
+      "lanes": 6,
+      "tag": "Andrew/Russ"
+    },
+    {
+      "name": "JD 1",
+      "required": 2,
+      "schedule": "Tue - WLU - 7:00\u20138:30 pm \u00b7 Thu - WLU - 6:00\u20137:30 am \u00b7 Fri - WLU - 6:30\u20138:00 pm \u00b7 Sat - WLU - 9:00\u201310:30 am",
+      "note": "Drew: no Thu AM",
+      "lanes": 3,
+      "tag": ""
+    },
+    {
+      "name": "JD 2",
+      "required": 2,
+      "schedule": "Mon - WLU - 6:30\u20138 pm \u00b7 Wed - WLU - 6\u20137:30 pm \u00b7 Thu - WLU - 5:30\u20137 pm",
+      "note": "",
+      "lanes": 3,
+      "tag": "Andrew/Kaitlyn"
+    },
+    {
+      "name": "Rec PM",
+      "required": 2,
+      "schedule": "Mon - CH - 8\u20139 pm \u00b7 Wed - CH - 8\u20139 pm \u00b7 Fri - CH - 8\u20139 pm",
+      "note": "",
+      "lanes": 6,
+      "tag": "Andrew"
+    },
+    {
+      "name": "TOPS 1-1",
+      "required": 2,
+      "schedule": "Mon - CH - 7\u20138 pm \u00b7 Wed - CH - 7\u20138 pm \u00b7 Fri - CH - 7\u20138 pm",
+      "note": "",
+      "lanes": 4,
+      "tag": "Andrew/Kaitlyn"
+    },
+    {
+      "name": "TOPS 1-2",
+      "required": 2,
+      "schedule": "Tue - WLU - 7:30\u20138:30 pm \u00b7 Wed - WLU - 6:30\u20137:30 pm \u00b7 Thu - WLU - 7\u20138 pm",
+      "note": "",
+      "lanes": 3,
+      "tag": "Andrew/Kaitlyn"
+    },
+    {
+      "name": "TOPS 2-1",
+      "required": 1,
+      "schedule": "Mon - CH - 7\u20138 pm \u00b7 Wed - CH - 7\u20138 pm",
+      "note": "",
+      "lanes": 1,
+      "tag": "Andrew"
+    },
+    {
+      "name": "TOPS 2-2",
+      "required": 1,
+      "schedule": "Wed - CH - 7\u20138 pm \u00b7 Fri - CH - 7\u20138 pm",
+      "note": "",
+      "lanes": 1,
+      "tag": "Andrew/Kaitlyn"
+    },
+    {
+      "name": "TOPS 2-3",
+      "required": 1,
+      "schedule": "Mon - CH - 7\u20138 pm \u00b7 Fri - CH - 7\u20138 pm",
+      "note": "",
+      "lanes": 1,
+      "tag": "Andrew"
+    },
+    {
+      "name": "TOPS 2-4",
+      "required": 3,
+      "schedule": "Tue - WLU - 5:30\u20136:30 pm \u00b7 Thu - WLU - 5:30\u20136:30 pm",
+      "note": "Stacks with TOPS 2-5",
+      "lanes": 3,
+      "tag": "Andrew/Kaitlyn"
+    },
+    {
+      "name": "TOPS 2-5",
+      "required": 3,
+      "schedule": "Tue - WLU - 6:30\u20137:30 pm \u00b7 Thu - WLU - 6:30\u20137:30 pm",
+      "note": "Stacks with TOPS 2-4",
+      "lanes": 3,
+      "tag": "Andrew/Kaitlyn"
+    },
+    {
+      "name": "SD Assistant",
+      "required": 1,
+      "schedule": "Mon - WLU - 6\u20137:30 am \u00b7 Tue - WLU - 4\u20136:30 pm \u00b7 Wed - WLU - 5\u20137 pm \u00b7 Thu - WLU - 4\u20136 pm \u00b7 Fri - WLU - 4:30\u20136 pm \u00b7 Sat - WLU - 6\u20138:30 am",
+      "note": "Trystan: Tue\u2013Sat only (Mon conflicts with AGD 2)",
+      "lanes": 6,
+      "tag": ""
+    },
+    {
+      "name": "RSA",
+      "required": 7,
+      "schedule": "Sat - CH - 7:30\u201310 am",
+      "note": "",
+      "lanes": 6,
+      "tag": "Andrew"
+    },
+    {
+      "name": "PD 3",
+      "required": 2,
+      "schedule": "Mon - WLU - 6:00\u20138:00 pm",
+      "note": "",
+      "lanes": 3,
+      "tag": "Isabelle"
+    }
+  ],
+  "coaches": [
+    "Allison",
+    "Anna",
+    "Connor",
+    "Devin",
+    "Drew",
+    "Elan",
+    "Elise",
+    "Gabby",
+    "Harshal",
+    "Inderpreet",
+    "Isabelle",
+    "Kaitlyn",
+    "Ksenia",
+    "Mannat",
+    "Oliver",
+    "Oliver A",
+    "Patrick",
+    "Ruby S",
+    "Sebastian",
+    "Trystan",
+    "Tysen",
+    "Tyson",
+    "Victor",
+    "Violet"
+  ],
+  "coaches_detail": [
+    {
+      "coach": "Allison",
+      "slot_grid": [
+        {
+          "slot": "Mon_CH",
+          "status": "spare"
+        },
+        {
+          "slot": "Mon_WLU",
+          "status": "assigned",
+          "groups": [
+            "JD 2"
+          ]
+        },
+        {
+          "slot": "Tue_WLU",
+          "status": "assigned",
+          "groups": [
+            "AGD 2"
+          ]
+        },
+        {
+          "slot": "Wed_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Wed_WLU",
+          "status": "assigned",
+          "groups": [
+            "JD 2"
+          ]
+        },
+        {
+          "slot": "Thu_WLU",
+          "status": "assigned",
+          "groups": [
+            "JD 2"
+          ]
+        },
+        {
+          "slot": "Fri_CH",
+          "status": "spare"
+        },
+        {
+          "slot": "Fri_WLU",
+          "status": "assigned",
+          "groups": [
+            "AGD 2"
+          ]
+        }
+      ],
+      "assigned_hours": 6.5,
+      "total_hours": 10.0,
+      "groups": [
+        {
+          "group": "AGD 2",
+          "slots": [
+            "Tue WLU",
+            "Fri WLU"
+          ],
+          "hours": 2.5
+        },
+        {
+          "group": "JD 2",
+          "slots": [
+            "Mon WLU",
+            "Wed WLU",
+            "Thu WLU"
+          ],
+          "hours": 4.0
+        }
+      ]
+    },
+    {
+      "coach": "Anna",
+      "slot_grid": [
+        {
+          "slot": "Mon_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Mon_WLU",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Tue_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Wed_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Wed_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Thu_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Fri_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Fri_WLU",
+          "status": "unavailable"
+        }
+      ],
+      "assigned_hours": 0.0,
+      "total_hours": 0,
+      "groups": []
+    },
+    {
+      "coach": "Connor",
+      "slot_grid": [
+        {
+          "slot": "Mon_CH",
+          "status": "assigned",
+          "groups": [
+            "AGD 1"
+          ]
+        },
+        {
+          "slot": "Mon_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Tue_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Wed_CH",
+          "status": "spare"
+        },
+        {
+          "slot": "Wed_WLU",
+          "status": "assigned",
+          "groups": [
+            "AGD 1"
+          ]
+        },
+        {
+          "slot": "Thu_WLU",
+          "status": "assigned",
+          "groups": [
+            "AGD 1"
+          ]
+        },
+        {
+          "slot": "Fri_CH",
+          "status": "spare"
+        },
+        {
+          "slot": "Fri_WLU",
+          "status": "spare"
+        }
+      ],
+      "assigned_hours": 3.5,
+      "total_hours": 6.5,
+      "groups": [
+        {
+          "group": "AGD 1",
+          "slots": [
+            "Mon CH",
+            "Wed WLU",
+            "Thu WLU"
+          ],
+          "hours": 3.5
+        }
+      ]
+    },
+    {
+      "coach": "Devin",
+      "slot_grid": [
+        {
+          "slot": "Mon_CH",
+          "status": "spare"
+        },
+        {
+          "slot": "Mon_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Tue_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Wed_CH",
+          "status": "spare"
+        },
+        {
+          "slot": "Wed_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Thu_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Fri_CH",
+          "status": "spare"
+        },
+        {
+          "slot": "Fri_WLU",
+          "status": "spare"
+        }
+      ],
+      "assigned_hours": 0.0,
+      "total_hours": 0,
+      "groups": []
+    },
+    {
+      "coach": "Drew",
+      "slot_grid": [
+        {
+          "slot": "Mon_CH",
+          "status": "spare"
+        },
+        {
+          "slot": "Mon_WLU",
+          "status": "assigned",
+          "groups": [
+            "PD 3"
+          ]
+        },
+        {
+          "slot": "Tue_WLU",
+          "status": "assigned",
+          "groups": [
+            "JD 1"
+          ]
+        },
+        {
+          "slot": "Wed_CH",
+          "status": "spare"
+        },
+        {
+          "slot": "Wed_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Thu_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Fri_CH",
+          "status": "spare"
+        },
+        {
+          "slot": "Fri_WLU",
+          "status": "assigned",
+          "groups": [
+            "JD 1"
+          ]
+        }
+      ],
+      "assigned_hours": 4.0,
+      "total_hours": 8.0,
+      "groups": [
+        {
+          "group": "JD 1",
+          "slots": [
+            "Tue WLU",
+            "Fri WLU"
+          ],
+          "hours": 2.5
+        },
+        {
+          "group": "PD 3",
+          "slots": [
+            "Mon WLU"
+          ],
+          "hours": 1.5
+        }
+      ]
+    },
+    {
+      "coach": "Elan",
+      "slot_grid": [
+        {
+          "slot": "Mon_CH",
+          "status": "spare"
+        },
+        {
+          "slot": "Mon_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Tue_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Wed_CH",
+          "status": "spare"
+        },
+        {
+          "slot": "Wed_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Thu_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Fri_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Fri_WLU",
+          "status": "unavailable"
+        }
+      ],
+      "assigned_hours": 0.0,
+      "total_hours": 0,
+      "groups": []
+    },
+    {
+      "coach": "Elise",
+      "slot_grid": [
+        {
+          "slot": "Mon_CH",
+          "status": "spare"
+        },
+        {
+          "slot": "Mon_WLU",
+          "status": "assigned",
+          "groups": [
+            "JD 2"
+          ]
+        },
+        {
+          "slot": "Tue_WLU",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Wed_CH",
+          "status": "spare"
+        },
+        {
+          "slot": "Wed_WLU",
+          "status": "assigned",
+          "groups": [
+            "JD 2"
+          ]
+        },
+        {
+          "slot": "Thu_WLU",
+          "status": "assigned",
+          "groups": [
+            "JD 2"
+          ]
+        },
+        {
+          "slot": "Fri_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Fri_WLU",
+          "status": "unavailable"
+        }
+      ],
+      "assigned_hours": 4.0,
+      "total_hours": 4.5,
+      "groups": [
+        {
+          "group": "JD 2",
+          "slots": [
+            "Mon WLU",
+            "Wed WLU",
+            "Thu WLU"
+          ],
+          "hours": 4.0
+        }
+      ]
+    },
+    {
+      "coach": "Gabby",
+      "slot_grid": [
+        {
+          "slot": "Mon_CH",
+          "status": "assigned",
+          "groups": [
+            "TOPS 1-1",
+            "Rec PM"
+          ]
+        },
+        {
+          "slot": "Mon_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Tue_WLU",
+          "status": "assigned",
+          "groups": [
+            "TOPS 2-4",
+            "TOPS 2-5"
+          ]
+        },
+        {
+          "slot": "Wed_CH",
+          "status": "assigned",
+          "groups": [
+            "TOPS 1-1",
+            "Rec PM"
+          ]
+        },
+        {
+          "slot": "Wed_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Thu_WLU",
+          "status": "assigned",
+          "groups": [
+            "TOPS 2-4",
+            "TOPS 2-5"
+          ]
+        },
+        {
+          "slot": "Fri_CH",
+          "status": "assigned",
+          "groups": [
+            "TOPS 1-1",
+            "Rec PM"
+          ]
+        },
+        {
+          "slot": "Fri_WLU",
+          "status": "spare"
+        }
+      ],
+      "assigned_hours": 5.5,
+      "total_hours": 12.5,
+      "groups": [
+        {
+          "group": "TOPS 1-1",
+          "slots": [
+            "Mon CH",
+            "Wed CH",
+            "Fri CH"
+          ],
+          "hours": 3.0
+        },
+        {
+          "group": "TOPS 2-4",
+          "slots": [
+            "Tue WLU",
+            "Thu WLU"
+          ],
+          "hours": 2.5
+        },
+        {
+          "group": "TOPS 2-5",
+          "slots": [
+            "Tue WLU",
+            "Thu WLU"
+          ],
+          "hours": 2.5
+        },
+        {
+          "group": "RSA",
+          "slots": [],
+          "hours": 0
+        },
+        {
+          "group": "Rec PM",
+          "slots": [
+            "Mon CH",
+            "Wed CH",
+            "Fri CH"
+          ],
+          "hours": 3.0
+        }
+      ]
+    },
+    {
+      "coach": "Harshal",
+      "slot_grid": [
+        {
+          "slot": "Mon_CH",
+          "status": "assigned",
+          "groups": [
+            "TOPS 2-3"
+          ]
+        },
+        {
+          "slot": "Mon_WLU",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Tue_WLU",
+          "status": "assigned",
+          "groups": [
+            "TOPS 1-2"
+          ]
+        },
+        {
+          "slot": "Wed_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Wed_WLU",
+          "status": "assigned",
+          "groups": [
+            "TOPS 1-2"
+          ]
+        },
+        {
+          "slot": "Thu_WLU",
+          "status": "assigned",
+          "groups": [
+            "TOPS 1-2"
+          ]
+        },
+        {
+          "slot": "Fri_CH",
+          "status": "assigned",
+          "groups": [
+            "TOPS 2-3"
+          ]
+        },
+        {
+          "slot": "Fri_WLU",
+          "status": "unavailable"
+        }
+      ],
+      "assigned_hours": 5.75,
+      "total_hours": 7.5,
+      "groups": [
+        {
+          "group": "TOPS 1-2",
+          "slots": [
+            "Tue WLU",
+            "Wed WLU",
+            "Thu WLU"
+          ],
+          "hours": 3.75
+        },
+        {
+          "group": "TOPS 2-3",
+          "slots": [
+            "Mon CH",
+            "Fri CH"
+          ],
+          "hours": 2.0
+        },
+        {
+          "group": "RSA",
+          "slots": [],
+          "hours": 0
+        }
+      ]
+    },
+    {
+      "coach": "Inderpreet",
+      "slot_grid": [
+        {
+          "slot": "Mon_CH",
+          "status": "spare"
+        },
+        {
+          "slot": "Mon_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Tue_WLU",
+          "status": "assigned",
+          "groups": [
+            "TOPS 2-4",
+            "TOPS 2-5"
+          ]
+        },
+        {
+          "slot": "Wed_CH",
+          "status": "assigned",
+          "groups": [
+            "TOPS 2-2"
+          ]
+        },
+        {
+          "slot": "Wed_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Thu_WLU",
+          "status": "assigned",
+          "groups": [
+            "TOPS 2-4",
+            "TOPS 2-5"
+          ]
+        },
+        {
+          "slot": "Fri_CH",
+          "status": "assigned",
+          "groups": [
+            "TOPS 2-2"
+          ]
+        },
+        {
+          "slot": "Fri_WLU",
+          "status": "unavailable"
+        }
+      ],
+      "assigned_hours": 4.5,
+      "total_hours": 6.0,
+      "groups": [
+        {
+          "group": "TOPS 2-2",
+          "slots": [
+            "Wed CH",
+            "Fri CH"
+          ],
+          "hours": 2.0
+        },
+        {
+          "group": "TOPS 2-4",
+          "slots": [
+            "Tue WLU",
+            "Thu WLU"
+          ],
+          "hours": 2.5
+        },
+        {
+          "group": "TOPS 2-5",
+          "slots": [
+            "Tue WLU",
+            "Thu WLU"
+          ],
+          "hours": 2.5
+        }
+      ]
+    },
+    {
+      "coach": "Isabelle",
+      "slot_grid": [
+        {
+          "slot": "Mon_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Mon_WLU",
+          "status": "assigned",
+          "groups": [
+            "PD 3"
+          ]
+        },
+        {
+          "slot": "Tue_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Wed_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Wed_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Thu_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Fri_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Fri_WLU",
+          "status": "spare"
+        }
+      ],
+      "assigned_hours": 1.5,
+      "total_hours": 2.0,
+      "groups": [
+        {
+          "group": "PD 3",
+          "slots": [
+            "Mon WLU"
+          ],
+          "hours": 1.5
+        }
+      ]
+    },
+    {
+      "coach": "Kaitlyn",
+      "slot_grid": [
+        {
+          "slot": "Mon_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Mon_WLU",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Tue_WLU",
+          "status": "assigned",
+          "groups": [
+            "JD 1"
+          ]
+        },
+        {
+          "slot": "Wed_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Wed_WLU",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Thu_WLU",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Fri_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Fri_WLU",
+          "status": "assigned",
+          "groups": [
+            "JD 1"
+          ]
+        }
+      ],
+      "assigned_hours": 2.5,
+      "total_hours": 6.0,
+      "groups": [
+        {
+          "group": "JD 1",
+          "slots": [
+            "Tue WLU",
+            "Fri WLU"
+          ],
+          "hours": 2.5
+        }
+      ]
+    },
+    {
+      "coach": "Ksenia",
+      "slot_grid": [
+        {
+          "slot": "Mon_CH",
+          "status": "assigned",
+          "groups": [
+            "AGD 1"
+          ]
+        },
+        {
+          "slot": "Mon_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Tue_WLU",
+          "status": "assigned",
+          "groups": [
+            "AGD 2"
+          ]
+        },
+        {
+          "slot": "Wed_CH",
+          "status": "spare"
+        },
+        {
+          "slot": "Wed_WLU",
+          "status": "assigned",
+          "groups": [
+            "AGD 1"
+          ]
+        },
+        {
+          "slot": "Thu_WLU",
+          "status": "assigned",
+          "groups": [
+            "AGD 1"
+          ]
+        },
+        {
+          "slot": "Fri_CH",
+          "status": "spare"
+        },
+        {
+          "slot": "Fri_WLU",
+          "status": "assigned",
+          "groups": [
+            "AGD 2"
+          ]
+        }
+      ],
+      "assigned_hours": 6.0,
+      "total_hours": 14.5,
+      "groups": [
+        {
+          "group": "AGD 2",
+          "slots": [
+            "Tue WLU",
+            "Fri WLU"
+          ],
+          "hours": 2.5
+        },
+        {
+          "group": "AGD 1",
+          "slots": [
+            "Mon CH",
+            "Wed WLU",
+            "Thu WLU"
+          ],
+          "hours": 3.5
+        },
+        {
+          "group": "RSA",
+          "slots": [],
+          "hours": 0
+        }
+      ]
+    },
+    {
+      "coach": "Mannat",
+      "slot_grid": [
+        {
+          "slot": "Mon_CH",
+          "status": "assigned",
+          "groups": [
+            "TOPS 2-1"
+          ]
+        },
+        {
+          "slot": "Mon_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Tue_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Wed_CH",
+          "status": "assigned",
+          "groups": [
+            "TOPS 2-1"
+          ]
+        },
+        {
+          "slot": "Wed_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Thu_WLU",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Fri_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Fri_WLU",
+          "status": "unavailable"
+        }
+      ],
+      "assigned_hours": 2.0,
+      "total_hours": 4.5,
+      "groups": [
+        {
+          "group": "TOPS 2-1",
+          "slots": [
+            "Mon CH",
+            "Wed CH"
+          ],
+          "hours": 2.0
+        },
+        {
+          "group": "RSA",
+          "slots": [],
+          "hours": 0
+        }
+      ]
+    },
+    {
+      "coach": "Oliver",
+      "slot_grid": [
+        {
+          "slot": "Mon_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Mon_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Tue_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Wed_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Wed_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Thu_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Fri_CH",
+          "status": "spare"
+        },
+        {
+          "slot": "Fri_WLU",
+          "status": "spare"
+        }
+      ],
+      "assigned_hours": 0.0,
+      "total_hours": 0,
+      "groups": []
+    },
+    {
+      "coach": "Oliver A",
+      "slot_grid": [
+        {
+          "slot": "Mon_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Mon_WLU",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Tue_WLU",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Wed_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Wed_WLU",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Thu_WLU",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Fri_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Fri_WLU",
+          "status": "unavailable"
+        }
+      ],
+      "assigned_hours": 0.0,
+      "total_hours": 2.5,
+      "groups": [
+        {
+          "group": "RSA",
+          "slots": [],
+          "hours": 0
+        }
+      ]
+    },
+    {
+      "coach": "Patrick",
+      "slot_grid": [
+        {
+          "slot": "Mon_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Mon_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Tue_WLU",
+          "status": "assigned",
+          "groups": [
+            "TOPS 1-2"
+          ]
+        },
+        {
+          "slot": "Wed_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Wed_WLU",
+          "status": "assigned",
+          "groups": [
+            "TOPS 1-2"
+          ]
+        },
+        {
+          "slot": "Thu_WLU",
+          "status": "assigned",
+          "groups": [
+            "TOPS 1-2"
+          ]
+        },
+        {
+          "slot": "Fri_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Fri_WLU",
+          "status": "spare"
+        }
+      ],
+      "assigned_hours": 3.75,
+      "total_hours": 3.0,
+      "groups": [
+        {
+          "group": "TOPS 1-2",
+          "slots": [
+            "Tue WLU",
+            "Wed WLU",
+            "Thu WLU"
+          ],
+          "hours": 3.75
+        }
+      ]
+    },
+    {
+      "coach": "Ruby S",
+      "slot_grid": [
+        {
+          "slot": "Mon_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Mon_WLU",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Tue_WLU",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Wed_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Wed_WLU",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Thu_WLU",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Fri_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Fri_WLU",
+          "status": "unavailable"
+        }
+      ],
+      "assigned_hours": 0.0,
+      "total_hours": 2.5,
+      "groups": [
+        {
+          "group": "RSA",
+          "slots": [],
+          "hours": 0
+        }
+      ]
+    },
+    {
+      "coach": "Sebastian",
+      "slot_grid": [
+        {
+          "slot": "Mon_CH",
+          "status": "spare"
+        },
+        {
+          "slot": "Mon_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Tue_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Wed_CH",
+          "status": "spare"
+        },
+        {
+          "slot": "Wed_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Thu_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Fri_CH",
+          "status": "spare"
+        },
+        {
+          "slot": "Fri_WLU",
+          "status": "spare"
+        }
+      ],
+      "assigned_hours": 0.0,
+      "total_hours": 0,
+      "groups": []
+    },
+    {
+      "coach": "Trystan",
+      "slot_grid": [
+        {
+          "slot": "Mon_CH",
+          "status": "spare"
+        },
+        {
+          "slot": "Mon_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Tue_WLU",
+          "status": "assigned",
+          "groups": [
+            "AGD 2",
+            "SD Assistant"
+          ]
+        },
+        {
+          "slot": "Wed_CH",
+          "status": "spare"
+        },
+        {
+          "slot": "Wed_WLU",
+          "status": "assigned",
+          "groups": [
+            "SD Assistant"
+          ]
+        },
+        {
+          "slot": "Thu_WLU",
+          "status": "assigned",
+          "groups": [
+            "SD Assistant"
+          ]
+        },
+        {
+          "slot": "Fri_CH",
+          "status": "spare"
+        },
+        {
+          "slot": "Fri_WLU",
+          "status": "assigned",
+          "groups": [
+            "AGD 2",
+            "SD Assistant"
+          ]
+        }
+      ],
+      "assigned_hours": 5.0,
+      "total_hours": 16.0,
+      "groups": [
+        {
+          "group": "AGD 2",
+          "slots": [
+            "Tue WLU",
+            "Fri WLU"
+          ],
+          "hours": 2.5
+        },
+        {
+          "group": "SD Assistant",
+          "slots": [
+            "Tue WLU",
+            "Wed WLU",
+            "Thu WLU",
+            "Fri WLU"
+          ],
+          "hours": 5.0
+        }
+      ]
+    },
+    {
+      "coach": "Tysen",
+      "slot_grid": [
+        {
+          "slot": "Mon_CH",
+          "status": "assigned",
+          "groups": [
+            "TOPS 1-1",
+            "Rec PM"
+          ]
+        },
+        {
+          "slot": "Mon_WLU",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Tue_WLU",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Wed_CH",
+          "status": "assigned",
+          "groups": [
+            "TOPS 1-1",
+            "Rec PM"
+          ]
+        },
+        {
+          "slot": "Wed_WLU",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Thu_WLU",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Fri_CH",
+          "status": "assigned",
+          "groups": [
+            "TOPS 1-1",
+            "Rec PM"
+          ]
+        },
+        {
+          "slot": "Fri_WLU",
+          "status": "unavailable"
+        }
+      ],
+      "assigned_hours": 3.0,
+      "total_hours": 6.0,
+      "groups": [
+        {
+          "group": "TOPS 1-1",
+          "slots": [
+            "Mon CH",
+            "Wed CH",
+            "Fri CH"
+          ],
+          "hours": 3.0
+        },
+        {
+          "group": "Rec PM",
+          "slots": [
+            "Mon CH",
+            "Wed CH",
+            "Fri CH"
+          ],
+          "hours": 3.0
+        }
+      ]
+    },
+    {
+      "coach": "Tyson",
+      "slot_grid": [
+        {
+          "slot": "Mon_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Mon_WLU",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Tue_WLU",
+          "status": "assigned",
+          "groups": [
+            "SD Assistant"
+          ]
+        },
+        {
+          "slot": "Wed_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Wed_WLU",
+          "status": "assigned",
+          "groups": [
+            "SD Assistant"
+          ]
+        },
+        {
+          "slot": "Thu_WLU",
+          "status": "assigned",
+          "groups": [
+            "SD Assistant"
+          ]
+        },
+        {
+          "slot": "Fri_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Fri_WLU",
+          "status": "assigned",
+          "groups": [
+            "SD Assistant"
+          ]
+        }
+      ],
+      "assigned_hours": 5.0,
+      "total_hours": 12.0,
+      "groups": [
+        {
+          "group": "SD Assistant",
+          "slots": [
+            "Tue WLU",
+            "Wed WLU",
+            "Thu WLU",
+            "Fri WLU"
+          ],
+          "hours": 5.0
+        }
+      ]
+    },
+    {
+      "coach": "Victor",
+      "slot_grid": [
+        {
+          "slot": "Mon_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Mon_WLU",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Tue_WLU",
+          "status": "assigned",
+          "groups": [
+            "TOPS 2-4",
+            "TOPS 2-5"
+          ]
+        },
+        {
+          "slot": "Wed_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Wed_WLU",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Thu_WLU",
+          "status": "assigned",
+          "groups": [
+            "TOPS 2-4",
+            "TOPS 2-5"
+          ]
+        },
+        {
+          "slot": "Fri_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Fri_WLU",
+          "status": "unavailable"
+        }
+      ],
+      "assigned_hours": 2.5,
+      "total_hours": 6.5,
+      "groups": [
+        {
+          "group": "TOPS 2-4",
+          "slots": [
+            "Tue WLU",
+            "Thu WLU"
+          ],
+          "hours": 2.5
+        },
+        {
+          "group": "TOPS 2-5",
+          "slots": [
+            "Tue WLU",
+            "Thu WLU"
+          ],
+          "hours": 2.5
+        },
+        {
+          "group": "RSA",
+          "slots": [],
+          "hours": 0
+        }
+      ]
+    },
+    {
+      "coach": "Violet",
+      "slot_grid": [
+        {
+          "slot": "Mon_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Mon_WLU",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Tue_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Wed_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Wed_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Thu_WLU",
+          "status": "spare"
+        },
+        {
+          "slot": "Fri_CH",
+          "status": "unavailable"
+        },
+        {
+          "slot": "Fri_WLU",
+          "status": "spare"
+        }
+      ],
+      "assigned_hours": 0.0,
+      "total_hours": 2.5,
+      "groups": [
+        {
+          "group": "RSA",
+          "slots": [],
+          "hours": 0
+        }
+      ]
+    }
+  ],
+  "assignments": {
+    "AGD 2": [
+      "Ksenia",
+      "Trystan",
+      "Allison"
+    ],
+    "AGD 1": [
+      "Ksenia",
+      "Connor"
+    ],
+    "JD 1": [
+      "Kaitlyn",
+      "Drew"
+    ],
+    "JD 2": [
+      "Allison",
+      "Elise"
+    ],
+    "TOPS 1-1": [
+      "Gabby",
+      "Tysen"
+    ],
+    "TOPS 1-2": [
+      "Patrick",
+      "Harshal"
+    ],
+    "TOPS 2-1": [
+      "Mannat"
+    ],
+    "TOPS 2-2": [
+      "Inderpreet"
+    ],
+    "TOPS 2-3": [
+      "Harshal"
+    ],
+    "TOPS 2-4": [
+      "Gabby",
+      "Inderpreet",
+      "Victor"
+    ],
+    "TOPS 2-5": [
+      "Gabby",
+      "Inderpreet",
+      "Victor"
+    ],
+    "RSA": [
+      "Ksenia",
+      "Gabby",
+      "Violet",
+      "Mannat",
+      "Oliver A",
+      "Ruby S",
+      "Victor",
+      "Harshal"
+    ],
+    "Rec PM": [
+      "Gabby",
+      "Tysen"
+    ],
+    "SD Assistant": [
+      "Tyson",
+      "Trystan"
+    ],
+    "PD 3": [
+      "Drew",
+      "Isabelle"
+    ]
+  },
+  "tentative": [],
+  "volunteers": {
+    "JD 1": [
+      "Sebastian",
+      "Oliver"
+    ],
+    "RSA": [
+      "Anna",
+      "Violet",
+      "Oliver A",
+      "Ruby S"
+    ]
+  },
+  "supervisors": {
+    "JD 1": [
+      "Kaitlyn"
+    ],
+    "SD Assistant": [
+      "Tyson"
+    ]
+  },
+  "confirmed": [
+    "Harshal",
+    "Trystan",
+    "Inderpreet",
+    "Violet",
+    "Oliver A",
+    "Gabby",
+    "Connor",
+    "Isabelle",
+    "Drew",
+    "Mannat",
+    "Patrick",
+    "Allison",
+    "Tysen",
+    "Victor",
+    "Ksenia",
+    "Elise",
+    "Ruby S"
+  ],
+  "hide_from_schedule": [
+    "Kaitlyn",
+    "Tyson"
+  ],
+  "matrix": {
+    "Allison": {
+      "AGD 1": "ineligible",
+      "AGD 2": "assigned",
+      "JD 1": "blocked:AGD 2",
+      "JD 2": "assigned",
+      "Rec PM": "partial",
+      "TOPS 1-1": "partial",
+      "TOPS 1-2": "blocked:AGD 2,JD 2",
+      "TOPS 2-1": "partial",
+      "TOPS 2-2": "partial",
+      "TOPS 2-3": "blocked:AGD 2,JD 2",
+      "TOPS 2-4": "blocked:JD 2",
+      "TOPS 2-5": "blocked:AGD 2,JD 2",
+      "SD Assistant": "ineligible",
+      "RSA": "ineligible",
+      "PD 3": "ineligible"
+    },
+    "Anna": {
+      "AGD 1": "partial",
+      "AGD 2": "partial",
+      "JD 1": "partial",
+      "JD 2": "partial",
+      "Rec PM": "ineligible",
+      "TOPS 1-1": "ineligible",
+      "TOPS 1-2": "ineligible",
+      "TOPS 2-1": "ineligible",
+      "TOPS 2-2": "ineligible",
+      "TOPS 2-3": "ineligible",
+      "TOPS 2-4": "ineligible",
+      "TOPS 2-5": "ineligible",
+      "SD Assistant": "partial",
+      "RSA": "available",
+      "PD 3": "ineligible"
+    },
+    "Connor": {
+      "AGD 1": "assigned",
+      "AGD 2": "ineligible",
+      "JD 1": "ineligible",
+      "JD 2": "ineligible",
+      "Rec PM": "ineligible",
+      "TOPS 1-1": "ineligible",
+      "TOPS 1-2": "ineligible",
+      "TOPS 2-1": "ineligible",
+      "TOPS 2-2": "ineligible",
+      "TOPS 2-3": "ineligible",
+      "TOPS 2-4": "ineligible",
+      "TOPS 2-5": "ineligible",
+      "SD Assistant": "ineligible",
+      "RSA": "available",
+      "PD 3": "ineligible"
+    },
+    "Devin": {
+      "AGD 1": "ineligible",
+      "AGD 2": "ineligible",
+      "JD 1": "ineligible",
+      "JD 2": "available",
+      "Rec PM": "available",
+      "TOPS 1-1": "available",
+      "TOPS 1-2": "available",
+      "TOPS 2-1": "available",
+      "TOPS 2-2": "available",
+      "TOPS 2-3": "available",
+      "TOPS 2-4": "ineligible",
+      "TOPS 2-5": "available",
+      "SD Assistant": "ineligible",
+      "RSA": "ineligible",
+      "PD 3": "ineligible"
+    },
+    "Drew": {
+      "AGD 1": "ineligible",
+      "AGD 2": "ineligible",
+      "JD 1": "assigned",
+      "JD 2": "ineligible",
+      "Rec PM": "ineligible",
+      "TOPS 1-1": "blocked:JD 1",
+      "TOPS 1-2": "blocked:JD 1",
+      "TOPS 2-1": "available",
+      "TOPS 2-2": "blocked:JD 1",
+      "TOPS 2-3": "blocked:JD 1",
+      "TOPS 2-4": "ineligible",
+      "TOPS 2-5": "ineligible",
+      "SD Assistant": "ineligible",
+      "RSA": "ineligible",
+      "PD 3": "assigned"
+    },
+    "Elan": {
+      "AGD 1": "ineligible",
+      "AGD 2": "partial",
+      "JD 1": "partial",
+      "JD 2": "ineligible",
+      "Rec PM": "partial",
+      "TOPS 1-1": "partial",
+      "TOPS 1-2": "available",
+      "TOPS 2-1": "available",
+      "TOPS 2-2": "partial",
+      "TOPS 2-3": "partial",
+      "TOPS 2-4": "ineligible",
+      "TOPS 2-5": "ineligible",
+      "SD Assistant": "partial",
+      "RSA": "ineligible",
+      "PD 3": "ineligible"
+    },
+    "Elise": {
+      "AGD 1": "ineligible",
+      "AGD 2": "ineligible",
+      "JD 1": "ineligible",
+      "JD 2": "assigned",
+      "Rec PM": "partial",
+      "TOPS 1-1": "partial",
+      "TOPS 1-2": "partial",
+      "TOPS 2-1": "blocked:JD 2",
+      "TOPS 2-2": "partial",
+      "TOPS 2-3": "partial",
+      "TOPS 2-4": "partial",
+      "TOPS 2-5": "partial",
+      "SD Assistant": "partial",
+      "RSA": "ineligible",
+      "PD 3": "ineligible"
+    },
+    "Gabby": {
+      "AGD 1": "ineligible",
+      "AGD 2": "ineligible",
+      "JD 1": "ineligible",
+      "JD 2": "blocked:TOPS 1-1,TOPS 2-4,TOPS 2-5,Rec PM",
+      "Rec PM": "assigned",
+      "TOPS 1-1": "assigned",
+      "TOPS 1-2": "ineligible",
+      "TOPS 2-1": "blocked:TOPS 1-1",
+      "TOPS 2-2": "blocked:TOPS 1-1",
+      "TOPS 2-3": "blocked:TOPS 1-1",
+      "TOPS 2-4": "assigned",
+      "TOPS 2-5": "assigned",
+      "SD Assistant": "ineligible",
+      "RSA": "assigned",
+      "PD 3": "ineligible"
+    },
+    "Harshal": {
+      "AGD 1": "ineligible",
+      "AGD 2": "partial",
+      "JD 1": "partial",
+      "JD 2": "partial",
+      "Rec PM": "partial",
+      "TOPS 1-1": "partial",
+      "TOPS 1-2": "assigned",
+      "TOPS 2-1": "partial",
+      "TOPS 2-2": "partial",
+      "TOPS 2-3": "assigned",
+      "TOPS 2-4": "ineligible",
+      "TOPS 2-5": "ineligible",
+      "SD Assistant": "partial",
+      "RSA": "assigned",
+      "PD 3": "ineligible"
+    },
+    "Inderpreet": {
+      "AGD 1": "ineligible",
+      "AGD 2": "partial",
+      "JD 1": "partial",
+      "JD 2": "blocked:TOPS 2-2,TOPS 2-4,TOPS 2-5",
+      "Rec PM": "ineligible",
+      "TOPS 1-1": "blocked:TOPS 2-2",
+      "TOPS 1-2": "blocked:TOPS 2-2,TOPS 2-5",
+      "TOPS 2-1": "blocked:TOPS 2-2",
+      "TOPS 2-2": "assigned",
+      "TOPS 2-3": "blocked:TOPS 2-2",
+      "TOPS 2-4": "assigned",
+      "TOPS 2-5": "assigned",
+      "SD Assistant": "partial",
+      "RSA": "available",
+      "PD 3": "ineligible"
+    },
+    "Isabelle": {
+      "AGD 1": "partial",
+      "AGD 2": "ineligible",
+      "JD 1": "ineligible",
+      "JD 2": "ineligible",
+      "Rec PM": "ineligible",
+      "TOPS 1-1": "ineligible",
+      "TOPS 1-2": "ineligible",
+      "TOPS 2-1": "ineligible",
+      "TOPS 2-2": "ineligible",
+      "TOPS 2-3": "ineligible",
+      "TOPS 2-4": "ineligible",
+      "TOPS 2-5": "ineligible",
+      "SD Assistant": "ineligible",
+      "RSA": "ineligible",
+      "PD 3": "assigned"
+    },
+    "Kaitlyn": {
+      "AGD 1": "ineligible",
+      "AGD 2": "ineligible",
+      "JD 1": "assigned",
+      "JD 2": "ineligible",
+      "Rec PM": "ineligible",
+      "TOPS 1-1": "ineligible",
+      "TOPS 1-2": "ineligible",
+      "TOPS 2-1": "ineligible",
+      "TOPS 2-2": "ineligible",
+      "TOPS 2-3": "ineligible",
+      "TOPS 2-4": "ineligible",
+      "TOPS 2-5": "ineligible",
+      "SD Assistant": "ineligible",
+      "RSA": "ineligible",
+      "PD 3": "ineligible"
+    },
+    "Ksenia": {
+      "AGD 1": "assigned",
+      "AGD 2": "assigned",
+      "JD 1": "ineligible",
+      "JD 2": "ineligible",
+      "Rec PM": "blocked:AGD 2,AGD 1",
+      "TOPS 1-1": "blocked:AGD 2,AGD 1",
+      "TOPS 1-2": "blocked:AGD 2,AGD 1",
+      "TOPS 2-1": "blocked:AGD 1",
+      "TOPS 2-2": "blocked:AGD 2,AGD 1",
+      "TOPS 2-3": "blocked:AGD 2",
+      "TOPS 2-4": "ineligible",
+      "TOPS 2-5": "blocked:AGD 2",
+      "SD Assistant": "ineligible",
+      "RSA": "assigned",
+      "PD 3": "ineligible"
+    },
+    "Mannat": {
+      "AGD 1": "partial",
+      "AGD 2": "partial",
+      "JD 1": "partial",
+      "JD 2": "partial",
+      "Rec PM": "partial",
+      "TOPS 1-1": "partial",
+      "TOPS 1-2": "partial",
+      "TOPS 2-1": "assigned",
+      "TOPS 2-2": "partial",
+      "TOPS 2-3": "partial",
+      "TOPS 2-4": "partial",
+      "TOPS 2-5": "partial",
+      "SD Assistant": "partial",
+      "RSA": "assigned",
+      "PD 3": "ineligible"
+    },
+    "Oliver": {
+      "AGD 1": "partial",
+      "AGD 2": "ineligible",
+      "JD 1": "available",
+      "JD 2": "ineligible",
+      "Rec PM": "partial",
+      "TOPS 1-1": "partial",
+      "TOPS 1-2": "ineligible",
+      "TOPS 2-1": "ineligible",
+      "TOPS 2-2": "partial",
+      "TOPS 2-3": "partial",
+      "TOPS 2-4": "ineligible",
+      "TOPS 2-5": "available",
+      "SD Assistant": "ineligible",
+      "RSA": "ineligible",
+      "PD 3": "ineligible"
+    },
+    "Oliver A": {
+      "AGD 1": "ineligible",
+      "AGD 2": "ineligible",
+      "JD 1": "ineligible",
+      "JD 2": "ineligible",
+      "Rec PM": "ineligible",
+      "TOPS 1-1": "ineligible",
+      "TOPS 1-2": "ineligible",
+      "TOPS 2-1": "ineligible",
+      "TOPS 2-2": "ineligible",
+      "TOPS 2-3": "ineligible",
+      "TOPS 2-4": "ineligible",
+      "TOPS 2-5": "ineligible",
+      "SD Assistant": "ineligible",
+      "RSA": "assigned",
+      "PD 3": "ineligible"
+    },
+    "Patrick": {
+      "AGD 1": "partial",
+      "AGD 2": "ineligible",
+      "JD 1": "ineligible",
+      "JD 2": "ineligible",
+      "Rec PM": "blocked:TOPS 1-2",
+      "TOPS 1-1": "blocked:TOPS 1-2",
+      "TOPS 1-2": "assigned",
+      "TOPS 2-1": "blocked:TOPS 1-2",
+      "TOPS 2-2": "blocked:TOPS 1-2",
+      "TOPS 2-3": "available",
+      "TOPS 2-4": "ineligible",
+      "TOPS 2-5": "blocked:TOPS 1-2",
+      "SD Assistant": "ineligible",
+      "RSA": "ineligible",
+      "PD 3": "ineligible"
+    },
+    "Ruby S": {
+      "AGD 1": "ineligible",
+      "AGD 2": "ineligible",
+      "JD 1": "ineligible",
+      "JD 2": "ineligible",
+      "Rec PM": "ineligible",
+      "TOPS 1-1": "ineligible",
+      "TOPS 1-2": "ineligible",
+      "TOPS 2-1": "ineligible",
+      "TOPS 2-2": "ineligible",
+      "TOPS 2-3": "ineligible",
+      "TOPS 2-4": "ineligible",
+      "TOPS 2-5": "ineligible",
+      "SD Assistant": "ineligible",
+      "RSA": "assigned",
+      "PD 3": "ineligible"
+    },
+    "Sebastian": {
+      "AGD 1": "ineligible",
+      "AGD 2": "ineligible",
+      "JD 1": "available",
+      "JD 2": "ineligible",
+      "Rec PM": "ineligible",
+      "TOPS 1-1": "ineligible",
+      "TOPS 1-2": "ineligible",
+      "TOPS 2-1": "ineligible",
+      "TOPS 2-2": "ineligible",
+      "TOPS 2-3": "ineligible",
+      "TOPS 2-4": "ineligible",
+      "TOPS 2-5": "ineligible",
+      "SD Assistant": "ineligible",
+      "RSA": "ineligible",
+      "PD 3": "ineligible"
+    },
+    "Trystan": {
+      "AGD 1": "blocked:SD Assistant",
+      "AGD 2": "assigned",
+      "JD 1": "ineligible",
+      "JD 2": "blocked:SD Assistant",
+      "Rec PM": "blocked:AGD 2,SD Assistant",
+      "TOPS 1-1": "blocked:AGD 2,SD Assistant",
+      "TOPS 1-2": "blocked:AGD 2,SD Assistant",
+      "TOPS 2-1": "blocked:SD Assistant",
+      "TOPS 2-2": "blocked:AGD 2,SD Assistant",
+      "TOPS 2-3": "blocked:AGD 2,SD Assistant",
+      "TOPS 2-4": "blocked:SD Assistant",
+      "TOPS 2-5": "blocked:AGD 2",
+      "SD Assistant": "assigned",
+      "RSA": "available",
+      "PD 3": "ineligible"
+    },
+    "Tysen": {
+      "AGD 1": "partial",
+      "AGD 2": "ineligible",
+      "JD 1": "ineligible",
+      "JD 2": "blocked:TOPS 1-1,Rec PM",
+      "Rec PM": "assigned",
+      "TOPS 1-1": "assigned",
+      "TOPS 1-2": "ineligible",
+      "TOPS 2-1": "blocked:TOPS 1-1",
+      "TOPS 2-2": "ineligible",
+      "TOPS 2-3": "ineligible",
+      "TOPS 2-4": "ineligible",
+      "TOPS 2-5": "ineligible",
+      "SD Assistant": "ineligible",
+      "RSA": "ineligible",
+      "PD 3": "ineligible"
+    },
+    "Tyson": {
+      "AGD 1": "ineligible",
+      "AGD 2": "ineligible",
+      "JD 1": "ineligible",
+      "JD 2": "ineligible",
+      "Rec PM": "ineligible",
+      "TOPS 1-1": "ineligible",
+      "TOPS 1-2": "ineligible",
+      "TOPS 2-1": "ineligible",
+      "TOPS 2-2": "ineligible",
+      "TOPS 2-3": "ineligible",
+      "TOPS 2-4": "ineligible",
+      "TOPS 2-5": "ineligible",
+      "SD Assistant": "assigned",
+      "RSA": "ineligible",
+      "PD 3": "ineligible"
+    },
+    "Victor": {
+      "AGD 1": "partial",
+      "AGD 2": "partial",
+      "JD 1": "partial",
+      "JD 2": "partial",
+      "Rec PM": "ineligible",
+      "TOPS 1-1": "ineligible",
+      "TOPS 1-2": "partial",
+      "TOPS 2-1": "ineligible",
+      "TOPS 2-2": "ineligible",
+      "TOPS 2-3": "ineligible",
+      "TOPS 2-4": "assigned",
+      "TOPS 2-5": "assigned",
+      "SD Assistant": "partial",
+      "RSA": "assigned",
+      "PD 3": "ineligible"
+    },
+    "Violet": {
+      "AGD 1": "partial",
+      "AGD 2": "ineligible",
+      "JD 1": "available",
+      "JD 2": "partial",
+      "Rec PM": "ineligible",
+      "TOPS 1-1": "ineligible",
+      "TOPS 1-2": "ineligible",
+      "TOPS 2-1": "ineligible",
+      "TOPS 2-2": "ineligible",
+      "TOPS 2-3": "ineligible",
+      "TOPS 2-4": "ineligible",
+      "TOPS 2-5": "available",
+      "SD Assistant": "ineligible",
+      "RSA": "assigned",
+      "PD 3": "ineligible"
+    }
+  },
+  "spare": {
+    "Allison": [
+      "Mon CH",
+      "Fri CH"
+    ],
+    "Anna": [
+      "Tue WLU",
+      "Wed WLU",
+      "Thu WLU"
+    ],
+    "Connor": [
+      "Mon WLU",
+      "Tue WLU",
+      "Wed CH",
+      "Fri CH",
+      "Fri WLU"
+    ],
+    "Devin": [
+      "Mon CH",
+      "Mon WLU",
+      "Tue WLU",
+      "Wed CH",
+      "Wed WLU",
+      "Thu WLU",
+      "Fri CH",
+      "Fri WLU"
+    ],
+    "Drew": [
+      "Mon CH",
+      "Wed CH",
+      "Wed WLU",
+      "Thu WLU",
+      "Fri CH"
+    ],
+    "Elan": [
+      "Mon CH",
+      "Mon WLU",
+      "Tue WLU",
+      "Wed CH",
+      "Wed WLU",
+      "Thu WLU"
+    ],
+    "Elise": [
+      "Mon CH",
+      "Wed CH"
+    ],
+    "Gabby": [
+      "Mon WLU",
+      "Wed WLU",
+      "Fri WLU"
+    ],
+    "Inderpreet": [
+      "Mon CH",
+      "Mon WLU",
+      "Wed WLU"
+    ],
+    "Isabelle": [
+      "Tue WLU",
+      "Wed WLU",
+      "Thu WLU",
+      "Fri WLU"
+    ],
+    "Ksenia": [
+      "Mon WLU",
+      "Wed CH",
+      "Fri CH"
+    ],
+    "Mannat": [
+      "Mon WLU",
+      "Tue WLU",
+      "Wed WLU"
+    ],
+    "Oliver": [
+      "Mon WLU",
+      "Tue WLU",
+      "Wed WLU",
+      "Thu WLU",
+      "Fri CH",
+      "Fri WLU"
+    ],
+    "Patrick": [
+      "Mon WLU",
+      "Fri WLU"
+    ],
+    "Sebastian": [
+      "Mon CH",
+      "Mon WLU",
+      "Tue WLU",
+      "Wed CH",
+      "Wed WLU",
+      "Thu WLU",
+      "Fri CH",
+      "Fri WLU"
+    ],
+    "Trystan": [
+      "Mon CH",
+      "Mon WLU",
+      "Wed CH",
+      "Fri CH"
+    ],
+    "Violet": [
+      "Tue WLU",
+      "Wed WLU",
+      "Thu WLU",
+      "Fri WLU"
+    ]
+  },
+  "partial_groups": {
+    "Allison": [
+      {
+        "group": "Rec PM",
+        "can": [
+          "Mon CH",
+          "Fri CH"
+        ],
+        "of": 3
+      },
+      {
+        "group": "TOPS 1-1",
+        "can": [
+          "Mon CH",
+          "Fri CH"
+        ],
+        "of": 3
+      },
+      {
+        "group": "TOPS 2-1",
+        "can": [
+          "Mon CH"
+        ],
+        "of": 2
+      },
+      {
+        "group": "TOPS 2-2",
+        "can": [
+          "Fri CH"
+        ],
+        "of": 2
+      }
+    ],
+    "Anna": [
+      {
+        "group": "AGD 1",
+        "can": [
+          "Wed WLU",
+          "Thu WLU"
+        ],
+        "of": 3
+      },
+      {
+        "group": "AGD 2",
+        "can": [
+          "Tue WLU"
+        ],
+        "of": 2
+      },
+      {
+        "group": "JD 1",
+        "can": [
+          "Tue WLU"
+        ],
+        "of": 2
+      },
+      {
+        "group": "JD 2",
+        "can": [
+          "Wed WLU",
+          "Thu WLU"
+        ],
+        "of": 3
+      },
+      {
+        "group": "SD Assistant",
+        "can": [
+          "Tue WLU",
+          "Wed WLU",
+          "Thu WLU"
+        ],
+        "of": 4
+      }
+    ],
+    "Elan": [
+      {
+        "group": "AGD 2",
+        "can": [
+          "Tue WLU"
+        ],
+        "of": 2
+      },
+      {
+        "group": "JD 1",
+        "can": [
+          "Tue WLU"
+        ],
+        "of": 2
+      },
+      {
+        "group": "Rec PM",
+        "can": [
+          "Mon CH",
+          "Wed CH"
+        ],
+        "of": 3
+      },
+      {
+        "group": "TOPS 1-1",
+        "can": [
+          "Mon CH",
+          "Wed CH"
+        ],
+        "of": 3
+      },
+      {
+        "group": "TOPS 2-2",
+        "can": [
+          "Wed CH"
+        ],
+        "of": 2
+      },
+      {
+        "group": "TOPS 2-3",
+        "can": [
+          "Mon CH"
+        ],
+        "of": 2
+      },
+      {
+        "group": "SD Assistant",
+        "can": [
+          "Tue WLU",
+          "Wed WLU",
+          "Thu WLU"
+        ],
+        "of": 4
+      }
+    ],
+    "Elise": [
+      {
+        "group": "Rec PM",
+        "can": [
+          "Mon CH",
+          "Wed CH"
+        ],
+        "of": 3
+      },
+      {
+        "group": "TOPS 1-1",
+        "can": [
+          "Mon CH",
+          "Wed CH"
+        ],
+        "of": 3
+      },
+      {
+        "group": "TOPS 1-2",
+        "can": [
+          "Wed WLU",
+          "Thu WLU"
+        ],
+        "of": 3
+      },
+      {
+        "group": "TOPS 2-2",
+        "can": [
+          "Wed CH"
+        ],
+        "of": 2
+      },
+      {
+        "group": "TOPS 2-3",
+        "can": [
+          "Mon CH"
+        ],
+        "of": 2
+      },
+      {
+        "group": "TOPS 2-4",
+        "can": [
+          "Thu WLU"
+        ],
+        "of": 2
+      },
+      {
+        "group": "TOPS 2-5",
+        "can": [
+          "Thu WLU"
+        ],
+        "of": 2
+      },
+      {
+        "group": "SD Assistant",
+        "can": [
+          "Wed WLU",
+          "Thu WLU"
+        ],
+        "of": 4
+      }
+    ],
+    "Harshal": [
+      {
+        "group": "AGD 2",
+        "can": [
+          "Tue WLU"
+        ],
+        "of": 2
+      },
+      {
+        "group": "JD 1",
+        "can": [
+          "Tue WLU"
+        ],
+        "of": 2
+      },
+      {
+        "group": "JD 2",
+        "can": [
+          "Wed WLU",
+          "Thu WLU"
+        ],
+        "of": 3
+      },
+      {
+        "group": "Rec PM",
+        "can": [
+          "Mon CH",
+          "Fri CH"
+        ],
+        "of": 3
+      },
+      {
+        "group": "TOPS 1-1",
+        "can": [
+          "Mon CH",
+          "Fri CH"
+        ],
+        "of": 3
+      },
+      {
+        "group": "TOPS 2-1",
+        "can": [
+          "Mon CH"
+        ],
+        "of": 2
+      },
+      {
+        "group": "TOPS 2-2",
+        "can": [
+          "Fri CH"
+        ],
+        "of": 2
+      },
+      {
+        "group": "SD Assistant",
+        "can": [
+          "Tue WLU",
+          "Wed WLU",
+          "Thu WLU"
+        ],
+        "of": 4
+      }
+    ],
+    "Inderpreet": [
+      {
+        "group": "AGD 2",
+        "can": [
+          "Tue WLU"
+        ],
+        "of": 2
+      },
+      {
+        "group": "JD 1",
+        "can": [
+          "Tue WLU"
+        ],
+        "of": 2
+      },
+      {
+        "group": "SD Assistant",
+        "can": [
+          "Tue WLU",
+          "Wed WLU",
+          "Thu WLU"
+        ],
+        "of": 4
+      }
+    ],
+    "Isabelle": [
+      {
+        "group": "AGD 1",
+        "can": [
+          "Wed WLU",
+          "Thu WLU"
+        ],
+        "of": 3
+      }
+    ],
+    "Mannat": [
+      {
+        "group": "AGD 1",
+        "can": [
+          "Mon CH",
+          "Wed WLU"
+        ],
+        "of": 3
+      },
+      {
+        "group": "AGD 2",
+        "can": [
+          "Tue WLU"
+        ],
+        "of": 2
+      },
+      {
+        "group": "JD 1",
+        "can": [
+          "Tue WLU"
+        ],
+        "of": 2
+      },
+      {
+        "group": "JD 2",
+        "can": [
+          "Mon WLU",
+          "Wed WLU"
+        ],
+        "of": 3
+      },
+      {
+        "group": "Rec PM",
+        "can": [
+          "Mon CH",
+          "Wed CH"
+        ],
+        "of": 3
+      },
+      {
+        "group": "TOPS 1-1",
+        "can": [
+          "Mon CH",
+          "Wed CH"
+        ],
+        "of": 3
+      },
+      {
+        "group": "TOPS 1-2",
+        "can": [
+          "Tue WLU",
+          "Wed WLU"
+        ],
+        "of": 3
+      },
+      {
+        "group": "TOPS 2-2",
+        "can": [
+          "Wed CH"
+        ],
+        "of": 2
+      },
+      {
+        "group": "TOPS 2-3",
+        "can": [
+          "Mon CH"
+        ],
+        "of": 2
+      },
+      {
+        "group": "TOPS 2-4",
+        "can": [
+          "Tue WLU"
+        ],
+        "of": 2
+      },
+      {
+        "group": "TOPS 2-5",
+        "can": [
+          "Tue WLU"
+        ],
+        "of": 2
+      },
+      {
+        "group": "SD Assistant",
+        "can": [
+          "Tue WLU",
+          "Wed WLU"
+        ],
+        "of": 4
+      }
+    ],
+    "Oliver": [
+      {
+        "group": "AGD 1",
+        "can": [
+          "Wed WLU",
+          "Thu WLU"
+        ],
+        "of": 3
+      },
+      {
+        "group": "Rec PM",
+        "can": [
+          "Fri CH"
+        ],
+        "of": 3
+      },
+      {
+        "group": "TOPS 1-1",
+        "can": [
+          "Fri CH"
+        ],
+        "of": 3
+      },
+      {
+        "group": "TOPS 2-2",
+        "can": [
+          "Fri CH"
+        ],
+        "of": 2
+      },
+      {
+        "group": "TOPS 2-3",
+        "can": [
+          "Fri CH"
+        ],
+        "of": 2
+      }
+    ],
+    "Patrick": [
+      {
+        "group": "AGD 1",
+        "can": [
+          "Wed WLU",
+          "Thu WLU"
+        ],
+        "of": 3
+      }
+    ],
+    "Tysen": [
+      {
+        "group": "AGD 1",
+        "can": [
+          "Mon CH"
+        ],
+        "of": 3
+      }
+    ],
+    "Victor": [
+      {
+        "group": "AGD 1",
+        "can": [
+          "Thu WLU"
+        ],
+        "of": 3
+      },
+      {
+        "group": "AGD 2",
+        "can": [
+          "Tue WLU"
+        ],
+        "of": 2
+      },
+      {
+        "group": "JD 1",
+        "can": [
+          "Tue WLU"
+        ],
+        "of": 2
+      },
+      {
+        "group": "JD 2",
+        "can": [
+          "Thu WLU"
+        ],
+        "of": 3
+      },
+      {
+        "group": "TOPS 1-2",
+        "can": [
+          "Tue WLU",
+          "Thu WLU"
+        ],
+        "of": 3
+      },
+      {
+        "group": "SD Assistant",
+        "can": [
+          "Tue WLU",
+          "Thu WLU"
+        ],
+        "of": 4
+      }
+    ],
+    "Violet": [
+      {
+        "group": "AGD 1",
+        "can": [
+          "Wed WLU",
+          "Thu WLU"
+        ],
+        "of": 3
+      },
+      {
+        "group": "JD 2",
+        "can": [
+          "Wed WLU",
+          "Thu WLU"
+        ],
+        "of": 3
+      }
+    ]
+  }
+};
+
+// ── RENDER GROUP CARDS ──────────────────────────────────────────────────────
+const groupsEl = document.getElementById('groups');
+const tentativeGroups = new Set(DATA.tentative || []);
+
+DATA.groups.forEach((g, i) => {
+  const assigned = DATA.assignments[g.name] || [];
+  const filled = assigned.filter(Boolean).length;
+  const done = filled >= g.required;
+  const tentative = done && tentativeGroups.has(g.name);
+
+  const card = document.createElement('div');
+  card.className = 'group-card' + (tentative ? ' tentative' : done ? ' filled' : '');
+
+  const groupVolunteers = (DATA.volunteers && DATA.volunteers[g.name]) || [];
+  const groupSupervisors = (DATA.supervisors && DATA.supervisors[g.name]) || [];
+  const confirmedSet = new Set(DATA.confirmed || []);
+  const slots = Array.from({length: Math.max(g.required, assigned.length)}, (_, si) => {
+    const coach = assigned[si];
+    if (coach) {
+      const cls = groupVolunteers.includes(coach) ? 'volunteer-slot'
+                : groupSupervisors.includes(coach) ? 'supervisor-slot'
+                : 'filled-slot';
+      const tick = confirmedSet.has(coach) ? ' ✓' : '';
+      return `<span class="slot ${cls}">${coach}${tick}</span>`;
+    }
+    return `<span class="slot">open</span>`;
+  }).join('');
+
+  const stackNote = g.note ? `<div class="stack-note">⟳ ${g.note}</div>` : '';
+  const statusClass = tentative ? 'tentative' : done ? 'done' : 'open';
+  const statusLabel = tentative ? `${filled} coaches · tentative` : `${filled} coaches`;
+  const supervisorChip = g.tag ? `<span class="slot supervisor-slot">${g.tag}</span>` : '';
+
+  card.innerHTML = `
+    <div class="card-top">
+      <span class="priority-badge">#${i+1}</span>
+      <span class="group-name">${g.name}<span class="lanes-note">(${g.lanes} ${g.lanes === 1 ? 'lane' : 'lanes'})</span></span>
+      <span class="fill-status ${statusClass}">${statusLabel}</span>
+    </div>
+    <div class="card-body">
+      <div class="schedule">${g.schedule.split(' · ').join('<br>')}</div>
+      ${stackNote}
+      <div class="slots">${slots}${supervisorChip}</div>
+    </div>`;
+  groupsEl.appendChild(card);
+});
+
+// ── RENDER SCHEDULE BY COACH ─────────────────────────────────────────────────
+const coachScheduleEl = document.getElementById('coach-schedule');
+
+// Coach-specific schedule overrides (coach → group name → custom schedule)
+const SCHEDULE_OVERRIDES = {
+  'Violet':  { 'JD 1':         'Tue - WLU - 7:00–8:30 pm · Thu - WLU - 6:00–7:30 am · Fri - WLU - 6:30–8:00 pm' },
+  'Drew':    { 'JD 1': 'Tue - WLU - 7:00–8:30 pm · Fri - WLU - 6:30–8:00 pm · Sat - WLU - 9:00–10:30 am' },
+  'Trystan': { 'SD Assistant': 'Tue - WLU - 4–6:30 pm · Wed - WLU - 5–7 pm · Thu - WLU - 4–6 pm · Fri - WLU - 4:30–6 pm · Sat - WLU - 6–8:30 am' },
+};
+
+// Build coach → groups map
+const coachGroups = {};
+DATA.groups.forEach(g => {
+  const assigned = DATA.assignments[g.name] || [];
+  assigned.forEach(coach => {
+    if (!coach) return;
+    if (!coachGroups[coach]) coachGroups[coach] = [];
+    coachGroups[coach].push(g);
+  });
+});
+
+// Build hours lookup: coach name → total_hours
+const hoursMap = {};
+(DATA.coaches_detail || []).forEach(cd => { hoursMap[cd.coach] = cd.total_hours; });
+
+// Render a card per coach who has assignments, in alphabetical order
+const hideFromSchedule = new Set(DATA.hide_from_schedule || []);
+DATA.coaches.forEach(coach => {
+  if (hideFromSchedule.has(coach)) return;
+  const groups = coachGroups[coach];
+  if (!groups || groups.length === 0) return;
+
+  const card = document.createElement('div');
+  const confirmedCoaches = new Set(DATA.confirmed || []);
+  const isConfirmed = confirmedCoaches.has(coach);
+  card.className = 'coach-card' + (isConfirmed ? ' confirmed' : '');
+
+  const groupCount = groups.length;
+  const noun = groupCount === 1 ? 'group' : 'groups';
+
+  const rows = groups.map((g, idx) => {
+    const divider = idx < groups.length - 1 ? '<hr class="coach-group-divider">' : '';
+    return `
+      <div class="coach-group-row">
+        <div class="coach-group-label">
+          <span class="coach-group-name">${g.name}</span>
+        </div>
+        <div class="coach-group-schedule">${((SCHEDULE_OVERRIDES[coach] && SCHEDULE_OVERRIDES[coach][g.name]) || g.schedule).split(' · ').join('<br>')}${g.name === 'RSA' && ['Ksenia','Trystan'].includes(coach) ? '<br><em>(Supervisor)</em>' : ''}</div>
+      </div>
+      ${divider}`;
+  }).join('');
+
+  const totalHrs = hoursMap[coach];
+  const hrsChip = totalHrs != null ? `<span class="hours-chip">${Number.isInteger(totalHrs) ? totalHrs : totalHrs.toFixed(1)} hrs</span>` : '';
+
+  const confirmedBadge = isConfirmed ? `<span class="confirmed-badge">✓ Confirmed</span>` : '';
+  card.innerHTML = `
+    <div class="coach-card-top">
+      <div>
+        <div class="coach-card-name">${coach}</div>
+        <div class="coach-card-count">${groupCount} ${noun}</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:6px;">${confirmedBadge}${hrsChip}</div>
+    </div>
+    <div class="coach-card-body">${rows}</div>`;
+
+  coachScheduleEl.appendChild(card);
+});
+
+</script>

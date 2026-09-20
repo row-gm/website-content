@@ -411,10 +411,9 @@
       if (lostList.length) {
         const names = lostList.map(c => '<li>' + c.name + (c.id ? ' <span style="font-family:\'Courier New\',monospace;font-size:12px;font-weight:700">[' + c.id + ']</span>' : '') + '</li>').join('');
         blocks.push('<div class="msg-box msg-warn">'
-          + '<div class="msg-head">' + iconInfo() + 'Noted — ' + (lostList.length === 1 ? 'card' : 'cards') + ' to replace</div>'
-          + '<p>We\'ll arrange replacement' + (lostList.length === 1 ? ' a replacement card' : ' replacement cards') + ' for:</p>'
+          + '<div class="msg-head">' + iconInfo() + 'Noted — card' + (lostList.length === 1 ? '' : 's') + ' lost</div>'
           + '<ul>' + names + '</ul>'
-          + '<p>Laurier values these cards at <strong>$30 each</strong>. We will replace swimmer cards at <strong>no charge</strong> — more details to follow.</p>'
+          + '<p>We\'ll replace <strong>1 card per swimmer</strong> at no charge. Further details on access to non-swimmer cards (valued by WLU at $30 each) will follow.</p>'
           + '</div>');
       }
     } else {

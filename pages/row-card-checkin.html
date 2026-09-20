@@ -401,10 +401,27 @@
     return 'mailto:andrewmoss@rowswimming.ca?subject=' + encodeURIComponent(decodeURIComponent(subj)) + '&body=' + encodeURIComponent(bodyText);
   }
 
+  // ── POST to Google Sheet via Apps Script ──────────────────────────────────
+  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx9fotmiQOHDvq1VR0kWKKz_GTkfB4Ph7XKh1-ruw7XWz8EjWeyNhY5b_JDIrDnnA80nQ/exec';
+
+  function postToSheet(cardResults) {
+    if (!SCRIPT_URL || SCRIPT_URL.startsWith('PASTE')) return;
+    fetch(SCRIPT_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ fn: fn, status: stat, cards: cardResults }),
+      mode: 'no-cors' // Apps Script doesn't return CORS headers on redirects
+    }).catch(() => {}); // silent fail — response still shown to member
+  }
+
   // ── Show response after submit ─────────────────────────────────────────────
   function submit() {
     const haveList = cards.filter((_, i) => answers[i] === true);
     const lostList = cards.filter((_, i) => answers[i] === false);
+
+    // POST results to Google Sheet
+    const cardResults = cards.map((c, i) => ({ name: c.name, id: c.id, has: answers[i] }));
+    postToSheet(cardResults);
     const allHave  = lostList.length === 0;
     const allLost  = haveList.length === 0;
 

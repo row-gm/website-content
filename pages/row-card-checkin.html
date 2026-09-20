@@ -15,6 +15,9 @@
     --accent:   #1676C2;
     --accent-h: #1260A4;
 
+    --have-bg: #E6F5EE; --have-bd: #2E9E5A; --have-tx: #124C2C;
+    --lost-bg: #FEF4E4; --lost-bd: #D4860A; --lost-tx: #78410A;
+
     --msg-yes-bg:   #E6F5EE; --msg-yes-bd:   #9ECFB2; --msg-yes-tx:   #124C2C;
     --msg-warn-bg:  #FEF4E4; --msg-warn-bd:  #F0C276; --msg-warn-tx:  #78410A;
     --msg-blue-bg:  #E4EFFD; --msg-blue-bd:  #9AB8F0; --msg-blue-tx:  #1B3478;
@@ -24,11 +27,14 @@
     :root:not([data-theme="light"]) {
       --bg:       #081524;
       --surface:  #0E2030;
-      --border:   #193450;
+      --border:   #1E3A55;
       --text:     #DCEEFA;
       --muted:    #6898B8;
       --accent:   #48A6DE;
       --accent-h: #5BB4E8;
+
+      --have-bg: #092A18; --have-bd: #1D7040; --have-tx: #6EDAA0;
+      --lost-bg: #281A07; --lost-bd: #9A5D0A; --lost-tx: #F5C87A;
 
       --msg-yes-bg:   #092A18; --msg-yes-bd:   #185A34; --msg-yes-tx:   #6EDAA0;
       --msg-warn-bg:  #281A07; --msg-warn-bd:  #7A4B10; --msg-warn-tx:  #F5C87A;
@@ -39,11 +45,14 @@
   :root[data-theme="dark"] {
     --bg:       #081524;
     --surface:  #0E2030;
-    --border:   #193450;
+    --border:   #1E3A55;
     --text:     #DCEEFA;
     --muted:    #6898B8;
     --accent:   #48A6DE;
     --accent-h: #5BB4E8;
+
+    --have-bg: #092A18; --have-bd: #1D7040; --have-tx: #6EDAA0;
+    --lost-bg: #281A07; --lost-bd: #9A5D0A; --lost-tx: #F5C87A;
 
     --msg-yes-bg:   #092A18; --msg-yes-bd:   #185A34; --msg-yes-tx:   #6EDAA0;
     --msg-warn-bg:  #281A07; --msg-warn-bd:  #7A4B10; --msg-warn-tx:  #F5C87A;
@@ -58,7 +67,7 @@
     background: var(--bg);
     color: var(--text);
     margin: 0;
-    padding: 28px 16px 40px;
+    padding: 28px 16px 48px;
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -68,7 +77,7 @@
 
   .wrap {
     width: 100%;
-    max-width: 460px;
+    max-width: 480px;
     display: flex;
     flex-direction: column;
     gap: 14px;
@@ -115,70 +124,128 @@
   }
   .context {
     font-size: 14px; color: var(--muted);
-    line-height: 1.65; margin: 0 0 20px;
+    line-height: 1.65; margin: 0 0 22px;
   }
 
-  /* ── Card list ── */
-  .cards-box {
-    background: var(--bg);
-    border-radius: 10px;
-    padding: 12px 14px;
-    margin: 0 0 22px;
-  }
-  .cards-label {
+  /* ── Section label ── */
+  .section-label {
     font-size: 10px; font-weight: 800;
     letter-spacing: 0.12em; text-transform: uppercase;
-    color: var(--muted); margin-bottom: 8px;
+    color: var(--muted); margin-bottom: 12px;
   }
-  .card-row {
-    display: flex; align-items: center;
-    justify-content: space-between; gap: 12px;
-    padding: 5px 0;
+
+  /* ── Per-card rows ── */
+  .cards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 24px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
   }
-  .card-row + .card-row {
-    border-top: 1px solid var(--border);
-    margin-top: 5px; padding-top: 10px;
+
+  .card-check-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
   }
-  .swimmer { font-size: 14px; font-weight: 600; }
+  .card-check-row:last-child { border-bottom: none; }
+
+  .card-info { flex: 1; min-width: 0; }
+  .swimmer-name {
+    font-size: 14px; font-weight: 700;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
   .cid {
     font-family: 'Courier New', monospace;
-    font-size: 12px; font-weight: 700;
+    font-size: 11px; font-weight: 700;
     color: var(--accent);
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 5px;
-    padding: 2px 8px;
-    white-space: nowrap;
+    margin-top: 2px;
+  }
+
+  /* ── Toggle buttons ── */
+  .card-toggle {
+    display: flex;
+    gap: 6px;
     flex-shrink: 0;
   }
-
-  /* ── Question ── */
-  .question {
-    font-size: 16px; font-weight: 700;
-    margin: 0 0 16px; line-height: 1.4;
+  .tog {
+    padding: 7px 14px;
+    border-radius: 8px;
+    border: 2px solid var(--border);
+    background: transparent;
+    color: var(--muted);
+    font-family: inherit;
+    font-size: 13px; font-weight: 700;
+    cursor: pointer;
+    transition: all 0.12s ease;
+    white-space: nowrap;
   }
-  .btn-row { display: flex; gap: 10px; }
-  .btn {
-    flex: 1; padding: 13px 14px;
-    border-radius: 10px; border: 2px solid;
-    font-family: inherit; font-size: 14px; font-weight: 700;
-    cursor: pointer; transition: all 0.12s ease;
+  .tog:hover { border-color: var(--muted); color: var(--text); }
+
+  .tog.have-sel {
+    background: var(--have-bg);
+    border-color: var(--have-bd);
+    color: var(--have-tx);
+  }
+  .tog.lost-sel {
+    background: var(--lost-bg);
+    border-color: var(--lost-bd);
+    color: var(--lost-tx);
+  }
+
+  /* ── Progress hint ── */
+  .progress-hint {
+    font-size: 13px;
+    color: var(--muted);
     text-align: center;
+    margin-bottom: 20px;
+    min-height: 20px;
+    transition: color 0.2s;
   }
-  .btn-yes {
-    background: var(--accent); color: #fff; border-color: var(--accent);
+  .progress-hint.ready { color: var(--accent); font-weight: 700; }
+
+  /* ── Submit button ── */
+  .submit-wrap {
+    margin-top: 4px;
   }
-  .btn-yes:hover, .btn-yes:focus-visible {
-    background: var(--accent-h); border-color: var(--accent-h); outline: none;
+  .submit-btn {
+    width: 100%;
+    padding: 18px 20px;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    font-family: inherit;
+    font-size: 18px; font-weight: 800;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    transition: background 0.15s, transform 0.1s, box-shadow 0.15s;
+    box-shadow: 0 4px 18px rgba(22, 118, 194, 0.35);
+    display: flex; align-items: center; justify-content: center; gap: 10px;
   }
-  .btn-no {
-    background: transparent; color: var(--text); border-color: var(--border);
+  .submit-btn:not(:disabled):hover {
+    background: var(--accent-h);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 22px rgba(22, 118, 194, 0.45);
   }
-  .btn-no:hover, .btn-no:focus-visible {
-    background: var(--bg); border-color: var(--muted); outline: none;
+  .submit-btn:not(:disabled):active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(22, 118, 194, 0.3);
+  }
+  .submit-btn:disabled {
+    opacity: 0.32;
+    cursor: not-allowed;
+    box-shadow: none;
   }
 
-  /* ── Response message ── */
+  /* ── Response section ── */
+  .response-section { display: flex; flex-direction: column; gap: 12px; }
+
   .msg-box {
     border-radius: 12px;
     padding: 18px 16px;
@@ -188,6 +255,8 @@
   .msg-box p { margin: 0 0 10px; }
   .msg-box p:last-child { margin-bottom: 0; }
   .msg-box strong { font-weight: 700; }
+  .msg-box ul { margin: 8px 0 10px 20px; padding: 0; }
+  .msg-box li { margin-bottom: 4px; }
 
   .msg-head {
     display: flex; align-items: center; gap: 7px;
@@ -202,10 +271,9 @@
   .msg-blue { background: var(--msg-blue-bg); border-color: var(--msg-blue-bd); color: var(--msg-blue-tx); }
   .msg-grey { background: var(--msg-grey-bg); border-color: var(--msg-grey-bd); color: var(--msg-grey-tx); }
 
-  /* ── Notify link ── */
   .notify-btn {
     display: inline-flex; align-items: center; gap: 7px;
-    margin-top: 16px; padding: 9px 14px;
+    margin-top: 14px; padding: 9px 14px;
     border: 1px solid var(--border);
     background: var(--surface);
     border-radius: 8px;
@@ -218,7 +286,6 @@
   .thank-note {
     display: flex; align-items: center; gap: 6px;
     font-size: 13px; color: var(--muted);
-    margin-top: 12px;
   }
 
   /* ── No-params state ── */
@@ -236,9 +303,10 @@
   }
   .footer a { color: var(--muted); }
 
-  @media (max-width: 400px) {
+  @media (max-width: 420px) {
     .card { padding: 20px 16px; }
-    .btn-row { flex-direction: column; }
+    .tog { padding: 6px 10px; font-size: 12px; }
+    .submit-btn { font-size: 16px; padding: 16px; }
   }
 </style>
 </head>
@@ -260,20 +328,15 @@
 </div>
 
 <script>
-  const p     = new URLSearchParams(location.search);
-  const fn    = (p.get('fn')     || '').trim();
-  const stat  = (p.get('status') || 'former').trim().toLowerCase();
-  const raw   = (p.get('cards')  || '').trim();
+  const p    = new URLSearchParams(location.search);
+  const fn   = (p.get('fn')     || '').trim();
+  const stat = (p.get('status') || 'former').trim().toLowerCase();
+  const raw  = (p.get('cards')  || '').trim();
   const isCur = stat === 'current';
 
-  // Parse "Swimmer Name [CardID]" entries, separated by | or "],"
   function parseCards(str) {
     if (!str) return [];
-    // split on | or on ], then add ] back to each chunk
-    const chunks = str.includes('|')
-      ? str.split('|')
-      : str.split('],').map((s, i, a) => i < a.length - 1 ? s.trim() + ']' : s.trim());
-    return chunks.flatMap(chunk => {
+    return str.split('|').flatMap(chunk => {
       const m = chunk.trim().match(/^(.+?)\s*\[([^\]]+)\]\s*$/);
       if (m) return [{ name: m[1].trim(), id: m[2].trim() }];
       if (chunk.trim()) return [{ name: chunk.trim(), id: '' }];
@@ -281,111 +344,162 @@
     });
   }
 
-  const cards  = parseCards(raw);
-  const plural = cards.length !== 1;
+  const cards = parseCards(raw);
+  const answers = new Array(cards.length).fill(null); // null | true | false
 
-  function buildMailto(hasCard) {
-    const list = cards.map(c => c.id ? c.name + ' [' + c.id + ']' : c.name).join(', ') || '(see account)';
-    const subj = encodeURIComponent('Laurier Card Response — ' + (fn || 'Account Holder'));
-    const body = encodeURIComponent(
-      'Hi Andrew,\n\n'
-      + (fn || 'The account holder') + ' has confirmed: '
-      + (hasCard ? 'Yes, I have my card(s) in my possession.' : 'No, I no longer have my card(s).')
-      + '\n\nCards: ' + list
-      + '\nMember status: ' + (isCur ? 'Current ROW member' : 'Former ROW member')
-      + '\n\nThank you.'
-    );
-    return 'mailto:andrewmoss@rowswimming.ca?subject=' + subj + '&body=' + body;
-  }
+  // ── Icons ──────────────────────────────────────────────────────────────────
+  const iconCheck = () => '<svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="8"/><polyline points="6.5,10.5 9,13 13.5,7"/></svg>';
+  const iconInfo  = () => '<svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="10" cy="10" r="8"/><line x1="10" y1="9" x2="10" y2="14"/><circle cx="10" cy="6.2" r="0.8" fill="currentColor" stroke="none"/></svg>';
+  const iconReturn= () => '<svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h9a4 4 0 0 0 0-8H6"/><polyline points="7,6 4,10 7,14"/></svg>';
+  const iconWave  = () => '<svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 14c3-5 11-5 14 0"/><path d="M3 6c3 5 11 5 14 0"/></svg>';
+  const iconMail  = () => '<svg width="13" height="13" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="16" height="13" rx="2"/><polyline points="2,4 10,12 18,4"/></svg>';
+  const iconTick  = () => '<svg width="13" height="13" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4,10 8,14 16,6"/></svg>';
+  const iconArrow = () => '<svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="10" x2="16" y2="10"/><polyline points="11,5 16,10 11,15"/></svg>';
 
-  // SVG icons
-  function iconCheck() {
-    return '<svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="8"/><polyline points="6.5,10.5 9,13 13.5,7"/></svg>';
-  }
-  function iconInfo() {
-    return '<svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="10" cy="10" r="8"/><line x1="10" y1="9" x2="10" y2="14"/><circle cx="10" cy="6.2" r="0.8" fill="currentColor" stroke="none"/></svg>';
-  }
-  function iconReturn() {
-    return '<svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h9a4 4 0 0 0 0-8H6"/><polyline points="7,6 4,10 7,14"/></svg>';
-  }
-  function iconWave() {
-    return '<svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 14c3-5 11-5 14 0"/><path d="M3 6c3 5 11 5 14 0"/></svg>';
-  }
-  function iconMail() {
-    return '<svg width="13" height="13" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="16" height="13" rx="2"/><polyline points="2,4 10,12 18,4"/></svg>';
-  }
-  function iconTick() {
-    return '<svg width="13" height="13" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4,10 8,14 16,6"/></svg>';
+  // ── Toggle a card's answer ─────────────────────────────────────────────────
+  function pick(idx, hasIt) {
+    answers[idx] = hasIt;
+    // Update button states
+    const row = document.getElementById('row-' + idx);
+    row.querySelector('.tog-yes').classList.toggle('have-sel', hasIt === true);
+    row.querySelector('.tog-no').classList.toggle('lost-sel', hasIt === false);
+    updateProgress();
   }
 
-  const MSGS = {
-    'yes-current': {
-      cls: 'msg-yes', icon: iconCheck(), label: 'Great news',
-      body: '<p>Please hold onto your card' + (plural ? 's' : '') + ' — we’ll be in touch once ' + (plural ? 'they’ve' : 'it’s') + ' been reactivated for the <strong>2026–27 season</strong>.</p>'
-    },
-    'no-current': {
-      cls: 'msg-warn', icon: iconInfo(), label: 'Noted',
-      body: '<p>We’ll arrange replacement card' + (plural ? 's' : '') + ' for your account. Please note that Wilfrid Laurier values these cards at <strong>$30 each</strong>.</p>'
-           + '<p>We will replace swimmer cards at <strong>no charge</strong>. More information on accessing additional cards will follow.</p>'
-    },
-    'yes-former': {
-      cls: 'msg-blue', icon: iconReturn(), label: 'Thank you',
-      body: '<p>If you’re able to, please <strong>return the card' + (plural ? 's' : '') + '</strong> to the front desk of the <strong>Laurier Athletics Complex</strong>.</p>'
-           + '<p>Just let them know you’re returning an old ROW Swimming access card. We really appreciate it!</p>'
-    },
-    'no-former': {
-      cls: 'msg-grey', icon: iconWave(), label: 'Thank you',
-      body: '<p>We appreciate you taking the time to help us out.</p><p>We wish you all the best!</p>'
+  function updateProgress() {
+    const answered = answers.filter(a => a !== null).length;
+    const total    = cards.length;
+    const hint     = document.getElementById('progress-hint');
+    const btn      = document.getElementById('submit-btn');
+    const allDone  = answered === total;
+
+    if (allDone) {
+      hint.textContent = 'All cards answered — ready to submit!';
+      hint.className   = 'progress-hint ready';
+    } else {
+      hint.textContent = answered + ' of ' + total + ' card' + (total === 1 ? '' : 's') + ' answered';
+      hint.className   = 'progress-hint';
     }
-  };
+    btn.disabled = !allDone;
+  }
 
-  function respond(hasCard) {
-    const key = (hasCard ? 'yes' : 'no') + '-' + (isCur ? 'current' : 'former');
-    const msg = MSGS[key];
+  // ── Build mailto from per-card answers ────────────────────────────────────
+  function buildMailto() {
+    const haveList = [];
+    const lostList = [];
+    cards.forEach((c, i) => {
+      const label = c.name + (c.id ? ' [' + c.id + ']' : '');
+      (answers[i] ? haveList : lostList).push(label);
+    });
+    const subj = encodeURIComponent('Laurier Card Response — ' + (fn || 'Account Holder'));
+    let bodyText = 'Hi Andrew,\n\n';
+    bodyText += (fn || 'The account holder') + ' has submitted their card check-in.\n';
+    bodyText += 'Member status: ' + (isCur ? 'Current ROW member' : 'Former ROW member') + '\n\n';
+    if (haveList.length) bodyText += 'Have the card(s):\n' + haveList.map(s => '  • ' + s).join('\n') + '\n\n';
+    if (lostList.length) bodyText += 'No longer have the card(s):\n' + lostList.map(s => '  • ' + s).join('\n') + '\n\n';
+    bodyText += 'Thank you.';
+    return 'mailto:andrewmoss@rowswimming.ca?subject=' + encodeURIComponent(decodeURIComponent(subj)) + '&body=' + encodeURIComponent(bodyText);
+  }
+
+  // ── Show response after submit ─────────────────────────────────────────────
+  function submit() {
+    const haveList = cards.filter((_, i) => answers[i] === true);
+    const lostList = cards.filter((_, i) => answers[i] === false);
+    const allHave  = lostList.length === 0;
+    const allLost  = haveList.length === 0;
+
     document.getElementById('q-section').hidden = true;
+
+    let blocks = [];
+
+    if (isCur) {
+      if (haveList.length) {
+        const names = haveList.map(c => '<li>' + c.name + (c.id ? ' <span style="font-family:\'Courier New\',monospace;font-size:12px;font-weight:700">[' + c.id + ']</span>' : '') + '</li>').join('');
+        blocks.push('<div class="msg-box msg-yes">'
+          + '<div class="msg-head">' + iconCheck() + 'Great — hold onto ' + (haveList.length === 1 ? 'it' : 'these') + '</div>'
+          + '<p>We\'ll reactivate ' + (haveList.length === 1 ? 'this card' : 'these cards') + ' for the <strong>2026–27 season</strong>. Keep ' + (haveList.length === 1 ? 'it' : 'them') + ' safe!</p>'
+          + '<ul>' + names + '</ul>'
+          + '</div>');
+      }
+      if (lostList.length) {
+        const names = lostList.map(c => '<li>' + c.name + (c.id ? ' <span style="font-family:\'Courier New\',monospace;font-size:12px;font-weight:700">[' + c.id + ']</span>' : '') + '</li>').join('');
+        blocks.push('<div class="msg-box msg-warn">'
+          + '<div class="msg-head">' + iconInfo() + 'Noted — ' + (lostList.length === 1 ? 'card' : 'cards') + ' to replace</div>'
+          + '<p>We\'ll arrange replacement' + (lostList.length === 1 ? ' a replacement card' : ' replacement cards') + ' for:</p>'
+          + '<ul>' + names + '</ul>'
+          + '<p>Laurier values these cards at <strong>$30 each</strong>. We will replace swimmer cards at <strong>no charge</strong> — more details to follow.</p>'
+          + '</div>');
+      }
+    } else {
+      if (haveList.length) {
+        const names = haveList.map(c => '<li>' + c.name + (c.id ? ' <span style="font-family:\'Courier New\',monospace;font-size:12px;font-weight:700">[' + c.id + ']</span>' : '') + '</li>').join('');
+        blocks.push('<div class="msg-box msg-blue">'
+          + '<div class="msg-head">' + iconReturn() + 'Please return ' + (haveList.length === 1 ? 'this card' : 'these cards') + '</div>'
+          + '<p>Drop ' + (haveList.length === 1 ? 'it' : 'them') + ' off at the front desk of the <strong>Laurier Athletics Complex</strong> and let staff know you\'re returning an old ROW Swimming access card.</p>'
+          + '<ul>' + names + '</ul>'
+          + '</div>');
+      }
+      if (lostList.length) {
+        blocks.push('<div class="msg-box msg-grey">'
+          + '<div class="msg-head">' + iconWave() + 'Thanks for letting us know</div>'
+          + '<p>We appreciate you taking the time. We wish you all the best!</p>'
+          + '</div>');
+      }
+    }
+
+    blocks.push(
+      '<a class="notify-btn" href="' + buildMailto() + '">'
+        + iconMail() + 'Send us a quick confirmation email'
+      + '</a>'
+    );
+    blocks.push(
+      '<div class="thank-note">' + iconTick() + 'Response noted — thank you' + (fn ? ', ' + fn : '') + '!</div>'
+    );
+
     const r = document.getElementById('r-section');
-    r.innerHTML =
-      '<div class="msg-box ' + msg.cls + '">'
-        + '<div class="msg-head">' + msg.icon + msg.label + '</div>'
-        + msg.body
-        + '<a class="notify-btn" href="' + buildMailto(hasCard) + '">'
-        + iconMail() + 'Send us a quick confirmation'
-        + '</a>'
-      + '</div>'
-      + '<div class="thank-note">'
-        + iconTick()
-        + 'Response noted — thank you' + (fn ? ', ' + fn : '') + '!'
-      + '</div>';
+    r.innerHTML = '<div class="response-section">' + blocks.join('') + '</div>';
     r.hidden = false;
   }
 
-  // Build page
+  // ── Build page ────────────────────────────────────────────────────────────
   const content = document.getElementById('content');
 
   if (!fn && cards.length === 0) {
     content.innerHTML =
       '<div class="no-params">'
       + '<p>Please use the personalized link from your email to access this form.</p>'
-      + '<p style="font-size:12px">Questions? Contact us at <a href="mailto:andrewmoss@rowswimming.ca">andrewmoss@rowswimming.ca</a>.</p>'
+      + '<p style="font-size:12px">Questions? <a href="mailto:andrewmoss@rowswimming.ca">andrewmoss@rowswimming.ca</a></p>'
       + '</div>';
   } else {
+    const plural = cards.length !== 1;
+
     const cardRows = cards.map((c, i) =>
-      '<div class="card-row">'
-      + '<span class="swimmer">' + c.name + '</span>'
-      + (c.id ? '<span class="cid">' + c.id + '</span>' : '')
+      '<div class="card-check-row" id="row-' + i + '">'
+      + '<div class="card-info">'
+        + '<div class="swimmer-name">' + c.name + '</div>'
+        + (c.id ? '<div class="cid">Card #' + c.id + '</div>' : '')
+      + '</div>'
+      + '<div class="card-toggle">'
+        + '<button class="tog tog-yes" onclick="pick(' + i + ', true)">✓ Have it</button>'
+        + '<button class="tog tog-no"  onclick="pick(' + i + ', false)">✗ Lost it</button>'
+      + '</div>'
       + '</div>'
     ).join('');
 
     content.innerHTML =
-      '<p class="greeting">Hi' + (fn ? ' ' + fn : '') + ',</p>'
-      + '<p class="context">We’re checking in about your Wilfrid Laurier Athletics access card'
-      + (plural ? 's' : '') + ' associated with your ROW Swimming account.</p>'
-      + (cardRows ? '<div class="cards-box"><div class="cards-label">Your card' + (plural ? 's' : '') + '</div>' + cardRows + '</div>' : '')
+      '<p class="greeting">Hi' + (fn ? ', ' + fn : '') + '!</p>'
+      + '<p class="context">We\'re checking in about your Wilfrid Laurier Athletics access card'
+        + (plural ? 's' : '') + ' linked to your ROW Swimming account. Please confirm each card below.</p>'
       + '<div id="q-section">'
-        + '<p class="question">Do you still have ' + (plural ? 'these cards' : 'this card') + ' in your possession?</p>'
-        + '<div class="btn-row">'
-          + '<button class="btn btn-yes" onclick="respond(true)">Yes, I have ' + (plural ? 'them' : 'it') + '</button>'
-          + '<button class="btn btn-no" onclick="respond(false)">No, I don’t</button>'
+        + '<div class="section-label">Your card' + (plural ? 's' : '') + ' — do you still have ' + (plural ? 'them' : 'it') + '?</div>'
+        + '<div class="cards-list">' + cardRows + '</div>'
+        + '<p class="progress-hint" id="progress-hint">'
+          + '0 of ' + cards.length + ' card' + (plural ? 's' : '') + ' answered'
+        + '</p>'
+        + '<div class="submit-wrap">'
+          + '<button class="submit-btn" id="submit-btn" onclick="submit()" disabled>'
+            + iconArrow() + 'Submit My Answers'
+          + '</button>'
         + '</div>'
       + '</div>'
       + '<div id="r-section" hidden></div>';

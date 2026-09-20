@@ -271,17 +271,6 @@
   .msg-blue { background: var(--msg-blue-bg); border-color: var(--msg-blue-bd); color: var(--msg-blue-tx); }
   .msg-grey { background: var(--msg-grey-bg); border-color: var(--msg-grey-bd); color: var(--msg-grey-tx); }
 
-  .notify-btn {
-    display: inline-flex; align-items: center; gap: 7px;
-    margin-top: 14px; padding: 9px 14px;
-    border: 1px solid var(--border);
-    background: var(--surface);
-    border-radius: 8px;
-    font-family: inherit; font-size: 13px; font-weight: 600;
-    color: var(--accent); text-decoration: none;
-    cursor: pointer; transition: background 0.12s;
-  }
-  .notify-btn:hover { background: var(--bg); }
 
   .thank-note {
     display: flex; align-items: center; gap: 6px;
@@ -352,7 +341,6 @@
   const iconInfo  = () => '<svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="10" cy="10" r="8"/><line x1="10" y1="9" x2="10" y2="14"/><circle cx="10" cy="6.2" r="0.8" fill="currentColor" stroke="none"/></svg>';
   const iconReturn= () => '<svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h9a4 4 0 0 0 0-8H6"/><polyline points="7,6 4,10 7,14"/></svg>';
   const iconWave  = () => '<svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 14c3-5 11-5 14 0"/><path d="M3 6c3 5 11 5 14 0"/></svg>';
-  const iconMail  = () => '<svg width="13" height="13" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="16" height="13" rx="2"/><polyline points="2,4 10,12 18,4"/></svg>';
   const iconTick  = () => '<svg width="13" height="13" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4,10 8,14 16,6"/></svg>';
   const iconArrow = () => '<svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="10" x2="16" y2="10"/><polyline points="11,5 16,10 11,15"/></svg>';
 
@@ -381,24 +369,6 @@
       hint.className   = 'progress-hint';
     }
     btn.disabled = !allDone;
-  }
-
-  // ── Build mailto from per-card answers ────────────────────────────────────
-  function buildMailto() {
-    const haveList = [];
-    const lostList = [];
-    cards.forEach((c, i) => {
-      const label = c.name + (c.id ? ' [' + c.id + ']' : '');
-      (answers[i] ? haveList : lostList).push(label);
-    });
-    const subj = encodeURIComponent('Laurier Card Response — ' + (fn || 'Account Holder'));
-    let bodyText = 'Hi Andrew,\n\n';
-    bodyText += (fn || 'The account holder') + ' has submitted their card check-in.\n';
-    bodyText += 'Member status: ' + (isCur ? 'Current ROW member' : 'Former ROW member') + '\n\n';
-    if (haveList.length) bodyText += 'Have the card(s):\n' + haveList.map(s => '  • ' + s).join('\n') + '\n\n';
-    if (lostList.length) bodyText += 'No longer have the card(s):\n' + lostList.map(s => '  • ' + s).join('\n') + '\n\n';
-    bodyText += 'Thank you.';
-    return 'mailto:andrewmoss@rowswimming.ca?subject=' + encodeURIComponent(decodeURIComponent(subj)) + '&body=' + encodeURIComponent(bodyText);
   }
 
   // ── POST to Google Sheet via Apps Script ──────────────────────────────────
@@ -464,11 +434,6 @@
       }
     }
 
-    blocks.push(
-      '<a class="notify-btn" href="' + buildMailto() + '">'
-        + iconMail() + 'Send us a quick confirmation email'
-      + '</a>'
-    );
     blocks.push(
       '<div class="thank-note">' + iconTick() + 'Response noted — thank you' + (fn ? ', ' + fn : '') + '!</div>'
     );

@@ -1,0 +1,777 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FPP Handbook</title>
+<style>
+
+/* Layout: a single reading column. The weekly routine sits at the top as three
+   numbered steps, because it really is a sequence. Everything below is
+   reference, reachable but out of the way. Anything set in mono is a word you
+   will see on the screen itself. */
+:root {
+  --bg:        #F2F4F7;
+  --surface:   #FFFFFF;
+  --sunk:      #E7ECF2;
+  --ink:       #12202E;
+  --ink-soft:  #4A5A6B;
+  --ink-faint: #74838F;
+  --rule:      #D3DBE4;
+  --deep:      #0E3A5E;
+  --deep-soft: #E3EDF5;
+  --lane:      #C9820E;
+
+  --ok:        #1C6B45;
+  --ok-bg:     #DCF0E5;
+  --wait:      #17506E;
+  --wait-bg:   #DAEAF4;
+  --fix:       #9A3412;
+  --fix-bg:    #FBE6DB;
+  --off:       #5A6672;
+  --off-bg:    #E4E8EC;
+
+  --display: 'IBM Plex Sans Condensed', 'IBM Plex Sans', Arial, sans-serif;
+  --body:    'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --mono:    'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg:        #0D161F;
+    --surface:   #152232;
+    --sunk:      #1C2C3E;
+    --ink:       #E8EEF4;
+    --ink-soft:  #A9B8C6;
+    --ink-faint: #7E8E9C;
+    --rule:      #2A3B4E;
+    --deep:      #78B6E4;
+    --deep-soft: #1A2E42;
+    --lane:      #E0A93C;
+
+    --ok:        #6FD3A2;
+    --ok-bg:     #153425;
+    --wait:      #7DC0E6;
+    --wait-bg:   #132C3C;
+    --fix:       #F0A57C;
+    --fix-bg:    #3A2118;
+    --off:       #9AA7B3;
+    --off-bg:    #232F3B;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg:        #0D161F;
+  --surface:   #152232;
+  --sunk:      #1C2C3E;
+  --ink:       #E8EEF4;
+  --ink-soft:  #A9B8C6;
+  --ink-faint: #7E8E9C;
+  --rule:      #2A3B4E;
+  --deep:      #78B6E4;
+  --deep-soft: #1A2E42;
+  --lane:      #E0A93C;
+
+  --ok:        #6FD3A2;
+  --ok-bg:     #153425;
+  --wait:      #7DC0E6;
+  --wait-bg:   #132C3C;
+  --fix:       #F0A57C;
+  --fix-bg:    #3A2118;
+  --off:       #9AA7B3;
+  --off-bg:    #232F3B;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding-inline: 20px;
+  padding-block: 0 72px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: 720px; margin: 0 auto; }
+
+/* ---------- masthead ---------- */
+.masthead {
+  padding-block: 44px 28px;
+  border-bottom: 3px solid var(--deep);
+}
+.kicker {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin: 0 0 14px;
+}
+h1 {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: clamp(30px, 7vw, 44px);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  margin: 0 0 14px;
+  text-wrap: balance;
+}
+.standfirst {
+  font-size: 17px;
+  color: var(--ink-soft);
+  margin: 0;
+  max-width: 34em;
+}
+
+/* ---------- sections ---------- */
+section { padding-block: 40px 8px; }
+h2 {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 23px;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  margin: 0 0 6px;
+  text-wrap: balance;
+}
+h3 {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 17px;
+  margin: 28px 0 8px;
+  text-wrap: balance;
+}
+.sub {
+  color: var(--ink-faint);
+  font-size: 15px;
+  margin: 0 0 22px;
+  max-width: 34em;
+}
+p { margin: 0 0 14px; max-width: 34em; }
+ul { margin: 0 0 14px; padding-left: 20px; max-width: 34em; }
+li { margin-bottom: 7px; }
+strong { font-weight: 600; }
+
+/* anything you will literally see on screen */
+.ui {
+  font-family: var(--mono);
+  font-size: 0.87em;
+  font-weight: 500;
+  background: var(--sunk);
+  color: var(--ink);
+  padding: 1px 5px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+/* ---------- the three weekly steps ---------- */
+ol.steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+ol.steps > li {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--deep);
+  border-radius: 4px;
+  padding: 18px 20px;
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 4px 14px;
+  margin: 0;
+}
+.num {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1;
+  color: var(--deep);
+  grid-row: 1 / span 2;
+  font-variant-numeric: tabular-nums;
+  padding-top: 2px;
+}
+.step-do { font-weight: 600; font-size: 16px; }
+.step-why { color: var(--ink-soft); font-size: 15px; max-width: none; margin: 0; }
+
+/* ---------- callout ---------- */
+.note {
+  background: var(--deep-soft);
+  border-radius: 4px;
+  padding: 16px 18px;
+  margin: 22px 0;
+  font-size: 15px;
+}
+.note p:last-child { margin-bottom: 0; }
+.note .label {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--deep);
+  display: block;
+  margin-bottom: 6px;
+}
+.note.warn { background: var(--fix-bg); }
+.note.warn .label { color: var(--fix); }
+
+/* ---------- tables ---------- */
+.scroller { overflow-x: auto; margin: 0 0 20px; -webkit-overflow-scrolling: touch; }
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 460px;
+  font-size: 15px;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+}
+th, td {
+  text-align: left;
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+th {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  background: var(--sunk);
+  white-space: nowrap;
+}
+tbody tr:last-child td { border-bottom: none; }
+td.tab-name { font-family: var(--mono); font-size: 13px; font-weight: 500; white-space: nowrap; }
+
+/* ---------- status pills ---------- */
+.pill {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.p-new  { background: var(--off-bg);  color: var(--off); }
+.p-fix  { background: var(--fix-bg);  color: var(--fix); }
+.p-wait { background: var(--wait-bg); color: var(--wait); }
+.p-cnt  { background: var(--ok-bg);   color: var(--ok); }
+.p-dec  { background: var(--off-bg);  color: var(--off); }
+
+/* ---------- message list ---------- */
+dl.msgs { margin: 0; }
+dl.msgs > div {
+  padding: 14px 0;
+  border-top: 1px solid var(--rule);
+}
+dl.msgs > div:last-child { border-bottom: 1px solid var(--rule); }
+dt {
+  font-family: var(--mono);
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--fix);
+  margin-bottom: 5px;
+  line-height: 1.45;
+}
+dd { margin: 0; color: var(--ink-soft); font-size: 15px; max-width: 34em; }
+
+/* ---------- link block ---------- */
+.linkcard {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 16px 18px;
+  margin-bottom: 12px;
+}
+.linkcard h4 {
+  font-family: var(--display);
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+.linkcard p { font-size: 14px; color: var(--ink-soft); margin: 0 0 9px; }
+.linkcard a {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--deep);
+  word-break: break-all;
+  line-height: 1.5;
+}
+a { color: var(--deep); }
+a:focus-visible, summary:focus-visible {
+  outline: 2px solid var(--lane);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ---------- year ---------- */
+.year { display: grid; gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 4px; overflow: hidden; }
+.year > div { background: var(--surface); padding: 14px 16px; display: grid; grid-template-columns: 120px 1fr; gap: 14px; }
+.when {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--lane);
+  padding-top: 3px;
+}
+.what { font-size: 15px; min-width: 0; }
+@media (max-width: 520px) {
+  .year > div { grid-template-columns: 1fr; gap: 3px; }
+}
+
+footer {
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid var(--rule);
+  font-size: 14px;
+  color: var(--ink-faint);
+}
+footer p { max-width: 34em; }
+
+/* ---------- print ---------- */
+@page { size: Letter; margin: 16mm 15mm 18mm; }
+html, body { background: #FFFFFF !important; }
+body { padding-inline: 0; font-size: 10.5pt; line-height: 1.55; }
+.wrap { max-width: none; }
+h1 { font-size: 26pt !important; }
+h2 { font-size: 15pt; break-after: avoid; }
+h3 { font-size: 11.5pt; break-after: avoid; }
+p, ul, li, dd { max-width: none; }
+.masthead { padding-block: 0 16px; }
+section { padding-block: 20px 2px; }
+ol.steps > li, .linkcard, .note, .year > div, dl.msgs > div, footer { break-inside: avoid; }
+
+/* Each section starts its own page, so a heading always has its material
+   under it and you can find a topic by flicking rather than reading. */
+section:not(:first-of-type) { break-before: page; }
+/* A long section may still run on; it just cannot start mid-page. */
+section { break-inside: auto; }
+h2 + .sub { break-after: avoid; }
+
+/* A table is read by comparing rows down a column, which a page break ruins.
+   Whole tables move to the next page instead. */
+table, .scroller { break-inside: avoid; }
+
+/* The nine red messages are one list and belong together. At the web page's
+   spacing the last one fell alone onto a page of its own, so the list is set
+   a little tighter in print. Nothing else changes. */
+dl.msgs > div { padding: 9px 0; }
+
+/* Five link cards, and the last was falling onto a page of its own. Same
+   treatment as the message list: take the room out of the gaps. */
+.linkcard { padding: 11px 14px; margin-bottom: 8px; }
+.linkcard p { margin-bottom: 6px; }
+.linkcard h4 { margin-bottom: 3px; }
+dl.msgs dt { margin-bottom: 3px; }
+h2 + .sub { margin-bottom: 16px; }
+table { min-width: 0; font-size: 9.5pt; break-inside: auto; }
+thead { display: table-header-group; }
+tr { break-inside: avoid; }
+.scroller { overflow: visible; }
+a { text-decoration: none; }
+.linkcard a { font-size: 8.5pt; }
+.pill { border: 0.5pt solid currentColor; }
+
+
+/* Print sits tighter than the screen. The screen has room to breathe; paper
+   costs a page every few lines, and a page holding one callout reads as a
+   mistake. */
+section h3 { margin-top: 15px; }
+section p { margin-bottom: 9px; }
+section ul { margin-bottom: 9px; }
+section li { margin-bottom: 4px; }
+.note { margin: 14px 0; padding: 12px 14px; }
+ol.steps { gap: 10px; }
+ol.steps > li { padding: 13px 16px; }
+
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="kicker">ROW Swim Club &middot; Family Partnership Program</p>
+    <h1>Running the FPP tool</h1>
+    <p class="standfirst">You look after the Family Partnership Program. This page tells you how, in the order you will need it. The weekly routine is at the top. Everything below explains what the words mean, and is there for the day something does not look right.</p>
+  </header>
+
+  <section>
+    <h2>How it is put together</h2>
+    <p class="sub">Two doors in, one place everything lands.</p>
+
+    <p>Families owe a number of volunteer points each season. How many depends on their swimmer's group. The tool works out what each family owes, collects what they have done, checks it, and adds it up.</p>
+
+    <p><strong>Activity comes in through three sources, and nothing else.</strong> All three sit outside the workbook, and the tool reads them:</p>
+
+    <div class="scroller">
+      <table>
+        <thead>
+          <tr><th>Source</th><th>Who fills it in</th><th>Who it is about</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Family Self Reporting form</td><td>a family</td><td>themselves</td></tr>
+          <tr><td>Meet FPP sheet</td><td>the meet team</td><td>officials at a meet</td></tr>
+          <tr><td>Admin Reported Data sheet</td><td>you, or a coordinator</td><td>other people</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p><strong>Every row from every source goes through the same gate.</strong> It needs an address that matches a family, an activity that is on the price list and still switched on, a date inside the season, and it must not be something already held. Pass and it is admitted. Fail and it is held with the reason written beside it. A row is never dropped in silence.</p>
+
+    <p><strong>What happens after that depends on who made the claim.</strong> A family reporting on itself is a claim, and a claim about yourself needs somebody else to agree, so it lands as <span class="pill p-wait">Pending</span> and waits for you. A meet or admin row is the club's own record of what somebody else did, so it lands <span class="pill p-cnt">Counted</span>.</p>
+
+    <p>The roster and last season's figures come in by a different door. They are reference, not claims, so nobody approves them — they are replaced wholesale and the tool names any row it had to drop.</p>
+  </section>
+
+  <section>
+    <h2>Every week</h2>
+    <p class="sub">One pull and one look. Ten minutes at most.</p>
+
+    <ol class="steps">
+      <li>
+        <span class="num">1</span>
+        <span class="step-do">FPP &rsaquo; <span class="ui">Pull Family Reported Data</span></span>
+        <p class="step-why">Brings in what families have sent, checks every entry, fetches any decisions your reviewers have made, sends out anything newly pending, and rebuilds the totals. It takes about a minute and a half. Wait for it.</p>
+      </li>
+      <li>
+        <span class="num">2</span>
+        <span class="step-do">Open the <span class="ui">Activity Log</span> and read anything in red</span>
+        <p class="step-why">Red means <span class="pill p-fix">Needs fixing</span>. The reason is written in the Checked column beside it. Put the cause right, then pull again — it will be looked at afresh and cleared by itself.</p>
+      </li>
+      <li>
+        <span class="num">3</span>
+        <span class="step-do">FPP &rsaquo; <span class="ui">Approve All Pending Activity</span></span>
+        <p class="step-why">Family entries do not count towards a total until you do this. Meet and admin rows have already counted, because you recorded them.</p>
+      </li>
+    </ol>
+
+    <div class="note">
+      <span class="label">If you only remember one thing</span>
+      <p>Pull, fix what is red, approve. You cannot break anything by pulling twice — anything already held is recognised and left alone, and every pull works out the totals when it finishes.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>The menu</h2>
+    <p class="sub">One item per source, named for what follows. Below the line is what you do with it once it is here.</p>
+
+    <div class="scroller">
+      <table>
+        <thead>
+          <tr><th>Menu item</th><th>What it does</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="tab-name">Pull Family Reported Data</td><td>The form. Also exchanges decisions with the validation workbook.</td></tr>
+          <tr><td class="tab-name">Pull Meet Reported Data</td><td>The meet team's sheet. Fills the Meet Check tab at the same time.</td></tr>
+          <tr><td class="tab-name">Pull Admin Reported Data</td><td>The admin sheet.</td></tr>
+          <tr><td class="tab-name">Approve All Pending Activity</td><td>Makes every pending family entry count.</td></tr>
+          <tr><td class="tab-name">Update Totals</td><td>Works everything out again. Safe to run at any time.</td></tr>
+          <tr><td class="tab-name">Set Up &rsaquo; Import Roster</td><td>Reads a pasted registration export.</td></tr>
+          <tr><td class="tab-name">Set Up &rsaquo; Import Last Season</td><td>Reads last season's closing figures. Once a season.</td></tr>
+          <tr><td class="tab-name">Set Up &rsaquo; Update Activity Lists</td><td>Writes the activity lists out to the form and the admin sheet.</td></tr>
+          <tr><td class="tab-name">Set Up &rsaquo; Show All Tabs</td><td>Brings the hidden tabs into view.</td></tr>
+          <tr><td class="tab-name">Set Up &rsaquo; Hide Set Up Tabs</td><td>Puts them away again.</td></tr>
+          <tr><td class="tab-name">Set Up &rsaquo; Lock Formulas</td><td>Protects the calculated cells.</td></tr>
+          <tr><td class="tab-name">Set Up &rsaquo; Set Up Workbook</td><td>Rebuilds headings, formulas and settings rows.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Every pull ends by working out the totals, so nothing you can see is ever a step behind the Activity Log. No pull ever approves anything.</p>
+  </section>
+
+  <section>
+    <h2>The other jobs</h2>
+    <p class="sub">These come up now and then, not weekly.</p>
+
+    <h3>After a meet</h3>
+    <p>FPP &rsaquo; <span class="ui">Pull Meet Reported Data</span>. One step. It reads the meet team's sheet, brings in everything not already held, fills the <span class="ui">Meet Check</span> tab with anything that needs sorting out — with the row number on their own sheet, so you can point them straight at it — and works out the totals.</p>
+    <p>Every row that is not already on the Activity Log comes in, including the ones with something wrong. That is deliberate: it is what makes the list shrink instead of repeating. A row nobody can ever fix — a visiting official, a family who has left — is set to <span class="pill p-dec">Declined</span> once, and never raised again.</p>
+    <p>If the meet sheet is still showing last season, the pull says so in one sentence and brings in nothing at all. It will not fill your log with a season of out-of-date rows.</p>
+
+    <h3>Activity you are recording yourself</h3>
+    <p>Board roles, officials clinics, casino, bingo, fundraising — things a family should not be sending in on the form. Type them on the <strong>Admin Reported Data</strong> sheet, then FPP &rsaquo; <span class="ui">Pull Admin Reported Data</span>.</p>
+    <p>One row per person. Leave <strong>Date</strong>, <strong>Activity</strong> and <strong>Points</strong> blank below the first row and they carry down, so a night with twenty volunteers is one date, one activity, then twenty names — each with its own Details, which is what officials clinics need.</p>
+    <p><strong>Good rows come in and the rest stay where they are</strong>, with the reason beside them. One bad address does not hold up the other nineteen. What came in is cleared away, so the sheet empties itself down to just the problems.</p>
+
+    <h3>When the roster changes</h3>
+    <p>Paste the new export onto the <span class="ui">Roster Import</span> tab, then FPP &rsaquo; Set Up &rsaquo; <span class="ui">Import Roster</span>. It rebuilds the totals by itself.</p>
+
+  </section>
+
+  <section>
+    <h2>Changing what is on the form</h2>
+    <p class="sub">One list, one place to edit it.</p>
+
+    <p><strong>Edit the <span class="ui">Activities</span> tab, never the form.</strong> The tab holds the name, the type and the price together. FPP &rsaquo; Set Up &rsaquo; <span class="ui">Update Activity Lists</span> then writes that list out — the Family rows onto the form, the Admin rows as the drop-down on the admin sheet.</p>
+    <p>To retire an activity, set its <strong>Active</strong> column to No and run Update Activity Lists. It comes off the form and keeps its history.</p>
+
+    <div class="note warn">
+      <span class="label">Why this direction, and not the other</span>
+      <p>It used to run the other way: the tool read the form and copied anything new onto the Activities tab. Tidying the wording on the form therefore looked like three brand new activities, and they arrived with no price at all while their old rows kept the points. Nothing can flow from the form back into the tab any more.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>The five words on the Activity Log</h2>
+    <p class="sub">The Status column is the whole story. Everything else follows from it.</p>
+
+    <div class="scroller">
+      <table>
+        <thead>
+          <tr><th>Status</th><th>What it means</th><th>What you do</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="pill p-new">New</span></td>
+            <td>Just arrived. Not looked at yet.</td>
+            <td>Nothing. The next pull picks it up.</td>
+          </tr>
+          <tr>
+            <td><span class="pill p-fix">Needs fixing</span></td>
+            <td>Something is wrong. The reason is in the Checked column.</td>
+            <td>Put the cause right, then pull again.</td>
+          </tr>
+          <tr>
+            <td><span class="pill p-wait">Pending</span></td>
+            <td>Passed every check. A family entry, waiting for a person to say yes.</td>
+            <td>Approve All Pending Activity.</td>
+          </tr>
+          <tr>
+            <td><span class="pill p-cnt">Counted</span></td>
+            <td>In the family's total.</td>
+            <td>Nothing. Done.</td>
+          </tr>
+          <tr>
+            <td><span class="pill p-dec">Declined</span></td>
+            <td>Turned down, or never fixable.</td>
+            <td>Nothing. It is closed for good and will not be raised again.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note">
+      <span class="label">Why Declined matters</span>
+      <p>Setting a row to <span class="pill p-dec">Declined</span> is how you stop something coming back. The Activity Log is the tool's memory. Once a row is on it, no pull will ever raise that same entry again.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>What the red messages mean</h2>
+    <p class="sub">These are the exact words you will see in the Checked column, and what to do about each.</p>
+
+    <dl class="msgs">
+      <div>
+        <dt>&ldquo;someone@example.com&rdquo; does not match any family. Add it to Extra Emails, or correct it here.</dt>
+        <dd>Somebody used an address the club does not have on file. Put it on the <span class="ui">Extra Emails</span> tab, pointing at their real account address. You do this once per address, ever — after that the tool knows it.</dd>
+      </div>
+      <div>
+        <dt>No email address.</dt>
+        <dd>The entry has nobody attached to it. Type the family's address into the Submitted Email column.</dd>
+      </div>
+      <div>
+        <dt>&ldquo;Timer&rdquo; is not on the Activities tab.</dt>
+        <dd>Somebody reported something the club has not priced. Add it to the <span class="ui">Activities</span> tab and give it a value, or correct the spelling on the log.</dd>
+      </div>
+      <div>
+        <dt>&ldquo;Timer&rdquo; is switched off this season.</dt>
+        <dd>The activity exists but its Active column says No. Switch it back on, or decline the entry.</dd>
+      </div>
+      <div>
+        <dt>&ldquo;Casino&rdquo; is worth a different amount every time, so it needs a number.</dt>
+        <dd>The activity is priced as Variable. Type what this one is worth into the Points Override column.</dd>
+      </div>
+      <div>
+        <dt>That date is outside the season.</dt>
+        <dd>The date falls before Season Starts or after Season Ends on the <span class="ui">Settings</span> tab. Either the date is wrong, or it really was last season and should be declined.</dd>
+      </div>
+      <div>
+        <dt>That date is text, not a date.</dt>
+        <dd>The cell looks like a date but the sheet is treating it as words. Format that column as a date and retype it. Meet rows need a real date; a family may answer in words.</dd>
+      </div>
+      <div>
+        <dt>No date. Put the day, or say when it was in words.</dt>
+        <dd>Blank. A plain description works fine here — &ldquo;the fall session&rdquo; is accepted. Only a real date is checked against the season.</dd>
+      </div>
+      <div>
+        <dt>This looks like the same entry twice.</dt>
+        <dd>The same family, activity and date is already on the log. If it genuinely happened twice, change the Details so the two are not identical.</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section>
+    <h2>The tabs</h2>
+    <p class="sub">Two stay open. Everything else is one click away.</p>
+
+    <p>The workbook opens on <span class="ui">Standings</span> and <span class="ui">Activity Log</span>, because those are the only two a normal week touches. FPP &rsaquo; Set Up &rsaquo; <span class="ui">Show All Tabs</span> brings the rest into view, and <span class="ui">Hide Set Up Tabs</span> puts them away again.</p>
+
+    <div class="scroller">
+      <table>
+        <thead>
+          <tr><th>Tab</th><th>What it holds</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="tab-name">Standings</td><td>One row per family. What they owe, what they have earned, what is left. This is what the report page and the mail merge read.</td></tr>
+          <tr><td class="tab-name">Activity Log</td><td>Every entry ever, and its status. The tool's memory. Never delete rows here.</td></tr>
+          <tr><td class="tab-name">Roster</td><td>The current membership, and what each family owes.</td></tr>
+          <tr><td class="tab-name">Activities</td><td>The club's price list, and the master of every activity name. Edit it here.</td></tr>
+          <tr><td class="tab-name">Extra Emails</td><td>Spare addresses, pointed at the family they belong to.</td></tr>
+          <tr><td class="tab-name">Meet Check</td><td>What the last meet pull found, with the row number on the meet team's own sheet.</td></tr>
+          <tr><td class="tab-name">Settings</td><td>Every number and link the tool runs on.</td></tr>
+          <tr><td class="tab-name">Last Season</td><td>Last season's closing figures, for carry forward credit.</td></tr>
+          <tr><td class="tab-name">Adjustments</td><td>A requirement set by hand, for what no rule covers. Beats every other rule.</td></tr>
+          <tr><td class="tab-name">Swimmer Notes</td><td>First-year status set by hand, where the join dates do not tell the truth.</td></tr>
+          <tr><td class="tab-name">Billing Groups</td><td>Your groups and what each is worth. In FPP = No means no requirement.</td></tr>
+          <tr><td class="tab-name">Roster Import</td><td>Where a registration export is pasted.</td></tr>
+          <tr><td class="tab-name">Batch Add Activity</td><td>Only there if no admin sheet is named on Settings. Name one and this tab puts itself away.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p><span class="ui">Lookups</span> and the form's own responses tab stay hidden either way. Nothing in either is meant to be read.</p>
+  </section>
+
+  <section>
+    <h2>The Settings tab</h2>
+    <p class="sub">Three columns. Only the middle one is yours.</p>
+
+    <ul>
+      <li><strong>Column B, the yellow Value column, is safe to change.</strong> That is what the tab is for. Nothing you run will overwrite it.</li>
+      <li><strong>Column A, the names on the left, should be left alone.</strong> The tool finds each setting by its exact name. A renamed one reads as zero rather than raising an error.</li>
+      <li><strong>Column C explains each one</strong> and is rewritten every time the workbook is set up, so there is no point editing it.</li>
+    </ul>
+
+    <p>You can add your own rows anywhere. They will survive, but the tool will not read them — an extra row is a note to yourself unless the tool is changed to read it.</p>
+
+    <div class="note warn">
+      <span class="label">The three that matter most</span>
+      <p><span class="ui">First Year %</span>, <span class="ui">First Year Least</span> and <span class="ui">Activity Cap %</span> are called out by Update Totals if they ever go blank. The others are not, so a blank <span class="ui">Carry Forward %</span> simply means nobody gets credit, and nothing says so.</p>
+    </div>
+
+    <h3>The ones that point at another file</h3>
+    <p>Paste the whole web address into any of these. You do not have to dig the long code out of the middle of it.</p>
+    <ul>
+      <li><span class="ui">Form Link</span> — the family form, so Update Activity Lists can write to it.</li>
+      <li><span class="ui">Review Workbook ID</span> — where your reviewers approve entries.</li>
+      <li><span class="ui">Meet Source ID</span> and <span class="ui">Meet Source Tab</span> — the meet team's file, and which tab holds who did what.</li>
+      <li><span class="ui">Meet Jobs Tab</span> — the tab that lists their jobs, so their prices can be checked against ours.</li>
+      <li><span class="ui">Last Season Workbook</span> and <span class="ui">Last Season Tab</span> — where last season's figures are read from.</li>
+      <li><span class="ui">Admin Sheet</span> and <span class="ui">Admin Sheet Tab</span> — the admin reporting sheet. Leave the tab blank and the first tab is used. Leave the sheet blank and admin rows are typed on the Batch Add Activity tab instead.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>The year</h2>
+    <p class="sub">Roughly when each thing happens.</p>
+
+    <div class="year">
+      <div><span class="when">Registration</span><span class="what">Paste the roster export and run <span class="ui">Import Roster</span>. Set the season dates and the first-year date on Settings. Confirm the points on <span class="ui">Billing Groups</span>.</span></div>
+      <div><span class="when">Once a season</span><span class="what">Run <span class="ui">Import Last Season</span>, then look down the rows with no activity listed — a blank there can mean nothing was ever recorded, not that nothing was done.</span></div>
+      <div><span class="when">Season opens</span><span class="what">Run <span class="ui">Update Activity Lists</span>, then send families the form link.</span></div>
+      <div><span class="when">Every week</span><span class="what">The three steps at the top of this page.</span></div>
+      <div><span class="when">After a meet</span><span class="what"><span class="ui">Pull Meet Reported Data</span>.</span></div>
+      <div><span class="when">Now and then</span><span class="what">Type admin rows on the admin sheet and run <span class="ui">Pull Admin Reported Data</span>.</span></div>
+      <div><span class="when">Roster changes</span><span class="what">Paste the new export and run <span class="ui">Import Roster</span> again.</span></div>
+      <div><span class="when">Season ends</span><span class="what">Read the Standings tab. Families who met their requirement can be carried forward into next season.</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>When something looks wrong</h2>
+
+    <h3>A family's total is zero and should not be</h3>
+    <p>Check their entries are <span class="pill p-cnt">Counted</span>, not still <span class="pill p-wait">Pending</span>. If they are Counted, run FPP &rsaquo; <span class="ui">Update Totals</span>.</p>
+
+    <h3>A whole column has gone blank</h3>
+    <p>Somebody deleted a row. See the rule at the end of this guide. Running FPP &rsaquo; Set Up &rsaquo; <span class="ui">Set Up Workbook</span> puts the formulas back.</p>
+
+    <h3>The menu is missing, or still shows the old items</h3>
+    <p>Reload the page. The FPP menu is built when the workbook opens, so it only changes when you open it afresh.</p>
+
+    <h3>Nothing came in from a meet</h3>
+    <p>Read what the pull told you. The most common cause by far is that the meet team's tab is still pointed at last season — in which case the pull says so and brings in nothing.</p>
+
+    <h3>An activity on the form has no value</h3>
+    <p>Its Type on the <span class="ui">Activities</span> tab is Variable, which means the amount is typed in each time. If it is really worth the same every time, set Type to Flat and put the number in the Points column.</p>
+
+    <h3>A script runs for a long time</h3>
+    <p>That is normal. A pull takes about a minute and a half, and Set Up Workbook about seventy seconds. Let it finish rather than clicking again.</p>
+  </section>
+
+  <section>
+    <h2>Links</h2>
+
+    <p class="sub">Hold <strong>Ctrl</strong> as you click — <strong>⌘</strong> on a Mac — and the link opens in a new tab, so the handbook stays where it is.</p>
+
+    <div class="linkcard">
+      <h4>The report page</h4>
+      <p>Open it with your club account and it lets you in — there is no key to remember and nothing to leak. Google tells the page who you are, and only a <span class="ui">rowswimming.ca</span> account is recognised. Your address is shown at the top so you can see which account you are using.</p>
+      <p>For anyone without a club account, the old style of link still works: add <span class="ui">?key=</span> and the value in the <span class="ui">Report Key</span> row of Settings. Change that value and every keyed link stops working at once.</p>
+      <a href="https://script.google.com/macros/s/AKfycbxKn_6EIJrkA-zr_rYgQGGP-ZWwE_-fd2ea9ca28CCGbDyoEoRhfIN4ZFPw0felu_a8/exec" target="_blank" rel="noopener noreferrer">https://script.google.com/macros/s/AKfycbxKn_6EIJrkA-zr_rYgQGGP-ZWwE_-fd2ea9ca28CCGbDyoEoRhfIN4ZFPw0felu_a8/exec</a>
+    </div>
+
+    <div class="linkcard">
+      <h4>The family reporting form</h4>
+      <p>What families fill in themselves. This is the editing link, for changing the questions and the wording — the address you send families is a different one, found under <strong>Send</strong> inside the form. Do not edit the list of activities here; edit the <span class="ui">Activities</span> tab and run Update Activity Lists.</p>
+      <a href="https://docs.google.com/forms/d/1zQ-Y3RyHZIYZfnNcxL8uD6Zqy-Oh3z9wwAHN5yYfjAI/edit" target="_blank" rel="noopener noreferrer">https://docs.google.com/forms/d/1zQ-Y3RyHZIYZfnNcxL8uD6Zqy-Oh3z9wwAHN5yYfjAI/edit</a>
+    </div>
+
+    <div class="linkcard">
+      <h4>The admin reporting sheet</h4>
+      <p>Where you or a coordinator type activity the club records itself. Its drop-down of activities is written by Update Activity Lists, so it can only ever offer what the club prices. Share this one with whoever does the entering — they never need the main workbook.</p>
+      <a href="https://docs.google.com/spreadsheets/d/1wGYIrja4Un1izTbs2NB29sHiIEdCZ1-jzOCJV83aQ0o/edit" target="_blank" rel="noopener noreferrer">https://docs.google.com/spreadsheets/d/1wGYIrja4Un1izTbs2NB29sHiIEdCZ1-jzOCJV83aQ0o/edit</a>
+    </div>
+
+    <div class="linkcard">
+      <h4>The meet workbook</h4>
+      <p>The meet team's own file. The tool reads two tabs from it and never writes anything back: <span class="ui">Positions</span> for the job list, <span class="ui">Officials Experience</span> for who did what. It belongs to the meet team, so treat it as theirs.</p>
+      <a href="https://docs.google.com/spreadsheets/d/1VARbcBs2367WQ0vAx2FAb1shFjR1z3Mor_ZpyGOGX9U/edit" target="_blank" rel="noopener noreferrer">https://docs.google.com/spreadsheets/d/1VARbcBs2367WQ0vAx2FAb1shFjR1z3Mor_ZpyGOGX9U/edit</a>
+    </div>
+
+    <div class="linkcard">
+      <h4>The validation workbook</h4>
+      <p>A separate, almost empty workbook where somebody else can approve family entries without seeing anything else — no addresses, no totals, no roster, nobody's standing. They choose a Decision; they do not change the activity. Share this one with your reviewers. Do not share the main workbook.</p>
+      <a href="https://docs.google.com/spreadsheets/d/1re7EY9-MYq_ABmE5B3HEZwI2o8hfyuMxn9oZXrWqoOY/edit" target="_blank" rel="noopener noreferrer">https://docs.google.com/spreadsheets/d/1re7EY9-MYq_ABmE5B3HEZwI2o8hfyuMxn9oZXrWqoOY/edit</a>
+    </div>
+
+    <div class="linkcard">
+      <h4>Last season's workbook</h4>
+      <p>The 2025-26 file. Read once, by Import Last Season, for carry forward credit. Nothing is ever written to it.</p>
+      <a href="https://docs.google.com/spreadsheets/d/1zOF4HGkv_HBy0AmILeUUmNSIKMZmBDNyCdCRqo1-3LY/edit" target="_blank" rel="noopener noreferrer">https://docs.google.com/spreadsheets/d/1zOF4HGkv_HBy0AmILeUUmNSIKMZmBDNyCdCRqo1-3LY/edit</a>
+    </div>
+
+    <div class="linkcard">
+      <h4>The workbook</h4>
+      <p>Administrators only. Everything in this guide happens here.</p>
+      <a href="https://docs.google.com/spreadsheets/d/1SKKryT_s8N063KI2KDfQjFT12BkIbVTa2gpXqEvC0eQ/edit" target="_blank" rel="noopener noreferrer">https://docs.google.com/spreadsheets/d/1SKKryT_s8N063KI2KDfQjFT12BkIbVTa2gpXqEvC0eQ/edit</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>The one rule that matters</h2>
+
+    <div class="note warn">
+      <span class="label">Never delete rows</span>
+      <p>Not on <span class="ui">Activity Log</span>, <span class="ui">Roster</span>, <span class="ui">Standings</span> or <span class="ui">Last Season</span>.</p>
+      <p>Every calculated column on those tabs is a single formula sitting in row 2, filling the whole column below it. Delete row 2 and that formula is gone. The column does not show an error — it just quietly stops working, and totals start coming out at zero.</p>
+      <p>To clear something, select the cells and clear the contents. Leave the rows where they are.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>ROW Swim Club, September 2026. If anything here does not match what is on your screen, trust the screen.</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
